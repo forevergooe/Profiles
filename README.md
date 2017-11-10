@@ -40,5 +40,21 @@ Postern
 ```
 https://raw.githubusercontent.com/ConnersHua/Profiles/master/Postern.conf
 ```
+# 感谢
+
+[lhie1](https://github.com/lhie1) 提供的 Surge/Shadowrocket 规则
+
+[Eval](https://twitter.com/OAuth4/status/829012555976712192) 提供的运营商劫持淘宝和京东获取返利抽成的问题
+
+[BreakWa11](https://breakwa11.blogspot.com/2016/12/baidu.html) 提供的屏蔽百度高精度定位
+
+[逗bi极客](http://weibo.com/1989623982/EmnY4sEka) 提供的 Super Mario Run 代理
+
+[旦旦熊](https://twitter.com/zanefox/status/775330280768843776) 提供的去成都联通浮窗广告
+
+[Jelly](https://twitter.com/zhgd/status/774794766953230336) 提供的兼容盯盯拍方法
+
+[慕容寻](https://twitter.com/yanfengzi/status/772850538778013696) 提供的去广告
+
 # 许可
 本规则中的屏蔽规则来于 lhie1 的 [Surge](https://github.com/lhie1/Surge) 项目，特此声明并感谢。
