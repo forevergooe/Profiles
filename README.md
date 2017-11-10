@@ -25,21 +25,21 @@ Shadowrocket：设置 – 证书 – 安装证书
 
 # 规则
 Surge
-```
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf
-```
+
+[https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf)
+
 Shadowrocket/ShadowRay
-```
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf
-```
+
+[https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf)
+
 Kitsunebi
-```
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Kitsunebi.conf
-```
+
+[https://raw.githubusercontent.com/ConnersHua/Profiles/master/Kitsunebi.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Kitsunebi.conf)
+
 Postern
-```
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Postern.conf
-```
+
+[https://raw.githubusercontent.com/ConnersHua/Profiles/master/Postern.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Postern.conf)
+
 # 感谢
 
 [lhie1](https://github.com/lhie1) 提供的 Surge/Shadowrocket 规则
