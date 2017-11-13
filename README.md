@@ -24,17 +24,13 @@ Shadowrocket：设置 – 证书 – 安装证书
 5.从 2017 年 3 月开始屏蔽规则取自 [lhie1/Surge](https://github.com/lhie1/Surge) ，在此感谢。
 
 # 规则
-Surge
+Surge / Kitsunebi
 
 [https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf)
 
-Shadowrocket/ShadowRay
+Shadowrocket / ShadowRay
 
 [https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf)
-
-Kitsunebi
-
-[https://raw.githubusercontent.com/ConnersHua/Profiles/master/Kitsunebi.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Kitsunebi.conf)
 
 Postern
 
