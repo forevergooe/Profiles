@@ -21,10 +21,12 @@ Shadowrocket：设置 – 证书 – 安装证书
 
 设置 – 通用 – 关于本机 – 证书信任设置 – 信任
 ```
-5.从 2017 年 3 月开始屏蔽规则取自 [lhie1/Surge](https://github.com/lhie1/Surge) ，在此感谢。
+5.REJECT 规则偏向于反劫持和跟踪保护。
 
 # 规则
 Surge / Kitsunebi
+
+（因 Kitsunebi 每次规则导入不会清空以前的规则，所以需先「删除全部规则」再倒入，也不建议和其他规则叠压使用）
 
 [https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf)
 
@@ -38,9 +40,9 @@ Postern
 
 # 感谢
 
-[lhie1](https://github.com/lhie1) 提供的 Surge/Shadowrocket 规则
+[lhie1](https://github.com/lhie1) 提供的 Surge/Shadowrocket 规则（2017年3至10月使用期屏蔽规则）
 
-[Eval](https://twitter.com/OAuth4/status/829012555976712192) 提供的运营商劫持淘宝和京东获取返利抽成的问题
+[Eval](https://twitter.com/OAuth4/status/829012555976712192) 提供的解决运营商劫持淘宝和京东获取返利抽成
 
 [BreakWa11](https://breakwa11.blogspot.com/2016/12/baidu.html) 提供的屏蔽百度高精度定位
 
@@ -53,4 +55,5 @@ Postern
 [慕容寻](https://twitter.com/yanfengzi/status/772850538778013696) 提供的去广告
 
 # 许可
-本规则中的屏蔽规则来于 lhie1 的 [Surge](https://github.com/lhie1/Surge) 项目，特此声明并感谢。
+
+转载需注明作者及项目地址
