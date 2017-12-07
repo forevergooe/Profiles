@@ -21,10 +21,9 @@ Surge、Shadowrocket、ShadowRay、Kitsunebi、Postern 的配置规则
 
 # 规则
 
-标准版
+**标准版**
 
 Surge / Kitsunebi
-
 [https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf)
 
 Shadowrocket / ShadowRay
@@ -35,7 +34,7 @@ Postern
 
 [https://raw.githubusercontent.com/ConnersHua/Profiles/master/Postern.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Postern.conf)
 
-特殊版
+**特殊版**
 
 Surge / Kitsunebi
 
