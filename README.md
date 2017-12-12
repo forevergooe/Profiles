@@ -53,6 +53,8 @@ Postern
 
 > [lhie1](https://github.com/lhie1) - 特殊版去广告基于其规则
 
+> Lison
+
 # 许可
 
 转载需注明作者及项目地址
