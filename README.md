@@ -5,13 +5,13 @@ Surge、Shadowrocket、ShadowRay、Kitsunebi、Postern 的配置规则
 
 - 规则主推黑名单模式，被 ☭ 和速度极慢的网站才走代理。
 
-- 规则分为标准版及特殊版（特殊版基于 [lhie1](https://github.com/lhie1) 的规则具有去广告作用）
+- 规则分为标准版及特别版（特别版基于 [lhie1](https://github.com/lhie1) 的规则具有去广告作用）
 
 # 使用
 
 - 连接公共 Wi-Fi 时可暂时关闭待连接成功后再开启，否则可能出现验证页面无法加载的情况。
 
-- 如需要去广告请使用特殊版，特殊版需安装证书，具体方法：
+- 如需要去广告请使用特别版，特别版需安装证书，具体方法：
   - [Surge 导入配置及安装证书](https://diveng.io/import-profile-and-install-certificate-on-surge.html)
   - [Shadowrocket 导入配置及安装证书](https://diveng.io/import-profile-and-install-certificate-on-shadowrocket.html)
 
@@ -35,7 +35,7 @@ Postern
 
 [https://raw.githubusercontent.com/ConnersHua/Profiles/master/Postern.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Postern.conf)
 
-**特殊版**
+**特别版**
 
 Surge / Kitsunebi
 
@@ -51,9 +51,9 @@ Postern
 
 # 感谢
 
-> [lhie1](https://github.com/lhie1) - 特殊版去广告基于其规则
+> [lhie1](https://github.com/lhie1) - 特别版去广告基于其规则
 
-> Lison
+> Lison Bin
 
 # 许可
 
