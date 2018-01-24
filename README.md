@@ -1,5 +1,5 @@
 # 简介
-Surge、Shadowrocket、ShadowRay、Kitsunebi、Postern 的配置规则
+Surge、Shadowrocket、Pepi(ShadowRay)、Kitsunebi、Postern 的配置规则
 
 - 规则不提供节点信息。
 
@@ -27,7 +27,7 @@ Surge / Kitsunebi
 
 [https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf)
 
-Shadowrocket / ShadowRay
+Shadowrocket / Pepi(ShadowRay)
 
 [https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf)
 
@@ -41,7 +41,7 @@ Surge / Kitsunebi
 
 [https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeS.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeS.conf)
 
-Shadowrocket / ShadowRay
+Shadowrocket / Pepi(ShadowRay)
 
 [https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowS.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowS.conf)
 
@@ -53,7 +53,9 @@ Postern
 
 > [lhie1](https://github.com/lhie1) - 特别版去广告基于其规则
 
-> Lison Bin
+> Lison Bin - 完善 Apple、WhatsApp、Line 相关规则
+
+> [linjiacheng](https://github.com/linjiacheng) - 解决盯盯拍无法使用的问题
 
 # 许可
 
