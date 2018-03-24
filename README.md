@@ -23,7 +23,7 @@ Surge、Shadowrocket、Pepi(ShadowRay)、Kitsunebi、Postern 的配置规则
 
 **标准版**
 
-Surge / Kitsunebi
+Surge / Kitsunebi / Postern
 
 [https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf)
 
@@ -31,23 +31,15 @@ Shadowrocket / Pepi(ShadowRay)
 
 [https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf)
 
-Postern
-
-[https://raw.githubusercontent.com/ConnersHua/Profiles/master/Postern.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Postern.conf)
-
 **特别版**
 
-Surge / Kitsunebi
+Surge / Kitsunebi / Postern
 
 [https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeS.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeS.conf)
 
 Shadowrocket / Pepi(ShadowRay)
 
 [https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowS.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowS.conf)
-
-Postern
-
-[https://raw.githubusercontent.com/ConnersHua/Profiles/master/PosternS.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/PosternS.conf)
 
 # 感谢
 
