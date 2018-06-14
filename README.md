@@ -1,5 +1,5 @@
 # 简介
-Surge、Shadowrocket、Pepi(ShadowRay)、Kitsunebi、Postern 的配置规则
+Surge、Shadowrocket、Pepi(ShadowRay)、Kitsunebi、V2Ray、Postern 的配置规则
 
 ### 使用
 
@@ -14,6 +14,7 @@ Surge、Shadowrocket、Pepi(ShadowRay)、Kitsunebi、Postern 的配置规则
 - [Surge 导入配置及安装证书](https://diveng.io/import-profile-and-install-certificate-on-surge.html)
 - [Shadowrocket 导入配置及安装证书](https://diveng.io/import-profile-and-install-certificate-on-shadowrocket.html)
 - [Kitsunebi 导入配置](https://diveng.io/import-profile-on-kitsunebi.html)
+- V2Ray 为兼容 V2Ray Core 的配置，建议使用 [v2RayNG](https://play.google.com/store/apps/details?id=com.v2ray.ang)，复制配置文件链接在添加时选择「从 URL 导入自定义配置」导入即可（内置了[云监控](https://xxoox.fun/)提供的节点但建议使用你自己的）
 
 **关于特别版**
 
@@ -33,6 +34,10 @@ Shadowrocket / Pepi(ShadowRay)
 
 [https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf)
 
+V2Ray
+
+[https://raw.githubusercontent.com/ConnersHua/Profiles/master/V2Ray.json](https://raw.githubusercontent.com/ConnersHua/Profiles/master/V2Ray.json)
+
 **特别版**
 
 Surge / Kitsunebi / Postern
@@ -43,6 +48,10 @@ Shadowrocket / Pepi(ShadowRay)
 
 [https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowS.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowS.conf)
 
+V2Ray
+
+[https://raw.githubusercontent.com/ConnersHua/Profiles/master/V2RayS.json](https://raw.githubusercontent.com/ConnersHua/Profiles/master/V2RayS.json)
+
 # 感谢
 
 > [lhie1](https://github.com/lhie1) - 旧版特别版去广告基于其规则
@@ -50,6 +59,8 @@ Shadowrocket / Pepi(ShadowRay)
 > Lison Bin - 完善 Apple、WhatsApp、Line 相关规则
 
 > [linjiacheng](https://github.com/linjiacheng) - 解决盯盯拍无法使用的问题
+
+> [云监控](https://xxoox.fun/) – 提供 V2Ray 节点
 
 # 许可
 
