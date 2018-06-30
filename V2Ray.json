@@ -18,7 +18,7 @@
     {
       "mux" : {
         "concurrency" : 8,
-        "enabled" : false
+        "enabled" : true
       },
       "protocol" : "vmess",
       "settings" : {
@@ -26,29 +26,22 @@
           {
             "users" : [
               {
-                "id" : "1f3987a7-99a7-4d66-a93c-f7eb37dc252c",
-                "alterId" : 0,
+                "id" : "a3482e88-686a-4a58-8126-99c9df64b7bf",
+                "alterId" : 64,
                 "security" : "chacha20-poly1305"
               }
             ],
-            "address" : "66.154.109.218",
-            "port" : 6025
+            "address" : "v2ray.cool",
+            "port" : 443
           }
         ]
       },
       "streamSettings" : {
-        "security" : "none",
-        "kcpSettings" : {
-          "downlinkCapacity" : 6,
-          "readBufferSize" : 1,
-          "mtu" : 1350,
-          "writeBufferSize" : 1,
-          "uplinkCapacity" : 1,
-          "header" : {
-            "type" : "srtp"
-          }
+        "security" : "tls",
+        "wsSettings" : {
+          "path" : "\/v2ray.cool\/"
         },
-        "network" : "kcp",
+        "network" : "ws",
         "tlsSettings" : {
           "allowInsecure" : true
         }
@@ -105,6 +98,7 @@
             "facebook",
             "google",
             "instagram",
+            "jav",
             "porn",
             "shadowsocks",
             "telegram",
@@ -121,6 +115,7 @@
             "domain:agoogleaday.com",
             "domain:akamaiedge.net",
             "domain:allconnected.co",
+            "domain:amazon.co.jp",
             "domain:amazon.com",
             "domain:amazonaws.com",
             "domain:ampproject.com",
@@ -135,6 +130,7 @@
             "domain:aolcdn.com",
             "domain:api-glb-sea.smoot.apple.com",
             "domain:apigee.com",
+            "domain:apk-cloud.com",
             "domain:apk-dl.com",
             "domain:apkfind.com",
             "domain:apkleecher.com",
@@ -396,6 +392,7 @@
             "domain:panoramio.com",
             "domain:pastebin.com",
             "domain:pentoy.hk",
+            "domain:phncdn.com",
             "domain:picasaweb.com",
             "domain:pinimg.com",
             "domain:pinterest.com",
@@ -606,6 +603,7 @@
             "domain:yesasia.com",
             "domain:yidio.com",
             "domain:yimg.com",
+            "domain:yingtanruiwen.com",
             "domain:yorkbbs.ca",
             "domain:youmaker.com",
             "domain:yourlisten.com",
@@ -632,20 +630,17 @@
             "119.235.224.0\/20",
             "125.209.222.0\/16",
             "147.92.128.0\/21",
-            "149.154.0.0\/16",
-            "158.0.0.0\/8",
-            "169.0.0.0\/8",
-            "174.0.0.0\/8",
-            "18.0.0.0\/8",
-            "199.0.0.0\/8",
+            "149.154.164.0\/24",
+            "149.154.171.0\/24",
+            "157.240.0.0\/16",
+            "18.175.241.0\/24",
+            "18.184.241.0\/24",
             "203.104.128.0\/19",
-            "31.0.0.0\/8",
-            "35.0.0.0\/8",
-            "52.0.0.0\/8",
-            "54.0.0.0\/8",
-            "64.0.0.0\/8",
-            "75.0.0.0\/8",
-            "91.108.0.0\/16"
+            "31.13.0.0\/16",
+            "52.74.125.22\/32",
+            "52.74.200.77\/32",
+            "54.225.121.0\/24",
+            "91.108.56.0\/24"
           ],
           "outboundTag" : "proxy"
         }
