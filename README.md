@@ -12,9 +12,16 @@ Surge、Shadowrocket、Pepi(ShadowRay)、Kitsunebi、V2Ray、Postern 的配置�
 **导入方法**
 
 - [Surge 导入配置及安装证书](https://diveng.io/import-profile-and-install-certificate-on-surge.html)
+
 - [Shadowrocket 导入配置及安装证书](https://diveng.io/import-profile-and-install-certificate-on-shadowrocket.html)
+
 - [Kitsunebi 导入配置](https://diveng.io/import-profile-on-kitsunebi.html)
-- V2Ray 为兼容 V2Ray Core 的配置，建议使用 [v2RayNG](https://play.google.com/store/apps/details?id=com.v2ray.ang)，复制配置文件链接在添加时选择「从 URL 导入自定义配置」导入即可（内置了[云监控](https://xxoox.fun/)提供的节点但建议使用你自己的）
+
+- V2Ray 为兼容 V2Ray Core 的配置，建议使用 [v2rayNG](https://play.google.com/store/apps/details?id=com.v2ray.ang):
+
+  1. 下载配置
+  2. 使用编辑器（如[920编辑器](https://play.google.com/store/apps/details?id=com.jecelyin.editor.v2&hl=zh)）打开修改「outboundDetour」下的服务器相关配置
+  3. 打开 v2rayNG 添加选择「从本地导入自定义配置」
 
 **关于特别版**
 
@@ -59,8 +66,6 @@ V2Ray
 > Lison Bin - 完善 Apple、WhatsApp、Line 相关规则
 
 > [linjiacheng](https://github.com/linjiacheng) - 解决盯盯拍无法使用的问题
-
-> [云监控](https://xxoox.fun/) – 提供 V2Ray 节点
 
 # 许可
 
