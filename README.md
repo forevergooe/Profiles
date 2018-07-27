@@ -1,9 +1,17 @@
-# 简介
-Surge、Shadowrocket、Pepi(ShadowRay)、Kitsunebi、V2Ray(v2rayNG、BifrostV) 的配置规则文件 
+### 简介
+
+[Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8)、[Shadowrocket](https://itunes.apple.com/app/apple-store/id932747118?mt=8)、[Pepi(ShadowRay)](https://itunes.apple.com/app/apple-store/id1283082051?mt=8)、[Kitsunebi](https://itunes.apple.com/app/apple-store/id1275446921?mt=8)、[Potatso 2](https://itunes.apple.com/app/apple-store/id1162704202?mt=8)、V2Ray([v2rayNG](https://play.google.com/store/apps/details?id=com.v2ray.ang)、[BifrostV](https://play.google.com/store/apps/details?id=com.github.dawndiy.bifrostv)) 的配置规则文件
 
 ### 规则
 
+规则分为标准版、专业版和回国版
+
 **标准版**
+
+- 使用公共 DNS 达到快速、准备、稳定及安全的解析
+- 国内应用及网站直连
+- 海外常用应用及网站加速
+- Apple 部分服务加速(Apple News(iPhone 需飞行模式)、Spotlight、iBook Store 及 iTunes Store)
 
 Surge / Kitsunebi
 
@@ -13,52 +21,81 @@ Shadowrocket / Pepi(ShadowRay)
 
 <https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf>
 
-V2Ray
+V2Ray(v2rayNG、BifrostV)
 
 <https://raw.githubusercontent.com/ConnersHua/Profiles/master/V2Ray.json>
 
-**特别版**
+**专业版**
+
+- 标准版所有功能
+- 拦截应用及网站的行为分析、数据统计、隐私跟踪
+- 拦截臭名昭著的诈骗网站（如**思杰马克丁**伪造的一系列软件官网）
+- 拦截运营商劫持
+- 拦截应用的广告（网页广告请使用 Safari 内容拦截器如 [ADGuard](https://itunes.apple.com/app/apple-store/id1047223162?mt=8) (在「过滤器」中添加「EasyList China」) 或自带去广告功能的浏览器。）
 
 Surge / Kitsunebi
 
-<https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeS.conf>
+<https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgePro.conf>
 
 Shadowrocket / Pepi(ShadowRay)
 
-<https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowS.conf>
+<https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowPro.conf>
 
-V2Ray
+Potatso 2
 
-<https://raw.githubusercontent.com/ConnersHua/Profiles/master/V2RayS.json>
+<https://raw.githubusercontent.com/ConnersHua/Profiles/master/PotatsoPro.conf>
+
+V2Ray(v2rayNG、BifrostV)
+
+<https://raw.githubusercontent.com/ConnersHua/Profiles/master/V2RayPro.json>
+
+**回国版**
+
+- 国内常用应用及网站加速(主要针对视听如腾讯视频、爱奇艺、网易云音乐等)
+
+Surge / Kitsunebi
+
+<https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeCN.conf>
+
+Shadowrocket / Pepi(ShadowRay)
+
+<https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowCN.conf>
 
 ### 使用说明
 
-一、规则不提供节点
+连接公共 Wi-Fi 时若出现验证页面无法加载的情况，可暂时关闭待连接成功后再开启。
 
-二、规则分为标准版和特别版：
-
-标准版只有代理规则
-
-特别版针对应用内以下行为做屏蔽：
-
-1. 广告（网页广告请使用 Safari 内容拦截器如 ADGuard （在「过滤器」中添加「ChinaList+EasyList」） 或自带去广告功能的浏览器。）
-2. 行为分析、数据统计、隐私跟踪
-3. 诈骗网站（如**思杰马克丁**伪造的一系列软件官网）
-4. 运营商劫持
-
-三、配置方法：
+导入配置教程：
 
 - [Surge 导入配置及安装证书](https://diveng.io/import-profile-and-install-certificate-on-surge.html)
 - [Shadowrocket 导入配置及安装证书](https://diveng.io/import-profile-and-install-certificate-on-shadowrocket.html)
 - [Kitsunebi 导入配置](https://diveng.io/import-profile-on-kitsunebi.html)
+- [Potatso 2 导入配置](https://diveng.io/import-profile-and-install-certificate-on-potatso.html)
 - V2Ray 为兼容 V2Ray Core 的配置：
-  Android 用户推荐使用 [BifrostV](https://play.google.com/store/apps/details?id=com.github.dawndiy.bifrostv) ：复制配置地址选择从「从 URL 导入」后文本编辑修改「outboundDetour」下的服务器相关配置（可[加入频道](https://t.me/DivineEngine_Profiles)索取内置节点版本）
+  Android 用户推荐使用 [BifrostV](https://play.google.com/store/apps/details?id=com.github.dawndiy.bifrostv) ：复制配置地址选择从「从 URL 导入」后进行文本编辑修改「outboundDetour」下的服务器相关配置；（可[加入频道](https://t.me/DivineEngine_Profiles)索取内置节点版本）
 
-四、规则为黑名单模式：
+规则为黑名单模式：
 
-- 什么是黑名单模式？黑名单模式为只有被 ☭ 墙、主动屏蔽或极慢的网站和应用才走代理的模式。
+- 什么是黑名单模式？
+  黑名单模式为只有被 ☭ 墙、主动屏蔽或极慢的网站和应用才走代理的模式。
 
-五、连接公共 Wi-Fi 时可能出现验证页面无法加载的情况，可暂时关闭待连接成功后再开启。 
+- 为什么是黑名单模式？
+  现在众多流行的规则基本都是白名单模式也就是在这个基础上
+
+  ```
+  [Rule]
+  // 中国 IP 段直连
+  GEOIP,CN,DIRECT
+  // 其他都走代理
+  FINAL,Proxy
+  ```
+
+  这个策略的走法就是中国的 IP 段都走直连，其他走代理，在墙越来越高的今天这样的分流策略是好的，但是我认为有几个问题需要探讨：
+
+  1. 首先，白名单就是除了大陆应用或网站的都代理，这个理念看起来是很美好的，但是实际情况却是因为 CDN 等原因是做不到保证都走了直连，所以在此基础上需要添加大陆应用或网站的地址。另外也是没法保证如 Google 这样的应用或网站走了正确代理，所以可以看到白名单规则除了大陆地址规则还得有**部分**如 Google 等应用或网站的规则。
+     此处的问题是明明理论上白名单模式只用管大陆区域应用或网站就好了，但是实际还是要加代理规则，那如果到最后还是要加代理规则为何不只做代理规则，这样至少可以保证该直连的东西一定直连了。
+  2. 其次，除了大陆的服务或网站都代理是否真的有必要，有些应用或网站明明可以直连却走了代理，且不说不少人的代理服务流量有限，在敏感时期大流量还容易被封 IP。
+  3. 最后，墙已经够高了，希望世界上的中国流量可以更多吧，我不是说白名单模式不好，而是出于基于此三点的理念不同，希望能带来别的选择，当然我更希望有一天可以不再需要规则就能上网冲浪。
 
 # 感谢
 
