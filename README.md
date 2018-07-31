@@ -1,6 +1,6 @@
 ### 简介
 
-[Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8)、[Shadowrocket](https://itunes.apple.com/app/apple-store/id932747118?mt=8)、[Pepi(ShadowRay)](https://itunes.apple.com/app/apple-store/id1283082051?mt=8)、[Kitsunebi](https://itunes.apple.com/app/apple-store/id1275446921?mt=8)、[Potatso 2](https://itunes.apple.com/app/apple-store/id1162704202?mt=8)、V2Ray([v2rayNG](https://play.google.com/store/apps/details?id=com.v2ray.ang)、[BifrostV](https://play.google.com/store/apps/details?id=com.github.dawndiy.bifrostv)) 的配置规则文件
+[Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8)、[Shadowrocket](https://itunes.apple.com/app/apple-store/id932747118?mt=8)、[Pepi(ShadowRay)](https://itunes.apple.com/app/apple-store/id1283082051?mt=8)、[Kitsunebi](https://itunes.apple.com/app/apple-store/id1275446921?mt=8)、[Potatso 2](https://itunes.apple.com/app/apple-store/id1162704202?mt=8)、[Quantumult](https://itunes.apple.com/app/apple-store/id1252015438?mt=8)、[Surfboard](https://manual.getsurfboard.com/) 、V2Ray([v2rayNG](https://play.google.com/store/apps/details?id=com.v2ray.ang)、[BifrostV](https://play.google.com/store/apps/details?id=com.github.dawndiy.bifrostv)) 的配置规则文件 
 
 ### 规则
 
@@ -11,15 +11,24 @@
 - 使用公共 DNS 达到快速、准确、稳定及安全的解析
 - 国内应用及网站直连
 - 海外常用应用及网站加速
-- Apple 部分服务加速(Apple News(iPhone 需飞行模式)、Spotlight、iBook Store 及 iTunes Store)
+- Apple 部分服务加速(Apple News、Spotlight、iBook Store 及 iTunes Store)
+  注：iPhone 上使用 Apple News 需将「地区」改成「美国」且在「飞行模式」下方可使用。但由此而来会造成 Apple Map 的地图数据变成 TOMTOM 来源，如果觉得受到影响可以将规则中的「gspe1-ssl.ls.apple.com」的策略修改成「DIRECT」
 
-Surge / Kitsunebi
+Surge / Kitsunebi / Surfboard
 
 <https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf>
 
 Shadowrocket / Pepi(ShadowRay)
 
 <https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf>
+
+Potatso 2
+
+<https://raw.githubusercontent.com/ConnersHua/Profiles/master/Potatso.conf>
+
+Quantumult
+
+<https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult.conf>
 
 V2Ray(v2rayNG、BifrostV)
 
@@ -29,11 +38,11 @@ V2Ray(v2rayNG、BifrostV)
 
 - 标准版所有功能
 - 拦截应用及网站的行为分析、数据统计、隐私跟踪
-- 拦截臭名昭著的诈骗网站（如**思杰马克丁**伪造的一系列软件官网）
 - 拦截运营商劫持
 - 拦截应用的广告（网页广告请使用 Safari 内容拦截器如 [ADGuard](https://itunes.apple.com/app/apple-store/id1047223162?mt=8) (在「过滤器」中添加「EasyList China」) 或自带去广告功能的浏览器。）
+- 拦截臭名昭著的诈骗网站（如**思杰马克丁**伪造的一系列软件官网）
 
-Surge / Kitsunebi
+Surge / Kitsunebi / Surfboard
 
 <https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgePro.conf>
 
@@ -44,6 +53,12 @@ Shadowrocket / Pepi(ShadowRay)
 Potatso 2
 
 <https://raw.githubusercontent.com/ConnersHua/Profiles/master/PotatsoPro.conf>
+
+Quantumult
+
+<https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultPro.conf>
+
+<https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultRejection.conf>
 
 V2Ray(v2rayNG、BifrostV)
 
@@ -69,8 +84,10 @@ Shadowrocket / Pepi(ShadowRay)
 
 - [Surge 导入配置及安装证书](https://diveng.io/import-profile-and-install-certificate-on-surge.html)
 - [Shadowrocket 导入配置及安装证书](https://diveng.io/import-profile-and-install-certificate-on-shadowrocket.html)
+- [Quantumult 导入配置及安装证书](https://diveng.io/import-profile-and-install-certificate-on-quantumult.html)
+- [Potatso 2 导入配置](https://diveng.io/import-profile-on-potatso.html)
 - [Kitsunebi 导入配置](https://diveng.io/import-profile-on-kitsunebi.html)
-- [Potatso 2 导入配置](https://diveng.io/import-profile-and-install-certificate-on-potatso.html)
+- [Surfboard 导入配置](https://diveng.io/import-profile-on-surfboard.html)
 - V2Ray 为兼容 V2Ray Core 的配置：
   Android 用户推荐使用 [BifrostV](https://play.google.com/store/apps/details?id=com.github.dawndiy.bifrostv) ：复制配置地址选择从「从 URL 导入」后进行文本编辑修改「outboundDetour」下的服务器相关配置；（可[加入频道](https://t.me/DivineEngine_Profiles)索取内置节点版本）
 
