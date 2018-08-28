@@ -64,7 +64,7 @@ V2Ray(v2rayNG、BifrostV)
 
 <https://raw.githubusercontent.com/ConnersHua/Profiles/master/V2RayPro.json>
 
-**回国版**
+**回国版**(测试)
 
 - 国内常用应用及网站加速(主要针对视听如腾讯视频、爱奇艺、网易云音乐等)
 
@@ -75,6 +75,12 @@ Surge / Kitsunebi
 Shadowrocket / Pepi(ShadowRay)
 
 <https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowCN.conf>
+
+**Workflow**
+
+(适用于 Surge 和 Shadowrocket 的标准版及专业版配置):
+
+<https://workflow.is/workflows/dfd5071905ad459182c2fa8aa3d639d1>
 
 ### 使用说明
 
