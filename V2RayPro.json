@@ -1,6 +1,18 @@
 {
   "inboundDetour" : [
-
+    {
+      "domainOverride" : [
+        "http",
+        "tls"
+      ],
+      "port" : 1086,
+      "listen" : "127.0.0.1",
+      "protocol" : "socks",
+      "settings" : {
+        "auth" : "noauth",
+        "udp" : true
+      }
+    }
   ],
   "outboundDetour" : [
     {
@@ -52,16 +64,11 @@
     ]
   },
   "inbound" : {
-    "domainOverride" : [
-      "http",
-      "tls"
-    ],
-    "port" : 1086,
+    "port" : 1087,
     "listen" : "127.0.0.1",
-    "protocol" : "socks",
+    "protocol" : "http",
     "settings" : {
-      "auth" : "noauth",
-      "udp" : true
+
     }
   },
   "outbound" : {
@@ -101,6 +108,7 @@
             "domain:abbyychina.com",
             "domain:acs4baichuan.m.taobao.com",
             "domain:ad-cn.jovcloud.com",
+            "domain:ad-stat.ksosoft.com",
             "domain:ad.12306.cn",
             "domain:ad.api.moji.com",
             "domain:ad.bn.netease.com",
@@ -109,6 +117,7 @@
             "domain:ad.intl.xiaomi.com",
             "domain:ad.jiemian.com",
             "domain:ad.mobile.youku.com",
+            "domain:ad.qingting.fm",
             "domain:ad.xiaomi.com",
             "domain:ad.ximalaya.com",
             "domain:adash-c.ut.taobao.com",
@@ -130,12 +139,14 @@
             "domain:ads.service.kugou.com",
             "domain:ads.simplepath.com",
             "domain:ads.sohu.com",
+            "domain:adsapi.manhuaren.com",
             "domain:adse.ximalaya.com",
             "domain:adservice.google.com",
             "domain:adserviceretry.kugou.com",
             "domain:adsfile.bssdlbig.kugou.com",
             "domain:adshow.58.com",
             "domain:adshows.21cn.com",
+            "domain:adsp.xunlei.com",
             "domain:adtrack.ucweb.com",
             "domain:adui.tg.meitu.com",
             "domain:adv.sec.miui.com",
@@ -170,6 +181,7 @@
             "domain:bingdianhuanyuan.cn",
             "domain:bryonypie.com",
             "domain:btrace.qq.com",
+            "domain:bugly.qq.com",
             "domain:cdn.adapi.fotoable.com",
             "domain:cdn.segment.com",
             "domain:chemdraw.com.cn",
@@ -201,6 +213,7 @@
             "domain:easyrecoverychina.com",
             "domain:ediuschina.com",
             "domain:erdoscs.com",
+            "domain:etl.xlmc.sandai.net",
             "domain:eum-appdynamics.com",
             "domain:exoclick.com",
             "domain:exosrv.com",
@@ -211,7 +224,6 @@
             "domain:freedrive.cn",
             "domain:fwmrm.net",
             "domain:g3.letv.com",
-            "domain:geo2.adobe.com",
             "domain:ggs.myzaker.com",
             "domain:googleadservices.com",
             "domain:googleadsserving.cn",
@@ -226,6 +238,7 @@
             "domain:iadsdk.apple.com",
             "domain:ichaosheng.com",
             "domain:ifacelog.iqiyi.com",
+            "domain:img.auction-ads.wpscdn.cn",
             "domain:imindmap.cc",
             "domain:imp.optaim.com",
             "domain:impservice.dictapp.youdao.com",
@@ -249,6 +262,7 @@
             "domain:log.umsns.com",
             "domain:log.v2.hunantv.com",
             "domain:log.web.kugou.com",
+            "domain:log.yex.youdao.com",
             "domain:maipinshangmao.com",
             "domain:mairuan.com",
             "domain:makeding.com",
@@ -257,6 +271,7 @@
             "domain:mi.gdt.qq.com",
             "domain:miaozhen.com",
             "domain:mindmanager.cc",
+            "domain:minfo.wps.cn",
             "domain:mkitgfs.com",
             "domain:mlnbike.com",
             "domain:moatads.com",
@@ -282,6 +297,7 @@
             "domain:o2o.api.xiaomi.com",
             "domain:offnavi.map.baidu.com",
             "domain:omtrdc.net",
+            "domain:oth.eve.mdt.qq.com",
             "domain:overturechina.com",
             "domain:ping.chartbeat.net",
             "domain:pingma.qq.com",
@@ -296,6 +312,9 @@
             "domain:rayjump.com",
             "domain:regist.fotoable.com",
             "domain:rich.kuwo.cn",
+            "domain:sax.sina.com.cn",
+            "domain:saxn.sina.com.cn",
+            "domain:saxs.sina.com.cn",
             "domain:scorecardresearch.com",
             "domain:serving-sys.com",
             "domain:sg536.cn",
@@ -307,13 +326,17 @@
             "domain:sv.map.baidu.com",
             "domain:talkingdata.com",
             "domain:tanx.com",
+            "domain:testplus.cn",
             "domain:topitme.com",
             "domain:track.58.com",
             "domain:track.uc.cn",
+            "domain:track.xiachufang.com",
             "domain:tracking.miui.com",
             "domain:tuanxue360.net",
             "domain:tuipenguin.com",
             "domain:tuitiger.com",
+            "domain:tunion-api.m.taobao.com",
+            "domain:u1.img.mobile.sina.cn",
             "domain:udrig.com",
             "domain:ulog.imap.baidu.com",
             "domain:umeng.com",
@@ -550,6 +573,7 @@
             "domain:getfoxyproxy.org",
             "domain:getlantern.org",
             "domain:getmdl.io",
+            "domain:getoutline.org",
             "domain:getsync.com",
             "domain:gfw.press",
             "domain:ggpht.com",
@@ -730,6 +754,7 @@
             "domain:rsf.org",
             "domain:rthk.hk",
             "domain:s.mzstatic.com",
+            "domain:sc-cdn.net",
             "domain:scdn.co",
             "domain:sciencedaily.com",
             "domain:sciencemag.org",
@@ -958,6 +983,7 @@
             "179.60.192.0\/22",
             "18.184.0.0\/15",
             "18.194.0.0\/15",
+            "18.196.0.0\/15",
             "18.208.0.0\/13",
             "18.232.0.0\/14",
             "185.60.216.0\/22",
@@ -974,6 +1000,7 @@
             "52.74.0.0\/16",
             "52.77.0.0\/16",
             "52.84.0.0\/15",
+            "52.90.0.0\/15",
             "54.152.0.0\/16",
             "54.156.0.0\/14",
             "54.208.0.0\/15",

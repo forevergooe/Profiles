@@ -1,6 +1,18 @@
 {
   "inboundDetour" : [
-
+    {
+      "domainOverride" : [
+        "http",
+        "tls"
+      ],
+      "port" : 1086,
+      "listen" : "127.0.0.1",
+      "protocol" : "socks",
+      "settings" : {
+        "auth" : "noauth",
+        "udp" : true
+      }
+    }
   ],
   "outboundDetour" : [
     {
@@ -52,16 +64,11 @@
     ]
   },
   "inbound" : {
-    "domainOverride" : [
-      "http",
-      "tls"
-    ],
-    "port" : 1086,
+    "port" : 1087,
     "listen" : "127.0.0.1",
-    "protocol" : "socks",
+    "protocol" : "http",
     "settings" : {
-      "auth" : "noauth",
-      "udp" : true
+
     }
   },
   "outbound" : {
