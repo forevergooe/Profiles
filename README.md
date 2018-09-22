@@ -1,6 +1,12 @@
 ### 简介
 
-[Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8)、[Shadowrocket](https://itunes.apple.com/app/apple-store/id932747118?mt=8)、[Pepi(ShadowRay)](https://itunes.apple.com/app/apple-store/id1283082051?mt=8)、[Kitsunebi](https://itunes.apple.com/app/apple-store/id1275446921?mt=8)、[Potatso 2](https://itunes.apple.com/app/apple-store/id1162704202?mt=8)、[Quantumult](https://itunes.apple.com/app/apple-store/id1252015438?mt=8)、[Surfboard](https://manual.getsurfboard.com/) 、V2Ray([v2rayNG](https://play.google.com/store/apps/details?id=com.v2ray.ang)、[BifrostV](https://play.google.com/store/apps/details?id=com.github.dawndiy.bifrostv)) 的配置规则文件 
+配置规则文件
+
+iOS: [Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8)、[Quantumult](https://itunes.apple.com/app/apple-store/id1252015438?mt=8)、[Kitsunebi](https://itunes.apple.com/app/apple-store/id1275446921?mt=8)、[Shadowrocket](https://itunes.apple.com/app/apple-store/id932747118?mt=8)、[Pepi(ShadowRay)](https://itunes.apple.com/app/apple-store/id1283082051?mt=8)、[Potatso 2](https://itunes.apple.com/app/apple-store/id1162704202?mt=8)
+
+Android: [Surfboard](https://manual.getsurfboard.com/) 、V2Ray([v2rayNG](https://play.google.com/store/apps/details?id=com.v2ray.ang)、[BifrostV](https://play.google.com/store/apps/details?id=com.github.dawndiy.bifrostv))
+
+可订阅 [Telegram 频道](https://t.me/DivineEngine_Profiles) 获取更多信息
 
 ### 规则
 
@@ -18,6 +24,14 @@ Surge / Kitsunebi / Surfboard
 
 <https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf>
 
+Surge Workflow 自动脚本:
+
+<https://workflow.is/workflows/7854da2a71f54a9b9fc27c5ca9c90299>
+
+Quantumult
+
+<https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult.conf>
+
 Shadowrocket / Pepi(ShadowRay)
 
 <https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf>
@@ -25,10 +39,6 @@ Shadowrocket / Pepi(ShadowRay)
 Potatso 2
 
 <https://raw.githubusercontent.com/ConnersHua/Profiles/master/Potatso.conf>
-
-Quantumult
-
-<https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult.conf>
 
 V2Ray(v2rayNG、BifrostV)
 
@@ -40,11 +50,21 @@ V2Ray(v2rayNG、BifrostV)
 - 拦截应用及网站的行为分析、数据统计、隐私跟踪
 - 拦截运营商劫持
 - 拦截应用的广告（网页广告请使用 Safari 内容拦截器如 [ADGuard](https://itunes.apple.com/app/apple-store/id1047223162?mt=8) (在「过滤器」中添加「EasyList China」) 或自带去广告功能的浏览器。）
-- 拦截臭名昭著的诈骗网站（如**思杰马克丁**伪造的一系列软件官网）
+- 拦截臭名昭著的诈骗网站（如**思杰马克丁**伪造的一系列软件官网、MacKeeper等）
 
 Surge / Kitsunebi / Surfboard
 
 <https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgePro.conf>
+
+Surge Workflow 自动脚本:
+
+<https://workflow.is/workflows/7854da2a71f54a9b9fc27c5ca9c90299>
+
+Quantumult
+
+<https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultPro.conf>
+
+<https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultRejection.conf>
 
 Shadowrocket / Pepi(ShadowRay)
 
@@ -54,17 +74,11 @@ Potatso 2
 
 <https://raw.githubusercontent.com/ConnersHua/Profiles/master/PotatsoPro.conf>
 
-Quantumult
-
-<https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultPro.conf>
-
-<https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultRejection.conf>
-
 V2Ray(v2rayNG、BifrostV)
 
 <https://raw.githubusercontent.com/ConnersHua/Profiles/master/V2RayPro.json>
 
-**回国版**(测试)
+**回国版**
 
 - 国内常用应用及网站加速(主要针对视听如腾讯视频、爱奇艺、网易云音乐等)
 
@@ -72,15 +86,13 @@ Surge / Kitsunebi
 
 <https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeCN.conf>
 
+Quantumult
+
+<https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultCN.conf>
+
 Shadowrocket / Pepi(ShadowRay)
 
 <https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowCN.conf>
-
-**Workflow**
-
-(适用于 Surge 和 Shadowrocket 的标准版及专业版配置):
-
-<https://workflow.is/workflows/dfd5071905ad459182c2fa8aa3d639d1>
 
 ### 使用说明
 
@@ -103,9 +115,10 @@ Shadowrocket / Pepi(ShadowRay)
   黑名单模式为只有被 ☭ 墙、主动屏蔽或极慢的网站和应用才走代理的模式。
 
 - 为什么是黑名单模式？
+
   现在众多流行的规则基本都是白名单模式也就是在这个基础上
 
-  ```
+  ```bash
   [Rule]
   // 中国 IP 段直连
   GEOIP,CN,DIRECT
@@ -115,19 +128,21 @@ Shadowrocket / Pepi(ShadowRay)
 
   这个策略的走法就是中国的 IP 段都走直连，其他走代理，在墙越来越高的今天这样的分流策略是好的，但是我认为有几个问题需要探讨：
 
-  1. 首先，白名单就是除了大陆应用或网站的都代理，这个理念看起来是很美好的，但是实际情况却是因为 CDN 等原因是做不到保证都走了直连，所以在此基础上需要添加大陆应用或网站的地址。另外也是没法保证如 Google 这样的应用或网站走了正确代理，所以可以看到白名单规则除了大陆地址规则还得有**部分**如 Google 等应用或网站的规则。
-     此处的问题是明明理论上白名单模式只用管大陆区域应用或网站就好了，但是实际还是要加代理规则，那如果到最后还是要加代理规则为何不只做代理规则，这样至少可以保证该直连的东西一定直连了。
+  1. 首先，白名单就是除了大陆应用或网站的都代理，这个理念看起来是很美好的，但是实际情况却是因为 CDN 等原因是做不到保证都走了直连，所以在此基础上需要添加大陆应用或网站的地址。另外也是没法保证如 Google 这样的应用或网站确保走了正确代理，所以可以看到白名单规则除了大陆地址规则还得有**部分**如 Google 等应用或网站的规则。
+     此处的问题是明明理论上白名单模式只用管大陆区域应用或网站就好了，但是实际还是要加代理规则，那如果到最后还是要加代理规则为何不只做代理规则，这样至少我可以保证该直连的东西一定直连了。
   2. 其次，除了大陆的服务或网站都代理是否真的有必要，有些应用或网站明明可以直连却走了代理，且不说不少人的代理服务流量有限，在敏感时期大流量还容易被封 IP。
   3. 最后，墙已经够高了，希望世界上的中国流量可以更多吧，我不是说白名单模式是错误的，而是出于基于此三点的理念不同，希望能带来别的选择，黑白模式并无好坏之分，我更希望有一天可以不再需要规则就能上网冲浪。
 
-# 感谢
+### 感谢
 
-> [lhie1](https://github.com/lhie1) - 旧版特别版去广告基于其规则
+[lhie1](https://github.com/lhie1) – 2017 ~ 2018.5 特别版去广告相关规则基于其规则
 
-> Lison Bin - 完善 Apple、WhatsApp、Line 相关规则
+Lison Bin – 完善 Apple、WhatsApp、Line 相关规则
 
-> [linjiacheng](https://github.com/linjiacheng) - 解决盯盯拍无法使用的问题
+[linjiacheng](https://github.com/linjiacheng) – 解决盯盯拍无法使用的问题
 
-# 许可
+Booui、liceva – 完善 Google Play IP 段
+
+### 许可
 
 转载需注明作者及项目地址
