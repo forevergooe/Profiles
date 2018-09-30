@@ -12,6 +12,8 @@ Android: [Surfboard](https://manual.getsurfboard.com/) 、V2Ray([v2rayNG](https:
 
 规则分为标准版、专业版和回国版
 
+#### 基础用户 | 适合导入即用的朋友
+
 **标准版**
 
 - 使用公共 DNS 达到快速、准确、稳定及安全的解析
@@ -23,10 +25,6 @@ Android: [Surfboard](https://manual.getsurfboard.com/) 、V2Ray([v2rayNG](https:
 Surge / Kitsunebi / Surfboard
 
 <https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf>
-
-Surge Workflow 自动脚本:
-
-<https://workflow.is/workflows/7854da2a71f54a9b9fc27c5ca9c90299>
 
 Quantumult
 
@@ -55,10 +53,6 @@ V2Ray(v2rayNG、BifrostV)
 Surge / Kitsunebi / Surfboard
 
 <https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgePro.conf>
-
-Surge Workflow 自动脚本:
-
-<https://workflow.is/workflows/7854da2a71f54a9b9fc27c5ca9c90299>
 
 Quantumult
 
@@ -93,6 +87,18 @@ Quantumult
 Shadowrocket / Pepi(ShadowRay)
 
 <https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowCN.conf>
+
+#### 进阶用户 | 适合对规则有定制需求的朋友
+
+**捷径（Shorcuts）/ Workflow 版**
+
+Surge 2 / Surge 3
+
+<https://www.icloud.com/shortcuts/13a877919c464cf599845774a7a17e9d>
+
+Shadowrocket / Pepi(ShadowRay)
+
+<https://www.icloud.com/shortcuts/73add44ee78b4abf8fc0d25b898fe824>
 
 ### 使用说明
 
