@@ -2,7 +2,7 @@
 
 配置规则文件
 
-iOS: [Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8)、[Quantumult](https://itunes.apple.com/app/apple-store/id1252015438?mt=8)、[Kitsunebi](https://itunes.apple.com/app/apple-store/id1275446921?mt=8)、[Shadowrocket](https://itunes.apple.com/app/apple-store/id932747118?mt=8)、[Pepi(ShadowRay)](https://itunes.apple.com/app/apple-store/id1283082051?mt=8)、[Potatso 2](https://itunes.apple.com/app/apple-store/id1162704202?mt=8)
+iOS: [Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8)、[Quantumult](https://itunes.apple.com/app/apple-store/id1252015438?mt=8)、[Kitsunebi](https://itunes.apple.com/app/apple-store/id1275446921?mt=8)、[Shadowrocket](https://itunes.apple.com/app/apple-store/id932747118?mt=8)、[Pepi(ShadowRay)](https://itunes.apple.com/app/apple-store/id1283082051?mt=8)
 
 Android: [Surfboard](https://manual.getsurfboard.com/) 、V2Ray([v2rayNG](https://play.google.com/store/apps/details?id=com.v2ray.ang)、[BifrostV](https://play.google.com/store/apps/details?id=com.github.dawndiy.bifrostv))
 
@@ -12,8 +12,6 @@ Android: [Surfboard](https://manual.getsurfboard.com/) 、V2Ray([v2rayNG](https:
 
 规则分为标准版、专业版和回国版
 
-#### 基础用户 | 适合导入即用的朋友
-
 **标准版**
 
 - 使用公共 DNS 达到快速、准确、稳定及安全的解析
@@ -21,26 +19,6 @@ Android: [Surfboard](https://manual.getsurfboard.com/) 、V2Ray([v2rayNG](https:
 - 海外常用应用及网站加速
 - Apple 部分服务加速(Apple News、Spotlight、iBook Store 及 iTunes Store)
   注：iPhone 上使用 Apple News 需将「地区」改成「美国」且在「飞行模式」下方可使用。但由此而来会造成 Apple Map 的地图数据变成 TOMTOM 来源，如果觉得受到影响可以将规则中的「gspe1-ssl.ls.apple.com」的策略修改成「DIRECT」
-
-Surge / Kitsunebi / Surfboard
-
-<https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf>
-
-Quantumult
-
-<https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult.conf>
-
-Shadowrocket / Pepi(ShadowRay)
-
-<https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf>
-
-Potatso 2
-
-<https://raw.githubusercontent.com/ConnersHua/Profiles/master/Potatso.conf>
-
-V2Ray(v2rayNG、BifrostV)
-
-<https://raw.githubusercontent.com/ConnersHua/Profiles/master/V2Ray.json>
 
 **专业版**
 
@@ -50,55 +28,26 @@ V2Ray(v2rayNG、BifrostV)
 - 拦截应用的广告（网页广告请使用 Safari 内容拦截器如 [ADGuard](https://itunes.apple.com/app/apple-store/id1047223162?mt=8) (在「过滤器」中添加「EasyList China」) 或自带去广告功能的浏览器。）
 - 拦截臭名昭著的诈骗网站（如**思杰马克丁**伪造的一系列软件官网、MacKeeper等）
 
-Surge / Kitsunebi / Surfboard
-
-<https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgePro.conf>
-
-Quantumult
-
-<https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultPro.conf>
-
-<https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultRejection.conf>
-
-Shadowrocket / Pepi(ShadowRay)
-
-<https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowPro.conf>
-
-Potatso 2
-
-<https://raw.githubusercontent.com/ConnersHua/Profiles/master/PotatsoPro.conf>
-
-V2Ray(v2rayNG、BifrostV)
-
-<https://raw.githubusercontent.com/ConnersHua/Profiles/master/V2RayPro.json>
-
 **回国版**
 
 - 国内常用应用及网站加速(主要针对视听如腾讯视频、爱奇艺、网易云音乐等)
 
-Surge / Kitsunebi
+**规则下载**
 
-<https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeCN.conf>
+| **标准版**                                                   | **专业版**                                                   | **回国版**                                                   | **捷径**                                                     |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [Surge](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf) | [SurgePro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgePro.conf) | [SurgeCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeCN.conf) | [Surge](https://www.icloud.com/shortcuts/940a8d1220ef435faba4b8989c2d2e72) |
+| [Quantumult](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult.conf) | [QuantumultPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultPro.conf) [QuantumultRejection](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultRejection.conf) | [QuantumultCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultCN.conf) | 无                                                           |
+| [Shadow](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf) | [ShadowPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowPro.conf) | [ShadowCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowCN.conf) | [Shadow](https://www.icloud.com/shortcuts/73add44ee78b4abf8fc0d25b898fe824) |
+| [V2Ray](https://raw.githubusercontent.com/ConnersHua/Profiles/master/V2Ray.json) | [V2RayPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/V2RayPro.json) | 无                                                           | 无                                                           |
 
-Quantumult
+***Surge 用户建议使用捷径***
 
-<https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultCN.conf>
+*Surge 规则同适用于 Kitsunebi 和 Surfboard*
 
-Shadowrocket / Pepi(ShadowRay)
+*Shadow 规则同适用于 Shadowrocket 和 Pepi(ShadowRay)*
 
-<https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowCN.conf>
-
-#### 进阶用户 | 适合对规则有定制需求的朋友
-
-**捷径（Shorcuts）/ Workflow 版**
-
-Surge 2 / Surge 3
-
-<https://www.icloud.com/shortcuts/13a877919c464cf599845774a7a17e9d>
-
-Shadowrocket / Pepi(ShadowRay)
-
-<https://www.icloud.com/shortcuts/73add44ee78b4abf8fc0d25b898fe824>
+*若对规则有定制需求可使用捷径*
 
 ### 使用说明
 
