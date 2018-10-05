@@ -17,8 +17,8 @@ Android: [Surfboard](https://manual.getsurfboard.com/) 、V2Ray([v2rayNG](https:
 - 使用公共 DNS 达到快速、准确、稳定及安全的解析
 - 国内应用及网站直连
 - 海外常用应用及网站加速
-- Apple 部分服务加速(Apple News、Spotlight、iBook Store 及 iTunes Store)
-  注：iPhone 上使用 Apple News 需将「地区」改成「美国」且在「飞行模式」下方可使用。但由此而来会造成 Apple Map 的地图数据变成 TOMTOM 来源，如果觉得受到影响可以将规则中的「gspe1-ssl.ls.apple.com」的策略修改成「DIRECT」
+- Apple Spotlight、iBook Store、iTunes Store 服务（部分）加速及 Apple News（需将「地区」改成「美国」且中国大陆手机卡需在「飞行模式下」使用）
+- 海外视听应用及网站可指定节点（仅 Surge 及 Quantumult，支持 Youtube、Netflix、HBO、Hulu、BBC iPlayer、Bahamut、myTV SUPER、AbemaTV 和 JOOX）
 
 **专业版**
 
@@ -34,7 +34,7 @@ Android: [Surfboard](https://manual.getsurfboard.com/) 、V2Ray([v2rayNG](https:
 
 **规则下载**
 
-| **标准版**                                                   | **专业版**                                                   | **回国版**                                                   | **捷径**                                                     |
+| **标准版**                                                   | **专业版**                                                   | **回国版**                                                   | [**捷径**](https://itunes.apple.com/app/apple-store/id915249334?mt=8) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [Surge](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf) | [SurgePro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgePro.conf) | [SurgeCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeCN.conf) | [Surge](https://www.icloud.com/shortcuts/940a8d1220ef435faba4b8989c2d2e72) |
 | [Quantumult](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult.conf) | [QuantumultPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultPro.conf) <br> [QuantumultRejection](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultRejection.conf) | [QuantumultCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultCN.conf) | 无                                                           |
@@ -56,9 +56,8 @@ Android: [Surfboard](https://manual.getsurfboard.com/) 、V2Ray([v2rayNG](https:
 导入配置教程：
 
 - [Surge 导入配置及安装证书](https://diveng.io/import-profile-and-install-certificate-on-surge.html)
-- [Shadowrocket 导入配置及安装证书](https://diveng.io/import-profile-and-install-certificate-on-shadowrocket.html)
 - [Quantumult 导入配置及安装证书](https://diveng.io/import-profile-and-install-certificate-on-quantumult.html)
-- [Potatso 2 导入配置](https://diveng.io/import-profile-on-potatso.html)
+- [Shadowrocket 导入配置及安装证书](https://diveng.io/import-profile-and-install-certificate-on-shadowrocket.html)
 - [Kitsunebi 导入配置](https://diveng.io/import-profile-on-kitsunebi.html)
 - [Surfboard 导入配置](https://diveng.io/import-profile-on-surfboard.html)
 - V2Ray 为兼容 V2Ray Core 的配置：
