@@ -17,7 +17,7 @@ Android: [Surfboard](https://manual.getsurfboard.com/) 、V2Ray([v2rayNG](https:
 - 使用公共 DNS 达到快速、准确、稳定及安全的解析
 - 国内应用及网站直连
 - 海外常用应用及网站加速
-- Apple Spotlight、iBook Store、iTunes Store 服务（部分）加速及 Apple News（需将「地区」改成「美国」且中国大陆手机卡需在「飞行模式下」使用）
+- Apple Spotlight、iBook Store、iTunes Store 服务（部分）及 Apple News（需将「地区」改成「美国」且中国大陆手机卡需在「飞行模式下」使用）加速
 - 海外视听应用及网站可指定节点（仅 Surge 及 Quantumult，支持 Youtube、Netflix、HBO、Hulu、BBC iPlayer、Bahamut、myTV SUPER、AbemaTV 和 JOOX）
 
 **专业版**
