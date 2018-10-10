@@ -1,0 +1,49 @@
+# Media
+# - Youtube
+USER-AGENT,*youtube*
+USER-AGENT,YouTube*
+DOMAIN-SUFFIX,googlevideo.com,force-remote-dns
+DOMAIN-SUFFIX,youtube.com,force-remote-dns
+DOMAIN,youtubei.googleapis.com,force-remote-dns
+# - Netflix
+USER-AGENT,Argo*
+DOMAIN-SUFFIX,netflix.com
+DOMAIN-SUFFIX,netflix.net
+DOMAIN-SUFFIX,nflxext.com
+DOMAIN-SUFFIX,nflximg.com
+DOMAIN-SUFFIX,nflximg.net
+DOMAIN-SUFFIX,nflxso.net
+DOMAIN-SUFFIX,nflxvideo.net
+# - HBO
+USER-AGENT,HBO%20NOW*
+DOMAIN-SUFFIX,hbo.com
+DOMAIN-SUFFIX,hbogo.com
+# - Hulu
+USER-AGENT,Hulu*
+DOMAIN-SUFFIX,hulu.com
+DOMAIN-SUFFIX,huluim.com
+DOMAIN-KEYWORD,bbcfmt
+DOMAIN-KEYWORD,uk-live
+# - BBC iPlayer
+USER-AGENT,BBCiPlayer*
+DOMAIN-SUFFIX,bbc.co.uk
+DOMAIN-SUFFIX,bbci.co.uk
+# - Bahamut
+USER-AGENT,Anime*
+DOMAIN-SUFFIX,bahamut.com.tw
+DOMAIN-SUFFIX,gamer.com.tw
+DOMAIN-SUFFIX,hinet.net
+# - myTV_SUPER
+USER-AGENT,mytv*
+DOMAIN-SUFFIX,mytvsuper.com
+DOMAIN-SUFFIX,tvb.com
+# - AbemaTV
+USER-AGENT,AbemaTV*
+DOMAIN-SUFFIX,abema.io
+DOMAIN-SUFFIX,ameba.jp
+DOMAIN-SUFFIX,hayabusa.io
+DOMAIN,linear-abematv.akamaized.net
+# - JOOX
+USER-AGENT,WeMusic*
+USER-AGENT,JOOX*
+DOMAIN-SUFFIX,joox.com
