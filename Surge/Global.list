@@ -90,55 +90,6 @@ DOMAIN-SUFFIX,youtu.be,,force-remote-dns
 DOMAIN-SUFFIX,yt.be,,force-remote-dns
 DOMAIN-SUFFIX,ytimg.com,,force-remote-dns
 DOMAIN-SUFFIX,zynamics.com,,force-remote-dns
-# Video
-# - Youtube
-USER-AGENT,*youtube*,🎞 Video
-USER-AGENT,YouTube*,🎞 Video
-DOMAIN-SUFFIX,googlevideo.com,🎞 Video,force-remote-dns
-DOMAIN-SUFFIX,youtube.com,🎞 Video,force-remote-dns
-DOMAIN,youtubei.googleapis.com,🎞 Video,force-remote-dns
-# - Netflix
-USER-AGENT,Argo*,🎞 Video
-DOMAIN-SUFFIX,netflix.com,🎞 Video
-DOMAIN-SUFFIX,netflix.net,🎞 Video
-DOMAIN-SUFFIX,nflxext.com,🎞 Video
-DOMAIN-SUFFIX,nflximg.com,🎞 Video
-DOMAIN-SUFFIX,nflximg.net,🎞 Video
-DOMAIN-SUFFIX,nflxso.net,🎞 Video
-DOMAIN-SUFFIX,nflxvideo.net,🎞 Video
-# - HBO
-USER-AGENT,HBO%20NOW*,🎞 Video
-DOMAIN-SUFFIX,hbo.com,🎞 Video
-DOMAIN-SUFFIX,hbogo.com,🎞 Video
-# - Hulu
-USER-AGENT,Hulu*,🎞 Video
-DOMAIN-SUFFIX,hulu.com,🎞 Video
-DOMAIN-SUFFIX,huluim.com,🎞 Video
-DOMAIN-KEYWORD,bbcfmt,🎞 Video
-DOMAIN-KEYWORD,uk-live,🎞 Video
-# - BBC iPlayer
-USER-AGENT,BBCiPlayer*,🎞 Video
-DOMAIN-SUFFIX,bbc.co.uk,🎞 Video
-DOMAIN-SUFFIX,bbci.co.uk,🎞 Video
-# - Bahamut
-USER-AGENT,Anime*,🎞 Video
-DOMAIN-SUFFIX,bahamut.com.tw,🎞 Video
-DOMAIN-SUFFIX,gamer.com.tw,🎞 Video
-DOMAIN-SUFFIX,hinet.net,🎞 Video
-# - myTV_SUPER
-USER-AGENT,mytv*,🎞 Video
-DOMAIN-SUFFIX,mytvsuper.com,🎞 Video
-DOMAIN-SUFFIX,tvb.com,🎞 Video
-# - AbemaTV
-USER-AGENT,AbemaTV*,🎞 Video
-DOMAIN-SUFFIX,abema.io,🎞 Video
-DOMAIN-SUFFIX,ameba.jp,🎞 Video
-DOMAIN-SUFFIX,hayabusa.io,🎞 Video
-DOMAIN,linear-abematv.akamaized.net,🎞 Video
-# - JOOX
-USER-AGENT,WeMusic*,🎞 Video
-USER-AGENT,JOOX*,🎞 Video
-DOMAIN-SUFFIX,joox.com,🎞 Video
 # A
 DOMAIN-SUFFIX,abc.com,
 DOMAIN-SUFFIX,abc.net.au,
