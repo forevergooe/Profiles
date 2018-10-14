@@ -1,10 +1,6 @@
 ### 简介
 
-配置规则文件
-
-iOS: [Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8)、[Quantumult](https://itunes.apple.com/app/apple-store/id1252015438?mt=8)、[Kitsunebi](https://itunes.apple.com/app/apple-store/id1275446921?mt=8)、[Shadowrocket](https://itunes.apple.com/app/apple-store/id932747118?mt=8)、[Pepi(ShadowRay)](https://itunes.apple.com/app/apple-store/id1283082051?mt=8)
-
-Android: [Surfboard](https://manual.getsurfboard.com/) 、V2Ray([v2rayNG](https://play.google.com/store/apps/details?id=com.v2ray.ang)、[BifrostV](https://play.google.com/store/apps/details?id=com.github.dawndiy.bifrostv))
+[Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8)、[Quantumult](https://itunes.apple.com/app/apple-store/id1252015438?mt=8)、[Kitsunebi](https://itunes.apple.com/app/apple-store/id1275446921?mt=8)、[Shadowrocket](https://itunes.apple.com/app/apple-store/id932747118?mt=8)、[Pepi(ShadowRay)](https://itunes.apple.com/app/apple-store/id1283082051?mt=8) 配置规则文件
 
 可订阅 [Telegram 频道](https://t.me/DivineEngine_Profiles) 获取更多信息
 
@@ -39,11 +35,10 @@ Android: [Surfboard](https://manual.getsurfboard.com/) 、V2Ray([v2rayNG](https:
 | [Surge](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf) | [SurgePro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgePro.conf) | [SurgeCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeCN.conf) | [Surge](https://www.icloud.com/shortcuts/940a8d1220ef435faba4b8989c2d2e72) |
 | [Quantumult](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult.conf) | [QuantumultPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultPro.conf) <br> [QuantumultRejection](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultRejection.conf) | [QuantumultCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultCN.conf) | 无                                                           |
 | [Shadow](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf) | [ShadowPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowPro.conf) | [ShadowCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowCN.conf) | [Shadow](https://www.icloud.com/shortcuts/73add44ee78b4abf8fc0d25b898fe824) |
-| [V2Ray](https://raw.githubusercontent.com/ConnersHua/Profiles/master/V2Ray.json) | [V2RayPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/V2RayPro.json) | [V2RayCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/V2RayCN.json) | 无                                                           |
 
 ***Surge 用户建议使用捷径***
 
-*Surge 规则同适用于 Kitsunebi 和 Surfboard*
+*Surge 规则同适用于 Kitsunebi
 
 *Shadow 规则同适用于 Shadowrocket 和 Pepi(ShadowRay)*
 
@@ -59,9 +54,6 @@ Android: [Surfboard](https://manual.getsurfboard.com/) 、V2Ray([v2rayNG](https:
 - [Quantumult 导入配置及安装证书](https://diveng.io/import-profile-and-install-certificate-on-quantumult.html)
 - [Shadowrocket 导入配置及安装证书](https://diveng.io/import-profile-and-install-certificate-on-shadowrocket.html)
 - [Kitsunebi 导入配置](https://diveng.io/import-profile-on-kitsunebi.html)
-- [Surfboard 导入配置](https://diveng.io/import-profile-on-surfboard.html)
-- V2Ray 为兼容 V2Ray Core 的配置：
-  Android 用户推荐使用 [BifrostV](https://play.google.com/store/apps/details?id=com.github.dawndiy.bifrostv) ：复制配置地址选择从「从 URL 导入」后进行文本编辑修改「outboundDetour」下的服务器相关配置；（可[加入频道](https://t.me/DivineEngine_Profiles)索取内置节点版本）
 
 规则为黑名单模式：
 
