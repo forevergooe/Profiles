@@ -15,6 +15,7 @@ DOMAIN-SUFFIX,akuai.top
 DOMAIN-SUFFIX,atplay.cn
 DOMAIN-SUFFIX,baiwanchuangyi.com
 DOMAIN-SUFFIX,bayimob.com
+DOMAIN-SUFFIX,beerto.cn
 DOMAIN-SUFFIX,beilamusi.com
 DOMAIN-SUFFIX,benshiw.net
 DOMAIN-SUFFIX,bianxianmao.com
@@ -23,6 +24,7 @@ DOMAIN-SUFFIX,cishantao.com
 DOMAIN-SUFFIX,cjmakeding.com
 DOMAIN-SUFFIX,cszlks.com
 DOMAIN-SUFFIX,cudaojia.com
+DOMAIN-SUFFIX,dafapromo.com
 DOMAIN-SUFFIX,daitdai.com
 DOMAIN-SUFFIX,dsaeerf.com
 DOMAIN-SUFFIX,dugesheying.com
@@ -78,6 +80,7 @@ DOMAIN-SUFFIX,yinmong.com
 DOMAIN-SUFFIX,yitaopt.com
 DOMAIN-SUFFIX,yiqifa.com
 DOMAIN-SUFFIX,xiaohuau.xyz
+DOMAIN-SUFFIX,zhaozecheng.cn
 DOMAIN-SUFFIX,zhenxinet.com
 DOMAIN-SUFFIX,zzd6.com
 IP-CIDR,39.107.15.115/32,no-resolve
@@ -89,6 +92,7 @@ IP-CIDR,61.160.200.223/32,no-resolve
 IP-CIDR,61.160.200.242/32,no-resolve
 IP-CIDR,61.160.200.252/32,no-resolve
 IP-CIDR,61.174.50.214/32,no-resolve
+IP-CIDR,111.175.220.163/32,no-resolve
 IP-CIDR,111.175.220.164/32,no-resolve
 IP-CIDR,124.232.160.178/32,no-resolve
 IP-CIDR,175.6.223.15/32,no-resolve
@@ -99,6 +103,7 @@ IP-CIDR,221.231.6.79/32,no-resolve
 IP-CIDR,222.186.61.91/32,no-resolve
 IP-CIDR,222.186.61.95/32,no-resolve
 IP-CIDR,222.186.61.96/32,no-resolve
+IP-CIDR,222.186.61.97/32,no-resolve
 #  - ChinaUnicom
 IP-CIDR,106.75.231.48/32,no-resolve
 IP-CIDR,119.4.249.166/32,no-resolve
