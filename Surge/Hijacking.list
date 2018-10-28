@@ -1,4 +1,4 @@
-# <<< Internet Service Provider Hijacking Protection >>>
+# Internet Service Provider Hijacking Protection
 DOMAIN-SUFFIX,17gouwuba.com
 DOMAIN-SUFFIX,189zj.cn
 DOMAIN-SUFFIX,285680.com
@@ -86,7 +86,7 @@ IP-CIDR,39.107.15.115/32,no-resolve
 IP-CIDR,47.89.59.182/32,no-resolve
 IP-CIDR,103.49.209.27/32,no-resolve
 IP-CIDR,123.56.152.96/32,no-resolve
-#  - ChinaNet
+# > ChinaNet
 IP-CIDR,61.160.200.223/32,no-resolve
 IP-CIDR,61.160.200.242/32,no-resolve
 IP-CIDR,61.160.200.252/32,no-resolve
@@ -103,16 +103,16 @@ IP-CIDR,222.186.61.91/32,no-resolve
 IP-CIDR,222.186.61.95/32,no-resolve
 IP-CIDR,222.186.61.96/32,no-resolve
 IP-CIDR,222.186.61.97/32,no-resolve
-#  - ChinaUnicom
+# > ChinaUnicom
 IP-CIDR,106.75.231.48/32,no-resolve
 IP-CIDR,119.4.249.166/32,no-resolve
 IP-CIDR,220.196.52.141/32,no-resolve
 IP-CIDR,221.6.4.148/32,no-resolve
-# - ChinaMobile
+# > ChinaMobile
 IP-CIDR,114.247.28.96/32,no-resolve
 IP-CIDR,221.179.131.72/32,no-resolve
 IP-CIDR,221.179.140.145/32,no-resolve
-#  - Dr.Peng
+# > Dr.Peng
 IP-CIDR,10.72.25.0/24,no-resolve
 IP-CIDR,115.182.16.79/32,no-resolve
 IP-CIDR,118.144.88.126/32,no-resolve

@@ -1,6 +1,4 @@
-# Advertisement Block and Privacy Protection
-# > Exclusion
-USER-AGENT,*AnalyticsApp*,PROXY
+# Advertising Block
 # > General
 DOMAIN-KEYWORD,adservice
 DOMAIN-KEYWORD,analytics
@@ -24,6 +22,7 @@ DOMAIN-SUFFIX,adtechus.com
 DOMAIN-SUFFIX,advertising.com
 DOMAIN-SUFFIX,adview.cn
 DOMAIN-SUFFIX,adxpansion.com
+DOMAIN-SUFFIX,adxvip.com
 DOMAIN-SUFFIX,aerserv.com
 DOMAIN-SUFFIX,agkn.com
 DOMAIN-SUFFIX,alipaylog.com
@@ -126,6 +125,7 @@ DOMAIN-SUFFIX,urbanairship.com
 DOMAIN-SUFFIX,voiceads.cn
 DOMAIN-SUFFIX,vrtcal.com
 DOMAIN-SUFFIX,webspectator.com
+DOMAIN-SUFFIX,xadchina.cn
 DOMAIN-SUFFIX,xdrig.com
 DOMAIN-SUFFIX,yldbt.com
 
@@ -195,14 +195,7 @@ DOMAIN,oth.eve.mdt.qq.com
 DOMAIN,pingma.qq.com
 DOMAIN,pingtcss.qq.com
 DOMAIN,tajs.qq.com
-# > MI
-DOMAIN-SUFFIX,ad.xiaomi.com
-DOMAIN-SUFFIX,ad.intl.xiaomi.com
-DOMAIN-SUFFIX,data.mistat.xiaomi.com
-DOMAIN-SUFFIX,tracking.miui.com
-DOMAIN,adv.sec.miui.com
-DOMAIN,o2o.api.xiaomi.com
-# > 163
+# > NetEase
 DOMAIN,ad.bn.netease.com
 DOMAIN,iadmat.nosdn.127.net
 DOMAIN,iadmusicmat.music.126.net
@@ -210,9 +203,17 @@ DOMAIN,iadmusicmatvideo.music.126.net
 DOMAIN,impservice.dictapp.youdao.com
 DOMAIN,impservice.youdao.com
 DOMAIN,log.yex.youdao.com
+DOMAIN,log-yex.youdao.com
 DOMAIN,n.3g.163.com
 DOMAIN,nex.163.com
 DOMAIN,yt-adp.nosdn.127.net
+# > Mi
+DOMAIN-SUFFIX,ad.xiaomi.com
+DOMAIN-SUFFIX,ad.intl.xiaomi.com
+DOMAIN-SUFFIX,data.mistat.xiaomi.com
+DOMAIN-SUFFIX,tracking.miui.com
+DOMAIN,adv.sec.miui.com
+DOMAIN,o2o.api.xiaomi.com
 #  > Sina
 DOMAIN,u1.img.mobile.sina.cn
 DOMAIN,sax.sina.com.cn
@@ -258,6 +259,8 @@ DOMAIN,ad.ximalaya.com
 DOMAIN,adse.ximalaya.com
 # > Moji
 DOMAIN,ad.api.moji.com
+DOMAIN,adlaunch.moji.com
+DOMAIN,ads.mojicdn.com
 DOMAIN,v1.log.moji.com
 # > Kingsoft
 DOMAIN,ad-stat.ksosoft.com

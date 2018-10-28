@@ -1,11 +1,11 @@
-# Media
-# - Youtube
+# (Media)
+# > Youtube
 USER-AGENT,*youtube*
 USER-AGENT,YouTube*
 DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,youtube.com
 DOMAIN,youtubei.googleapis.com
-# - Netflix
+# > Netflix
 USER-AGENT,Argo*
 DOMAIN-SUFFIX,netflix.com
 DOMAIN-SUFFIX,netflix.net
@@ -14,36 +14,36 @@ DOMAIN-SUFFIX,nflximg.com
 DOMAIN-SUFFIX,nflximg.net
 DOMAIN-SUFFIX,nflxso.net
 DOMAIN-SUFFIX,nflxvideo.net
-# - HBO
+# > HBO
 USER-AGENT,HBO%20NOW*
 DOMAIN-SUFFIX,hbo.com
 DOMAIN-SUFFIX,hbogo.com
-# - Hulu
+# > Hulu
 USER-AGENT,Hulu*
 DOMAIN-SUFFIX,hulu.com
 DOMAIN-SUFFIX,huluim.com
-DOMAIN-KEYWORD,bbcfmt
-DOMAIN-KEYWORD,uk-live
-# - BBC iPlayer
+# > BBC iPlayer
 USER-AGENT,BBCiPlayer*
 DOMAIN-SUFFIX,bbc.co.uk
 DOMAIN-SUFFIX,bbci.co.uk
-# - Bahamut
+DOMAIN-KEYWORD,bbcfmt
+DOMAIN-KEYWORD,uk-live
+# > Bahamut
 USER-AGENT,Anime*
 DOMAIN-SUFFIX,bahamut.com.tw
 DOMAIN-SUFFIX,gamer.com.tw
 DOMAIN-SUFFIX,hinet.net
-# - myTV_SUPER
+# > myTV_SUPER
 USER-AGENT,mytv*
 DOMAIN-SUFFIX,mytvsuper.com
 DOMAIN-SUFFIX,tvb.com
-# - AbemaTV
+# > AbemaTV
 USER-AGENT,AbemaTV*
 DOMAIN-SUFFIX,abema.io
 DOMAIN-SUFFIX,ameba.jp
 DOMAIN-SUFFIX,hayabusa.io
 DOMAIN,linear-abematv.akamaized.net
-# - JOOX
+# > JOOX
 USER-AGENT,WeMusic*
 USER-AGENT,JOOX*
 DOMAIN-SUFFIX,joox.com
