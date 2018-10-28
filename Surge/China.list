@@ -41,3 +41,12 @@ DOMAIN-SUFFIX,ip-cdn.com
 DOMAIN-SUFFIX,ip.cn
 DOMAIN-SUFFIX,akadns.net // Apple services
 DOMAIN,ip.bjango.com // iStat Menu
+
+# > Proxy Client
+PROCESS-NAME,v2ray,DIRECT // V2RayX
+PROCESS-NAME,ss-local,DIRECT // ShadowsocksX-NG
+# > Download Client
+PROCESS-NAME,fdm,DIRECT // Free Download Manager
+PROCESS-NAME,aria2c,DIRECT // Aria2GUI
+PROCESS-NAME,NetTransport,DIRECT // NetTransport
+PROCESS-NAME,Thunder,DIRECT // Thunder
