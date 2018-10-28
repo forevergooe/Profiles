@@ -22,6 +22,7 @@ DOMAIN-SUFFIX,hbogo.com
 USER-AGENT,Hulu*
 DOMAIN-SUFFIX,hulu.com
 DOMAIN-SUFFIX,huluim.com
+DOMAIN-SUFFIX,happyon.jp
 # > BBC iPlayer
 USER-AGENT,BBCiPlayer*
 DOMAIN-SUFFIX,bbc.co.uk
