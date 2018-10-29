@@ -55,6 +55,69 @@
 - [Shadowrocket 导入配置及安装证书](https://diveng.io/import-profile-and-install-certificate-on-shadowrocket.html)
 - [Kitsunebi 导入配置](https://diveng.io/import-profile-on-kitsunebi.html)
 
+### 常见问题
+
+规则是所有版本同步更新吗？
+
+````
+是
+````
+
+需要及时更新规则吗？
+
+````
+如果 Telegram 频道的更新日志中没有对应你的需求可以不更，换句话说用着没问题就不更新
+````
+
+遇到连接公共场所 Wi-Fi 时验证页面无法显示？
+
+````
+暂时关闭待验证成功后再开启
+````
+
+DNS 推荐设置什么？
+
+````
+1.为什么不建议运营商的 DNS 及公共 DNS 的弊端是什么
+部分运营商存在 DNS 劫持、解析不准确或失败(尤其海外网站)的问题
+使用公共 DNS 上网的弊端（一）https://ephen.me/2017/PublicDns_1/
+使用公共 DNS 上网的弊端（二）https://ephen.me/2017/PublicDns_2/
+
+2.那么建议是什么
+使用运营商的设置「system」
+电信和联通设置「119.29.29.29,223.5.5.5」
+移动和长城宽带等设置「1.2.4.8」
+
+3.为什么不推荐海外的 DNS
+首先海外 DNS 基本没有国内节点，导致 CDN 解析不准确，如 OpenDNS 会将某些解析到香港导致访问速度变慢等问题
+其次现阶段追求海外 DNS 已无意义，早期来说可以避免 DNS 污染，但现在基本上 Public DNS 没有不污染的，还会导致上述解析问题
+````
+
+所以对于劫持/抢答/污染是怎样处理？
+
+````
+DNS 劫持 > 使用公共 DNS
+DNS 抢答 > 无解(使用 1.2.4.8 仍抢答的情况下向工信部投诉运营商劫持 CNNIC 即以流氓治流氓)
+HTTP 劫持 > 使用规则(反运营商劫持)
+DNS 污染 > 使用规则(海外加速)
+````
+
+有些应用无法去除广告
+
+````
+发现广告的可以提 Issues 给我
+
+1.不少应用会调用缓存广告，如果在使用规则前就已经加载过广告了建议到设置中清除缓存。
+
+2.部分广告去除需要 [URL Rewrite] 功能，即不支持该功能的应用会无法去除一些广告。
+
+3.Surge 虽有 [URL Rewrite] 但不支持去除 YOUKU 等部分应用的广告。
+
+4.不是所有广告都能依赖规则去除，如广告功能写死或者应用使用了 Certificate Pinning，只相信特定的证书或者来自特定的 issuer 的证书。该情况下 MitM 无法正常工作。(https://medium.com/@Blankwonder/surge-mitm-5281d8ace79d)
+````
+
+
+
 ### 感谢
 
 [lhie1](https://github.com/lhie1) – 2017 ~ 2018.5 特别版去广告相关规则基于其规则
@@ -64,6 +127,8 @@ Lison Bin – 完善 Apple、WhatsApp、Line 相关规则
 [linjiacheng](https://github.com/linjiacheng) – 解决盯盯拍无法使用的问题
 
 Booui、liceva – 完善 Google Play IP 段
+
+[JO2EY](https://github.com/JO2EY) - 完善 Media 策略组
 
 ### 许可
 
