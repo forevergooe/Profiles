@@ -1,6 +1,6 @@
 ### 简介
 
-[Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8)、[Quantumult](https://itunes.apple.com/app/apple-store/id1252015438?mt=8)、[Kitsunebi](https://itunes.apple.com/app/apple-store/id1275446921?mt=8)、[Shadowrocket](https://itunes.apple.com/app/apple-store/id932747118?mt=8)、[Pepi(ShadowRay)](https://itunes.apple.com/app/apple-store/id1283082051?mt=8) 配置规则文件
+[Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8)、[Quantumult](https://itunes.apple.com/app/apple-store/id1252015438?mt=8)、[Kitsunebi](https://testflight.apple.com/join/2w6EF67u)、[Shadowrocket](https://itunes.apple.com/app/apple-store/id932747118?mt=8)、[Pepi(ShadowRay)](https://itunes.apple.com/app/apple-store/id1283082051?mt=8) 、[Surfboard](https://rink.hockeyapp.net/recruit/2113783c503645abb0a5ec6317e1a169) 配置规则文件
 
 可订阅 [Telegram 频道](https://t.me/DivineEngine_Profiles) 获取更多信息
 
@@ -13,8 +13,8 @@
 - 使用公共 DNS 达到快速、准确、稳定及安全的解析
 - 国内应用及网站直连
 - 海外应用及网站加速
-- Apple Spotlight、iBook Store、iTunes Store 服务（部分）及 Apple News（需将「地区」改成「美国」且中国大陆手机卡需在「飞行模式下」使用）加速
-- 海外视听应用及网站可指定节点（仅 Surge 及 Quantumult，支持 Youtube、Netflix、HBO、Hulu、BBC iPlayer、Bahamut、myTV SUPER、AbemaTV 和 JOOX）
+- Apple Spotlight、iBook Store、iTunes Store 部分服务及 Apple News（需将「地区」改成「美国」且中国大陆手机卡需在「飞行模式下」使用）加速
+- 海外媒体部分服务可指定节点（仅 Surge 及 Quantumult，支持 Youtube、Netflix、HBO、Hulu、BBC iPlayer、Bahamut、myTV SUPER、AbemaTV 和 JOOX）
 
 **专业版**
 
@@ -38,7 +38,7 @@
 
 **Surge 2 用户建议使用捷径，Surge Mac 3 用户使用 SurgeNG**
 
-*Surge 规则同适用于 Kitsunebi*
+*Surge 规则同适用于 Kitsunebi、Surfboard*
 
 *Shadow 规则同适用于 Shadowrocket 和 Pepi(ShadowRay)*
 
