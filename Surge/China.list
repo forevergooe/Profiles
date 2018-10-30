@@ -1,4 +1,5 @@
 # China Area Network
+# > Apple
 DOMAIN-SUFFIX,aaplimg.com
 DOMAIN-SUFFIX,apple.co
 DOMAIN-SUFFIX,apple.com
@@ -31,9 +32,11 @@ DOMAIN-SUFFIX,zmzapi.com
 DOMAIN-SUFFIX,zimuzu.tv
 DOMAIN-SUFFIX,zmzfile.com
 DOMAIN-SUFFIX,zmzapi.net
+# > Udaicty
+DOMAIN,cn.udacity.com
+DOMAIN,classroom.udacity.com
 # > Other
 DOMAIN-SUFFIX,cloudflare.com
-DOMAIN-SUFFIX,udacity.com
 DOMAIN-SUFFIX,teamviewer.com
 DOMAIN-SUFFIX,maoyun.tv
 DOMAIN-SUFFIX,jd.hk
@@ -43,11 +46,17 @@ DOMAIN-SUFFIX,test-ipv6.com
 DOMAIN-SUFFIX,akadns.net // Apple services
 DOMAIN,ip.bjango.com // iStat Menu
 
-# > Proxy Client
+# Client
+# > Proxy
 PROCESS-NAME,v2ray // V2RayX
 PROCESS-NAME,ss-local // ShadowsocksX-NG
-# > Download Client
-PROCESS-NAME,fdm // Free Download Manager
+# > Download
 PROCESS-NAME,aria2c // Aria2GUI
+PROCESS-NAME,fdm // Free Download Manager
+PROCESS-NAME,Folx //Folx
 PROCESS-NAME,NetTransport // NetTransport
 PROCESS-NAME,Thunder // Thunder
+PROCESS-NAME,Transmission // Transmission
+PROCESS-NAME,uTorrent //uTorrent
+PROCESS-NAME,WebTorrent // WebTorrent
+PROCESS-NAME,WebTorrent Helper // WebTorrent Helper
