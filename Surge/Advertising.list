@@ -287,7 +287,19 @@ DOMAIN,track.uc.cn
 # > Xuneli
 DOMAIN,adsp.xunlei.com
 DOMAIN,etl.xlmc.sandai.net
-# > Blocklist
+# > CNTV
+DOMAIN,galaxy.bjcathay.com
+DOMAIN,mdrecv.app.cntvwb.cn
+DOMAIN,sdapprecv.app.cntvwb.cn
+DOMAIN,vdapprecv.app.cntvwb.cn
+# > Eleme
+DOMAIN,grand.ele.me
+DOMAIN,log.star.ele.me
+
+# Blocklist
+DOMAIN-SUFFIX,kuaizip.com
+DOMAIN-SUFFIX,mackeeper.com
+# > CJ Marketing
 DOMAIN-SUFFIX,4009997658.com
 DOMAIN-SUFFIX,abbyychina.com
 DOMAIN-SUFFIX,bartender.cc
@@ -313,7 +325,6 @@ DOMAIN-SUFFIX,jihehuaban.com.cn
 DOMAIN-SUFFIX,keyshot.cc
 DOMAIN-SUFFIX,kingdeecn.cn
 DOMAIN-SUFFIX,logoshejishi.com
-DOMAIN-SUFFIX,mackeeper.com
 DOMAIN-SUFFIX,mairuan.cn
 DOMAIN-SUFFIX,mairuan.com
 DOMAIN-SUFFIX,mairuan.com.cn

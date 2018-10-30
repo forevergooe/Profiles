@@ -1,4 +1,3 @@
-# Global Area Network
 # (DNS Cache Pollution Protection)
 # > Google
 DOMAIN-SUFFIX,appspot.com
@@ -36,6 +35,8 @@ DOMAIN-SUFFIX,apkpure.com
 DOMAIN-SUFFIX,ask.com
 DOMAIN-SUFFIX,bandwagonhost.com
 DOMAIN-SUFFIX,bbc.com
+DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,bitfinex.com
 DOMAIN-SUFFIX,booklive.jp
 DOMAIN-SUFFIX,bwh1.net
 DOMAIN-SUFFIX,cbc.ca
@@ -45,10 +46,15 @@ DOMAIN-SUFFIX,dropbox.com
 DOMAIN-SUFFIX,dropboxusercontent.com
 DOMAIN-SUFFIX,duckduckgo.com
 DOMAIN-SUFFIX,flickr.com
+DOMAIN-SUFFIX,gate.io
 DOMAIN-SUFFIX,goodreads.com
+DOMAIN-SUFFIX,huobi.pro
 DOMAIN-SUFFIX,initiummall.com
 DOMAIN-SUFFIX,kakao.com
+DOMAIN-SUFFIX,live.com
 DOMAIN-SUFFIX,medium.com
+DOMAIN-SUFFIX,mega.nz
+DOMAIN-SUFFIX,naver.com
 DOMAIN-SUFFIX,nyt.com
 DOMAIN-SUFFIX,nytco.com
 DOMAIN-SUFFIX,nytimes.com
@@ -56,6 +62,7 @@ DOMAIN-SUFFIX,nytstyle.com
 DOMAIN-SUFFIX,oculus.com
 DOMAIN-SUFFIX,oculuscdn.com
 DOMAIN-SUFFIX,ok.ru
+DOMAIN-SUFFIX,okex.com
 DOMAIN-SUFFIX,pinterest.com
 DOMAIN-SUFFIX,pixiv.net
 DOMAIN-SUFFIX,quora.com
@@ -76,17 +83,11 @@ DOMAIN-SUFFIX,v2ray.com
 DOMAIN-SUFFIX,vimeo.com
 DOMAIN-SUFFIX,vine.co
 DOMAIN-SUFFIX,voachinese.com
+DOMAIN-SUFFIX,whoer.net
 DOMAIN-SUFFIX,wikipedia.org
 DOMAIN-SUFFIX,wsj.com
 DOMAIN-SUFFIX,wsj.net
 DOMAIN-SUFFIX,yahoo.com
-DOMAIN-SUFFIX,huobi.pro
-DOMAIN-SUFFIX,okex.com
-DOMAIN-SUFFIX,binance.com
-DOMAIN-SUFFIX,gate.io
-DOMAIN-SUFFIX,bitfinex.com
-DOMAIN-SUFFIX,naver.com
-DOMAIN-SUFFIX,live.com
 # (The Most Popular Sites)
 # > Apple
 DOMAIN-SUFFIX,appsto.re // Apple URL Shortener
