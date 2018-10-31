@@ -34,7 +34,7 @@
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [Surge](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf)<br>[SurgeNG](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeNG.conf) | [SurgePro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgePro.conf)<br/>[SurgeNG](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeNG.conf) | [SurgeCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeCN.conf) | [Surge](https://www.icloud.com/shortcuts/dce799f2861b436b8febf08fb9df38e7) |
 | [Quantumult](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult.conf) | [QuantumultPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultPro.conf) <br> [QuantumultRejection](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultRejection.conf) | [QuantumultCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultCN.conf) | 无                                                           |
-| [Shadow](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf) | [ShadowPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowPro.conf) | [ShadowCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowCN.conf) | [Shadow](https://www.icloud.com/shortcuts/01831586d4344c4aa22b4e001050c77b) |
+| [Shadow](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf) | [ShadowPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowPro.conf) | [ShadowCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowCN.conf) | [Shadow](https://www.icloud.com/shortcuts/f026a745909d4addb920fdda08984832) |
 
 **Surge 2 用户建议使用捷径，Surge Mac 3 用户使用 SurgeNG**
 
@@ -114,7 +114,13 @@ DNS 污染 > 使用规则(海外加速)
 4.不是所有广告都能通过规则去除，如广告功能写死或者应用只相信特定的证书的情况下 MitM 无法正常工作。
 ````
 
+为什么 Youtube、知乎 等应用无法使用？
 
+````
+首先如果使用了专业版规则并且开启了「HTTPS 解密」功能不仅需要安装证书，还需在系统「设置」>「通用」>「关于本机」中底部的「证书信任设置」中信任所安装的证书！
+
+其次 Shadowrocket 2.1.23 的版本中「HTTPS 解密」功能存在问题，所以 不要！不要！不要！ 在该版本中开启此功能
+````
 
 ### 感谢
 
