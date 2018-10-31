@@ -35,16 +35,20 @@ DOMAIN-SUFFIX,zmzapi.net
 # > Udaicty
 DOMAIN,cn.udacity.com
 DOMAIN,classroom.udacity.com
-# > Other
-DOMAIN-SUFFIX,cloudflare.com
-DOMAIN-SUFFIX,teamviewer.com
-DOMAIN-SUFFIX,maoyun.tv
-DOMAIN-SUFFIX,jd.hk
-DOMAIN-SUFFIX,ip-cdn.com
+# > IP Query
 DOMAIN-SUFFIX,ip.cn
+DOMAIN-SUFFIX,ip-cdn.com
 DOMAIN-SUFFIX,test-ipv6.com
-DOMAIN-SUFFIX,akadns.net // Apple services
 DOMAIN,ip.bjango.com // iStat Menu
+# > Internet Speed Test
+DOMAIN-SUFFIX,fast.com
+DOMAIN-SUFFIX,speedtest.net
+# > Other
+DOMAIN-SUFFIX,akadns.net // Apple services
+DOMAIN-SUFFIX,cloudflare.com
+DOMAIN-SUFFIX,jd.hk
+DOMAIN-SUFFIX,maoyun.tv
+DOMAIN-SUFFIX,teamviewer.com
 
 # Client
 # > Proxy
