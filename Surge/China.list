@@ -42,6 +42,7 @@ DOMAIN-SUFFIX,test-ipv6.com
 DOMAIN,ip.bjango.com // iStat Menu
 # > Internet Speed Test
 DOMAIN-SUFFIX,fast.com
+DOMAIN-SUFFIX,netspeedtestmaster.com
 DOMAIN-SUFFIX,speedtest.net
 # > Other
 DOMAIN-SUFFIX,akadns.net // Apple services

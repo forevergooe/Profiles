@@ -16,6 +16,8 @@ DOMAIN-SUFFIX,instagram.com
 DOMAIN-SUFFIX,messenger.com
 DOMAIN-SUFFIX,whatsapp.com
 DOMAIN-SUFFIX,whatsapp.net
+DOMAIN-SUFFIX,oculus.com
+DOMAIN-SUFFIX,oculuscdn.com
 DOMAIN-KEYWORD,facebook
 # > Twitter
 DOMAIN-SUFFIX,t.co
@@ -35,6 +37,7 @@ DOMAIN-SUFFIX,apkpure.com
 DOMAIN-SUFFIX,ask.com
 DOMAIN-SUFFIX,bandwagonhost.com
 DOMAIN-SUFFIX,bbc.com
+DOMAIN-SUFFIX,behance.net
 DOMAIN-SUFFIX,bibox.com
 DOMAIN-SUFFIX,binance.com
 DOMAIN-SUFFIX,bitfinex.com
@@ -46,6 +49,7 @@ DOMAIN-SUFFIX,deezer.com
 DOMAIN-SUFFIX,dropbox.com
 DOMAIN-SUFFIX,dropboxusercontent.com
 DOMAIN-SUFFIX,duckduckgo.com
+DOMAIN-SUFFIX,feedly.com
 DOMAIN-SUFFIX,flickr.com
 DOMAIN-SUFFIX,gate.io
 DOMAIN-SUFFIX,goodreads.com
@@ -60,8 +64,6 @@ DOMAIN-SUFFIX,nyt.com
 DOMAIN-SUFFIX,nytco.com
 DOMAIN-SUFFIX,nytimes.com
 DOMAIN-SUFFIX,nytstyle.com
-DOMAIN-SUFFIX,oculus.com
-DOMAIN-SUFFIX,oculuscdn.com
 DOMAIN-SUFFIX,ok.ru
 DOMAIN-SUFFIX,okex.com
 DOMAIN-SUFFIX,pinterest.com
@@ -77,6 +79,7 @@ DOMAIN-SUFFIX,soundcloud.com
 DOMAIN-SUFFIX,steamcommunity.com
 DOMAIN-SUFFIX,telegram.org
 DOMAIN-SUFFIX,theinitium.com
+DOMAIN-SUFFIX,tineye.com
 DOMAIN-SUFFIX,tumblr.com
 DOMAIN-SUFFIX,twitch.tv
 DOMAIN-SUFFIX,uptodown.com
