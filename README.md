@@ -1,6 +1,6 @@
 ### 简介
 
-[Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8)、[Quantumult](https://itunes.apple.com/app/apple-store/id1252015438?mt=8)、[Kitsunebi](https://testflight.apple.com/join/2w6EF67u)、[Shadowrocket](https://itunes.apple.com/app/apple-store/id932747118?mt=8)、[Pepi(ShadowRay)](https://itunes.apple.com/app/apple-store/id1283082051?mt=8) 、[Surfboard](https://rink.hockeyapp.net/recruit/2113783c503645abb0a5ec6317e1a169) 配置规则文件
+[Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8)、[Quantumult](https://itunes.apple.com/app/apple-store/id1252015438?mt=8)、[Kitsunebi](https://testflight.apple.com/join/2w6EF67u)、[Shadowrocket](https://itunes.apple.com/app/apple-store/id932747118?mt=8)、[Pepi(ShadowRay)](https://itunes.apple.com/app/apple-store/id1283082051?mt=8) 、[Surfboard](https://manual.getsurfboard.com/) 配置规则文件
 
 可订阅 [Telegram 频道](https://t.me/DivineEngine_Profiles) 获取更多信息
 
@@ -13,8 +13,8 @@
 - 使用公共 DNS 达到快速、准确、稳定及安全的解析
 - 国内应用及网站直连
 - 海外应用及网站加速
-- Apple Spotlight、iBook Store、iTunes Store 部分服务及 Apple News（需将「地区」改成「美国」且中国大陆手机卡需在「飞行模式下」使用）加速
-- 海外媒体部分服务可指定节点（仅 Surge 及 Quantumult，支持 Youtube、Netflix、HBO、Hulu、BBC iPlayer、Bahamut、myTV SUPER、AbemaTV 和 JOOX）
+- Apple 服务加速（具体看底部说明）
+- 海外媒体部分服务可指定节点（具体看底部说明）
 
 **专业版**
 
@@ -84,7 +84,7 @@ DNS 推荐设置什么？
 使用公共 DNS 上网的弊端（二）https://ephen.me/2017/PublicDns_2/
 
 2.那么建议是什么
-不使用公共 DNS 设置「system」
+不使用公共 DNS 设置「system」(Quantumult 留空)
 电信和联通设置「119.29.29.29,223.5.5.5」
 移动和长城宽带等设置「1.2.4.8」
 
@@ -102,6 +102,25 @@ HTTP 劫持 > 使用规则(反运营商劫持)
 DNS 污染 > 使用规则(海外加速)
 ````
 
+关于 Apple 服务加速？
+
+````
+此处分为两个部分：
+
+第一是必须加速的服务有：Dictionary（维基百科）、Spotlight（汇率航班查询）、iBook Store（下载）、iTunes Store(影片预览)、短连接等
+
+第二是针对部分地区速度不理想给的可选策略（仅 Surge）：App Store、Music(待完善)、Moveis(待完善) 以及（仅 Surge 和 Quantumult） Apple News 和 Maps 海外版加速
+（需要注意的是使用 News 需将「地区」改成「美国」且中国大陆手机卡需在「飞行模式下」使用且因此必然导致 Maps 必须是海外版）
+````
+
+关于 Media 媒体服务加速？
+
+````
+仅 Surge 及 Quantumult 可用，主要是针对部分媒体服务需要特定节点支持，如没有特定节点则默认设置即可
+
+目前支持： Youtube、Netflix、HBO、Hulu、BBC iPlayer、Bahamut、myTV SUPER、AbemaTV 和 JOOX
+````
+
 有些应用无法去除广告
 
 ````
@@ -112,6 +131,11 @@ DNS 污染 > 使用规则(海外加速)
 3.Surge 虽有 [URL Rewrite] 但不支持去除 YOUKU 等部分应用的广告。
 
 4.不是所有广告都能通过规则去除，如广告功能写死或者应用只相信特定的证书的情况下 MitM 无法正常工作。
+
+然后说两个比较常问到的 Youtube 和网易云音乐
+Youtube：位于时间线上和视频下方的广告是和正常内容一起传输，也就是上面所说的相当于写死的状态，至于视频广告目前主要一个障碍是 Google 部分域名无法使用 MitM 否则会出现无法使用的情况，暂时是无解了
+网易云音乐：主要问题在于可以去除广告，但是会出现加载不出也就是空白页(Surge)和一直处于加载的(Quantumult)的情况，虽多次刷新和等待片刻加载但是比较影响使用，所以如对此不在意的可以自行在「MITM > hostname」后添加：
+,interface.music.163.com,59.111.160.*,59.111.181.*,193.112.159.*,223.252.199.*
 ````
 
 为什么 Youtube、知乎等应用（存在于 MitM 域名列表）无法使用？
