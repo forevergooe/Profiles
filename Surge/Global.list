@@ -92,6 +92,8 @@ DOMAIN-SUFFIX,wikipedia.org
 DOMAIN-SUFFIX,wsj.com
 DOMAIN-SUFFIX,wsj.net
 DOMAIN-SUFFIX,yahoo.com
+DOMAIN-SUFFIX,pornhub.com
+DOMAIN-SUFFIX,xvideos.com
 # (The Most Popular Sites)
 # > Apple
 DOMAIN-SUFFIX,appsto.re // Apple URL Shortener
@@ -122,6 +124,7 @@ DOMAIN-SUFFIX,gmail.com
 DOMAIN-SUFFIX,gmodules.com
 DOMAIN-SUFFIX,godoc.org
 DOMAIN-SUFFIX,golang.org
+DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,gv.com
 DOMAIN-SUFFIX,gwtproject.org
 DOMAIN-SUFFIX,itasoftware.com
@@ -144,6 +147,7 @@ DOMAIN-SUFFIX,x.company
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 DOMAIN-SUFFIX,youtu.be
 DOMAIN-SUFFIX,yt.be
+DOMAIN-SUFFIX,ytimg.com
 # > Other
 DOMAIN-SUFFIX,fb.com
 DOMAIN-SUFFIX,bing.com // Bing International
