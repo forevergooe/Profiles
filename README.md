@@ -50,7 +50,7 @@
 
 导入配置教程：
 
-- [Surge 导入配置及安装证书](https://diveng.io/import-profile-and-install-certificate-on-surge.html)
+- [Surge 导入配置及安装证书](https://medium.com/circumvention-technology/import-profile-on-surge-2d4119822302)
 - [Quantumult 导入配置及安装证书](https://diveng.io/import-profile-and-install-certificate-on-quantumult.html)
 - [Shadowrocket 导入配置及安装证书](https://diveng.io/import-profile-and-install-certificate-on-shadowrocket.html)
 - [Kitsunebi 导入配置](https://diveng.io/import-profile-on-kitsunebi.html)
