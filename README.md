@@ -30,19 +30,17 @@
 
 **下载**
 
+Surge 建议都使用捷径，若不用捷径则 Surge 3 用户使用 SurgeNG 规则
+
+Surge 2、Kitsunebi、Surfboard 使用 Surge/SurgePro 规则
+
+Shadowrocket 及 Pepi(ShadowRay) 用户使用 Shadow 规则
+
 | **标准版**                                                   | **专业版**                                                   | **回国版**                                                   | [**捷径**](https://itunes.apple.com/app/apple-store/id915249334?mt=8) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [Surge](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf)<br>[SurgeNG](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeNG.conf) | [SurgePro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgePro.conf)<br/>[SurgeNG](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeNG.conf) | [SurgeCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeCN.conf) | [Surge](https://www.icloud.com/shortcuts/dce799f2861b436b8febf08fb9df38e7) |
-| [Quantumult](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult.conf) | [QuantumultPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultPro.conf) <br> [QuantumultRejection](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultRejection.conf) | [QuantumultCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultCN.conf) | 无                                                           |
-| [Shadow](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf) | [ShadowPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowPro.conf) | [ShadowCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowCN.conf) | [Shadow](https://www.icloud.com/shortcuts/f026a745909d4addb920fdda08984832) |
-
-**Surge 2 用户建议使用捷径，Surge Mac 3 用户使用 SurgeNG**
-
-*Surge 规则同适用于 Kitsunebi、Surfboard*
-
-*Shadow 规则同适用于 Shadowrocket 和 Pepi(ShadowRay)*
-
-*若对规则有定制需求可使用捷径*
+| [Surge](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf)<br>[SurgeNG](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeNG.conf) | [SurgePro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgePro.conf)<br/>[SurgeNG](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeNG.conf) | [SurgeCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeCN.conf) | [Surge 2](https://www.icloud.com/shortcuts/c18183884c164af19d19f108b93998fe)<br />[Surge 3](https://www.icloud.com/shortcuts/4683f7754ac0400db93a1b9a58415b42) |
+| [Quantumult](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult.conf) | [QuantumultPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultPro.conf) <br>[QuantumultRejection](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultRejection.conf) | [QuantumultCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultCN.conf) | 无                                                           |
+| [Shadow](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf) | [ShadowPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowPro.conf) | [ShadowCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowCN.conf) | [Shadowrocket/Pepi](https://www.icloud.com/shortcuts/cc910e552547405c8dc54df04a678bd7) |
 
 ### 使用说明
 
@@ -51,9 +49,9 @@
 导入配置教程：
 
 - [Surge 导入配置及安装证书](https://medium.com/circumvention-technology/import-profile-on-surge-2d4119822302)
-- [Quantumult 导入配置及安装证书](https://diveng.io/import-profile-and-install-certificate-on-quantumult.html)
-- [Shadowrocket 导入配置及安装证书](https://diveng.io/import-profile-and-install-certificate-on-shadowrocket.html)
-- [Kitsunebi 导入配置](https://diveng.io/import-profile-on-kitsunebi.html)
+- [Quantumult 导入配置及安装证书](https://medium.com/circumvention-technology/import-profile-on-quantumult-2e5cef9cb0c5)
+- [Kitsunebi 导入配置](https://medium.com/circumvention-technology/import-profile-on-kitsunebi-6befa3db03db)
+- [Shadowrocket 导入配置及安装证书](https://medium.com/circumvention-technology/import-profile-on-shadowrocket-f183cd4e95ae)
 
 ### 常见问题
 
