@@ -177,6 +177,7 @@ DOMAIN,ad.qingting.fm
 DOMAIN,ad-cn.jovcloud.com
 DOMAIN,adnew.wifi8.com
 DOMAIN,adsapi.manhuaren.com
+DOMAIN,adsdk.dmzj.com
 DOMAIN,adshow.58.com
 DOMAIN,adshows.21cn.com
 DOMAIN,adui.tg.meitu.com
@@ -194,6 +195,7 @@ DOMAIN,track.tiara.daum.net
 DOMAIN,track.tiara.kakao.com
 DOMAIN,trackapp.guahao.cn
 DOMAIN,traffic.mogujie.com
+DOMAIN,log.ys7.com
 
 # > Baidu
 DOMAIN-SUFFIX,baidustatic.com
