@@ -75,7 +75,7 @@ Shadowrocket 及 Pepi(ShadowRay) 用户使用 Shadow 规则
 
 > DNS 推荐设置什么？
 
-**1.为什么不建议运营商的 DNS 及公共 DNS 的弊端是什么**
+**为什么不建议运营商的 DNS 及公共 DNS 的弊端是什么**
 
 部分运营商存在 DNS 劫持、解析不准确或失败(尤其海外网站)的问题
 
@@ -83,7 +83,7 @@ Shadowrocket 及 Pepi(ShadowRay) 用户使用 Shadow 规则
 
 使用公共 DNS 上网的弊端（二）https://ephen.me/2017/PublicDns_2/
 
-**2.那么建议是什么**
+**那么建议是什么**
 
 1. 使用运营商 DNS 和公共 DNS 设置为「system,119.29.29.29,223.5.5.5」
 2. 仅使用运营商 DNS 设置为「system」(Quantumult 留空、Kitsunebi 设置 localhost)
@@ -95,7 +95,7 @@ Shadowrocket 及 Pepi(ShadowRay) 用户使用 Shadow 规则
 
 若网络环境存在劫持 DNS（DNS 抢答）则不使用公共 DNS（或尝试使用 1.2.4.8 此 DNS 在部分中国移动不被抢答，反馈良好）
 
-**3.为什么不推荐海外的 DNS**
+**为什么不推荐海外的 DNS**
 
 首先目前海外 DNS 基本在国内没有节点会导致 CDN 解析不准确如解析到香港节点（包括腾讯的 119.28.28.28因运营商没有对路由进行更新所导致）
 
@@ -123,29 +123,25 @@ Shadowrocket 及 Pepi(ShadowRay) 用户使用 Shadow 规则
 
 > 关于 Media 媒体服务加速？
 
-仅 Surge 及 Quantumult 可用，主要是针对部分媒体服务需要特定节点支持，如没有特定节点则默认设置即可
-
-目前支持： Youtube、Netflix、HBO、Hulu、BBC iPlayer、Bahamut、myTV SUPER、AbemaTV 和 JOOX
+仅 Surge 及 Quantumult 可用，主要是针对部分媒体服务需要特定节点支持，如没有特定节点则默认设置即可，目前支持： Youtube、Netflix、HBO、Hulu、BBC iPlayer、Bahamut、myTV SUPER、AbemaTV 和 JOOX。
 
 
 
 > 有些应用无法去除广告
 
-1.不少应用会调用缓存广告，如果在使用规则前就已经加载过广告了建议到设置中清除缓存。
+部分应用存在缓存广告，如果在使用规则前就已经加载过广告需到设置中清除缓存，部分应用需重装
 
-2.部分广告去除需要 [URL Rewrite] 功能，即不支持该功能的应用会无法去除一些广告。
+部分广告去除需要 [URL Rewrite] 功能，即不支持该功能的应用会无法去除一些广告，另外 Surge 虽支持该功能但设计上导致如 YOUKU 等需要在 TUN 模式下识别的请求的应用也无法去除，Quantumult 默认也是如此需在「附加功能」中开启「激进阻止」
 
-3.Surge 虽有 [URL Rewrite] 但不支持去除 YOUKU 等部分应用的广告。
-
-4.不是所有广告都能通过规则去除，如广告功能写死或者应用只相信特定的证书的情况下 MitM 无法正常工作。
+最后，不是所有广告都能通过规则去除，如广告功能写死或者应用只相信特定的证书的情况下 MitM 无法正常工作
 
 
 
 > 为什么 Youtube、知乎等应用（存在于 MitM 域名列表）无法使用？
 
-如果使用了专业版规则并且开启了「HTTPS 解密(MitM)」功能不仅需要安装证书。还需在系统「设置」>「通用」>「关于本机」中底部的「证书信任设置」中信任所安装的证书！
+如果使用了专业版规则并且开启了「HTTPS 解密(MitM)」功能不仅需要安装证书。还需在系统「设置」>「通用」>「关于本机」中底部的「证书信任设置」中信任所安装的证书
 
-另外 Shadowrocket(2.1.23) 的版本（后续版本未测）中「HTTPS 解密」功能存在问题。所以 不要不要不要 在该版本中开启此功能。
+另外 Shadowrocket(2.1.23) 的版本（后续版本未测）中「HTTPS 解密」功能存在问题。所以 不要不要不要 在该版本中开启此功能
 
 ### 感谢
 
