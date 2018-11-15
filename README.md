@@ -86,7 +86,7 @@ Shadowrocket 及 Pepi(ShadowRay) 用户使用 Shadow 规则
 **那么建议是什么**
 
 1. 使用运营商 DNS 和公共 DNS 设置为「system,119.29.29.29,223.5.5.5」
-2. 仅使用运营商 DNS 设置为「system」(Quantumult 留空、Kitsunebi 设置 localhost)
+2. 仅使用运营商 DNS 设置为「system」(Quantumult、Kitsunebi 留空)
 3. 仅使用公共 DNS设置为「119.29.29.29,223.5.5.5」
 
 说明：
