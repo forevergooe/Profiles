@@ -1,4 +1,4 @@
-# Advertising Block
+# Advertising Block 去广告以及隐私追踪保护
 # > General
 DOMAIN-KEYWORD,adservice
 DOMAIN-KEYWORD,analytics
@@ -30,7 +30,6 @@ DOMAIN-SUFFIX,alipaylog.com
 DOMAIN-SUFFIX,amazon-adsystem.com
 DOMAIN-SUFFIX,analysys.cn
 DOMAIN-SUFFIX,app-adforce.jp
-DOMAIN-SUFFIX,appadhoc.com
 DOMAIN-SUFFIX,appboy.com
 DOMAIN-SUFFIX,appier.net
 DOMAIN-SUFFIX,appsflyer.com
@@ -155,6 +154,9 @@ DOMAIN-SUFFIX,xadchina.cn
 DOMAIN-SUFFIX,xdrig.com
 DOMAIN-SUFFIX,yldbt.com
 DOMAIN-SUFFIX,ymtracking.com
+DOMAIN-SUFFIX,madserving.com
+DOMAIN-SUFFIX,i2000.xyz
+DOMAIN-SUFFIX,ad373.com
 
 DOMAIN-SUFFIX,ad.daum.net
 DOMAIN-SUFFIX,api.appsee.com
@@ -162,6 +164,7 @@ DOMAIN-SUFFIX,ssl2.duapps.com
 DOMAIN-SUFFIX,unityads.unity3d.com
 DOMAIN,log.umsns.com
 DOMAIN,log.snssdk.com
+DOMAIN,wgo.mmstat.com
 DOMAIN,report.jpush.cn
 DOMAIN,static.jpush.cn
 DOMAIN,stats.jpush.cn
@@ -196,6 +199,7 @@ DOMAIN,track.tiara.kakao.com
 DOMAIN,trackapp.guahao.cn
 DOMAIN,traffic.mogujie.com
 DOMAIN,log.ys7.com
+DOMAIN,ad.hzyoka.com
 
 # > Baidu
 DOMAIN-SUFFIX,baidustatic.com
@@ -333,7 +337,6 @@ DOMAIN,mdrecv.app.cntvwb.cn
 DOMAIN,sdapprecv.app.cntvwb.cn
 DOMAIN,vdapprecv.app.cntvwb.cn
 # > Eleme
-DOMAIN,grand.ele.me
 DOMAIN,log.star.ele.me
 # > BitAuto
 DOMAIN,adx.yiche.com
@@ -341,3 +344,8 @@ DOMAIN,log.ycapp.yiche.com
 # > 同花顺
 DOMAIN,adm.10jqka.com.cn
 DOMAIN,stat.10jqka.com.cn
+# > AutoHome
+DOMAIN,adproxy.autohome.com.cn
+DOMAIN,rd.autohome.com.cn
+DOMAIN,al.autohome.com.cn
+DOMAIN,applogapi.autohome.com.cn

@@ -1,4 +1,3 @@
-# (DNS Cache Pollution Protection)
 # > Google
 DOMAIN-SUFFIX,appspot.com
 DOMAIN-SUFFIX,blogger.com
@@ -28,6 +27,7 @@ DOMAIN-SUFFIX,twitter.com
 # > Line
 DOMAIN-SUFFIX,line.me
 DOMAIN-SUFFIX,line-apps.com
+DOMAIN-SUFFIX,line-scdn.net
 DOMAIN-SUFFIX,naver.jp
 # > Other
 DOMAIN-SUFFIX,abc.net.au
@@ -66,8 +66,8 @@ DOMAIN-SUFFIX,nytimes.com
 DOMAIN-SUFFIX,nytstyle.com
 DOMAIN-SUFFIX,ok.ru
 DOMAIN-SUFFIX,okex.com
-DOMAIN-SUFFIX,pinterest.com
 DOMAIN-SUFFIX,pixiv.net
+DOMAIN-SUFFIX,pornhub.com
 DOMAIN-SUFFIX,quora.com
 DOMAIN-SUFFIX,reddit.com
 DOMAIN-SUFFIX,redditmedia.com
@@ -91,9 +91,10 @@ DOMAIN-SUFFIX,whoer.net
 DOMAIN-SUFFIX,wikipedia.org
 DOMAIN-SUFFIX,wsj.com
 DOMAIN-SUFFIX,wsj.net
-DOMAIN-SUFFIX,yahoo.com
-DOMAIN-SUFFIX,pornhub.com
 DOMAIN-SUFFIX,xvideos.com
+DOMAIN-SUFFIX,yahoo.com
+DOMAIN-SUFFIX,pinimg.com
+DOMAIN-KEYWORD,pinterest
 # (The Most Popular Sites)
 # > Apple
 DOMAIN-SUFFIX,appsto.re // Apple URL Shortener
