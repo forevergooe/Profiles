@@ -1,4 +1,4 @@
-# Internet Service Provider Hijacking Protection
+# Internet Service Provider Hijacking Protection 运营商劫持保护
 DOMAIN-SUFFIX,17gouwuba.com
 DOMAIN-SUFFIX,189zj.cn
 DOMAIN-SUFFIX,285680.com
@@ -126,7 +126,7 @@ IP-CIDR,180.166.52.24/32,no-resolve
 IP-CIDR,220.115.251.25/32,no-resolve
 IP-CIDR,222.73.156.235/32,no-resolve
 
-# Blocklist
+# Blocklist 黑名单
 DOMAIN-SUFFIX,kuaizip.com
 DOMAIN-SUFFIX,mackeeper.com
 # > CJ Marketing
