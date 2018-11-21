@@ -32,9 +32,9 @@
 
 Surge 3 用户使用 SurgeNG（推荐使用捷径，另外无需去广告按导入教程删除去广告部分即可）
 
-Surge 2（推荐使用捷径）、Kitsunebi、Surfboard 用户使用除 SurgeNG 外的 Surge 规则
+Surge 2（推荐使用捷径）、Surfboard 用户使用除 SurgeNG 外的 Surge 规则
 
-Shadowrocket 及 Pepi(ShadowRay) 用户使用 Shadow 规则
+Shadowrocket 及 Pepi(ShadowRay)、 Kitsunebi用户使用 Shadow 规则
 
 | **标准版**                                                   | **专业版**                                                   | **回国版**                                                   | [**捷径**](https://itunes.apple.com/app/apple-store/id915249334?mt=8) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
