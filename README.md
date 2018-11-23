@@ -42,9 +42,7 @@ Shadowrocket 及 Pepi(ShadowRay)、 Kitsunebi用户使用 Shadow 规则
 | [Quantumult](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult.conf) | [QuantumultPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultPro.conf) <br>[QuantumultRejection](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultRejection.conf) | [QuantumultCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultCN.conf) | 无                                                           |
 | [Shadow](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf) | [ShadowPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowPro.conf) | [ShadowCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowCN.conf) | [Shadowrocket/Pepi](https://www.icloud.com/shortcuts/cc910e552547405c8dc54df04a678bd7) |
 
-### 使用说明
-
-### 常见问题
+### 使用说明 & 常见问题
 
 > 怎么导入规则？规则怎么更新？
 
