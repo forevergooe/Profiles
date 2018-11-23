@@ -44,35 +44,30 @@ Shadowrocket 及 Pepi(ShadowRay)、 Kitsunebi用户使用 Shadow 规则
 
 ### 使用说明
 
-导入配置教程：
+### 常见问题
+
+> 怎么导入规则？规则怎么更新？
+
+导入配置及更新教程：
 
 - [Surge 导入配置及安装证书](https://medium.com/circumvention-technology/import-profile-on-surge-2d4119822302)
+  注：Surge 2 使用捷径（否则更新麻烦），Surge 3 如不需要去广告按教程删除去广告部分即可否则使用捷径。
+
 - [Quantumult 导入配置及安装证书](https://medium.com/circumvention-technology/import-profile-on-quantumult-2e5cef9cb0c5)
 - [Kitsunebi 导入配置](https://medium.com/circumvention-technology/import-profile-on-kitsunebi-6befa3db03db)
 - [Shadowrocket 导入配置及安装证书](https://medium.com/circumvention-technology/import-profile-on-shadowrocket-f183cd4e95ae)
 
-### 常见问题
 
-> 规则是所有版本同步更新吗？
 
-是
+> XX 规则更新没？
+
+每次更新即全部更新
 
 
 
 > 需要及时更新规则吗？
 
 如果 Telegram 频道的更新日志中没有对应你的需求可以不更，换句话说用着没问题就不更新
-
-
-
-> 规则如何更新？
-
-首先导入教程里均已说明，此处仅简单的说：
-Surge 2 使用捷径
-
-Surge 3 需要去广告功能使用捷径，不需要去广告按导入教程删掉去广告部分即可，除非频道公告否则不用更新
-
-Shadowrocket 点击「远程文件」中的配置链接选择「使用配置」
 
 
 
@@ -146,7 +141,7 @@ Shadowrocket 点击「远程文件」中的配置链接选择「使用配置」
 
 部分应用存在缓存广告，如果在使用规则前就已经加载过广告需到设置中清除缓存，部分应用需重装
 
-部分广告去除需要 [URL Rewrite] 功能，即不支持该功能的应用会无法去除一些广告，另外 Surge 虽支持该功能但设计上导致如 YOUKU 等需要在 TUN 模式下识别的请求的应用也无法去除，Quantumult 默认也是如此需在「附加功能」中开启「激进阻止」
+部分广告去除需要 [URL Rewrite] 功能，即不支持该功能的应用会无法去除一些广告（Surge 虽支持该功能但如 YOUKU 等需要在 TUN 模式下请求的应用因无法识别也无法去除广告，Quantumult 默认也是如此需在「附加功能」中开启「激进阻止」）
 
 最后，不是所有广告都能通过规则去除，如广告功能写死或者应用只相信特定的证书的情况下 MitM 无法正常工作
 
