@@ -30,7 +30,7 @@
 
 **下载**
 
-Surge 3 用户使用 SurgeNG（推荐使用捷径，另外无需去广告按导入教程删除去广告部分即可）
+Surge 3 用户使用 SurgeNG（推荐使用捷径）
 
 Surge 2（推荐使用捷径）、Surfboard 用户使用除 SurgeNG 外的 Surge 规则
 
@@ -43,8 +43,6 @@ Shadowrocket 及 Pepi(ShadowRay)、 Kitsunebi用户使用 Shadow 规则
 | [Shadow](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf) | [ShadowPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowPro.conf) | [ShadowCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowCN.conf) | [Shadowrocket/Pepi](https://www.icloud.com/shortcuts/cc910e552547405c8dc54df04a678bd7) |
 
 ### 使用说明
-
-连接公共 Wi-Fi 时若出现验证页面无法加载的情况，可暂时关闭待连接成功后再开启。
 
 导入配置教程：
 
@@ -64,6 +62,23 @@ Shadowrocket 及 Pepi(ShadowRay)、 Kitsunebi用户使用 Shadow 规则
 > 需要及时更新规则吗？
 
 如果 Telegram 频道的更新日志中没有对应你的需求可以不更，换句话说用着没问题就不更新
+
+
+
+> 规则如何更新？
+
+首先导入教程里均已说明，此处仅简单的说：
+Surge 2 使用捷径
+
+Surge 3 需要去广告功能使用捷径，不需要去广告按导入教程删掉去广告部分即可，除非频道公告否则不用更新
+
+Shadowrocket 点击「远程文件」中的配置链接选择「使用配置」
+
+
+
+> 捷径是什么？我想规则自定义怎么办？
+
+有自定义规则需要使用捷径
 
 
 
