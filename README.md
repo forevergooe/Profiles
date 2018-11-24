@@ -131,7 +131,7 @@ Shadowrocket 及 Pepi(ShadowRay)、 Kitsunebi用户使用 Shadow 规则
 
 > 关于 Media 媒体服务加速？
 
-仅 Surge 及 Quantumult 可用，主要是针对部分媒体服务需要特定节点支持，如没有特定节点则默认设置即可，目前支持： Youtube、Netflix、HBO、Hulu、BBC iPlayer、Bahamut、myTV SUPER、AbemaTV 和 JOOX。
+仅 Surge 及 Quantumult 可用，主要是针对部分媒体服务需要特定节点支持，如没有特定节点则默认设置即可，目前支持： Youtube、Netflix、HBO、Hulu、BBC iPlayer、Bahamut、myTV SUPER、AbemaTV、Spotify 和 JOOX。
 
 
 
