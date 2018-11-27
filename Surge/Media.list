@@ -1,10 +1,12 @@
-# (Media)
+# (Video)
+DOMAIN,content.jwplatform.com
+DOMAIN,videos-f.jwpsrv.com
 # > Youtube
 USER-AGENT,*youtube*
 USER-AGENT,YouTube*
-DOMAIN-SUFFIX,googlevideo.com
-DOMAIN-SUFFIX,youtube.com
-DOMAIN,youtubei.googleapis.com
+DOMAIN-SUFFIX,googlevideo.com,force-remote-dns
+DOMAIN-SUFFIX,youtube.com,force-remote-dns
+DOMAIN,youtubei.googleapis.com,force-remote-dns
 # > Netflix
 USER-AGENT,Argo*
 DOMAIN-SUFFIX,netflix.com
@@ -22,11 +24,12 @@ DOMAIN-SUFFIX,hbogo.com
 USER-AGENT,Hulu*
 DOMAIN-SUFFIX,hulu.com
 DOMAIN-SUFFIX,huluim.com
+# > Hulu(フールー)
 DOMAIN-SUFFIX,happyon.jp
 # > BBC iPlayer
 USER-AGENT,BBCiPlayer*
-DOMAIN-SUFFIX,bbc.co.uk
-DOMAIN-SUFFIX,bbci.co.uk
+DOMAIN-SUFFIX,bbc.co.uk,force-remote-dns
+DOMAIN-SUFFIX,bbci.co.uk,force-remote-dns
 DOMAIN-KEYWORD,bbcfmt
 DOMAIN-KEYWORD,uk-live
 # > Bahamut
@@ -44,6 +47,10 @@ DOMAIN-SUFFIX,abema.io
 DOMAIN-SUFFIX,ameba.jp
 DOMAIN-SUFFIX,hayabusa.io
 DOMAIN,linear-abematv.akamaized.net
+# > encoreTVB
+USER-AGENT,encoreTVB*
+
+# (Music)
 # > Spotify
 USER-AGENT,Spotify*
 DOMAIN-SUFFIX,scdn.co

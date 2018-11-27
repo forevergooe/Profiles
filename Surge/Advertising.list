@@ -155,6 +155,7 @@ DOMAIN-SUFFIX,xadchina.cn
 DOMAIN-SUFFIX,xdrig.com
 DOMAIN-SUFFIX,yldbt.com
 DOMAIN-SUFFIX,ymtracking.com
+DOMAIN-SUFFIX,appnext.com
 
 DOMAIN-SUFFIX,ad.daum.net
 DOMAIN-SUFFIX,api.appsee.com
@@ -168,6 +169,7 @@ DOMAIN,static.jpush.cn
 DOMAIN,stats.jpush.cn
 DOMAIN,stats.umsns.com
 DOMAIN,s0.2mdn.net
+DOMAIN,appnext.hs.llnwd.net
 
 DOMAIN,abema-adx.ameba.jp
 DOMAIN,ad.12306.cn
@@ -283,7 +285,6 @@ DOMAIN,sax.sina.com.cn
 DOMAIN,saxs.sina.com.cn
 DOMAIN,saxn.sina.com.cn
 #  > iQiyi
-DOMAIN-SUFFIX,cupid.iqiyi.com
 DOMAIN,ifacelog.iqiyi.com
 DOMAIN,mbdlog.iqiyi.com
 DOMAIN,msg.71.am

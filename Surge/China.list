@@ -11,6 +11,8 @@ DOMAIN-SUFFIX,icloud-content.com
 DOMAIN-SUFFIX,me.com
 DOMAIN-SUFFIX,mzstatic.com
 # > Microsoft
+DOMAIN-SUFFIX,microsoft.com
+DOMAIN-SUFFIX,windows.net
 DOMAIN-SUFFIX,storage.live.com // OneDrive
 DOMAIN-SUFFIX,1drv.com // OneDrive
 DOMAIN,officecdn-microsoft-com.akamaized.net // Microsoft AutoUpdate
