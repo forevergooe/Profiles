@@ -30,17 +30,32 @@
 
 **下载**
 
-Surge 3 用户使用 SurgeNG（推荐使用捷径）
+| Surge 2 | [Surge 2 捷径](https://www.icloud.com/shortcuts/0913876d77d647f7b229903edb3a9be0) |
+| ------- | ------------------------------------------------------------ |
+| 标准版  | [Surge](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf) |
+| 专业版  | [SurgePro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgePro.conf) |
+| 回国版  | [SurgeCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeCN.conf) |
 
-Surge 2（推荐使用捷径）、Surfboard 用户使用除 SurgeNG 外的 Surge 规则
+| Surge 3  | [Surge 3 捷径](https://www.icloud.com/shortcuts/bbb973be542a4c4bba94101f2ae16bcf) |
+| -------- | ------------------------------------------------------------ |
+| 多功能版 | [SurgeNG](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeNG.conf) |
 
-Shadowrocket 及 Pepi(ShadowRay)、 Kitsunebi用户使用 Shadow 规则
+| Quantumult 配置订阅 |                                                              |
+| ------------------- | ------------------------------------------------------------ |
+| 分流 - 标准版       | [Quantumult](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult.conf) |
+| 分流 - 专业版       | [QuantumultPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultPro.conf) |
+| 分流 - 回国版       | [QuantumultCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultCN.conf) |
+| 链接阻止            | [QuantumultRejection](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultRejection.conf) |
 
-| **标准版**                                                   | **专业版**                                                   | **回国版**                                                   | [**捷径**](https://itunes.apple.com/app/apple-store/id915249334?mt=8) |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [Surge](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge.conf)<br>[SurgeNG](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeNG.conf) | [SurgePro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgePro.conf)<br/>[SurgeNG](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeNG.conf) | [SurgeCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeCN.conf) | [Surge 2](https://www.icloud.com/shortcuts/0913876d77d647f7b229903edb3a9be0)<br />[Surge 3](https://www.icloud.com/shortcuts/bbb973be542a4c4bba94101f2ae16bcf) |
-| [Quantumult](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult.conf) | [QuantumultPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultPro.conf) <br>[QuantumultRejection](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultRejection.conf) | [QuantumultCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultCN.conf) | 无                                                           |
-| [Shadow](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf) | [ShadowPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowPro.conf) | [ShadowCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowCN.conf) | [Shadowrocket/Pepi](https://www.icloud.com/shortcuts/cc910e552547405c8dc54df04a678bd7) |
+| Shadowrocket 及 Pepi(ShadowRay) | [Shadowrocket/Pepi 捷径](https://www.icloud.com/shortcuts/cc910e552547405c8dc54df04a678bd7) |
+| ------------------------------- | ------------------------------------------------------------ |
+| 标准版                          | [Shadow](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf) |
+| 专业版                          | [ShadowPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowPro.conf) |
+| 回国版                          | [ShadowCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowCN.conf) |
+
+| Clash             |                                                              |
+| ----------------- | ------------------------------------------------------------ |
+| Clash for Windows | [Clash](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Clash.yml) |
 
 ### 使用说明 & 常见问题
 
