@@ -1,8 +1,12 @@
 ### 简介
 
-[Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8)、[Quantumult](https://itunes.apple.com/app/apple-store/id1252015438?mt=8)、[Kitsunebi](https://testflight.apple.com/join/2w6EF67u)、[Shadowrocket](https://itunes.apple.com/app/apple-store/id932747118?mt=8)、[Pepi(ShadowRay)](https://itunes.apple.com/app/apple-store/id1283082051?mt=8) 、[Surfboard](https://manual.getsurfboard.com/) 配置规则文件
+配置规则文件（订阅 [Telegram 频道](https://t.me/DivineEngine_Profiles) 获取更多信息）
 
-可订阅 [Telegram 频道](https://t.me/DivineEngine_Profiles) 获取更多信息
+macOS：[Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8)
+
+iOS：[Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8)、[Quantumult](https://itunes.apple.com/app/apple-store/id1252015438?mt=8)、[Kitsunebi](https://testflight.apple.com/join/2w6EF67u)、[Shadowrocket](https://itunes.apple.com/app/apple-store/id932747118?mt=8)、[Pepi(ShadowRay)](https://itunes.apple.com/app/apple-store/id1283082051?mt=8) 
+
+Windows：[Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg/blob/master/README.md)
 
 ### 规则
 
@@ -40,18 +44,18 @@
 | -------- | ------------------------------------------------------------ |
 | 多功能版 | [SurgeNG](https://raw.githubusercontent.com/ConnersHua/Profiles/master/SurgeNG.conf) |
 
-| Quantumult 配置订阅 |                                                              |
-| ------------------- | ------------------------------------------------------------ |
-| 分流 - 标准版       | [Quantumult](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult.conf) |
-| 分流 - 专业版       | [QuantumultPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultPro.conf) |
-| 分流 - 回国版       | [QuantumultCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultCN.conf) |
-| 链接阻止            | [QuantumultRejection](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultRejection.conf) |
+| Quantumult                 |                                                              |
+| -------------------------- | ------------------------------------------------------------ |
+| 分流 - 标准版              | [Quantumult](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult.conf) |
+| 分流 - 专业版              | [QuantumultPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultPro.conf) |
+| 分流 - 回国版              | [QuantumultCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultCN.conf) |
+| 链接阻止(配合专业或回国版) | [QuantumultRejection](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultRejection.conf) |
 
-| Shadowrocket 及 Pepi(ShadowRay) | [Shadowrocket/Pepi 捷径](https://www.icloud.com/shortcuts/cc910e552547405c8dc54df04a678bd7) |
-| ------------------------------- | ------------------------------------------------------------ |
-| 标准版                          | [Shadow](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf) |
-| 专业版                          | [ShadowPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowPro.conf) |
-| 回国版                          | [ShadowCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowCN.conf) |
+| Shadowrocket<br />Pepi(ShadowRay) | [Shadowrocket/Pepi 捷径](https://www.icloud.com/shortcuts/cc910e552547405c8dc54df04a678bd7) |
+| --------------------------------- | ------------------------------------------------------------ |
+| 标准版                            | [Shadow](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf) |
+| 专业版                            | [ShadowPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowPro.conf) |
+| 回国版                            | [ShadowCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowCN.conf) |
 
 | Clash             |                                                              |
 | ----------------- | ------------------------------------------------------------ |
