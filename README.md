@@ -2,7 +2,7 @@
 
 配置规则文件（订阅 [Telegram 频道](https://t.me/DivineEngine_Profiles) 获取更多信息）
 
-macOS：[Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8)
+macOS：[Surge](https://nssurge.com/)
 
 iOS：[Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8)、[Quantumult](https://itunes.apple.com/app/apple-store/id1252015438?mt=8)、[Kitsunebi](https://testflight.apple.com/join/2w6EF67u)、[Shadowrocket](https://itunes.apple.com/app/apple-store/id932747118?mt=8)、[Pepi(ShadowRay)](https://itunes.apple.com/app/apple-store/id1283082051?mt=8) 
 
