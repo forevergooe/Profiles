@@ -185,6 +185,7 @@ DOMAIN,adsdk.dmzj.com
 DOMAIN,adshow.58.com
 DOMAIN,adshows.21cn.com
 DOMAIN,adui.tg.meitu.com
+DOMAIN,adx.hupu.com
 DOMAIN,adxserver.ad.cmvideo.cn
 DOMAIN,app-ad.variflight.com
 DOMAIN,applog.mobike.com
@@ -239,9 +240,9 @@ DOMAIN,track.uc.cn
 # > Tencent
 DOMAIN-SUFFIX,bugly.qq.com
 DOMAIN-SUFFIX,e.qq.com
+DOMAIN-SUFFIX,gdt.qq.com
 DOMAIN-SUFFIX,l.qq.com
 DOMAIN-SUFFIX,rqd.qq.com
-DOMAIN,mi.gdt.qq.com
 DOMAIN,btrace.qq.com
 DOMAIN,mtrace.qq.com
 DOMAIN,oth.eve.mdt.qq.com

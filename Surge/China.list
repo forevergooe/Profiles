@@ -39,6 +39,7 @@ DOMAIN,cn.udacity.com
 DOMAIN,classroom.udacity.com
 # > IP Query
 DOMAIN-SUFFIX,ip.cn
+DOMAIN-SUFFIX,ip.la
 DOMAIN-SUFFIX,ip-cdn.com
 DOMAIN-SUFFIX,test-ipv6.com
 DOMAIN,ip.bjango.com // iStat Menu

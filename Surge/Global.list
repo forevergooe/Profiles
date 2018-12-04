@@ -1,3 +1,4 @@
+# (DNS Cache Pollution Protection)
 # > Google
 DOMAIN-SUFFIX,appspot.com
 DOMAIN-SUFFIX,blogger.com
@@ -5,6 +6,7 @@ DOMAIN-SUFFIX,getoutline.org
 DOMAIN-SUFFIX,gvt0.com
 DOMAIN-SUFFIX,gvt1.com
 DOMAIN-SUFFIX,gvt3.com
+DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 DOMAIN-KEYWORD,google
 DOMAIN-KEYWORD,blogspot
 # > Facebook
@@ -94,7 +96,9 @@ DOMAIN-SUFFIX,wsj.net
 DOMAIN-SUFFIX,xvideos.com
 DOMAIN-SUFFIX,yahoo.com
 DOMAIN-SUFFIX,pinimg.com
+DOMAIN-SUFFIX,hbg.com
 DOMAIN-KEYWORD,pinterest
+
 # (The Most Popular Sites)
 # > Apple
 DOMAIN-SUFFIX,appsto.re // Apple URL Shortener
@@ -145,13 +149,13 @@ DOMAIN-SUFFIX,webrtc.org
 DOMAIN-SUFFIX,whatbrowser.org
 DOMAIN-SUFFIX,widevine.com
 DOMAIN-SUFFIX,x.company
-DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 DOMAIN-SUFFIX,youtu.be
 DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
 # > Other
 DOMAIN-SUFFIX,fb.com
 DOMAIN-SUFFIX,bing.com // Bing International
+DOMAIN,ccmdl.adobe.com // Adobe Download
 # > Telegram
 IP-CIDR,91.108.4.0/22,no-resolve
 IP-CIDR,91.108.8.0/22,no-resolve
