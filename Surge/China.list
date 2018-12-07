@@ -13,6 +13,7 @@ DOMAIN-SUFFIX,mzstatic.com
 # > Microsoft
 DOMAIN-SUFFIX,microsoft.com
 DOMAIN-SUFFIX,windows.net
+DOMAIN-SUFFIX,sfx.ms
 DOMAIN-SUFFIX,storage.live.com // OneDrive
 DOMAIN-SUFFIX,1drv.com // OneDrive
 DOMAIN,officecdn-microsoft-com.akamaized.net // Microsoft AutoUpdate
@@ -34,13 +35,11 @@ DOMAIN-SUFFIX,zmzapi.com
 DOMAIN-SUFFIX,zimuzu.tv
 DOMAIN-SUFFIX,zmzfile.com
 DOMAIN-SUFFIX,zmzapi.net
-# > Udaicty
-DOMAIN,cn.udacity.com
-DOMAIN,classroom.udacity.com
 # > IP Query
 DOMAIN-SUFFIX,ip.cn
 DOMAIN-SUFFIX,ip.la
 DOMAIN-SUFFIX,ip-cdn.com
+DOMAIN-SUFFIX,ipv6-test.com
 DOMAIN-SUFFIX,test-ipv6.com
 DOMAIN,ip.bjango.com // iStat Menu
 # > Internet Speed Test
@@ -53,6 +52,7 @@ DOMAIN-SUFFIX,cloudflare.com
 DOMAIN-SUFFIX,jd.hk
 DOMAIN-SUFFIX,maoyun.tv
 DOMAIN-SUFFIX,teamviewer.com
+DOMAIN-SUFFIX,udacity.com
 USER-AGENT,NeteaseMusic*
 USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*
 
