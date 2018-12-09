@@ -39,7 +39,9 @@ DOMAIN-SUFFIX,appsflyer.com
 DOMAIN-SUFFIX,apptentive.com
 DOMAIN-SUFFIX,atwola.com
 DOMAIN-SUFFIX,bidswitch.com
+DOMAIN-SUFFIX,bjytgw.com
 DOMAIN-SUFFIX,bttrack.com
+DOMAIN-SUFFIX,bxmns.com
 DOMAIN-SUFFIX,cappumedia.com
 DOMAIN-SUFFIX,cferw.com
 DOMAIN-SUFFIX,chartbeat.net
@@ -131,6 +133,7 @@ DOMAIN-SUFFIX,taboola.com
 DOMAIN-SUFFIX,talkingdata.com
 DOMAIN-SUFFIX,tango-deg.com
 DOMAIN-SUFFIX,tanx.com
+DOMAIN-SUFFIX,tanv.com
 DOMAIN-SUFFIX,taplytics.com
 DOMAIN-SUFFIX,taptica.com
 DOMAIN-SUFFIX,testplus.cn
@@ -172,6 +175,7 @@ DOMAIN,s0.2mdn.net
 DOMAIN,appnext.hs.llnwd.net
 
 DOMAIN,abema-adx.ameba.jp
+DOMAIN,ad.10010.com
 DOMAIN,ad.12306.cn
 DOMAIN,ad.caiyunapp.com
 DOMAIN,ad.huajiao.com
@@ -199,10 +203,12 @@ DOMAIN,nativeadv.dftoutiao.com
 DOMAIN,static.vuevideo.net
 DOMAIN,sugar.zhihu.com
 DOMAIN,track.58.com
+DOMAIN,tracklog.58.com
 DOMAIN,track.tiara.daum.net
 DOMAIN,track.tiara.kakao.com
 DOMAIN,trackapp.guahao.cn
 DOMAIN,traffic.mogujie.com
+DOMAIN,wmlog.meituan.com
 
 # > Google
 DOMAIN-SUFFIX,doubleclick.net
@@ -246,8 +252,10 @@ DOMAIN-SUFFIX,rqd.qq.com
 DOMAIN,btrace.qq.com
 DOMAIN,mtrace.qq.com
 DOMAIN,oth.eve.mdt.qq.com
+DOMAIN,pgdt.gtimg.cn
 DOMAIN,pingma.qq.com
 DOMAIN,pingtcss.qq.com
+DOMAIN,splashqqlive.gtimg.com
 DOMAIN,tajs.qq.com
 DOMAIN,btrace.qq.com
 # >> 酷狗酷我
@@ -313,6 +321,7 @@ DOMAIN,de.as.pptv.com
 # > Le
 DOMAIN-SUFFIX,webp2p.letv.com
 DOMAIN,ark.letv.com
+DOMAIN,emma-414870e223.huodonghezi.com // TV Home
 DOMAIN,g3.letv.com
 DOMAIN,n.mark.letv.com
 # > 喜马拉雅
