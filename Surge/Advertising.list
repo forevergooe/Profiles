@@ -159,6 +159,7 @@ DOMAIN-SUFFIX,xdrig.com
 DOMAIN-SUFFIX,yldbt.com
 DOMAIN-SUFFIX,ymtracking.com
 DOMAIN-SUFFIX,appnext.com
+DOMAIN-SUFFIX,cnadnet.com
 
 DOMAIN-SUFFIX,ad.daum.net
 DOMAIN-SUFFIX,api.appsee.com
@@ -223,6 +224,7 @@ DOMAIN,hm.baidu.com
 DOMAIN,hmma.baidu.com
 DOMAIN,mobads.baidu.com
 DOMAIN,mobads-logs.baidu.com
+DOMAIN,nsclick.baidu.com
 DOMAIN,wn.pos.baidu.com
 # > Alibaba
 DOMAIN,acs4baichuan.m.taobao.com
@@ -257,7 +259,6 @@ DOMAIN,pingma.qq.com
 DOMAIN,pingtcss.qq.com
 DOMAIN,splashqqlive.gtimg.com
 DOMAIN,tajs.qq.com
-DOMAIN,btrace.qq.com
 # >> 酷狗酷我
 DOMAIN,adserviceretry.kugou.com
 DOMAIN,ads.service.kugou.com
@@ -271,6 +272,7 @@ DOMAIN,mobilead.kuwo.cn
 DOMAIN,rich.kuwo.cn
 # > NetEase
 DOMAIN,ad.bn.netease.com
+DOMAIN,ad.yixin.im
 DOMAIN,iadmat.nosdn.127.net
 DOMAIN,iadmusicmat.music.126.net
 DOMAIN,iadmusicmatvideo.music.126.net
@@ -358,3 +360,13 @@ DOMAIN,adproxy.autohome.com.cn
 DOMAIN,rd.autohome.com.cn
 DOMAIN,al.autohome.com.cn
 DOMAIN,applogapi.autohome.com.cn
+# > 太平洋
+DOMAIN,ad-analysis.pconline.com.cn
+DOMAIN,iad0ssl.pcauto.com.cn
+DOMAIN,iad0ssl.pconline.com.cn
+DOMAIN,imgad0.pcauto.com.cn
+DOMAIN,imgad0.pconline.com.cn
+DOMAIN,ivy.pchouse.com.cn
+# > ZOL
+DOMAIN,apppv.zol.com.cn
+DOMAIN,pvnapp.zol.com.cn
