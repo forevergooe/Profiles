@@ -359,12 +359,12 @@ Rule:
 - DOMAIN-KEYWORD,jav,PROXY
 - DOMAIN-KEYWORD,pinterest,PROXY
 - DOMAIN-KEYWORD,porn,PROXY
-- DOMAIN-SUFFIX,appsto.re,PROXY // Apple URL Shortener
-- DOMAIN,itunes.apple.com,PROXY // App Store Preview
-- DOMAIN,books.itunes.apple.com,PROXY // iBooks Store download
-- DOMAIN,hls.itunes.apple.com,PROXY // iTunes Store Moveis Trailers
-- DOMAIN,lookup-api.apple.com,PROXY // Dictionary
-- DOMAIN,api-glb-sea.smoot.apple.com,PROXY // Spotlight
+- DOMAIN-SUFFIX,appsto.re,PROXY
+- DOMAIN,itunes.apple.com,PROXY
+- DOMAIN,books.itunes.apple.com,PROXY
+- DOMAIN,hls.itunes.apple.com,PROXY
+- DOMAIN,lookup-api.apple.com,PROXY
+- DOMAIN,api-glb-sea.smoot.apple.com,PROXY
 - DOMAIN-SUFFIX,abc.xyz,PROXY
 - DOMAIN-SUFFIX,android.com,PROXY
 - DOMAIN-SUFFIX,androidify.com,PROXY
@@ -410,9 +410,9 @@ Rule:
 - DOMAIN-SUFFIX,yt.be,PROXY
 - DOMAIN-SUFFIX,ytimg.com,PROXY
 - DOMAIN-SUFFIX,fb.com,PROXY
-- DOMAIN-SUFFIX,bing.com,PROXY // Bing International
+- DOMAIN-SUFFIX,bing.com,PROXY
 - DOMAIN-SUFFIX,cloudfront.net,PROXY
-- DOMAIN,ccmdl.adobe.com,PROXY // Adobe Download
+- DOMAIN,ccmdl.adobe.com,PROXY
 - IP-CIDR,91.108.4.0/22,PROXY
 - IP-CIDR,91.108.8.0/22,PROXY
 - IP-CIDR,91.108.56.0/22,PROXY
@@ -428,17 +428,16 @@ Rule:
 - DOMAIN-SUFFIX,icloud-content.com,DIRECT
 - DOMAIN-SUFFIX,me.com,DIRECT
 - DOMAIN-SUFFIX,mzstatic.com,DIRECT
-- DOMAIN-SUFFIX,itunes.apple.com,APPLE // App Store Download || iBooks Sample
-- DOMAIN,audio-ssl.itunes.apple.com,APPLE // Apple Music Preview
-- >-
-  DOMAIN,gspe1-ssl.ls.apple.com,APPLE // Apple News and Apple Map TOMTOM
+- DOMAIN-SUFFIX,itunes.apple.com,APPLE
+- DOMAIN,audio-ssl.itunes.apple.com,APPLE
+- DOMAIN,gspe1-ssl.ls.apple.com,APPLE
   Version
 - DOMAIN-SUFFIX,microsoft.com,DIRECT
 - DOMAIN-SUFFIX,windows.net,DIRECT
 - DOMAIN-SUFFIX,sfx.ms,DIRECT
-- DOMAIN-SUFFIX,storage.live.com,DIRECT // OneDrive
-- DOMAIN-SUFFIX,1drv.com,DIRECT // OneDrive
-- DOMAIN,officecdn-microsoft-com.akamaized.net,DIRECT // Microsoft AutoUpdate
+- DOMAIN-SUFFIX,storage.live.com,DIRECT
+- DOMAIN-SUFFIX,1drv.com,DIRECT
+- DOMAIN,officecdn-microsoft-com.akamaized.net,DIRECT
 - DOMAIN-SUFFIX,blizzard.com,DIRECT
 - DOMAIN-SUFFIX,battle.net,DIRECT
 - DOMAIN,blzddist1-a.akamaihd.net,DIRECT
@@ -457,11 +456,11 @@ Rule:
 - DOMAIN-SUFFIX,ipv6-test.com,DIRECT
 - DOMAIN-SUFFIX,test-ipv6.com,DIRECT
 - DOMAIN-SUFFIX,whatismyip.com,DIRECT
-- DOMAIN,ip.bjango.com,DIRECT // iStat Menu
+- DOMAIN,ip.bjango.com,DIRECT
 - DOMAIN-SUFFIX,fast.com,DIRECT
 - DOMAIN-SUFFIX,netspeedtestmaster.com,DIRECT
 - DOMAIN-SUFFIX,speedtest.net,DIRECT
-- DOMAIN-SUFFIX,akadns.net,DIRECT // Apple services
+- DOMAIN-SUFFIX,akadns.net,DIRECT
 - DOMAIN-SUFFIX,cloudflare.com,DIRECT
 - DOMAIN-SUFFIX,jd.hk,DIRECT
 - DOMAIN-SUFFIX,maoyun.tv,DIRECT
