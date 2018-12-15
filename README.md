@@ -51,15 +51,21 @@ Windows：[Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg)
 | 分流 - 回国版 | [QuantumultCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultCN.conf) |
 | 链接阻止      | [QuantumultRejection](https://raw.githubusercontent.com/ConnersHua/Profiles/master/QuantumultRejection.conf) |
 
+| Kitsunebi |                                                              |
+| --------- | ------------------------------------------------------------ |
+| 标准版    | [KitsunebiBasic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Kitsunebi/Basic.conf) |
+| 专业版    | [KitsunebiPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Kitsunebi/Pro.conf) |
+
 | Shadowrocket<br />Pepi(ShadowRay) | [Shadowrocket/Pepi 捷径](https://www.icloud.com/shortcuts/cc910e552547405c8dc54df04a678bd7) |
 | --------------------------------- | ------------------------------------------------------------ |
 | 标准版                            | [Shadow](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow.conf) |
 | 专业版                            | [ShadowPro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowPro.conf) |
 | 回国版                            | [ShadowCN](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ShadowCN.conf) |
 
-| Clash |                                                              |
-| ----- | ------------------------------------------------------------ |
-| Clash | [Clash](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Clash.yml) |
+| Clash  |                                                              |
+| ------ | ------------------------------------------------------------ |
+| 出国版 | [Global](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Clash/Global.yml) |
+| 回国版 | [China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Clash/China.yml) |
 
 ### 使用说明 & 常见问题
 
