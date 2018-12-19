@@ -4,7 +4,7 @@
 
 macOS：[Surge](https://nssurge.com/)、[ClashX](https://github.com/yichengchen/clashX)
 
-iOS：[Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8)、[Quantumult](https://itunes.apple.com/app/apple-store/id1252015438?mt=8)、[Kitsunebi](https://testflight.apple.com/join/2w6EF67u)、[Shadowrocket](https://itunes.apple.com/app/apple-store/id932747118?mt=8)、[Pepi(ShadowRay)](https://itunes.apple.com/app/apple-store/id1283082051?mt=8) 
+iOS：[Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8)、[Quantumult](https://itunes.apple.com/app/apple-store/id1252015438?mt=8)、[Kitsunebi](https://itunes.apple.com/us/app/kitsunebi-proxy-utility/id1446584073?ls=1&mt=8)、[Shadowrocket](https://itunes.apple.com/app/apple-store/id932747118?mt=8)、[Pepi(ShadowRay)](https://itunes.apple.com/app/apple-store/id1283082051?mt=8) 
 
 Windows：[Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg)
 
@@ -34,38 +34,14 @@ Windows：[Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg)
 
 **下载**
 
-| Surge 2 | [Surge 2 捷径](https://www.icloud.com/shortcuts/cf486fa3f7f44b288416bc501efaf613) |
-| ------- | ------------------------------------------------------------ |
-| 标准版  | [Basic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Basic.conf) |
-| 专业版  | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Pro.conf) |
-| 回国版  | [China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/China.conf) |
-
-| Surge 3  | [Surge 3 捷径](https://www.icloud.com/shortcuts/8a2c2c9649dd484eab2f7e727282732c) |
-| -------- | ------------------------------------------------------------ |
-| 多功能版 | [Surge3](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Surge3.conf) |
-
-| Quantumult    |                                                              |
-| ------------- | ------------------------------------------------------------ |
-| 分流 - 标准版 | [Basic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/Basic.conf) |
-| 分流 - 专业版 | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/Pro.conf) |
-| 分流 - 回国版 | [China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/China.conf) |
-| 链接阻止      | [Rejection](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/Rejection.conf) |
-
-| Kitsunebi |                                                              |
-| --------- | ------------------------------------------------------------ |
-| 标准版    | [Basic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Kitsunebi/Basic.conf) |
-| 专业版    | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Kitsunebi/Pro.conf) |
-
-| Shadowrocket<br />Pepi(ShadowRay) | [Shadowrocket/Pepi 捷径](https://www.icloud.com/shortcuts/6eb1214d7ae345b18fcec2c93d18785b) |
-| --------------------------------- | ------------------------------------------------------------ |
-| 标准版                            | [Basic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/Basic.conf) |
-| 专业版                            | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/Pro.conf) |
-| 回国版                            | [China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/China.conf) |
-
-| Clash  |                                                              |
-| ------ | ------------------------------------------------------------ |
-| 出国版 | [Global](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Clash/Global.yml) |
-| 回国版 | [China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Clash/China.yml) |
+| 应用                                                         | 标准版                                                       | 专业版                                                       | 回国版                                                       |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Surge 2 \| [捷径](https://www.icloud.com/shortcuts/cf486fa3f7f44b288416bc501efaf613) | [Basic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Basic.conf) | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Pro.conf) | [China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/China.conf) |
+| Surge 3 \| [捷径](https://www.icloud.com/shortcuts/8a2c2c9649dd484eab2f7e727282732c) | [Surge3](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Surge3.conf) | [Surge3](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Surge3.conf) | 无                                                           |
+| Quantumult                                                   | [Basic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/Basic.conf) | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/Pro.conf) [Rejection](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/Rejection.conf) | [ China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/China.conf) [Rejection](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/Rejection.conf) |
+| Kitsunebi                                                    | [Basic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Kitsunebi/Basic.conf) | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Kitsunebi/Pro.conf) | 无                                                           |
+| Shadowrocket \| [捷径](https://www.icloud.com/shortcuts/6eb1214d7ae345b18fcec2c93d18785b) Pepi(ShadowRay) \| [捷径](https://www.icloud.com/shortcuts/6eb1214d7ae345b18fcec2c93d18785b) | [Basic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/Basic.conf) | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/Pro.conf) | [China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/China.conf) |
+| Clash                                                        | [Global](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Clash/Global.yml) | [China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Clash/China.yml) | 无                                                           |
 
 ### 使用说明 & 常见问题
 
