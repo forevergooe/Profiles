@@ -18,8 +18,8 @@ DOMAIN-SUFFIX,storage.live.com // OneDrive
 DOMAIN-SUFFIX,1drv.com // OneDrive
 DOMAIN,officecdn-microsoft-com.akamaized.net // Microsoft AutoUpdate
 # > Tencent
-USER-AGENT,MicroMessenger Client // WeChat
-USER-AGENT,WeChat* // WeChat
+USER-AGENT,MicroMessenger Client
+USER-AGENT,WeChat*
 # > Blizzard
 DOMAIN-SUFFIX,blizzard.com
 DOMAIN-SUFFIX,battle.net

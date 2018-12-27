@@ -100,6 +100,7 @@ DOMAIN-SUFFIX,wsj.com
 DOMAIN-SUFFIX,wsj.net
 DOMAIN-SUFFIX,xvideos.com
 DOMAIN-SUFFIX,yahoo.com
+DOMAIN-SUFFIX,issuu.com
 DOMAIN,onedrive.live.com
 DOMAIN-KEYWORD,jav
 DOMAIN-KEYWORD,pinterest
@@ -108,11 +109,12 @@ DOMAIN-KEYWORD,porn
 # (The Most Popular Sites)
 # > Apple
 DOMAIN-SUFFIX,appsto.re // Apple URL Shortener
-DOMAIN,itunes.apple.com // App Store Preview
+DOMAIN,api-glb-sea.smoot.apple.com // Spotlight
+DOMAIN,beta.itunes.apple.com // TestFlight
 DOMAIN,books.itunes.apple.com // iBooks Store download
 DOMAIN,hls.itunes.apple.com // iTunes Store Moveis Trailers
+DOMAIN,itunes.apple.com // App Store Preview
 DOMAIN,lookup-api.apple.com // Dictionary
-DOMAIN,api-glb-sea.smoot.apple.com // Spotlight
 # > Google
 DOMAIN-SUFFIX,abc.xyz
 DOMAIN-SUFFIX,android.com
@@ -158,12 +160,18 @@ DOMAIN-SUFFIX,x.company
 DOMAIN-SUFFIX,youtu.be
 DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
+# > Steam
+DOMAIN,media.steampowered.com
+DOMAIN,store.steampowered.com
 # > Other
 DOMAIN-SUFFIX,fb.com
 DOMAIN-SUFFIX,bing.com // Bing International
 DOMAIN-SUFFIX,cloudfront.net
 DOMAIN-SUFFIX,newsblur.com
+DOMAIN-SUFFIX,520cc.cc
 DOMAIN,ccmdl.adobe.com // Adobe Download
+DOMAIN,wego.here.com
+DOMAIN-KEYWORD,github
 USER-AGENT,Roam* // JegoTrip
 # > Telegram
 IP-CIDR,91.108.4.0/22,no-resolve
