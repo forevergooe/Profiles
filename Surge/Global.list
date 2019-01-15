@@ -101,6 +101,7 @@ DOMAIN-SUFFIX,wsj.net
 DOMAIN-SUFFIX,xvideos.com
 DOMAIN-SUFFIX,yahoo.com
 DOMAIN-SUFFIX,issuu.com
+DOMAIN-SUFFIX,disqus.com
 DOMAIN,onedrive.live.com
 DOMAIN-KEYWORD,jav
 DOMAIN-KEYWORD,pinterest
@@ -165,10 +166,10 @@ DOMAIN,media.steampowered.com
 DOMAIN,store.steampowered.com
 # > Other
 DOMAIN-SUFFIX,fb.com
-DOMAIN-SUFFIX,bing.com // Bing International
+DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,cloudfront.net
 DOMAIN-SUFFIX,newsblur.com
-DOMAIN-SUFFIX,520cc.cc
+DOMAIN-SUFFIX,sparknotes.com
 DOMAIN,ccmdl.adobe.com // Adobe Download
 DOMAIN,wego.here.com
 DOMAIN-KEYWORD,github

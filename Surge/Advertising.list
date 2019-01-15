@@ -2,6 +2,7 @@
 # > General
 DOMAIN-KEYWORD,adservice
 DOMAIN-KEYWORD,analytics
+DOMAIN-KEYWORD,analysis
 
 DOMAIN-SUFFIX,3lift.com
 DOMAIN-SUFFIX,51.la
@@ -23,7 +24,7 @@ DOMAIN-SUFFIX,ads-twitter.com
 DOMAIN-SUFFIX,adsymptotic.com
 DOMAIN-SUFFIX,adtechus.com
 DOMAIN-SUFFIX,adtilt.com
-DOMAIN-SUFFIX,advertising.com
+DOMAIN-SUFFIX.com
 DOMAIN-SUFFIX,adview.cn
 DOMAIN-SUFFIX,adxpansion.com
 DOMAIN-SUFFIX,adxvip.com
@@ -186,6 +187,7 @@ DOMAIN,ad.qingting.fm
 DOMAIN,ad-cn.jovcloud.com
 DOMAIN,adsapi.manhuaren.com
 DOMAIN,adsdk.dmzj.com
+DOMAIN,ads.daydaycook.com.cn
 DOMAIN,adshow.58.com
 DOMAIN,adshows.21cn.com
 DOMAIN,adui.tg.meitu.com

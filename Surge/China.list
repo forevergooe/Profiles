@@ -1,5 +1,9 @@
 # China Area Network
 # > Apple
+DOMAIN-SUFFIX,itunes.apple.com,APPLE // App Store Download || iBooks Sample
+DOMAIN,audio-ssl.itunes.apple.com,APPLE // Apple Music Preview
+DOMAIN,gspe1-ssl.ls.apple.com,APPLE // Apple News and Apple Map TOMTOM Version
+USER-AGENT,AppleNews*,APPLE // Apple News
 DOMAIN-SUFFIX,aaplimg.com
 DOMAIN-SUFFIX,apple.co
 DOMAIN-SUFFIX,apple.com
@@ -14,8 +18,6 @@ DOMAIN-SUFFIX,mzstatic.com
 DOMAIN-SUFFIX,microsoft.com
 DOMAIN-SUFFIX,windows.net
 DOMAIN-SUFFIX,sfx.ms
-DOMAIN-SUFFIX,storage.live.com // OneDrive
-DOMAIN-SUFFIX,1drv.com // OneDrive
 DOMAIN,officecdn-microsoft-com.akamaized.net // Microsoft AutoUpdate
 # > Tencent
 USER-AGENT,MicroMessenger Client
@@ -43,12 +45,8 @@ DOMAIN-SUFFIX,ipv6-test.com
 DOMAIN-SUFFIX,test-ipv6.com
 DOMAIN-SUFFIX,whatismyip.com
 DOMAIN,ip.bjango.com // iStat Menu
-# > Internet Speed Test
-DOMAIN-SUFFIX,fast.com
-DOMAIN-SUFFIX,netspeedtestmaster.com
-DOMAIN-SUFFIX,speedtest.net
 # > Other
-DOMAIN-SUFFIX,akadns.net // Apple services
+DOMAIN-SUFFIX,akadns.net
 DOMAIN-SUFFIX,cloudflare.com
 DOMAIN-SUFFIX,jd.hk
 DOMAIN-SUFFIX,maoyun.tv

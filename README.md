@@ -6,8 +6,6 @@ macOS：[Surge](https://nssurge.com/)、[ClashX](https://github.com/yichengchen/
 
 iOS：[Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8)、[Quantumult](https://itunes.apple.com/app/apple-store/id1252015438?mt=8)、[Kitsunebi](https://itunes.apple.com/us/app/kitsunebi-proxy-utility/id1446584073?ls=1&mt=8)、[Shadowrocket](https://itunes.apple.com/app/apple-store/id932747118?mt=8)、[Pepi(ShadowRay)](https://itunes.apple.com/app/apple-store/id1283082051?mt=8) 
 
-Android：[BifrostV](https://play.google.com/store/apps/details?id=com.github.dawndiy.bifrostv)、[Kitsunebi](https://play.google.com/store/apps/details?id=fun.kitsunebi.kitsunebi4android)
-
 Windows：[Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg)
 
 ### 规则
@@ -40,7 +38,6 @@ Windows：[Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg)
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |                            Clash                             |                              无                              | [Global](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Clash/Global.yml) | [China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Clash/China.yml) |
 |                        Kitsunebi(iOS)                        | [Basic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Kitsunebi/Basic.conf) | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Kitsunebi/Pro.conf) |                              无                              |
-|               BifrostV<br />Kitsunebi(Android)               |                              无                              | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ProjectV/Pro.json) |                              无                              |
 |                          Quantumult                          | [Basic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/Basic.conf) | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/Pro.conf)<br />[Rejection](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/Rejection.conf) | [ China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/China.conf)<br />[Rejection](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/Rejection.conf) |
 | Shadowrocket \| [捷径](https://www.icloud.com/shortcuts/6eb1214d7ae345b18fcec2c93d18785b) <br />Pepi(ShadowRay) \| [捷径](https://www.icloud.com/shortcuts/6eb1214d7ae345b18fcec2c93d18785b) | [Basic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/Basic.conf) | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/Pro.conf) | [China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/China.conf) |
 | Surge 2 \| [捷径](https://www.icloud.com/shortcuts/cf486fa3f7f44b288416bc501efaf613) | [Basic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Basic.conf) | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Pro.conf) | [China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/China.conf) |
@@ -94,7 +91,7 @@ Windows：[Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg)
 
 1. 使用运营商 DNS 和公共 DNS 设置为「system,119.29.29.29,223.5.5.5」
 
-   说明：日常情况，在网络没有劫持的情况下。另外针对 Kitsunebi 最好加上国外 DNS（如 8.8.8.8,8.8.4.4）以避免 DNS 污染。
+   说明：日常情况，在网络没有劫持的情况下。
 
 2. 仅使用运营商 DNS 设置为「system」
 
@@ -110,7 +107,7 @@ Windows：[Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg)
 
 其次很多人觉得海外公共 DNS 干净，而实际情况是被污染的域名仍旧污染部分重灾区运营商还对海外 DNS 请求完全进行抢答，所以没有意义。
 
-#### 关于 Apple 和 Media 视听媒体服务加速策略
+#### 关于服务加速策略
 
 > 关于 Apple 服务加速？
 
@@ -126,9 +123,37 @@ Windows：[Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg)
 
 **支持**
 
-视频：Youtube、Netflix、HBO、Hulu、BBC iPlayer、Bahamut、myTV SUPER、AbemaTV
+视频：
 
-音乐：Spotify、JOOX
+- Youtube
+- Netflix
+- HBO
+- Hulu
+- BBC iPlayer
+- Bahamut
+- myTV SUPER
+- AbemaTV
+
+音乐：
+
+- Spotify
+- JOOX
+
+> 关于 Game 游戏服务加速？
+>
+
+仅支持 Quantumult、Surge，主要针对部分游戏指定特定节点，如没有特定节点则默认设置即可。
+
+游戏：
+
+**支持**
+
+- Boom Beach
+- Brawl Stars
+- Clash of Clans
+- Clash Royale
+- Hay Day
+- PUBG
 
 #### 关于去广告
 
