@@ -1,33 +1,210 @@
 {
-  "inbounds" : [
-    {
-      "protocol" : "http",
-      "streamSettings" : {
-
-      },
-      "settings" : {
-        "allowTransparent" : true
-      },
-      "port" : 1087,
-      "listen" : "127.0.0.1"
-    }
-  ],
   "policy" : {
     "levels" : {
-      "0" : {
-        "handshake" : 4,
-        "connIdle" : 5,
-        "uplinkOnly" : 0,
-        "downlinkOnly" : 0
-      },
       "2018" : {
-        "handshake" : 4,
+        "downlinkOnly" : 0,
         "connIdle" : 5,
-        "uplinkOnly" : 0,
-        "downlinkOnly" : 0
+        "handshake" : 4,
+        "uplinkOnly" : 0
+      },
+      "0" : {
+        "downlinkOnly" : 0,
+        "connIdle" : 5,
+        "handshake" : 4,
+        "uplinkOnly" : 0
       }
     }
   },
+  "dns" : {
+    "hosts" : {
+
+    },
+    "clientIp" : "202.96.209.133",
+    "servers" : [
+      "223.5.5.5",
+      "114.114.114.114",
+      {
+        "address" : "8.8.8.8",
+        "domains" : [
+          "domain:appspot.com",
+          "domain:blogger.com",
+          "domain:getoutline.org",
+          "domain:gvt0.com",
+          "domain:gvt1.com",
+          "domain:gvt3.com",
+          "domain:googleapis.com",
+          "domain:googlevideo.com",
+          "domain:youtube.com",
+          "domain:xn--ngstr-lra8j.com",
+          "google",
+          "blogspot",
+          "domain:cdninstagram.com",
+          "domain:fb.me",
+          "domain:fbcdn.net",
+          "domain:instagram.com",
+          "domain:messenger.com",
+          "domain:whatsapp.com",
+          "domain:whatsapp.net",
+          "domain:oculus.com",
+          "domain:oculuscdn.com",
+          "facebook",
+          "domain:t.co",
+          "domain:twimg.co",
+          "domain:twimg.com",
+          "domain:twitpic.com",
+          "domain:twitter.com",
+          "domain:line.me",
+          "domain:line-apps.com",
+          "domain:line-scdn.net",
+          "domain:naver.jp",
+          "domain:abc.net.au",
+          "domain:amazon.co.jp",
+          "domain:apk-dl.com",
+          "domain:apkpure.com",
+          "domain:ask.com",
+          "domain:avgle.com",
+          "domain:bandwagonhost.com",
+          "domain:bbc.com",
+          "domain:behance.net",
+          "domain:bibox.com",
+          "domain:binance.com",
+          "domain:bitfinex.com",
+          "domain:booklive.jp",
+          "domain:bwh1.net",
+          "domain:cbc.ca",
+          "domain:dailymotion.com",
+          "domain:deezer.com",
+          "domain:discordapp.net",
+          "domain:dropbox.com",
+          "domain:dropboxusercontent.com",
+          "domain:duckduckgo.com",
+          "domain:feedly.com",
+          "domain:flickr.com",
+          "domain:gate.io",
+          "domain:goodreads.com",
+          "domain:hbg.com",
+          "domain:huobi.pro",
+          "domain:initiummall.com",
+          "domain:jkforum.net",
+          "domain:kakao.com",
+          "domain:medium.com",
+          "domain:mega.nz",
+          "domain:naver.com",
+          "domain:nyt.com",
+          "domain:nytco.com",
+          "domain:nytimes.com",
+          "domain:nytstyle.com",
+          "domain:ok.ru",
+          "domain:okex.com",
+          "domain:pinimg.com",
+          "domain:pixiv.net",
+          "domain:pornhub.com",
+          "domain:quora.com",
+          "domain:reddit.com",
+          "domain:redditmedia.com",
+          "domain:reuters.com",
+          "domain:scribd.com",
+          "domain:shadowsocks.org",
+          "domain:slideshare.net",
+          "domain:soundcloud.com",
+          "domain:steamcommunity.com",
+          "domain:telegram.org",
+          "domain:theinitium.com",
+          "domain:tineye.com",
+          "domain:tumblr.com",
+          "domain:turbobit.net",
+          "domain:twitch.tv",
+          "domain:uptodown.com",
+          "domain:v2ray.com",
+          "domain:vimeo.com",
+          "domain:vine.co",
+          "domain:voachinese.com",
+          "domain:whoer.net",
+          "domain:wikipedia.org",
+          "domain:wsj.com",
+          "domain:wsj.net",
+          "domain:xvideos.com",
+          "domain:yahoo.com",
+          "domain:issuu.com",
+          "domain:disqus.com",
+          "full:onedrive.live.com",
+          "jav",
+          "pinterest",
+          "porn"
+        ],
+        "port" : 53
+      }
+    ]
+  },
+  "outbounds" : [
+    {
+      "tag" : "proxy",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "v2ray.cool",
+            "port" : 443,
+            "users" : [
+              {
+                "id" : "a3482e88-686a-4a58-8126-99c9df64b7bf",
+                "alterId" : 64,
+                "security" : "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "security" : "tls",
+        "network" : "ws",
+        "wsSettings" : {
+          "path" : "\/v2ray.cool\/",
+          "headers" : {
+            "Host" : "v2ray.cool"
+          }
+        },
+        "tlsSettings" : {
+          "allowInsecure" : true
+        }
+      },
+      "protocol" : "vmess",
+      "mux" : {
+        "enabled" : true,
+        "concurrency" : 8
+      }
+    },
+    {
+      "tag" : "direct",
+      "settings" : {
+        "userLevel" : 2018,
+        "domainStrategy" : "UseIP"
+      },
+      "streamSettings" : {
+
+      },
+      "protocol" : "freedom"
+    },
+    {
+      "tag" : "block",
+      "protocol" : "blackhole",
+      "settings" : {
+
+      }
+    }
+  ],
+  "inbounds" : [
+    {
+      "port" : 1087,
+      "settings" : {
+        "allowTransparent" : true
+      },
+      "listen" : "127.0.0.1",
+      "streamSettings" : {
+
+      },
+      "protocol" : "http"
+    }
+  ],
   "routing" : {
     "rules" : [
       {
@@ -39,10 +216,11 @@
           "208.67.222.222\/32",
           "208.67.220.220\/32"
         ],
-        "outboundTag" : "proxy",
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "proxy"
       },
       {
+        "outboundTag" : "block",
         "domain" : [
           "adservice",
           "analytics",
@@ -333,7 +511,6 @@
           "full:msg.71.am",
           "full:msg.qy.net"
         ],
-        "outboundTag" : "block",
         "type" : "field"
       },
       {
@@ -343,10 +520,11 @@
           "101.227.200.28\/32",
           "124.192.153.42\/32"
         ],
-        "outboundTag" : "block",
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "block"
       },
       {
+        "outboundTag" : "block",
         "domain" : [
           "domain:ads.sohu.com",
           "domain:aty.sohu.com",
@@ -489,7 +667,6 @@
           "domain:zhenxinet.com",
           "domain:zzd6.com"
         ],
-        "outboundTag" : "block",
         "type" : "field"
       },
       {
@@ -532,27 +709,19 @@
           "220.115.251.25\/32",
           "222.73.156.235\/32"
         ],
-        "outboundTag" : "block",
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "block"
       },
       {
+        "outboundTag" : "proxy",
         "domain" : [
           "full:content.jwplatform.com",
           "full:videos-f.jwpsrv.com"
         ],
-        "outboundTag" : "proxy",
         "type" : "field"
       },
       {
-        "type" : "field",
         "outboundTag" : "proxy",
-        "userAgent" : [
-          "*youtube*",
-          "YouTube*",
-          "Argo*"
-        ]
-      },
-      {
         "domain" : [
           "domain:netflix.com",
           "domain:netflix.net",
@@ -562,143 +731,78 @@
           "domain:nflxso.net",
           "domain:nflxvideo.net"
         ],
-        "outboundTag" : "proxy",
         "type" : "field"
       },
       {
-        "type" : "field",
         "outboundTag" : "proxy",
-        "userAgent" : [
-          "HBO%20NOW*"
-        ]
-      },
-      {
         "domain" : [
           "domain:hbo.com",
           "domain:hbogo.com"
         ],
-        "outboundTag" : "proxy",
         "type" : "field"
       },
       {
-        "type" : "field",
         "outboundTag" : "proxy",
-        "userAgent" : [
-          "Hulu*"
-        ]
-      },
-      {
         "domain" : [
           "domain:hulu.com",
           "domain:huluim.com",
           "domain:happyon.jp"
         ],
-        "outboundTag" : "proxy",
         "type" : "field"
       },
       {
-        "type" : "field",
         "outboundTag" : "proxy",
-        "userAgent" : [
-          "BBCiPlayer*"
-        ]
-      },
-      {
         "domain" : [
           "bbcfmt",
           "uk-live"
         ],
-        "outboundTag" : "proxy",
         "type" : "field"
       },
       {
-        "type" : "field",
         "outboundTag" : "proxy",
-        "userAgent" : [
-          "Anime*"
-        ]
-      },
-      {
         "domain" : [
           "domain:bahamut.com.tw",
           "domain:gamer.com.tw",
           "domain:hinet.net"
         ],
-        "outboundTag" : "proxy",
         "type" : "field"
       },
       {
-        "type" : "field",
         "outboundTag" : "proxy",
-        "userAgent" : [
-          "mytv*"
-        ]
-      },
-      {
         "domain" : [
           "domain:mytvsuper.com",
           "domain:tvb.com"
         ],
-        "outboundTag" : "proxy",
         "type" : "field"
       },
       {
-        "type" : "field",
         "outboundTag" : "proxy",
-        "userAgent" : [
-          "AbemaTV*"
-        ]
-      },
-      {
         "domain" : [
           "domain:abema.io",
           "domain:ameba.jp",
           "domain:hayabusa.io",
           "full:linear-abematv.akamaized.net"
         ],
-        "outboundTag" : "proxy",
         "type" : "field"
       },
       {
-        "type" : "field",
         "outboundTag" : "proxy",
-        "userAgent" : [
-          "encoreTVB*",
-          "Spotify*"
-        ]
-      },
-      {
         "domain" : [
           "domain:scdn.co",
           "domain:spotify.com",
           "domain:spoti.fi"
         ],
-        "outboundTag" : "proxy",
         "type" : "field"
       },
       {
-        "type" : "field",
         "outboundTag" : "proxy",
-        "userAgent" : [
-          "WeMusic*",
-          "JOOX*"
-        ]
-      },
-      {
         "domain" : [
           "domain:joox.com"
         ],
-        "outboundTag" : "proxy",
         "type" : "field"
       },
       {
-        "type" : "field",
         "outboundTag" : "proxy",
-        "userAgent" : [
-          "BrawlStars*"
-        ]
-      },
-      {
         "domain" : [
           "domain:appsto.re",
           "full:api-glb-sea.smoot.apple.com",
@@ -763,15 +867,7 @@
           "full:wego.here.com",
           "github"
         ],
-        "outboundTag" : "proxy",
         "type" : "field"
-      },
-      {
-        "type" : "field",
-        "outboundTag" : "proxy",
-        "userAgent" : [
-          "Roam*"
-        ]
       },
       {
         "ip" : [
@@ -781,10 +877,11 @@
           "109.239.140.0\/24",
           "149.154.160.0\/20"
         ],
-        "outboundTag" : "proxy",
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "proxy"
       },
       {
+        "outboundTag" : "direct",
         "domain" : [
           "domain:aaplimg.com",
           "domain:apple.co",
@@ -801,18 +898,10 @@
           "domain:sfx.ms",
           "full:officecdn-microsoft-com.akamaized.net"
         ],
-        "outboundTag" : "direct",
         "type" : "field"
       },
       {
-        "type" : "field",
         "outboundTag" : "direct",
-        "userAgent" : [
-          "MicroMessenger Client",
-          "WeChat*"
-        ]
-      },
-      {
         "domain" : [
           "domain:blizzard.com",
           "domain:battle.net",
@@ -840,205 +929,17 @@
           "domain:teamviewer.com",
           "domain:udacity.com"
         ],
-        "outboundTag" : "direct",
         "type" : "field"
-      },
-      {
-        "type" : "field",
-        "outboundTag" : "direct",
-        "userAgent" : [
-          "NeteaseMusic*",
-          "%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*"
-        ]
       },
       {
         "ip" : [
           "geoip:private"
         ],
-        "outboundTag" : "direct",
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "direct"
       }
     ],
-    "domainStrategy" : "IPIfNonMatch"
-  },
-  "dns" : {
-    "hosts" : {
-
-    },
-    "servers" : [
-      "223.5.5.5",
-      "114.114.114.114",
-      {
-        "domains" : [
-          "domain:appspot.com",
-          "domain:blogger.com",
-          "domain:getoutline.org",
-          "domain:gvt0.com",
-          "domain:gvt1.com",
-          "domain:gvt3.com",
-          "domain:googleapis.com",
-          "domain:googlevideo.com",
-          "domain:youtube.com",
-          "domain:xn--ngstr-lra8j.com",
-          "google",
-          "blogspot",
-          "domain:cdninstagram.com",
-          "domain:fb.me",
-          "domain:fbcdn.net",
-          "domain:instagram.com",
-          "domain:messenger.com",
-          "domain:whatsapp.com",
-          "domain:whatsapp.net",
-          "domain:oculus.com",
-          "domain:oculuscdn.com",
-          "facebook",
-          "domain:t.co",
-          "domain:twimg.co",
-          "domain:twimg.com",
-          "domain:twitpic.com",
-          "domain:twitter.com",
-          "domain:line.me",
-          "domain:line-apps.com",
-          "domain:line-scdn.net",
-          "domain:naver.jp",
-          "domain:abc.net.au",
-          "domain:amazon.co.jp",
-          "domain:apk-dl.com",
-          "domain:apkpure.com",
-          "domain:ask.com",
-          "domain:avgle.com",
-          "domain:bandwagonhost.com",
-          "domain:bbc.com",
-          "domain:behance.net",
-          "domain:bibox.com",
-          "domain:binance.com",
-          "domain:bitfinex.com",
-          "domain:booklive.jp",
-          "domain:bwh1.net",
-          "domain:cbc.ca",
-          "domain:dailymotion.com",
-          "domain:deezer.com",
-          "domain:discordapp.net",
-          "domain:dropbox.com",
-          "domain:dropboxusercontent.com",
-          "domain:duckduckgo.com",
-          "domain:feedly.com",
-          "domain:flickr.com",
-          "domain:gate.io",
-          "domain:goodreads.com",
-          "domain:hbg.com",
-          "domain:huobi.pro",
-          "domain:initiummall.com",
-          "domain:jkforum.net",
-          "domain:kakao.com",
-          "domain:medium.com",
-          "domain:mega.nz",
-          "domain:naver.com",
-          "domain:nyt.com",
-          "domain:nytco.com",
-          "domain:nytimes.com",
-          "domain:nytstyle.com",
-          "domain:ok.ru",
-          "domain:okex.com",
-          "domain:pinimg.com",
-          "domain:pixiv.net",
-          "domain:pornhub.com",
-          "domain:quora.com",
-          "domain:reddit.com",
-          "domain:redditmedia.com",
-          "domain:reuters.com",
-          "domain:scribd.com",
-          "domain:shadowsocks.org",
-          "domain:slideshare.net",
-          "domain:soundcloud.com",
-          "domain:steamcommunity.com",
-          "domain:telegram.org",
-          "domain:theinitium.com",
-          "domain:tineye.com",
-          "domain:tumblr.com",
-          "domain:turbobit.net",
-          "domain:twitch.tv",
-          "domain:uptodown.com",
-          "domain:v2ray.com",
-          "domain:vimeo.com",
-          "domain:vine.co",
-          "domain:voachinese.com",
-          "domain:whoer.net",
-          "domain:wikipedia.org",
-          "domain:wsj.com",
-          "domain:wsj.net",
-          "domain:xvideos.com",
-          "domain:yahoo.com",
-          "domain:issuu.com",
-          "domain:disqus.com",
-          "full:onedrive.live.com",
-          "jav",
-          "pinterest",
-          "porn"
-        ],
-        "address" : "8.8.8.8",
-        "port" : 53
-      }
-    ],
-    "clientIp" : "202.96.209.133"
-  },
-  "outbounds" : [
-    {
-      "protocol" : "vmess",
-      "mux" : {
-        "concurrency" : 8,
-        "enabled" : true
-      },
-      "streamSettings" : {
-        "wsSettings" : {
-          "path" : "\/v2ray.cool\/",
-          "headers" : {
-            "Host" : "v2ray.cool"
-          }
-        },
-        "security" : "tls",
-        "network" : "ws",
-        "tlsSettings" : {
-          "allowInsecure" : true
-        }
-      },
-      "settings" : {
-        "vnext" : [
-          {
-            "users" : [
-              {
-                "security" : "none",
-                "alterId" : 64,
-                "id" : "a3482e88-686a-4a58-8126-99c9df64b7bf"
-              }
-            ],
-            "address" : "v2ray.cool",
-            "port" : 443
-          }
-        ]
-      },
-      "tag" : "proxy"
-    },
-    {
-      "protocol" : "freedom",
-      "streamSettings" : {
-
-      },
-      "settings" : {
-        "domainStrategy" : "UseIP",
-        "userLevel" : 2018
-      },
-      "tag" : "direct"
-    },
-    {
-      "tag" : "block",
-      "protocol" : "blackhole",
-      "settings" : {
-
-      }
-    }
-  ],
-  "log" : {
-    "loglevel" : "none"
+    "domainStrategy" : "IPIfNonMatch",
+    "strategy" : "rules"
   }
 }
