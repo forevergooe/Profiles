@@ -1,30 +1,15 @@
 {
-  "policy" : {
-    "levels" : {
-      "2018" : {
-        "downlinkOnly" : 0,
-        "connIdle" : 5,
-        "handshake" : 4,
-        "uplinkOnly" : 0
-      },
-      "0" : {
-        "downlinkOnly" : 0,
-        "connIdle" : 5,
-        "handshake" : 4,
-        "uplinkOnly" : 0
-      }
-    }
-  },
   "dns" : {
-    "hosts" : {
-
-    },
-    "clientIp" : "202.96.209.133",
     "servers" : [
-      "223.5.5.5",
+      {
+        "domains" : [
+          "geosite:cn"
+        ],
+        "address" : "223.5.5.5",
+        "port" : 53
+      },
       "114.114.114.114",
       {
-        "address" : "8.8.8.8",
         "domains" : [
           "domain:appspot.com",
           "domain:blogger.com",
@@ -132,82 +117,106 @@
           "pinterest",
           "porn"
         ],
+        "address" : "8.8.8.8",
         "port" : 53
       }
-    ]
+    ],
+    "hosts" : {
+
+    },
+    "clientIp" : "202.96.209.133"
   },
+  "inbounds" : [
+    {
+      "protocol" : "http",
+      "streamSettings" : {
+
+      },
+      "settings" : {
+        "allowTransparent" : true
+      },
+      "listen" : "127.0.0.1",
+      "port" : 1087
+    }
+  ],
   "outbounds" : [
     {
+      "mux" : {
+        "concurrency" : 8,
+        "enabled" : true
+      },
+      "protocol" : "vmess",
+      "streamSettings" : {
+        "wsSettings" : {
+          "headers" : {
+            "Host" : "v2ray.cool"
+          },
+          "path" : "\/v2ray.cool\/"
+        },
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : true
+        }
+      },
       "tag" : "proxy",
       "settings" : {
         "vnext" : [
           {
-            "address" : "v2ray.cool",
-            "port" : 443,
             "users" : [
               {
                 "id" : "a3482e88-686a-4a58-8126-99c9df64b7bf",
                 "alterId" : 64,
                 "security" : "none"
               }
-            ]
+            ],
+            "address" : "v2ray.cool",
+            "port" : 443
           }
         ]
-      },
-      "streamSettings" : {
-        "security" : "tls",
-        "network" : "ws",
-        "wsSettings" : {
-          "path" : "\/v2ray.cool\/",
-          "headers" : {
-            "Host" : "v2ray.cool"
-          }
-        },
-        "tlsSettings" : {
-          "allowInsecure" : true
-        }
-      },
-      "protocol" : "vmess",
-      "mux" : {
-        "enabled" : true,
-        "concurrency" : 8
       }
     },
     {
+      "protocol" : "freedom",
+      "streamSettings" : {
+
+      },
       "tag" : "direct",
       "settings" : {
         "userLevel" : 2018,
         "domainStrategy" : "UseIP"
-      },
-      "streamSettings" : {
-
-      },
-      "protocol" : "freedom"
+      }
     },
     {
-      "tag" : "block",
       "protocol" : "blackhole",
+      "tag" : "block",
       "settings" : {
 
       }
     }
   ],
-  "inbounds" : [
-    {
-      "port" : 1087,
-      "settings" : {
-        "allowTransparent" : true
+  "policy" : {
+    "levels" : {
+      "2018" : {
+        "connIdle" : 5,
+        "handshake" : 4,
+        "downlinkOnly" : 0,
+        "uplinkOnly" : 0
       },
-      "listen" : "127.0.0.1",
-      "streamSettings" : {
-
-      },
-      "protocol" : "http"
+      "0" : {
+        "connIdle" : 5,
+        "handshake" : 4,
+        "downlinkOnly" : 0,
+        "uplinkOnly" : 0
+      }
     }
-  ],
+  },
   "routing" : {
+    "strategy" : "rules",
+    "domainStrategy" : "IPIfNonMatch",
     "rules" : [
       {
+        "outboundTag" : "proxy",
         "ip" : [
           "1.1.1.1\/32",
           "1.0.0.1\/32",
@@ -216,8 +225,7 @@
           "208.67.222.222\/32",
           "208.67.220.220\/32"
         ],
-        "type" : "field",
-        "outboundTag" : "proxy"
+        "type" : "field"
       },
       {
         "outboundTag" : "block",
@@ -514,14 +522,14 @@
         "type" : "field"
       },
       {
+        "outboundTag" : "block",
         "ip" : [
           "101.227.97.240\/32",
           "101.227.200.11\/32",
           "101.227.200.28\/32",
           "124.192.153.42\/32"
         ],
-        "type" : "field",
-        "outboundTag" : "block"
+        "type" : "field"
       },
       {
         "outboundTag" : "block",
@@ -670,6 +678,7 @@
         "type" : "field"
       },
       {
+        "outboundTag" : "block",
         "ip" : [
           "39.107.15.115\/32",
           "47.89.59.182\/32",
@@ -709,8 +718,7 @@
           "220.115.251.25\/32",
           "222.73.156.235\/32"
         ],
-        "type" : "field",
-        "outboundTag" : "block"
+        "type" : "field"
       },
       {
         "outboundTag" : "proxy",
@@ -870,6 +878,7 @@
         "type" : "field"
       },
       {
+        "outboundTag" : "proxy",
         "ip" : [
           "91.108.4.0\/22",
           "91.108.8.0\/22",
@@ -877,8 +886,7 @@
           "109.239.140.0\/24",
           "149.154.160.0\/20"
         ],
-        "type" : "field",
-        "outboundTag" : "proxy"
+        "type" : "field"
       },
       {
         "outboundTag" : "direct",
@@ -932,14 +940,13 @@
         "type" : "field"
       },
       {
+        "outboundTag" : "direct",
         "ip" : [
+          "geoip:cn",
           "geoip:private"
         ],
-        "type" : "field",
-        "outboundTag" : "direct"
+        "type" : "field"
       }
-    ],
-    "domainStrategy" : "IPIfNonMatch",
-    "strategy" : "rules"
+    ]
   }
 }
