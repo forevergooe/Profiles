@@ -22,6 +22,7 @@ DOMAIN,officecdn-microsoft-com.akamaized.net // Microsoft AutoUpdate
 # > Tencent
 USER-AGENT,MicroMessenger Client
 USER-AGENT,WeChat*
+DOMAIN-SUFFIX,qq.com
 # > Blizzard
 DOMAIN-SUFFIX,blizzard.com
 DOMAIN-SUFFIX,battle.net

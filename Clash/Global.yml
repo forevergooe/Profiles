@@ -483,6 +483,8 @@ Rule:
 - DOMAIN-SUFFIX,windows.net,DIRECT
 - DOMAIN-SUFFIX,sfx.ms,DIRECT
 - DOMAIN,officecdn-microsoft-com.akamaized.net,DIRECT
+# > Tencent
+- DOMAIN-SUFFIX,qq.com,DIRECT
 # > Blizzard
 - DOMAIN-SUFFIX,blizzard.com,DIRECT
 - DOMAIN-SUFFIX,battle.net,DIRECT
