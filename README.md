@@ -174,6 +174,8 @@ Booui、liceva – 完善 Google Play IP 段
 
 [JO2EY](https://github.com/JO2EY) - 完善 Media 策略组
 
+[Choler](https://github.com/Choler) - Tiktok封区解锁
+
 ### 许可
 
 转载需注明作者及项目地址
