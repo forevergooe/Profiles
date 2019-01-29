@@ -90,7 +90,7 @@ Windows：[Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg)
 
 **建议**
 
-1. 使用运营商 DNS 和公共 DNS 设置为「system,119.29.29.29,223.5.5.5」
+1. 使用运营商 DNS 和公共 DNS 设置为「117.50.10.10,119.29.29.29,223.5.5.5,system」
 
    说明：日常情况，在网络没有劫持的情况下。
 
@@ -98,7 +98,7 @@ Windows：[Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg)
 
    说明：若网络存在劫持 DNS（亦称为抢答或污染）如长城宽带和部分中国移动宽带的情况下不使用公共 DNS。
 
-3. 仅使用公共 DNS设置为「119.29.29.29,223.5.5.5」
+3. 仅使用公共 DNS设置为「117.50.10.10,119.29.29.29,223.5.5.5」
 
    说明：若运营商 DNS 解析不准确或网络存在 DNS 劫持（但不是劫持 DNS）不使用运营商 DNS。
 
@@ -139,22 +139,6 @@ Windows：[Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg)
 
 - Spotify
 - JOOX
-
-> 关于 Game 游戏服务加速？
->
-
-仅支持 Quantumult、Surge，主要针对部分游戏指定特定节点，如没有特定节点则默认设置即可。
-
-游戏：
-
-**支持**
-
-- Boom Beach
-- Brawl Stars
-- Clash of Clans
-- Clash Royale
-- Hay Day
-- PUBG
 
 #### 关于去广告
 

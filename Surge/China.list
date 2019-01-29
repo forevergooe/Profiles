@@ -1,9 +1,5 @@
 # China Area Network
 # > Apple
-DOMAIN-SUFFIX,itunes.apple.com,APPLE // App Store Download || iBooks Sample
-DOMAIN,audio-ssl.itunes.apple.com,APPLE // Apple Music Preview
-DOMAIN,gspe1-ssl.ls.apple.com,APPLE // Apple News and Apple Map TOMTOM Version
-USER-AGENT,AppleNews*,APPLE // Apple News
 DOMAIN-SUFFIX,aaplimg.com
 DOMAIN-SUFFIX,apple.co
 DOMAIN-SUFFIX,apple.com
@@ -19,10 +15,6 @@ DOMAIN-SUFFIX,microsoft.com
 DOMAIN-SUFFIX,windows.net
 DOMAIN-SUFFIX,sfx.ms
 DOMAIN,officecdn-microsoft-com.akamaized.net // Microsoft AutoUpdate
-# > Tencent
-USER-AGENT,MicroMessenger Client
-USER-AGENT,WeChat*
-DOMAIN-SUFFIX,qq.com
 # > Blizzard
 DOMAIN-SUFFIX,blizzard.com
 DOMAIN-SUFFIX,battle.net
@@ -33,12 +25,59 @@ DOMAIN-SUFFIX,steam-chat.com
 DOMAIN,steamcdn-a.akamaihd.net
 DOMAIN,steamuserimages-a.akamaihd.net
 DOMAIN,steamstore-a.akamaihd.net
+# > Tencent
+USER-AGENT,MicroMessenger Client
+USER-AGENT,WeChat*
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,qpic.cn
+# > Alibaba
+DOMAIN-SUFFIX,alibaba.com
+DOMAIN-SUFFIX,alicdn.com
+DOMAIN-SUFFIX,amap.com
+DOMAIN-SUFFIX,taobao.com
+DOMAIN-SUFFIX,tmall.com
+DOMAIN-SUFFIX,ykimg.com
+DOMAIN-SUFFIX,youku.com
+DOMAIN-SUFFIX,xiami.com
+DOMAIN-SUFFIX,xiami.net
+# > NetEase
+DOMAIN-SUFFIX,163.com
+DOMAIN-SUFFIX,126.net
+DOMAIN-SUFFIX,163yun.com
+# > Sohu
+DOMAIN-SUFFIX,sohu.com.cn
+DOMAIN-SUFFIX,itc.cn
+DOMAIN-SUFFIX,sohu.com
+DOMAIN-SUFFIX,v-56.com
+# > Sina
+DOMAIN-SUFFIX,weibo.com
+# > JD
+DOMAIN-SUFFIX,jd.com
+DOMAIN-SUFFIX,jd.hk
+DOMAIN-SUFFIX,360buyimg.com
+# > MI
+DOMAIN-SUFFIX,mi-img.com
+DOMAIN-SUFFIX,mifile.cn
+# > bilibili
+DOMAIN-SUFFIX,acgvideo.com
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,hdslb.com
+# > iQiyi
+DOMAIN-SUFFIX,iqiyi.com
+DOMAIN-SUFFIX,iqiyipic.com
+# > HunanTV
+DOMAIN-SUFFIX,hitv.com
+DOMAIN-SUFFIX,mgtv.com
+# > Meitu
+DOMAIN-SUFFIX,meitudata.com
+DOMAIN-SUFFIX,meipai.com
 # > YYeTs
 DOMAIN-SUFFIX,zmzapi.com
 DOMAIN-SUFFIX,zimuzu.tv
 DOMAIN-SUFFIX,zmzfile.com
 DOMAIN-SUFFIX,zmzapi.net
 # > IP Query
+DOMAIN-SUFFIX,ipip.net
 DOMAIN-SUFFIX,ip.cn
 DOMAIN-SUFFIX,ip.la
 DOMAIN-SUFFIX,ip-cdn.com
@@ -48,11 +87,16 @@ DOMAIN-SUFFIX,whatismyip.com
 DOMAIN,ip.bjango.com // iStat Menu
 # > Other
 DOMAIN-SUFFIX,akadns.net
-DOMAIN-SUFFIX,cloudflare.com
-DOMAIN-SUFFIX,jd.hk
 DOMAIN-SUFFIX,maoyun.tv
 DOMAIN-SUFFIX,teamviewer.com
 DOMAIN-SUFFIX,udacity.com
+DOMAIN-SUFFIX,cmvideo.cn
+DOMAIN-SUFFIX,xmcdn.com
+DOMAIN-SUFFIX,sogou.com
+DOMAIN-SUFFIX,myzaker.com
+DOMAIN-SUFFIX,zhihu.com
+DOMAIN-SUFFIX,zhimg.com
+DOMAIN-SUFFIX,smzdm.com
 USER-AGENT,NeteaseMusic*
 USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*
 

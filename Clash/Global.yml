@@ -15,7 +15,7 @@ mode: Rule
 
 # 设置日志输出级别 (默认级别：info，级别越高日志输出量越大，越倾向于调试)
 # 四个级别：info / warning / error / debug
-log-level: info
+log-level: silent
 
 # Clash 的 RESTful API
 external-controller: 127.0.0.1:9090
@@ -27,6 +27,7 @@ dns:
   listen: 0.0.0.0:53
   # enhanced-mode: redir-host
   nameserver:
+    - 117.50.10.10
     - 119.29.29.29
     - 223.5.5.5
     - tls://dns.rubyfish.cn:853 # dns over tls
@@ -36,6 +37,7 @@ dns:
 
 # 代理节点
 Proxy:
+# 更多协议配置示例：https://github.com/Dreamacro/clash/blob/master/README.md
 # Shadowsocks
 # 加密算法推荐：AEAD_AES_128_GCM AEAD_AES_192_GCM AEAD_AES_256_GCM AEAD_CHACHA20_POLY1305
 - { name: "1", type: ss, server: 1.2.4.8, port: 443, cipher: AEAD_CHACHA20_POLY1305, password: "password" }
@@ -47,6 +49,8 @@ Proxy:
 # 代理组策略
 Proxy Group:
 - { name: "PROXY", type: select, proxies: ["1", "2", "3"] }
+# 白名单模式 PROXY，黑名单模式 DIRECT
+- { name: "MODE", type: select, proxies: ["PROXY", "DIRECT"] }
 - { name: "APPLE", type: select, proxies: ["DIRECT", "PROXY"] }
 - { name: "MEDIA", type: select, proxies: ["1", "2", "3"] }
 - { name: "HIJACKING", type: select, proxies: ["DIRECT", "REJECT"] }
@@ -276,6 +280,8 @@ Rule:
 - DOMAIN-SUFFIX,ameba.jp,MEDIA
 - DOMAIN-SUFFIX,hayabusa.io,MEDIA
 - DOMAIN,linear-abematv.akamaized.net,MEDIA
+# > iQiyiTW
+- DOMAIN-SUFFIX,tw.iqiyi.com,MEDIA
 # (Music)
 # > Spotify
 - DOMAIN-SUFFIX,scdn.co,MEDIA
@@ -283,6 +289,8 @@ Rule:
 - DOMAIN-SUFFIX,spoti.fi,MEDIA
 # > JOOX
 - DOMAIN-SUFFIX,joox.com,MEDIA
+# > Pandora
+- DOMAIN-SUFFIX,pandora.com,MEDIA
 # (DNS Cache Pollution Protection)
 # > Google
 - DOMAIN-SUFFIX,appspot.com,PROXY
@@ -296,6 +304,7 @@ Rule:
 - DOMAIN-KEYWORD,blogspot,PROXY
 # > Facebook
 - DOMAIN-SUFFIX,cdninstagram.com,PROXY
+- DOMAIN-SUFFIX,fb.com,PROXY
 - DOMAIN-SUFFIX,fb.me,PROXY
 - DOMAIN-SUFFIX,fbcdn.net,PROXY
 - DOMAIN-SUFFIX,instagram.com,PROXY
@@ -310,7 +319,7 @@ Rule:
 - DOMAIN-SUFFIX,twimg.co,PROXY
 - DOMAIN-SUFFIX,twimg.com,PROXY
 - DOMAIN-SUFFIX,twitpic.com,PROXY
-- DOMAIN-SUFFIX,twitter.com,PROXY
+- DOMAIN-KEYWORD,twitter,PROXY
 # > Line
 - DOMAIN-SUFFIX,line.me,PROXY
 - DOMAIN-SUFFIX,line-apps.com,PROXY
@@ -332,19 +341,25 @@ Rule:
 - DOMAIN-SUFFIX,booklive.jp,PROXY
 - DOMAIN-SUFFIX,bwh1.net,PROXY
 - DOMAIN-SUFFIX,cbc.ca,PROXY
+- DOMAIN-SUFFIX,comparitech.com,PROXY
 - DOMAIN-SUFFIX,dailymotion.com,PROXY
+- DOMAIN-SUFFIX,deepdiscount.com,PROXY
 - DOMAIN-SUFFIX,deezer.com,PROXY
+- DOMAIN-SUFFIX,discordapp.com,PROXY
 - DOMAIN-SUFFIX,discordapp.net,PROXY
+- DOMAIN-SUFFIX,disqus.com,PROXY
 - DOMAIN-SUFFIX,dropbox.com,PROXY
 - DOMAIN-SUFFIX,dropboxusercontent.com,PROXY
 - DOMAIN-SUFFIX,duckduckgo.com,PROXY
 - DOMAIN-SUFFIX,feedly.com,PROXY
 - DOMAIN-SUFFIX,flickr.com,PROXY
+- DOMAIN-SUFFIX,flitto.com,PROXY
 - DOMAIN-SUFFIX,gate.io,PROXY
 - DOMAIN-SUFFIX,goodreads.com,PROXY
 - DOMAIN-SUFFIX,hbg.com,PROXY
 - DOMAIN-SUFFIX,huobi.pro,PROXY
 - DOMAIN-SUFFIX,initiummall.com,PROXY
+- DOMAIN-SUFFIX,issuu.com,PROXY
 - DOMAIN-SUFFIX,jkforum.net,PROXY
 - DOMAIN-SUFFIX,kakao.com,PROXY
 - DOMAIN-SUFFIX,medium.com,PROXY
@@ -360,6 +375,7 @@ Rule:
 - DOMAIN-SUFFIX,pixiv.net,PROXY
 - DOMAIN-SUFFIX,pornhub.com,PROXY
 - DOMAIN-SUFFIX,quora.com,PROXY
+- DOMAIN-SUFFIX,rakuten.co.jp,PROXY
 - DOMAIN-SUFFIX,reddit.com,PROXY
 - DOMAIN-SUFFIX,redditmedia.com,PROXY
 - DOMAIN-SUFFIX,reuters.com,PROXY
@@ -367,6 +383,7 @@ Rule:
 - DOMAIN-SUFFIX,shadowsocks.org,PROXY
 - DOMAIN-SUFFIX,slideshare.net,PROXY
 - DOMAIN-SUFFIX,soundcloud.com,PROXY
+- DOMAIN-SUFFIX,startpage.com,PROXY
 - DOMAIN-SUFFIX,steamcommunity.com,PROXY
 - DOMAIN-SUFFIX,telegram.org,PROXY
 - DOMAIN-SUFFIX,theinitium.com,PROXY
@@ -385,12 +402,52 @@ Rule:
 - DOMAIN-SUFFIX,wsj.net,PROXY
 - DOMAIN-SUFFIX,xvideos.com,PROXY
 - DOMAIN-SUFFIX,yahoo.com,PROXY
-- DOMAIN-SUFFIX,issuu.com,PROXY
-- DOMAIN-SUFFIX,disqus.com,PROXY
 - DOMAIN,onedrive.live.com,PROXY
 - DOMAIN-KEYWORD,jav,PROXY
 - DOMAIN-KEYWORD,pinterest,PROXY
 - DOMAIN-KEYWORD,porn,PROXY
+# (Region-Restricted Access Denied)
+- DOMAIN-SUFFIX,apartmentratings.com,PROXY
+- DOMAIN-SUFFIX,apartments.com,PROXY
+- DOMAIN-SUFFIX,bankmobilevibe.com,PROXY
+- DOMAIN-SUFFIX,bing.com,PROXY
+- DOMAIN-SUFFIX,booktopia.com.au,PROXY
+- DOMAIN-SUFFIX,centauro.com.br,PROXY
+- DOMAIN-SUFFIX,clearsurance.com,PROXY
+- DOMAIN-SUFFIX,costco.com,PROXY
+- DOMAIN-SUFFIX,dish.com,PROXY
+- DOMAIN-SUFFIX,dmm.co.jp,PROXY
+- DOMAIN-SUFFIX,dmm.com,PROXY
+- DOMAIN-SUFFIX,dnvod.tv,PROXY
+- DOMAIN-SUFFIX,esurance.com,PROXY
+- DOMAIN-SUFFIX,extmatrix.com,PROXY
+- DOMAIN-SUFFIX,fastpic.ru,PROXY
+- DOMAIN-SUFFIX,flipboard.com,PROXY
+- DOMAIN-SUFFIX,fnac.be,PROXY
+- DOMAIN-SUFFIX,fnac.com,PROXY
+- DOMAIN-SUFFIX,funkyimg.com,PROXY
+- DOMAIN-SUFFIX,fxnetworks.com,PROXY
+- DOMAIN-SUFFIX,gettyimages.com,PROXY
+- DOMAIN-SUFFIX,jcpenney.com,PROXY
+- DOMAIN-SUFFIX,kkbox.com,PROXY
+- DOMAIN-SUFFIX,nationwide.com,PROXY
+- DOMAIN-SUFFIX,nbc.com,PROXY
+- DOMAIN-SUFFIX,nordstrom.com,PROXY
+- DOMAIN-SUFFIX,nordstromimage.com,PROXY
+- DOMAIN-SUFFIX,nordstromrack.com,PROXY
+- DOMAIN-SUFFIX,superpages.com,PROXY
+- DOMAIN-SUFFIX,target.com,PROXY
+- DOMAIN-SUFFIX,thinkgeek.com,PROXY
+- DOMAIN-SUFFIX,tracfone.com,PROXY
+- DOMAIN-SUFFIX,uploader.jp,PROXY
+- DOMAIN-SUFFIX,vevo.com,PROXY
+- DOMAIN-SUFFIX,viu.tv,PROXY
+- DOMAIN-SUFFIX,vk.com,PROXY
+- DOMAIN-SUFFIX,vsco.co,PROXY
+- DOMAIN-SUFFIX,xfinity.com,PROXY
+- DOMAIN-SUFFIX,zattoo.com,PROXY
+- DOMAIN,wego.here.com,PROXY
+
 # (The Most Popular Sites)
 # > Apple
 - DOMAIN-SUFFIX,appsto.re,PROXY
@@ -449,13 +506,10 @@ Rule:
 - DOMAIN,media.steampowered.com,PROXY
 - DOMAIN,store.steampowered.com,PROXY
 # > Other
-- DOMAIN-SUFFIX,fb.com,PROXY
-- DOMAIN-SUFFIX,bing.com,PROXY
 - DOMAIN-SUFFIX,cloudfront.net,PROXY
 - DOMAIN-SUFFIX,newsblur.com,PROXY
 - DOMAIN-SUFFIX,sparknotes.com,PROXY
-- DOMAIN,ccmdl.adobe.com,PROXY
-- DOMAIN,wego.here.com,PROXY
+- DOMAIN-SUFFIX,x-art.com,PROXY
 - DOMAIN-KEYWORD,github,PROXY
 # > Telegram
 - IP-CIDR,91.108.4.0/22,PROXY
@@ -463,6 +517,7 @@ Rule:
 - IP-CIDR,91.108.56.0/22,PROXY
 - IP-CIDR,109.239.140.0/24,PROXY
 - IP-CIDR,149.154.160.0/20,PROXY
+
 # China Area Network
 # > Apple
 - DOMAIN-SUFFIX,itunes.apple.com,APPLE
@@ -483,8 +538,6 @@ Rule:
 - DOMAIN-SUFFIX,windows.net,DIRECT
 - DOMAIN-SUFFIX,sfx.ms,DIRECT
 - DOMAIN,officecdn-microsoft-com.akamaized.net,DIRECT
-# > Tencent
-- DOMAIN-SUFFIX,qq.com,DIRECT
 # > Blizzard
 - DOMAIN-SUFFIX,blizzard.com,DIRECT
 - DOMAIN-SUFFIX,battle.net,DIRECT
@@ -495,12 +548,57 @@ Rule:
 - DOMAIN,steamcdn-a.akamaihd.net,DIRECT
 - DOMAIN,steamuserimages-a.akamaihd.net,DIRECT
 - DOMAIN,steamstore-a.akamaihd.net,DIRECT
+# > Tencent
+- DOMAIN-SUFFIX,qq.com,DIRECT
+- DOMAIN-SUFFIX,qpic.cn,DIRECT
+# > Alibaba
+- DOMAIN-SUFFIX,alibaba.com,DIRECT
+- DOMAIN-SUFFIX,alicdn.com,DIRECT
+- DOMAIN-SUFFIX,amap.com,DIRECT
+- DOMAIN-SUFFIX,taobao.com,DIRECT
+- DOMAIN-SUFFIX,tmall.com,DIRECT
+- DOMAIN-SUFFIX,ykimg.com,DIRECT
+- DOMAIN-SUFFIX,youku.com,DIRECT
+- DOMAIN-SUFFIX,xiami.com,DIRECT
+- DOMAIN-SUFFIX,xiami.net,DIRECT
+# > NetEase
+- DOMAIN-SUFFIX,163.com,DIRECT
+- DOMAIN-SUFFIX,126.net,DIRECT
+- DOMAIN-SUFFIX,163yun.com,DIRECT
+# > Sohu
+- DOMAIN-SUFFIX,sohu.com.cn,DIRECT
+- DOMAIN-SUFFIX,itc.cn,DIRECT
+- DOMAIN-SUFFIX,sohu.com,DIRECT
+- DOMAIN-SUFFIX,v-56.com,DIRECT
+# > Sina
+- DOMAIN-SUFFIX,weibo.com,DIRECT
+# > JD
+- DOMAIN-SUFFIX,jd.com,DIRECT
+- DOMAIN-SUFFIX,jd.hk,DIRECT
+- DOMAIN-SUFFIX,360buyimg.com,DIRECT
+# > MI
+- DOMAIN-SUFFIX,mi-img.com,DIRECT
+- DOMAIN-SUFFIX,mifile.cn,DIRECT
+# > bilibili
+- DOMAIN-SUFFIX,acgvideo.com,DIRECT
+- DOMAIN-SUFFIX,bilibili.com,DIRECT
+- DOMAIN-SUFFIX,hdslb.com,DIRECT
+# > iQiyi
+- DOMAIN-SUFFIX,iqiyi.com,DIRECT
+- DOMAIN-SUFFIX,iqiyipic.com,DIRECT
+# > HunanTV
+- DOMAIN-SUFFIX,hitv.com,DIRECT
+- DOMAIN-SUFFIX,mgtv.com,DIRECT
+# > Meitu
+- DOMAIN-SUFFIX,meitudata.com,DIRECT
+- DOMAIN-SUFFIX,meipai.com,DIRECT
 # > YYeTs
 - DOMAIN-SUFFIX,zmzapi.com,DIRECT
 - DOMAIN-SUFFIX,zimuzu.tv,DIRECT
 - DOMAIN-SUFFIX,zmzfile.com,DIRECT
 - DOMAIN-SUFFIX,zmzapi.net,DIRECT
 # > IP Query
+- DOMAIN-SUFFIX,ipip.net,DIRECT
 - DOMAIN-SUFFIX,ip.cn,DIRECT
 - DOMAIN-SUFFIX,ip.la,DIRECT
 - DOMAIN-SUFFIX,ip-cdn.com,DIRECT
@@ -510,11 +608,17 @@ Rule:
 - DOMAIN,ip.bjango.com,DIRECT
 # > Other
 - DOMAIN-SUFFIX,akadns.net,DIRECT
-- DOMAIN-SUFFIX,cloudflare.com,DIRECT
-- DOMAIN-SUFFIX,jd.hk,DIRECT
 - DOMAIN-SUFFIX,maoyun.tv,DIRECT
 - DOMAIN-SUFFIX,teamviewer.com,DIRECT
 - DOMAIN-SUFFIX,udacity.com,DIRECT
+- DOMAIN-SUFFIX,cmvideo.cn,DIRECT
+- DOMAIN-SUFFIX,xmcdn.com,DIRECT
+- DOMAIN-SUFFIX,sogou.com,DIRECT
+- DOMAIN-SUFFIX,myzaker.com,DIRECT
+- DOMAIN-SUFFIX,zhihu.com,DIRECT
+- DOMAIN-SUFFIX,zhimg.com,DIRECT
+- DOMAIN-SUFFIX,smzdm.com,DIRECT
+
 # Local Area Network
 - DOMAIN-SUFFIX,local,DIRECT
 - IP-CIDR,192.168.0.0/16,DIRECT
@@ -522,7 +626,54 @@ Rule:
 - IP-CIDR,172.16.0.0/12,DIRECT
 - IP-CIDR,127.0.0.0/8,DIRECT
 - IP-CIDR,100.64.0.0/10,DIRECT
+
+# (Extra IP-CIRD)
+# > Google
+- IP-CIDR,35.190.247.0/24,PROXY
+- IP-CIDR,64.233.160.0/19,PROXY
+- IP-CIDR,66.102.0.0/20,PROXY
+- IP-CIDR,66.249.80.0/20,PROXY
+- IP-CIDR,72.14.192.0/18,PROXY
+- IP-CIDR,74.125.0.0/16,PROXY
+- IP-CIDR,108.177.8.0/21,PROXY
+- IP-CIDR,172.217.0.0/16,PROXY
+- IP-CIDR,173.194.0.0/16,PROXY
+- IP-CIDR,209.85.128.0/17,PROXY
+- IP-CIDR,216.58.192.0/19,PROXY
+- IP-CIDR,216.239.32.0/19,PROXY
+# Facebook
+- IP-CIDR,31.13.24.0/21,PROXY
+- IP-CIDR,31.13.64.0/18,PROXY
+- IP-CIDR,45.64.40.0/22,PROXY
+- IP-CIDR,66.220.144.0/20,PROXY
+- IP-CIDR,69.63.176.0/20,PROXY
+- IP-CIDR,69.171.224.0/19,PROXY
+- IP-CIDR,74.119.76.0/22,PROXY
+- IP-CIDR,103.4.96.0/22,PROXY
+- IP-CIDR,129.134.0.0/17,PROXY
+- IP-CIDR,157.240.0.0/17,PROXY
+- IP-CIDR,173.252.64.0/19,PROXY
+- IP-CIDR,173.252.96.0/19,PROXY
+- IP-CIDR,179.60.192.0/22,PROXY
+- IP-CIDR,185.60.216.0/22,PROXY
+- IP-CIDR,204.15.20.0/22,PROXY
+# Twitter
+- IP-CIDR,69.195.160.0/19,PROXY
+- IP-CIDR,104.244.42.0/21,PROXY
+- IP-CIDR,192.133.76.0/22,PROXY
+- IP-CIDR,199.16.156.0/22,PROXY
+- IP-CIDR,199.59.148.0/22,PROXY
+- IP-CIDR,199.96.56.0/21,PROXY
+- IP-CIDR,202.160.128.0/22,PROXY
+- IP-CIDR,209.237.192.0/19,PROXY
+# > Other
+- IP-CIDR,68.71.240.0/20,PROXY
+- IP-CIDR,72.27.224.0/19,PROXY
+- IP-CIDR,81.169.128.0/17,PROXY
+- IP-CIDR,151.138.0.0/16,PROXY
+- IP-CIDR,190.86.0.0/16,PROXY
+- IP-CIDR,199.87.52.0/22,PROXY
 # GeoIP China
 - GEOIP,CN,DIRECT
 # Final
-- MATCH,PROXY
+- MATCH,MODE

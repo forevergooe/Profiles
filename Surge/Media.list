@@ -49,6 +49,8 @@ DOMAIN-SUFFIX,hayabusa.io
 DOMAIN,linear-abematv.akamaized.net
 # > encoreTVB
 USER-AGENT,encoreTVB*
+# > iQiyiTW
+DOMAIN-SUFFIX,tw.iqiyi.com
 
 # (Music)
 # > Spotify
@@ -60,3 +62,5 @@ DOMAIN-SUFFIX,spoti.fi
 USER-AGENT,WeMusic*
 USER-AGENT,JOOX*
 DOMAIN-SUFFIX,joox.com
+# > Pandora
+DOMAIN-SUFFIX,pandora.com

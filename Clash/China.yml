@@ -14,8 +14,8 @@ allow-lan: false
 mode: Rule
 
 # 设置日志输出级别 (默认级别：info，级别越高日志输出量越大，越倾向于调试)
-# 四个级别：info / warning / error / debug
-log-level: info
+# 四个级别：info / warning / error / debug / silent
+log-level: silent
 
 # Clash 的 RESTful API
 external-controller: 127.0.0.1:9090
@@ -27,6 +27,7 @@ dns:
   listen: 0.0.0.0:53
   # enhanced-mode: redir-host
   nameserver:
+  - 117.50.10.10
   - 119.29.29.29
   - 223.5.5.5
   - tls://dns.rubyfish.cn:853 # dns over tls
@@ -36,6 +37,7 @@ dns:
 
 # 代理节点
 Proxy:
+# 更多协议配置示例：https://github.com/Dreamacro/clash/blob/master/README.md
 # Shadowsocks
 # 加密算法推荐：AEAD_AES_128_GCM AEAD_AES_192_GCM AEAD_AES_256_GCM AEAD_CHACHA20_POLY1305
 - { name: "1", type: ss, server: 1.2.4.8, port: 443, cipher: AEAD_CHACHA20_POLY1305, password: "password" }
@@ -47,37 +49,52 @@ Proxy:
 # 代理组策略
 Proxy Group:
 - { name: "PROXY", type: select, proxies: ["1", "2", "3"] }
-- { name: "MODE", type: select, proxies: ["PROXY", "DIRECT"] }
 - { name: "AUTO", type: url-test, proxies: ["1", "2", "3"], url: http://www.gstatic.com/generate_204, interval: 300 }
 
 # 规则
 Rule:
+# (Video)
+# AcFun
 - DOMAIN-SUFFIX,acfun.cn,PROXY
 - DOMAIN-SUFFIX,acfun.com,PROXY
 - DOMAIN-SUFFIX,aixifan.com,PROXY
+# > bilibili
 - DOMAIN-SUFFIX,acgvideo.com,PROXY
 - DOMAIN-SUFFIX,bilibili.com,PROXY
 - DOMAIN-SUFFIX,hdslb.com,PROXY
+# > HunanTV
+- DOMAIN-SUFFIX,hitv.com,PROXY
 - DOMAIN-SUFFIX,hunantv.com,PROXY
 - DOMAIN-SUFFIX,mgtv.com,PROXY
+# > Migu
 - DOMAIN-SUFFIX,cmvideo.cn,PROXY
 - DOMAIN-SUFFIX,migu.cn,PROXY
 - DOMAIN-SUFFIX,miguvideo.com,PROXY
+# > iQiyi
 - DOMAIN-SUFFIX,iqiyi.com,PROXY
 - DOMAIN-SUFFIX,iqiyipic.com,PROXY
 - DOMAIN-SUFFIX,qy.net,PROXY
+# > Sohu
 - DOMAIN-SUFFIX,sohu.com,PROXY
 - DOMAIN-SUFFIX,sohu.com.cn,PROXY
+- DOMAIN-SUFFIX,itc.cn,PROXY
+- DOMAIN-SUFFIX,v-56.com,PROXY
+# > Tencent
 - DOMAIN-SUFFIX,video.qq.com,PROXY
+# > Youku
 - DOMAIN-SUFFIX,soku.com,PROXY
 - DOMAIN-SUFFIX,youku.com,PROXY
 - DOMAIN-SUFFIX,ykimg.com,PROXY
+# (Music)
+# > Alibaba
 - DOMAIN-SUFFIX,xiami.com,PROXY
 - DOMAIN-SUFFIX,xiami.net,PROXY
+# > Netease
 - DOMAIN-SUFFIX,music.126.net,PROXY
 - DOMAIN-SUFFIX,music.163.com,PROXY
+# > Tencent
 - DOMAIN-SUFFIX,qqmusic.qq.com,PROXY
 - DOMAIN-SUFFIX,y.qq.com,PROXY
 - DOMAIN,aqqmusic.tc.qq.com,PROXY
-- GEOIP,CN,MODE
+- GEOIP,CN,PROXY
 - MATCH,DIRECT

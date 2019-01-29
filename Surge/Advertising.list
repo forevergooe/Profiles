@@ -168,6 +168,7 @@ DOMAIN-SUFFIX,ssl2.duapps.com
 DOMAIN-SUFFIX,unityads.unity3d.com
 DOMAIN,log.umsns.com
 DOMAIN,log.snssdk.com
+DOMAIN,toblog.snssdk.com
 DOMAIN,wgo.mmstat.com
 DOMAIN,report.jpush.cn
 DOMAIN,static.jpush.cn
@@ -313,6 +314,7 @@ DOMAIN-SUFFIX,aty.sohu.com
 DOMAIN,imp.optaim.com
 DOMAIN,v2.reachmax.cn
 DOMAIN,track.sohu.com
+DOMAIN,hui.sohu.com
 # > HunanTV
 DOMAIN-SUFFIX,da.mgtv.com
 DOMAIN-SUFFIX,da.hunantv.com
@@ -379,3 +381,6 @@ DOMAIN,adfile.wifi8.com
 # > 百词斩
 DOMAIN,advertise.baicizhan.org
 DOMAIN,advertise.baicizhan.com
+# > The Paper
+DOMAIN,imgadpai.thepaper.cn
+DOMAIN,admonitor.thepaper.cn

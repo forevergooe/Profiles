@@ -11,6 +11,7 @@ DOMAIN-KEYWORD,google
 DOMAIN-KEYWORD,blogspot
 # > Facebook
 DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,fb.com
 DOMAIN-SUFFIX,fb.me
 DOMAIN-SUFFIX,fbcdn.net
 DOMAIN-SUFFIX,instagram.com
@@ -25,7 +26,7 @@ DOMAIN-SUFFIX,t.co
 DOMAIN-SUFFIX,twimg.co
 DOMAIN-SUFFIX,twimg.com
 DOMAIN-SUFFIX,twitpic.com
-DOMAIN-SUFFIX,twitter.com
+DOMAIN-KEYWORD,twitter
 # > Line
 DOMAIN-SUFFIX,line.me
 DOMAIN-SUFFIX,line-apps.com
@@ -47,19 +48,25 @@ DOMAIN-SUFFIX,bitfinex.com
 DOMAIN-SUFFIX,booklive.jp
 DOMAIN-SUFFIX,bwh1.net
 DOMAIN-SUFFIX,cbc.ca
+DOMAIN-SUFFIX,comparitech.com
 DOMAIN-SUFFIX,dailymotion.com
+DOMAIN-SUFFIX,deepdiscount.com
 DOMAIN-SUFFIX,deezer.com
+DOMAIN-SUFFIX,discordapp.com
 DOMAIN-SUFFIX,discordapp.net
+DOMAIN-SUFFIX,disqus.com
 DOMAIN-SUFFIX,dropbox.com
 DOMAIN-SUFFIX,dropboxusercontent.com
 DOMAIN-SUFFIX,duckduckgo.com
 DOMAIN-SUFFIX,feedly.com
 DOMAIN-SUFFIX,flickr.com
+DOMAIN-SUFFIX,flitto.com
 DOMAIN-SUFFIX,gate.io
 DOMAIN-SUFFIX,goodreads.com
 DOMAIN-SUFFIX,hbg.com
 DOMAIN-SUFFIX,huobi.pro
 DOMAIN-SUFFIX,initiummall.com
+DOMAIN-SUFFIX,issuu.com
 DOMAIN-SUFFIX,jkforum.net
 DOMAIN-SUFFIX,kakao.com
 DOMAIN-SUFFIX,medium.com
@@ -75,6 +82,7 @@ DOMAIN-SUFFIX,pinimg.com
 DOMAIN-SUFFIX,pixiv.net
 DOMAIN-SUFFIX,pornhub.com
 DOMAIN-SUFFIX,quora.com
+DOMAIN-SUFFIX,rakuten.co.jp
 DOMAIN-SUFFIX,reddit.com
 DOMAIN-SUFFIX,redditmedia.com
 DOMAIN-SUFFIX,reuters.com
@@ -82,6 +90,7 @@ DOMAIN-SUFFIX,scribd.com
 DOMAIN-SUFFIX,shadowsocks.org
 DOMAIN-SUFFIX,slideshare.net
 DOMAIN-SUFFIX,soundcloud.com
+DOMAIN-SUFFIX,startpage.com
 DOMAIN-SUFFIX,steamcommunity.com
 DOMAIN-SUFFIX,telegram.org
 DOMAIN-SUFFIX,theinitium.com
@@ -100,12 +109,53 @@ DOMAIN-SUFFIX,wsj.com
 DOMAIN-SUFFIX,wsj.net
 DOMAIN-SUFFIX,xvideos.com
 DOMAIN-SUFFIX,yahoo.com
-DOMAIN-SUFFIX,issuu.com
-DOMAIN-SUFFIX,disqus.com
 DOMAIN,onedrive.live.com
 DOMAIN-KEYWORD,jav
 DOMAIN-KEYWORD,pinterest
 DOMAIN-KEYWORD,porn
+
+# (Region-Restricted Access Denied)
+DOMAIN-SUFFIX,apartmentratings.com
+DOMAIN-SUFFIX,apartments.com
+DOMAIN-SUFFIX,bankmobilevibe.com
+DOMAIN-SUFFIX,bing.com
+DOMAIN-SUFFIX,booktopia.com.au
+DOMAIN-SUFFIX,centauro.com.br
+DOMAIN-SUFFIX,clearsurance.com
+DOMAIN-SUFFIX,costco.com
+DOMAIN-SUFFIX,dish.com
+DOMAIN-SUFFIX,dmm.co.jp
+DOMAIN-SUFFIX,dmm.com
+DOMAIN-SUFFIX,dnvod.tv
+DOMAIN-SUFFIX,esurance.com
+DOMAIN-SUFFIX,extmatrix.com
+DOMAIN-SUFFIX,fastpic.ru
+DOMAIN-SUFFIX,flipboard.com
+DOMAIN-SUFFIX,fnac.be
+DOMAIN-SUFFIX,fnac.com
+DOMAIN-SUFFIX,funkyimg.com
+DOMAIN-SUFFIX,fxnetworks.com
+DOMAIN-SUFFIX,gettyimages.com
+DOMAIN-SUFFIX,jcpenney.com
+DOMAIN-SUFFIX,kkbox.com
+DOMAIN-SUFFIX,nationwide.com
+DOMAIN-SUFFIX,nbc.com
+DOMAIN-SUFFIX,nordstrom.com
+DOMAIN-SUFFIX,nordstromimage.com
+DOMAIN-SUFFIX,nordstromrack.com
+DOMAIN-SUFFIX,superpages.com
+DOMAIN-SUFFIX,target.com
+DOMAIN-SUFFIX,thinkgeek.com
+DOMAIN-SUFFIX,tracfone.com
+DOMAIN-SUFFIX,uploader.jp
+DOMAIN-SUFFIX,vevo.com
+DOMAIN-SUFFIX,viu.tv
+DOMAIN-SUFFIX,vk.com
+DOMAIN-SUFFIX,vsco.co
+DOMAIN-SUFFIX,xfinity.com
+DOMAIN-SUFFIX,zattoo.com
+DOMAIN,wego.here.com
+USER-AGENT,Roam* // JegoTrip
 
 # (The Most Popular Sites)
 # > Apple
@@ -164,16 +214,16 @@ DOMAIN-SUFFIX,ytimg.com
 # > Steam
 DOMAIN,media.steampowered.com
 DOMAIN,store.steampowered.com
+# > Supercell
+DOMAIN-SUFFIX,brawlstars.com
+DOMAIN-SUFFIX,brawlstarsgame.com
+DOMAIN-SUFFIX,supercell.com
 # > Other
-DOMAIN-SUFFIX,fb.com
-DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,cloudfront.net
 DOMAIN-SUFFIX,newsblur.com
 DOMAIN-SUFFIX,sparknotes.com
-DOMAIN,ccmdl.adobe.com // Adobe Download
-DOMAIN,wego.here.com
+DOMAIN-SUFFIX,x-art.com
 DOMAIN-KEYWORD,github
-USER-AGENT,Roam* // JegoTrip
 # > Telegram
 IP-CIDR,91.108.4.0/22,no-resolve
 IP-CIDR,91.108.8.0/22,no-resolve
