@@ -1,222 +1,8 @@
 {
-  "dns" : {
-    "servers" : [
-      {
-        "domains" : [
-          "geosite:cn"
-        ],
-        "address" : "223.5.5.5",
-        "port" : 53
-      },
-      "114.114.114.114",
-      {
-        "domains" : [
-          "domain:appspot.com",
-          "domain:blogger.com",
-          "domain:getoutline.org",
-          "domain:gvt0.com",
-          "domain:gvt1.com",
-          "domain:gvt3.com",
-          "domain:googleapis.com",
-          "domain:googlevideo.com",
-          "domain:youtube.com",
-          "domain:xn--ngstr-lra8j.com",
-          "google",
-          "blogspot",
-          "domain:cdninstagram.com",
-          "domain:fb.me",
-          "domain:fbcdn.net",
-          "domain:instagram.com",
-          "domain:messenger.com",
-          "domain:whatsapp.com",
-          "domain:whatsapp.net",
-          "domain:oculus.com",
-          "domain:oculuscdn.com",
-          "facebook",
-          "domain:t.co",
-          "domain:twimg.co",
-          "domain:twimg.com",
-          "domain:twitpic.com",
-          "domain:twitter.com",
-          "domain:line.me",
-          "domain:line-apps.com",
-          "domain:line-scdn.net",
-          "domain:naver.jp",
-          "domain:abc.net.au",
-          "domain:amazon.co.jp",
-          "domain:apk-dl.com",
-          "domain:apkpure.com",
-          "domain:ask.com",
-          "domain:avgle.com",
-          "domain:bandwagonhost.com",
-          "domain:bbc.com",
-          "domain:behance.net",
-          "domain:bibox.com",
-          "domain:binance.com",
-          "domain:bitfinex.com",
-          "domain:booklive.jp",
-          "domain:bwh1.net",
-          "domain:cbc.ca",
-          "domain:dailymotion.com",
-          "domain:deezer.com",
-          "domain:discordapp.net",
-          "domain:dropbox.com",
-          "domain:dropboxusercontent.com",
-          "domain:duckduckgo.com",
-          "domain:feedly.com",
-          "domain:flickr.com",
-          "domain:gate.io",
-          "domain:goodreads.com",
-          "domain:hbg.com",
-          "domain:huobi.pro",
-          "domain:initiummall.com",
-          "domain:jkforum.net",
-          "domain:kakao.com",
-          "domain:medium.com",
-          "domain:mega.nz",
-          "domain:naver.com",
-          "domain:nyt.com",
-          "domain:nytco.com",
-          "domain:nytimes.com",
-          "domain:nytstyle.com",
-          "domain:ok.ru",
-          "domain:okex.com",
-          "domain:pinimg.com",
-          "domain:pixiv.net",
-          "domain:pornhub.com",
-          "domain:quora.com",
-          "domain:reddit.com",
-          "domain:redditmedia.com",
-          "domain:reuters.com",
-          "domain:scribd.com",
-          "domain:shadowsocks.org",
-          "domain:slideshare.net",
-          "domain:soundcloud.com",
-          "domain:steamcommunity.com",
-          "domain:telegram.org",
-          "domain:theinitium.com",
-          "domain:tineye.com",
-          "domain:tumblr.com",
-          "domain:turbobit.net",
-          "domain:twitch.tv",
-          "domain:uptodown.com",
-          "domain:v2ray.com",
-          "domain:vimeo.com",
-          "domain:vine.co",
-          "domain:voachinese.com",
-          "domain:whoer.net",
-          "domain:wikipedia.org",
-          "domain:wsj.com",
-          "domain:wsj.net",
-          "domain:xvideos.com",
-          "domain:yahoo.com",
-          "domain:issuu.com",
-          "domain:disqus.com",
-          "full:onedrive.live.com",
-          "jav",
-          "pinterest",
-          "porn"
-        ],
-        "address" : "8.8.8.8",
-        "port" : 53
-      }
-    ],
-    "hosts" : {
-
-    },
-    "clientIp" : "202.96.209.133"
-  },
-  "inbounds" : [
-    {
-      "protocol" : "http",
-      "streamSettings" : {
-
-      },
-      "settings" : {
-        "allowTransparent" : true
-      },
-      "listen" : "127.0.0.1",
-      "port" : 1087
-    }
-  ],
-  "outbounds" : [
-    {
-      "mux" : {
-        "concurrency" : 8,
-        "enabled" : true
-      },
-      "protocol" : "vmess",
-      "streamSettings" : {
-        "wsSettings" : {
-          "headers" : {
-            "Host" : "v2ray.cool"
-          },
-          "path" : "\/v2ray.cool\/"
-        },
-        "network" : "ws",
-        "security" : "tls",
-        "tlsSettings" : {
-          "allowInsecure" : true
-        }
-      },
-      "tag" : "proxy",
-      "settings" : {
-        "vnext" : [
-          {
-            "users" : [
-              {
-                "id" : "a3482e88-686a-4a58-8126-99c9df64b7bf",
-                "alterId" : 64,
-                "security" : "none"
-              }
-            ],
-            "address" : "v2ray.cool",
-            "port" : 443
-          }
-        ]
-      }
-    },
-    {
-      "protocol" : "freedom",
-      "streamSettings" : {
-
-      },
-      "tag" : "direct",
-      "settings" : {
-        "userLevel" : 2018,
-        "domainStrategy" : "UseIP"
-      }
-    },
-    {
-      "protocol" : "blackhole",
-      "tag" : "block",
-      "settings" : {
-
-      }
-    }
-  ],
-  "policy" : {
-    "levels" : {
-      "2018" : {
-        "connIdle" : 5,
-        "handshake" : 4,
-        "downlinkOnly" : 0,
-        "uplinkOnly" : 0
-      },
-      "0" : {
-        "connIdle" : 5,
-        "handshake" : 4,
-        "downlinkOnly" : 0,
-        "uplinkOnly" : 0
-      }
-    }
-  },
   "routing" : {
-    "strategy" : "rules",
     "domainStrategy" : "IPIfNonMatch",
     "rules" : [
       {
-        "outboundTag" : "proxy",
         "ip" : [
           "1.1.1.1\/32",
           "1.0.0.1\/32",
@@ -225,10 +11,10 @@
           "208.67.222.222\/32",
           "208.67.220.220\/32"
         ],
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "proxy"
       },
       {
-        "outboundTag" : "block",
         "domain" : [
           "adservice",
           "analytics",
@@ -519,20 +305,20 @@
           "full:msg.71.am",
           "full:msg.qy.net"
         ],
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "block"
       },
       {
-        "outboundTag" : "block",
         "ip" : [
           "101.227.97.240\/32",
           "101.227.200.11\/32",
           "101.227.200.28\/32",
           "124.192.153.42\/32"
         ],
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "block"
       },
       {
-        "outboundTag" : "block",
         "domain" : [
           "domain:ads.sohu.com",
           "domain:aty.sohu.com",
@@ -589,6 +375,12 @@
           "full:adfile.wifi8.com",
           "full:advertise.baicizhan.org",
           "full:advertise.baicizhan.com",
+          "full:imgadpai.thepaper.cn",
+          "full:admonitor.thepaper.cn",
+          "full:applog.musical.ly",
+          "full:track.toutiao.com",
+          "full:xlog.snssdk.com",
+          "full:xlog-va.byteoversea.com",
           "domain:17gouwuba.com",
           "domain:189zj.cn",
           "domain:285680.com",
@@ -675,10 +467,10 @@
           "domain:zhenxinet.com",
           "domain:zzd6.com"
         ],
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "block"
       },
       {
-        "outboundTag" : "block",
         "ip" : [
           "39.107.15.115\/32",
           "47.89.59.182\/32",
@@ -718,18 +510,85 @@
           "220.115.251.25\/32",
           "222.73.156.235\/32"
         ],
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "block"
       },
       {
-        "outboundTag" : "proxy",
+        "domain" : [
+          "domain:kuaizip.com",
+          "domain:mackeeper.com",
+          "domain:4009997658.com",
+          "domain:abbyychina.com",
+          "domain:bartender.cc",
+          "domain:betterzip.net",
+          "domain:beyondcompare.cc",
+          "domain:bingdianhuanyuan.cn",
+          "domain:chemdraw.com.cn",
+          "domain:cjmakeding.com",
+          "domain:cjmkt.com",
+          "domain:codesoftchina.com",
+          "domain:coreldrawchina.com",
+          "domain:crossoverchina.com",
+          "domain:easyrecoverychina.com",
+          "domain:ediuschina.com",
+          "domain:flstudiochina.com",
+          "domain:formysql.com",
+          "domain:guitarpro.cc",
+          "domain:huishenghuiying.com.cn",
+          "domain:hypersnap.net",
+          "domain:iconworkshop.cn",
+          "domain:imindmap.cc",
+          "domain:jihehuaban.com.cn",
+          "domain:keyshot.cc",
+          "domain:kingdeecn.cn",
+          "domain:logoshejishi.com",
+          "domain:mairuan.cn",
+          "domain:mairuan.com",
+          "domain:mairuan.com.cn",
+          "domain:mairuan.net",
+          "domain:mairuanwang.com",
+          "domain:makeding.com",
+          "domain:mathtype.cn",
+          "domain:mindmanager.cc",
+          "domain:mindmapper.cc",
+          "domain:mycleanmymac.com",
+          "domain:nicelabel.cc",
+          "domain:ntfsformac.cc",
+          "domain:ntfsformac.cn",
+          "domain:overturechina.com",
+          "domain:passwordrecovery.cn",
+          "domain:pdfexpert.cc",
+          "domain:shankejingling.com",
+          "domain:ultraiso.net",
+          "domain:vegaschina.cn",
+          "domain:xmindchina.net",
+          "domain:xshellcn.com",
+          "domain:yihuifu.cn",
+          "domain:yuanchengxiezuo.com",
+          "domain:zbrushcn.com",
+          "domain:zhzzx.com"
+        ],
+        "type" : "field",
+        "outboundTag" : "block"
+      },
+      {
         "domain" : [
           "full:content.jwplatform.com",
           "full:videos-f.jwpsrv.com"
         ],
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "proxy"
       },
       {
-        "outboundTag" : "proxy",
+        "domain" : [
+          "domain:googlevideo.com",
+          "domain:youtube.com",
+          "full:youtubei.googleapis.com"
+        ],
+        "type" : "field",
+        "outboundTag" : "proxy"
+      },
+      {
         "domain" : [
           "domain:netflix.com",
           "domain:netflix.net",
@@ -739,78 +598,237 @@
           "domain:nflxso.net",
           "domain:nflxvideo.net"
         ],
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "proxy"
       },
       {
-        "outboundTag" : "proxy",
         "domain" : [
           "domain:hbo.com",
           "domain:hbogo.com"
         ],
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "proxy"
       },
       {
-        "outboundTag" : "proxy",
         "domain" : [
           "domain:hulu.com",
           "domain:huluim.com",
           "domain:happyon.jp"
         ],
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "proxy"
       },
       {
-        "outboundTag" : "proxy",
         "domain" : [
+          "domain:bbc.co.uk",
+          "domain:bbci.co.uk",
           "bbcfmt",
           "uk-live"
         ],
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "proxy"
       },
       {
-        "outboundTag" : "proxy",
         "domain" : [
           "domain:bahamut.com.tw",
           "domain:gamer.com.tw",
           "domain:hinet.net"
         ],
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "proxy"
       },
       {
-        "outboundTag" : "proxy",
         "domain" : [
           "domain:mytvsuper.com",
           "domain:tvb.com"
         ],
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "proxy"
       },
       {
-        "outboundTag" : "proxy",
         "domain" : [
           "domain:abema.io",
           "domain:ameba.jp",
           "domain:hayabusa.io",
           "full:linear-abematv.akamaized.net"
         ],
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "proxy"
       },
       {
-        "outboundTag" : "proxy",
+        "domain" : [
+          "domain:tw.iqiyi.com"
+        ],
+        "type" : "field",
+        "outboundTag" : "proxy"
+      },
+      {
         "domain" : [
           "domain:scdn.co",
           "domain:spotify.com",
           "domain:spoti.fi"
         ],
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "proxy"
       },
       {
-        "outboundTag" : "proxy",
         "domain" : [
-          "domain:joox.com"
+          "domain:joox.com",
+          "domain:pandora.com",
+          "domain:appspot.com",
+          "domain:blogger.com",
+          "domain:getoutline.org",
+          "domain:gvt0.com",
+          "domain:gvt1.com",
+          "domain:gvt3.com",
+          "domain:xn--ngstr-lra8j.com",
+          "google",
+          "blogspot",
+          "domain:cdninstagram.com",
+          "domain:fb.com",
+          "domain:fb.me",
+          "domain:fbcdn.net",
+          "domain:instagram.com",
+          "domain:messenger.com",
+          "domain:whatsapp.com",
+          "domain:whatsapp.net",
+          "domain:oculus.com",
+          "domain:oculuscdn.com",
+          "facebook",
+          "domain:t.co",
+          "domain:twimg.co",
+          "domain:twimg.com",
+          "domain:twitpic.com",
+          "twitter",
+          "domain:line.me",
+          "domain:line-apps.com",
+          "domain:line-scdn.net",
+          "domain:naver.jp",
+          "domain:abc.net.au",
+          "domain:amazon.co.jp",
+          "domain:apk-dl.com",
+          "domain:apkpure.com",
+          "domain:ask.com",
+          "domain:avgle.com",
+          "domain:bandwagonhost.com",
+          "domain:bbc.com",
+          "domain:behance.net",
+          "domain:bibox.com",
+          "domain:binance.com",
+          "domain:bitfinex.com",
+          "domain:booklive.jp",
+          "domain:bwh1.net",
+          "domain:cbc.ca",
+          "domain:comparitech.com",
+          "domain:dailymotion.com",
+          "domain:deepdiscount.com",
+          "domain:deezer.com",
+          "domain:discordapp.com",
+          "domain:discordapp.net",
+          "domain:disqus.com",
+          "domain:dropbox.com",
+          "domain:dropboxusercontent.com",
+          "domain:duckduckgo.com",
+          "domain:feedly.com",
+          "domain:flickr.com",
+          "domain:flitto.com",
+          "domain:gate.io",
+          "domain:goodreads.com",
+          "domain:hbg.com",
+          "domain:huobi.pro",
+          "domain:initiummall.com",
+          "domain:issuu.com",
+          "domain:jkforum.net",
+          "domain:kakao.com",
+          "domain:medium.com",
+          "domain:mega.nz",
+          "domain:naver.com",
+          "domain:nyt.com",
+          "domain:nytco.com",
+          "domain:nytimes.com",
+          "domain:nytstyle.com",
+          "domain:ok.ru",
+          "domain:okex.com",
+          "domain:pinimg.com",
+          "domain:pixiv.net",
+          "domain:pornhub.com",
+          "domain:quora.com",
+          "domain:rakuten.co.jp",
+          "domain:reddit.com",
+          "domain:redditmedia.com",
+          "domain:reuters.com",
+          "domain:scribd.com",
+          "domain:shadowsocks.org",
+          "domain:slideshare.net",
+          "domain:soundcloud.com",
+          "domain:startpage.com",
+          "domain:steamcommunity.com",
+          "domain:telegram.org",
+          "domain:theinitium.com",
+          "domain:tineye.com",
+          "domain:tumblr.com",
+          "domain:turbobit.net",
+          "domain:twitch.tv",
+          "domain:uptodown.com",
+          "domain:v2ray.com",
+          "domain:vimeo.com",
+          "domain:vine.co",
+          "domain:voachinese.com",
+          "domain:whoer.net",
+          "domain:wikipedia.org",
+          "domain:wsj.com",
+          "domain:wsj.net",
+          "domain:xvideos.com",
+          "domain:yahoo.com",
+          "full:onedrive.live.com",
+          "jav",
+          "pinterest",
+          "porn",
+          "domain:apartmentratings.com",
+          "domain:apartments.com",
+          "domain:bankmobilevibe.com",
+          "domain:bing.com",
+          "domain:booktopia.com.au",
+          "domain:centauro.com.br",
+          "domain:clearsurance.com",
+          "domain:costco.com",
+          "domain:dish.com",
+          "domain:dmm.co.jp",
+          "domain:dmm.com",
+          "domain:dnvod.tv",
+          "domain:esurance.com",
+          "domain:extmatrix.com",
+          "domain:fastpic.ru",
+          "domain:flipboard.com",
+          "domain:fnac.be",
+          "domain:fnac.com",
+          "domain:funkyimg.com",
+          "domain:fxnetworks.com",
+          "domain:gettyimages.com",
+          "domain:jcpenney.com",
+          "domain:kkbox.com",
+          "domain:nationwide.com",
+          "domain:nbc.com",
+          "domain:nordstrom.com",
+          "domain:nordstromimage.com",
+          "domain:nordstromrack.com",
+          "domain:superpages.com",
+          "domain:target.com",
+          "domain:thinkgeek.com",
+          "domain:tracfone.com",
+          "domain:uploader.jp",
+          "domain:vevo.com",
+          "domain:viu.tv",
+          "domain:vk.com",
+          "domain:vsco.co",
+          "domain:xfinity.com",
+          "domain:zattoo.com",
+          "full:wego.here.com"
         ],
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "proxy"
       },
       {
-        "outboundTag" : "proxy",
         "domain" : [
           "domain:appsto.re",
           "full:api-glb-sea.smoot.apple.com",
@@ -863,22 +881,18 @@
           "domain:youtu.be",
           "domain:yt.be",
           "domain:ytimg.com",
-          "full:proxy.steampowered.com",
+          "full:media.steampowered.com",
           "full:store.steampowered.com",
-          "domain:fb.com",
-          "domain:bing.com",
           "domain:cloudfront.net",
           "domain:newsblur.com",
           "domain:sparknotes.com",
-          "domain:vk.com",
-          "full:ccmdl.adobe.com",
-          "full:wego.here.com",
+          "domain:x-art.com",
           "github"
         ],
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "proxy"
       },
       {
-        "outboundTag" : "proxy",
         "ip" : [
           "91.108.4.0\/22",
           "91.108.8.0\/22",
@@ -886,10 +900,10 @@
           "109.239.140.0\/24",
           "149.154.160.0\/20"
         ],
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "proxy"
       },
       {
-        "outboundTag" : "direct",
         "domain" : [
           "domain:aaplimg.com",
           "domain:apple.co",
@@ -904,13 +918,7 @@
           "domain:microsoft.com",
           "domain:windows.net",
           "domain:sfx.ms",
-          "full:officecdn-microsoft-com.akamaized.net"
-        ],
-        "type" : "field"
-      },
-      {
-        "outboundTag" : "direct",
-        "domain" : [
+          "full:officecdn-microsoft-com.akamaized.net",
           "domain:blizzard.com",
           "domain:battle.net",
           "full:blzddist1-a.akamaihd.net",
@@ -918,11 +926,51 @@
           "domain:steam-chat.com",
           "full:steamcdn-a.akamaihd.net",
           "full:steamuserimages-a.akamaihd.net",
-          "full:steamstore-a.akamaihd.net",
+          "full:steamstore-a.akamaihd.net"
+        ],
+        "type" : "field",
+        "outboundTag" : "direct"
+      },
+      {
+        "domain" : [
+          "domain:qq.com",
+          "domain:qpic.cn",
+          "domain:alibaba.com",
+          "domain:alicdn.com",
+          "domain:amap.com",
+          "domain:taobao.com",
+          "domain:tmall.com",
+          "domain:ykimg.com",
+          "domain:youku.com",
+          "domain:xiami.com",
+          "domain:xiami.net",
+          "domain:163.com",
+          "domain:126.net",
+          "domain:163yun.com",
+          "domain:sohu.com.cn",
+          "domain:itc.cn",
+          "domain:sohu.com",
+          "domain:v-56.com",
+          "domain:weibo.com",
+          "domain:jd.com",
+          "domain:jd.hk",
+          "domain:360buyimg.com",
+          "domain:mi-img.com",
+          "domain:mifile.cn",
+          "domain:acgvideo.com",
+          "domain:bilibili.com",
+          "domain:hdslb.com",
+          "domain:iqiyi.com",
+          "domain:iqiyipic.com",
+          "domain:hitv.com",
+          "domain:mgtv.com",
+          "domain:meitudata.com",
+          "domain:meipai.com",
           "domain:zmzapi.com",
           "domain:zimuzu.tv",
           "domain:zmzfile.com",
           "domain:zmzapi.net",
+          "domain:ipip.net",
           "domain:ip.cn",
           "domain:ip.la",
           "domain:ip-cdn.com",
@@ -931,22 +979,247 @@
           "domain:whatismyip.com",
           "full:ip.bjango.com",
           "domain:akadns.net",
-          "domain:cloudflare.com",
-          "domain:jd.hk",
           "domain:maoyun.tv",
           "domain:teamviewer.com",
-          "domain:udacity.com"
+          "domain:udacity.com",
+          "domain:cmvideo.cn",
+          "domain:xmcdn.com",
+          "domain:sogou.com",
+          "domain:myzaker.com",
+          "domain:zhihu.com",
+          "domain:zhimg.com",
+          "domain:smzdm.com"
         ],
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "direct"
       },
       {
-        "outboundTag" : "direct",
         "ip" : [
           "geoip:cn",
           "geoip:private"
         ],
-        "type" : "field"
+        "type" : "field",
+        "outboundTag" : "direct"
       }
     ]
-  }
+  },
+  "dns" : {
+    "servers" : [
+      {
+        "address" : "223.5.5.5",
+        "domains" : [
+          "geosite:cn"
+        ],
+        "port" : 53
+      },
+      "114.114.114.114",
+      {
+        "address" : "8.8.8.8",
+        "domains" : [
+          "domain:appspot.com",
+          "domain:blogger.com",
+          "domain:getoutline.org",
+          "domain:gvt0.com",
+          "domain:gvt1.com",
+          "domain:gvt3.com",
+          "domain:googleapis.com",
+          "domain:googlevideo.com",
+          "domain:youtube.com",
+          "domain:xn--ngstr-lra8j.com",
+          "google",
+          "blogspot",
+          "domain:cdninstagram.com",
+          "domain:fb.com",
+          "domain:fb.me",
+          "domain:fbcdn.net",
+          "domain:instagram.com",
+          "domain:messenger.com",
+          "domain:whatsapp.com",
+          "domain:whatsapp.net",
+          "domain:oculus.com",
+          "domain:oculuscdn.com",
+          "facebook",
+          "domain:t.co",
+          "domain:twimg.co",
+          "domain:twimg.com",
+          "domain:twitpic.com",
+          "twitter",
+          "domain:line.me",
+          "domain:line-apps.com",
+          "domain:line-scdn.net",
+          "domain:naver.jp",
+          "domain:abc.net.au",
+          "domain:amazon.co.jp",
+          "domain:apk-dl.com",
+          "domain:apkpure.com",
+          "domain:ask.com",
+          "domain:avgle.com",
+          "domain:bandwagonhost.com",
+          "domain:bbc.com",
+          "domain:behance.net",
+          "domain:bibox.com",
+          "domain:binance.com",
+          "domain:bitfinex.com",
+          "domain:booklive.jp",
+          "domain:bwh1.net",
+          "domain:cbc.ca",
+          "domain:comparitech.com",
+          "domain:dailymotion.com",
+          "domain:deepdiscount.com",
+          "domain:deezer.com",
+          "domain:discordapp.com",
+          "domain:discordapp.net",
+          "domain:disqus.com",
+          "domain:dropbox.com",
+          "domain:dropboxusercontent.com",
+          "domain:duckduckgo.com",
+          "domain:feedly.com",
+          "domain:flickr.com",
+          "domain:flitto.com",
+          "domain:gate.io",
+          "domain:goodreads.com",
+          "domain:hbg.com",
+          "domain:huobi.pro",
+          "domain:initiummall.com",
+          "domain:issuu.com",
+          "domain:jkforum.net",
+          "domain:kakao.com",
+          "domain:medium.com",
+          "domain:mega.nz",
+          "domain:naver.com",
+          "domain:nyt.com",
+          "domain:nytco.com",
+          "domain:nytimes.com",
+          "domain:nytstyle.com",
+          "domain:ok.ru",
+          "domain:okex.com",
+          "domain:pinimg.com",
+          "domain:pixiv.net",
+          "domain:pornhub.com",
+          "domain:quora.com",
+          "domain:rakuten.co.jp",
+          "domain:reddit.com",
+          "domain:redditmedia.com",
+          "domain:reuters.com",
+          "domain:scribd.com",
+          "domain:shadowsocks.org",
+          "domain:slideshare.net",
+          "domain:soundcloud.com",
+          "domain:startpage.com",
+          "domain:steamcommunity.com",
+          "domain:telegram.org",
+          "domain:theinitium.com",
+          "domain:tineye.com",
+          "domain:tumblr.com",
+          "domain:turbobit.net",
+          "domain:twitch.tv",
+          "domain:uptodown.com",
+          "domain:v2ray.com",
+          "domain:vimeo.com",
+          "domain:vine.co",
+          "domain:voachinese.com",
+          "domain:whoer.net",
+          "domain:wikipedia.org",
+          "domain:wsj.com",
+          "domain:wsj.net",
+          "domain:xvideos.com",
+          "domain:yahoo.com",
+          "full:onedrive.live.com",
+          "jav",
+          "pinterest",
+          "porn"
+        ],
+        "port" : 53
+      }
+    ],
+    "clientIp" : "202.96.209.133",
+    "hosts" : {
+
+    }
+  },
+  "policy" : {
+    "levels" : {
+      "0" : {
+        "downlinkOnly" : 0,
+        "handshake" : 4,
+        "connIdle" : 5,
+        "uplinkOnly" : 0
+      },
+      "2018" : {
+        "downlinkOnly" : 0,
+        "handshake" : 4,
+        "connIdle" : 5,
+        "uplinkOnly" : 0
+      }
+    }
+  },
+  "outbounds" : [
+    {
+      "tag" : "direct",
+      "settings" : {
+        "userLevel" : 2018,
+        "domainStrategy" : "UseIP"
+      },
+      "streamSettings" : {
+
+      },
+      "protocol" : "freedom"
+    },
+    {
+      "tag" : "proxy",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "v2ray.cool",
+            "users" : [
+              {
+                "security" : "none",
+                "id" : "a3482e88-686a-4a58-8126-99c9df64b7bf",
+                "alterId" : 64
+              }
+            ],
+            "port" : 443
+          }
+        ]
+      },
+      "mux" : {
+        "enabled" : true,
+        "concurrency" : 8
+      },
+      "streamSettings" : {
+        "tlsSettings" : {
+          "allowInsecure" : true
+        },
+        "wsSettings" : {
+          "path" : "\/v2ray.cool\/",
+          "headers" : {
+            "Host" : "v2ray.cool"
+          }
+        },
+        "security" : "tls",
+        "network" : "ws"
+      },
+      "protocol" : "vmess"
+    },
+    {
+      "settings" : {
+
+      },
+      "protocol" : "blackhole",
+      "tag" : "block"
+    }
+  ],
+  "inbounds" : [
+    {
+      "listen" : "127.0.0.1",
+      "settings" : {
+        "allowTransparent" : true
+      },
+      "port" : 1087,
+      "streamSettings" : {
+
+      },
+      "protocol" : "http"
+    }
+  ]
 }
