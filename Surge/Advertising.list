@@ -384,3 +384,8 @@ DOMAIN,advertise.baicizhan.com
 # > The Paper
 DOMAIN,imgadpai.thepaper.cn
 DOMAIN,admonitor.thepaper.cn
+# > ByteDance
+DOMAIN,applog.musical.ly
+DOMAIN,track.toutiao.com
+DOMAIN,xlog.snssdk.com
+DOMAIN,xlog-va.byteoversea.com
