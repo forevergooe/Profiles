@@ -166,6 +166,9 @@ DOMAIN,books.itunes.apple.com // iBooks Store download
 DOMAIN,hls.itunes.apple.com // iTunes Store Moveis Trailers
 DOMAIN,itunes.apple.com // App Store Preview
 DOMAIN,lookup-api.apple.com // Dictionary
+PROCESS-NAME,LookupViewService
+PROCESS-NAME,News // Apple News
+USER-AGENT,AppleNews* // Apple News
 # > Google
 DOMAIN-SUFFIX,abc.xyz
 DOMAIN-SUFFIX,android.com
