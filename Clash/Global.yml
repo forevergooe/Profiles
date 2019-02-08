@@ -50,7 +50,7 @@ Proxy:
 Proxy Group:
 - { name: "PROXY", type: select, proxies: ["1", "2", "3"] }
 # 白名单模式 PROXY，黑名单模式 DIRECT
-- { name: "MODE", type: select, proxies: ["PROXY", "DIRECT"] }
+- { name: "FINAL", type: select, proxies: ["PROXY", "DIRECT"] }
 - { name: "APPLE", type: select, proxies: ["DIRECT", "PROXY"] }
 - { name: "MEDIA", type: select, proxies: ["1", "2", "3"] }
 - { name: "HIJACKING", type: select, proxies: ["DIRECT", "REJECT"] }
@@ -676,4 +676,4 @@ Rule:
 # GeoIP China
 - GEOIP,CN,DIRECT
 # Final
-- MATCH,MODE
+- MATCH,FINAL

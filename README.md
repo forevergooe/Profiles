@@ -40,9 +40,9 @@ Windows：[Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg)
 |               BifrostV<br />Kitsunebi(Android)               |                              无                              | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ProjectV/Pro.json) |                              无                              |
 |                        Kitsunebi(iOS)                        | [Basic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Kitsunebi/Basic.conf) | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Kitsunebi/Pro.conf) | [China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Kitsunebi/China.conf) |
 |                          Quantumult                          | [Basic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/Basic.conf) | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/Pro.conf)<br />[Rejection](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/Rejection.conf) | [ China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/China.conf)<br />[Rejection](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/Rejection.conf) |
-| Shadowrocket \| [捷径](https://www.icloud.com/shortcuts/6eb1214d7ae345b18fcec2c93d18785b) <br />Pepi(ShadowRay) \| [捷径](https://www.icloud.com/shortcuts/6eb1214d7ae345b18fcec2c93d18785b) | [Basic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/Basic.conf) | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/Pro.conf) | [China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/China.conf) |
-| Surge 2 \| [捷径](https://www.icloud.com/shortcuts/cf486fa3f7f44b288416bc501efaf613) | [Basic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Basic.conf) | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Pro.conf) | [China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/China.conf) |
-| Surge 3 \| [捷径](https://www.icloud.com/shortcuts/8a2c2c9649dd484eab2f7e727282732c) |                              无                              | [Surge3](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Surge3.conf) |                              无                              |
+| Shadowrocket \| [捷径](https://www.icloud.com/shortcuts/b50d84fb063e469891f8600ab089a684) <br />Pepi(ShadowRay) \| [捷径](https://www.icloud.com/shortcuts/b50d84fb063e469891f8600ab089a684) | [Basic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/Basic.conf) | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/Pro.conf) | [China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/China.conf) |
+| Surge 2 \| [捷径](https://www.icloud.com/shortcuts/ef983d4a23544191890d52c708f42718) | [Basic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Basic.conf) | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Pro.conf) | [China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/China.conf) |
+| Surge 3 \| [捷径](https://www.icloud.com/shortcuts/529792025f5b48c0a4b5216326080d0d) |                              无                              | [Surge3](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Surge3.conf) |                              无                              |
 
 ### 使用说明 & 常见问题
 
@@ -53,24 +53,27 @@ Windows：[Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg)
 导入配置及更新教程：
 
 - [Surge 导入配置及安装证书](https://medium.com/circumvention-technology/import-profile-on-surge-2d4119822302)
-
 - [Quantumult 导入配置及安装证书](https://medium.com/circumvention-technology/import-profile-on-quantumult-2e5cef9cb0c5)
 - [Kitsunebi 导入配置](https://medium.com/circumvention-technology/import-profile-on-kitsunebi-6befa3db03db)
 - [Shadowrocket 导入配置及安装证书](https://medium.com/circumvention-technology/import-profile-on-shadowrocket-f183cd4e95ae)
 
 > XX 规则更新没？
 
-每次更新即全部更新
+Surge 和 Quantumult 为优先更新对象，其他规则会每月初统一更新。
 
 > 需要及时更新规则吗？
 
-如果 Telegram 频道的更新日志中没有对应你的需求可以不更，换句话说用着没问题就不更新
+如果 Telegram 频道的更新日志中没有你的需求可以不更，换句话说用着没问题就不更新
 
 #### 关于自定义和捷径
 
 > 捷径是什么？我想规则自定义怎么办？
 
 有自定义规则需要使用捷径，另外 Surge 2 及 Surge 3（需要去广告功能）强烈推荐使用捷径。
+
+> 捷径导入没变化？
+
+比较常见的现象是导出配置后虽然跳转到类 Surge 界面，但是没有任何变化和提示，此时先退出类 Surge 应用，再次进入即可看到「覆盖」等提示或变化，如依旧没有则再运行一次捷径脚本倒出即可。
 
 #### 关于 DNS
 
@@ -134,11 +137,14 @@ Windows：[Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg)
 - Bahamut
 - myTV SUPER
 - AbemaTV
+- encoreTVB
+- 愛奇藝台灣站
 
 音乐：
 
 - Spotify
 - JOOX
+- Pandora
 
 #### 关于去广告
 
@@ -154,7 +160,7 @@ Windows：[Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg)
 
 如果使用了专业版规则并且开启了「HTTPS 解密(MitM)」功能**不仅需要安装证书，还需在系统「设置」>「通用」>「关于本机」中底部的「证书信任设置」中信任所安装的证书。**
 
-另外 Shadowrocket(2.1.23) 的版本（后续版本未测）中「HTTPS 解密」功能存在问题，因此 Shadowrocket 规则已默认关闭「HTTPS 解密」，使用 2.1.23 之前版本的用户可手动开启，Pepi(ShadowRay) 一直不支持「HTTPS 解密(MitM)」的域名列表导入所以亦不用开启此功能。
+另外 Shadowrocket(2.1.23) 的版本（后续版本未测，使用 2.1.23 之前版本的用户可手动开启）中「HTTPS 解密」功能存在问题以及Pepi(ShadowRay) 一直不支持「HTTPS 解密(MitM)」的域名列表导入，因此 Shadow 系列规则已默认关闭「HTTPS 解密」功能。
 
 #### 其他
 
