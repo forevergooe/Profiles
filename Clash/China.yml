@@ -21,19 +21,19 @@ log-level: silent
 external-controller: 127.0.0.1:9090
 
 # DNS 设置
-dns:
-  enable: true # set true to enable dns (default is false)
-  ipv6: false # default is false
-  listen: 0.0.0.0:53
-  # enhanced-mode: redir-host
-  nameserver:
-  - 117.50.10.10
-  - 119.29.29.29
-  - 223.5.5.5
-  - tls://dns.rubyfish.cn:853 # dns over tls
-  fallback: # concurrent request with nameserver, fallback used when GEOIP country isnt CN
-  - 1.1.1.1
-  - 8.8.8.8
+# dns:
+#   enable: true # set true to enable dns (default is false)
+#   ipv6: false # default is false
+#   listen: 0.0.0.0:53
+#   # enhanced-mode: redir-host
+#   nameserver:
+#   - 117.50.10.10
+#   - 119.29.29.29
+#   - 223.5.5.5
+#   - tls://dns.rubyfish.cn:853 # dns over tls
+#   fallback: # concurrent request with nameserver, fallback used when GEOIP country isnt CN
+#   - 1.1.1.1
+#   - 8.8.8.8
 
 # 代理节点
 Proxy:
@@ -74,6 +74,9 @@ Rule:
 - DOMAIN-SUFFIX,iqiyi.com,PROXY
 - DOMAIN-SUFFIX,iqiyipic.com,PROXY
 - DOMAIN-SUFFIX,qy.net,PROXY
+- IP-CIDR,101.227.0.0/16,PROXY
+- IP-CIDR,101.224.0.0/13,PROXY
+- IP-CIDR,119.176.0.0/12,PROXY
 # > Sohu
 - DOMAIN-SUFFIX,sohu.com,PROXY
 - DOMAIN-SUFFIX,sohu.com.cn,PROXY
