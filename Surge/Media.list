@@ -49,8 +49,14 @@ DOMAIN-SUFFIX,hayabusa.io
 DOMAIN,linear-abematv.akamaized.net
 # > encoreTVB
 USER-AGENT,encoreTVB*
-# > iQiyiTW
+# > 愛奇藝台灣站
 DOMAIN-SUFFIX,tw.iqiyi.com
+# > PBS
+USER-AGENT,PBS*
+DOMAIN-SUFFIX,pbs.org
+# > Amazon Prime Video
+USER-AGENT,InstantVideo.US*
+USER-AGENT,Prime%20Video*
 
 # (Music)
 # > Spotify

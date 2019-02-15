@@ -185,6 +185,7 @@ Rule:
 - IP-CIDR,180.166.52.24/32,HIJACKING
 - IP-CIDR,220.115.251.25/32,HIJACKING
 - IP-CIDR,222.73.156.235/32,HIJACKING
+
 # Blocklist 黑名单
 - DOMAIN-SUFFIX,kuaizip.com,HIJACKING
 - DOMAIN-SUFFIX,mackeeper.com,HIJACKING
@@ -239,15 +240,19 @@ Rule:
 - DOMAIN-SUFFIX,yuanchengxiezuo.com,HIJACKING
 - DOMAIN-SUFFIX,zbrushcn.com,HIJACKING
 - DOMAIN-SUFFIX,zhzzx.com,HIJACKING
+
 # Global Area Network
 # (Video)
 - DOMAIN,content.jwplatform.com,MEDIA
 - DOMAIN,videos-f.jwpsrv.com,MEDIA
 # > Youtube
+# USER-AGENT,*youtube*,MEDIA
+# USER-AGENT,YouTube*,MEDIA
 - DOMAIN-SUFFIX,googlevideo.com,MEDIA
 - DOMAIN-SUFFIX,youtube.com,MEDIA
 - DOMAIN,youtubei.googleapis.com,MEDIA
 # > Netflix
+# USER-AGENT,Argo*,MEDIA
 - DOMAIN-SUFFIX,netflix.com,MEDIA
 - DOMAIN-SUFFIX,netflix.net,MEDIA
 - DOMAIN-SUFFIX,nflxext.com,MEDIA
@@ -256,41 +261,60 @@ Rule:
 - DOMAIN-SUFFIX,nflxso.net,MEDIA
 - DOMAIN-SUFFIX,nflxvideo.net,MEDIA
 # > HBO
+# USER-AGENT,HBO%20NOW*,MEDIA
 - DOMAIN-SUFFIX,hbo.com,MEDIA
 - DOMAIN-SUFFIX,hbogo.com,MEDIA
 # > Hulu
+# USER-AGENT,Hulu*,MEDIA
 - DOMAIN-SUFFIX,hulu.com,MEDIA
 - DOMAIN-SUFFIX,huluim.com,MEDIA
 # > Hulu(フールー)
 - DOMAIN-SUFFIX,happyon.jp,MEDIA
 # > BBC iPlayer
+# USER-AGENT,BBCiPlayer*,MEDIA
 - DOMAIN-SUFFIX,bbc.co.uk,MEDIA
 - DOMAIN-SUFFIX,bbci.co.uk,MEDIA
 - DOMAIN-KEYWORD,bbcfmt,MEDIA
 - DOMAIN-KEYWORD,uk-live,MEDIA
 # > Bahamut
+# USER-AGENT,Anime*,MEDIA
 - DOMAIN-SUFFIX,bahamut.com.tw,MEDIA
 - DOMAIN-SUFFIX,gamer.com.tw,MEDIA
 - DOMAIN-SUFFIX,hinet.net,MEDIA
 # > myTV_SUPER
+# USER-AGENT,mytv*,MEDIA
 - DOMAIN-SUFFIX,mytvsuper.com,MEDIA
 - DOMAIN-SUFFIX,tvb.com,MEDIA
 # > AbemaTV
+# USER-AGENT,AbemaTV*,MEDIA
 - DOMAIN-SUFFIX,abema.io,MEDIA
 - DOMAIN-SUFFIX,ameba.jp,MEDIA
 - DOMAIN-SUFFIX,hayabusa.io,MEDIA
 - DOMAIN,linear-abematv.akamaized.net,MEDIA
-# > iQiyiTW
+# > encoreTVB
+# USER-AGENT,encoreTVB*,MEDIA
+# > 愛奇藝台灣站
 - DOMAIN-SUFFIX,tw.iqiyi.com,MEDIA
+# > PBS
+# USER-AGENT,PBS*,MEDIA
+- DOMAIN-SUFFIX,pbs.org,MEDIA
+# > Amazon Prime Video
+# USER-AGENT,InstantVideo.US*,MEDIA
+# USER-AGENT,Prime%20Video*,MEDIA
+
 # (Music)
 # > Spotify
+# USER-AGENT,Spotify*,MEDIA
 - DOMAIN-SUFFIX,scdn.co,MEDIA
 - DOMAIN-SUFFIX,spotify.com,MEDIA
 - DOMAIN-SUFFIX,spoti.fi,MEDIA
 # > JOOX
+# USER-AGENT,WeMusic*,MEDIA
+# USER-AGENT,JOOX*,MEDIA
 - DOMAIN-SUFFIX,joox.com,MEDIA
 # > Pandora
 - DOMAIN-SUFFIX,pandora.com,MEDIA
+
 # (DNS Cache Pollution Protection)
 # > Google
 - DOMAIN-SUFFIX,appspot.com,PROXY
@@ -306,19 +330,27 @@ Rule:
 - DOMAIN-SUFFIX,cdninstagram.com,PROXY
 - DOMAIN-SUFFIX,fb.com,PROXY
 - DOMAIN-SUFFIX,fb.me,PROXY
+- DOMAIN-SUFFIX,fbaddins.com,PROXY
 - DOMAIN-SUFFIX,fbcdn.net,PROXY
+- DOMAIN-SUFFIX,fbsbx.com,PROXY
+- DOMAIN-SUFFIX,fbworkmail.com,PROXY
 - DOMAIN-SUFFIX,instagram.com,PROXY
+- DOMAIN-SUFFIX,m.me,PROXY
 - DOMAIN-SUFFIX,messenger.com,PROXY
-- DOMAIN-SUFFIX,whatsapp.com,PROXY
-- DOMAIN-SUFFIX,whatsapp.net,PROXY
 - DOMAIN-SUFFIX,oculus.com,PROXY
 - DOMAIN-SUFFIX,oculuscdn.com,PROXY
+- DOMAIN-SUFFIX,rocksdb.org,PROXY
+- DOMAIN-SUFFIX,whatsapp.com,PROXY
+- DOMAIN-SUFFIX,whatsapp.net,PROXY
 - DOMAIN-KEYWORD,facebook,PROXY
 # > Twitter
+- DOMAIN-SUFFIX,pscp.tv,PROXY
+- DOMAIN-SUFFIX,periscope.tv,PROXY
 - DOMAIN-SUFFIX,t.co,PROXY
 - DOMAIN-SUFFIX,twimg.co,PROXY
 - DOMAIN-SUFFIX,twimg.com,PROXY
 - DOMAIN-SUFFIX,twitpic.com,PROXY
+- DOMAIN-SUFFIX,vine.co,PROXY
 - DOMAIN-KEYWORD,twitter,PROXY
 # > Line
 - DOMAIN-SUFFIX,line.me,PROXY
@@ -326,86 +358,166 @@ Rule:
 - DOMAIN-SUFFIX,line-scdn.net,PROXY
 - DOMAIN-SUFFIX,naver.jp,PROXY
 # > Other
+- DOMAIN-SUFFIX,4shared.com,PROXY
+- DOMAIN-SUFFIX,881903.com,PROXY
 - DOMAIN-SUFFIX,abc.net.au,PROXY
+- DOMAIN-SUFFIX,abebooks.com,PROXY
+- DOMAIN-SUFFIX,aex.com,PROXY
 - DOMAIN-SUFFIX,amazon.co.jp,PROXY
+- DOMAIN-SUFFIX,apigee.com,PROXY
 - DOMAIN-SUFFIX,apk-dl.com,PROXY
+- DOMAIN-SUFFIX,apkmirror.com,PROXY
+- DOMAIN-SUFFIX,apkmonk.com,PROXY
 - DOMAIN-SUFFIX,apkpure.com,PROXY
+- DOMAIN-SUFFIX,aptoide.com,PROXY
+- DOMAIN-SUFFIX,archive.org,PROXY
+- DOMAIN-SUFFIX,arte.tv,PROXY
 - DOMAIN-SUFFIX,ask.com,PROXY
 - DOMAIN-SUFFIX,avgle.com,PROXY
+- DOMAIN-SUFFIX,badoo.com,PROXY
 - DOMAIN-SUFFIX,bandwagonhost.com,PROXY
 - DOMAIN-SUFFIX,bbc.com,PROXY
 - DOMAIN-SUFFIX,behance.net,PROXY
 - DOMAIN-SUFFIX,bibox.com,PROXY
+- DOMAIN-SUFFIX,biggo.com.tw,PROXY
 - DOMAIN-SUFFIX,binance.com,PROXY
+- DOMAIN-SUFFIX,bitcointalk.org,PROXY
 - DOMAIN-SUFFIX,bitfinex.com,PROXY
+- DOMAIN-SUFFIX,bitmex.com,PROXY
+- DOMAIN-SUFFIX,bit-z.com,PROXY
+- DOMAIN-SUFFIX,bloglovin.com,PROXY
+- DOMAIN-SUFFIX,bloomberg.cn,PROXY
+- DOMAIN-SUFFIX,bloomberg.com,PROXY
+- DOMAIN-SUFFIX,book.com.tw,PROXY
 - DOMAIN-SUFFIX,booklive.jp,PROXY
+- DOMAIN-SUFFIX,books.com.tw,PROXY
+- DOMAIN-SUFFIX,box.com,PROXY
+- DOMAIN-SUFFIX,brookings.edu,PROXY
+- DOMAIN-SUFFIX,businessinsider.com,PROXY
 - DOMAIN-SUFFIX,bwh1.net,PROXY
+- DOMAIN-SUFFIX,castbox.fm,PROXY
 - DOMAIN-SUFFIX,cbc.ca,PROXY
+- DOMAIN-SUFFIX,cdw.com,PROXY
+- DOMAIN-SUFFIX,change.org,PROXY
+- DOMAIN-SUFFIX,clyp.it,PROXY
 - DOMAIN-SUFFIX,comparitech.com,PROXY
 - DOMAIN-SUFFIX,dailymotion.com,PROXY
+- DOMAIN-SUFFIX,dailyview.tw,PROXY
+- DOMAIN-SUFFIX,daum.net,PROXY
 - DOMAIN-SUFFIX,deepdiscount.com,PROXY
 - DOMAIN-SUFFIX,deezer.com,PROXY
+- DOMAIN-SUFFIX,depositphotos.com,PROXY
 - DOMAIN-SUFFIX,discordapp.com,PROXY
 - DOMAIN-SUFFIX,discordapp.net,PROXY
 - DOMAIN-SUFFIX,disqus.com,PROXY
 - DOMAIN-SUFFIX,dropbox.com,PROXY
 - DOMAIN-SUFFIX,dropboxusercontent.com,PROXY
 - DOMAIN-SUFFIX,duckduckgo.com,PROXY
+- DOMAIN-SUFFIX,dynu.com,PROXY
+- DOMAIN-SUFFIX,ebookservice.tw,PROXY
 - DOMAIN-SUFFIX,feedly.com,PROXY
+- DOMAIN-SUFFIX,files.wordpress.com,PROXY
 - DOMAIN-SUFFIX,flickr.com,PROXY
 - DOMAIN-SUFFIX,flitto.com,PROXY
+- DOMAIN-SUFFIX,foreignpolicy.com,PROXY
 - DOMAIN-SUFFIX,gate.io,PROXY
+- DOMAIN-SUFFIX,goo.ne.jp,PROXY
 - DOMAIN-SUFFIX,goodreads.com,PROXY
+- DOMAIN-SUFFIX,gov.tw,PROXY
 - DOMAIN-SUFFIX,hbg.com,PROXY
+- DOMAIN-SUFFIX,hightail.com,PROXY
+- DOMAIN-SUFFIX,hkgolden.com,PROXY
+- DOMAIN-SUFFIX,hudson.org,PROXY
 - DOMAIN-SUFFIX,huobi.pro,PROXY
 - DOMAIN-SUFFIX,initiummall.com,PROXY
+- DOMAIN-SUFFIX,ipfs.io,PROXY
 - DOMAIN-SUFFIX,issuu.com,PROXY
+- DOMAIN-SUFFIX,japantimes.co.jp,PROXY
+- DOMAIN-SUFFIX,jiji.com,PROXY
+- DOMAIN-SUFFIX,jinx.com,PROXY
 - DOMAIN-SUFFIX,jkforum.net,PROXY
+- DOMAIN-SUFFIX,joinmastodon.org,PROXY
 - DOMAIN-SUFFIX,kakao.com,PROXY
+- DOMAIN-SUFFIX,lihkg.com,PROXY
+- DOMAIN-SUFFIX,live.com,PROXY
+- DOMAIN-SUFFIX,mail.ru,PROXY
+- DOMAIN-SUFFIX,matters.news,PROXY
 - DOMAIN-SUFFIX,medium.com,PROXY
 - DOMAIN-SUFFIX,mega.nz,PROXY
+- DOMAIN-SUFFIX,mobile01.com,PROXY
 - DOMAIN-SUFFIX,naver.com,PROXY
+- DOMAIN-SUFFIX,nikkei.com,PROXY
+- DOMAIN-SUFFIX,nofile.io,PROXY
+- DOMAIN-SUFFIX,now.com,PROXY
 - DOMAIN-SUFFIX,nyt.com,PROXY
+- DOMAIN-SUFFIX,nytchina.com,PROXY
+- DOMAIN-SUFFIX,nytcn.me,PROXY
 - DOMAIN-SUFFIX,nytco.com,PROXY
 - DOMAIN-SUFFIX,nytimes.com,PROXY
+- DOMAIN-SUFFIX,nytimg.com,PROXY
+- DOMAIN-SUFFIX,nytlog.com,PROXY
 - DOMAIN-SUFFIX,nytstyle.com,PROXY
 - DOMAIN-SUFFIX,ok.ru,PROXY
 - DOMAIN-SUFFIX,okex.com,PROXY
+- DOMAIN-SUFFIX,pcloud.com,PROXY
 - DOMAIN-SUFFIX,pinimg.com,PROXY
 - DOMAIN-SUFFIX,pixiv.net,PROXY
 - DOMAIN-SUFFIX,pornhub.com,PROXY
+- DOMAIN-SUFFIX,pureapk.com,PROXY
 - DOMAIN-SUFFIX,quora.com,PROXY
+- DOMAIN-SUFFIX,quoracdn.net,PROXY
 - DOMAIN-SUFFIX,rakuten.co.jp,PROXY
 - DOMAIN-SUFFIX,reddit.com,PROXY
 - DOMAIN-SUFFIX,redditmedia.com,PROXY
 - DOMAIN-SUFFIX,reuters.com,PROXY
+- DOMAIN-SUFFIX,scmp.com,PROXY
 - DOMAIN-SUFFIX,scribd.com,PROXY
+- DOMAIN-SUFFIX,seatguru.com,PROXY
 - DOMAIN-SUFFIX,shadowsocks.org,PROXY
 - DOMAIN-SUFFIX,slideshare.net,PROXY
 - DOMAIN-SUFFIX,soundcloud.com,PROXY
 - DOMAIN-SUFFIX,startpage.com,PROXY
 - DOMAIN-SUFFIX,steamcommunity.com,PROXY
+- DOMAIN-SUFFIX,steemit.com,PROXY
+- DOMAIN-SUFFIX,teco-hk.org,PROXY
+- DOMAIN-SUFFIX,teco-mo.org,PROXY
+- DOMAIN-SUFFIX,teddysun.com,PROXY
 - DOMAIN-SUFFIX,telegram.org,PROXY
 - DOMAIN-SUFFIX,theinitium.com,PROXY
 - DOMAIN-SUFFIX,tineye.com,PROXY
 - DOMAIN-SUFFIX,tumblr.com,PROXY
 - DOMAIN-SUFFIX,turbobit.net,PROXY
 - DOMAIN-SUFFIX,twitch.tv,PROXY
+- DOMAIN-SUFFIX,unseen.is,PROXY
 - DOMAIN-SUFFIX,uptodown.com,PROXY
 - DOMAIN-SUFFIX,v2ray.com,PROXY
+- DOMAIN-SUFFIX,videopress.com,PROXY
 - DOMAIN-SUFFIX,vimeo.com,PROXY
-- DOMAIN-SUFFIX,vine.co,PROXY
 - DOMAIN-SUFFIX,voachinese.com,PROXY
+- DOMAIN-SUFFIX,vzw.com,PROXY
 - DOMAIN-SUFFIX,whoer.net,PROXY
+- DOMAIN-SUFFIX,wikimapia.org,PROXY
 - DOMAIN-SUFFIX,wikipedia.org,PROXY
+- DOMAIN-SUFFIX,wire.com,PROXY
+- DOMAIN-SUFFIX,worldcat.org,PROXY
 - DOMAIN-SUFFIX,wsj.com,PROXY
 - DOMAIN-SUFFIX,wsj.net,PROXY
 - DOMAIN-SUFFIX,xvideos.com,PROXY
 - DOMAIN-SUFFIX,yahoo.com,PROXY
-- DOMAIN,onedrive.live.com,PROXY
+- DOMAIN-SUFFIX,yesasia.com,PROXY
+- DOMAIN-SUFFIX,yes-news.com,PROXY
+- DOMAIN-SUFFIX,yomiuri.co.jp,PROXY
+- DOMAIN-SUFFIX,you-get.org,PROXY
+- DOMAIN-SUFFIX,zb.com,PROXY
+- DOMAIN-SUFFIX,zello.com,PROXY
+- DOMAIN-SUFFIX,zeronet.io,PROXY
+- DOMAIN,cdn-images.mailchimp.com,PROXY
+- DOMAIN,gist.github.com,PROXY
 - DOMAIN-KEYWORD,jav,PROXY
 - DOMAIN-KEYWORD,pinterest,PROXY
 - DOMAIN-KEYWORD,porn,PROXY
+- DOMAIN-KEYWORD,wikileaks,PROXY
+
 # (Region-Restricted Access Denied)
 - DOMAIN-SUFFIX,apartmentratings.com,PROXY
 - DOMAIN-SUFFIX,apartments.com,PROXY
@@ -415,6 +527,7 @@ Rule:
 - DOMAIN-SUFFIX,centauro.com.br,PROXY
 - DOMAIN-SUFFIX,clearsurance.com,PROXY
 - DOMAIN-SUFFIX,costco.com,PROXY
+- DOMAIN-SUFFIX,depositphotos.cn,PROXY
 - DOMAIN-SUFFIX,dish.com,PROXY
 - DOMAIN-SUFFIX,dmm.co.jp,PROXY
 - DOMAIN-SUFFIX,dmm.com,PROXY
@@ -430,11 +543,13 @@ Rule:
 - DOMAIN-SUFFIX,gettyimages.com,PROXY
 - DOMAIN-SUFFIX,jcpenney.com,PROXY
 - DOMAIN-SUFFIX,kkbox.com,PROXY
+- DOMAIN-SUFFIX,kknews.cc,PROXY
 - DOMAIN-SUFFIX,nationwide.com,PROXY
 - DOMAIN-SUFFIX,nbc.com,PROXY
 - DOMAIN-SUFFIX,nordstrom.com,PROXY
 - DOMAIN-SUFFIX,nordstromimage.com,PROXY
 - DOMAIN-SUFFIX,nordstromrack.com,PROXY
+- DOMAIN-SUFFIX,read01.com,PROXY
 - DOMAIN-SUFFIX,superpages.com,PROXY
 - DOMAIN-SUFFIX,target.com,PROXY
 - DOMAIN-SUFFIX,thinkgeek.com,PROXY
@@ -446,17 +561,21 @@ Rule:
 - DOMAIN-SUFFIX,vsco.co,PROXY
 - DOMAIN-SUFFIX,xfinity.com,PROXY
 - DOMAIN-SUFFIX,zattoo.com,PROXY
+- DOMAIN,abc.com,PROXY
+- DOMAIN,abc.go.com,PROXY
+- DOMAIN,abc.net.au,PROXY
 - DOMAIN,wego.here.com,PROXY
+# USER-AGENT,Roam*,PROXY // JegoTrip
 
 # (The Most Popular Sites)
 # > Apple
-- DOMAIN-SUFFIX,appsto.re,PROXY
-- DOMAIN,api-glb-sea.smoot.apple.com,PROXY
-- DOMAIN,beta.itunes.apple.com,PROXY
-- DOMAIN,books.itunes.apple.com,PROXY
-- DOMAIN,hls.itunes.apple.com,PROXY
-- DOMAIN,itunes.apple.com,PROXY
-- DOMAIN,lookup-api.apple.com,PROXY
+- DOMAIN-SUFFIX,appsto.re,PROXY // Apple URL Shortener
+- DOMAIN,api-glb-sea.smoot.apple.com,PROXY // Spotlight
+- DOMAIN,beta.itunes.apple.com,PROXY // TestFlight
+- DOMAIN,books.itunes.apple.com,PROXY // iBooks Store download
+- DOMAIN,hls.itunes.apple.com,PROXY // iTunes Store Moveis Trailers
+- DOMAIN,itunes.apple.com,PROXY // App Store Preview
+- DOMAIN,lookup-api.apple.com,PROXY // Dictionary
 # > Google
 - DOMAIN-SUFFIX,abc.xyz,PROXY
 - DOMAIN-SUFFIX,android.com,PROXY
@@ -502,15 +621,59 @@ Rule:
 - DOMAIN-SUFFIX,youtu.be,PROXY
 - DOMAIN-SUFFIX,yt.be,PROXY
 - DOMAIN-SUFFIX,ytimg.com,PROXY
+# > Akamai
+# - DOMAIN-SUFFIX,akamai.net,PROXY
+# - DOMAIN-SUFFIX,akamaistream.net,PROXY
+# - DOMAIN-SUFFIX,akamaized.net,PROXY
+# - DOMAIN-SUFFIX,akamaihd.net,PROXY
 # > Steam
 - DOMAIN,media.steampowered.com,PROXY
 - DOMAIN,store.steampowered.com,PROXY
+# > Supercell
+- DOMAIN-SUFFIX,brawlstars.com,PROXY
+- DOMAIN-SUFFIX,brawlstarsgame.com,PROXY
+- DOMAIN-SUFFIX,supercell.com,PROXY
 # > Other
+- DOMAIN-SUFFIX,0rz.tw,PROXY
+- DOMAIN-SUFFIX,4bluestones.biz,PROXY
+- DOMAIN-SUFFIX,9bis.net,PROXY
+- DOMAIN-SUFFIX,akamaihd.net,PROXY
+- DOMAIN-SUFFIX,allconnected.co,PROXY
+- DOMAIN-SUFFIX,amazon.com,PROXY
+- DOMAIN-SUFFIX,amazonaws.com,PROXY
+- DOMAIN-SUFFIX,aol.com,PROXY
+- DOMAIN-SUFFIX,bcc.com.tw,PROXY
+- DOMAIN-SUFFIX,bit.ly,PROXY
+- DOMAIN-SUFFIX,bitshare.com,PROXY
+- DOMAIN-SUFFIX,blog.jp,PROXY
+- DOMAIN-SUFFIX,blogimg.jp,PROXY
+- DOMAIN-SUFFIX,blogtd.org,PROXY
+- DOMAIN-SUFFIX,broadcast.co.nz,PROXY
+- DOMAIN-SUFFIX,camfrog.com,PROXY
+- DOMAIN-SUFFIX,cfos.de,PROXY
 - DOMAIN-SUFFIX,cloudfront.net,PROXY
+- DOMAIN-SUFFIX,discuss.com.hk,PROXY
+- DOMAIN-SUFFIX,edditstatic.com,PROXY
+- DOMAIN-SUFFIX,ftchinese.com,PROXY
+- DOMAIN-SUFFIX,gov,PROXY
+- DOMAIN-SUFFIX,hwcdn.net,PROXY
+- DOMAIN-SUFFIX,jtvnw.net,PROXY
+- DOMAIN-SUFFIX,manyvids.com,PROXY
+- DOMAIN-SUFFIX,myactimes.com,PROXY
 - DOMAIN-SUFFIX,newsblur.com,PROXY
+- DOMAIN-SUFFIX,now.im,PROXY
+- DOMAIN-SUFFIX,redditlist.com,PROXY
 - DOMAIN-SUFFIX,sparknotes.com,PROXY
+- DOMAIN-SUFFIX,t.me,PROXY
+- DOMAIN-SUFFIX,tdesktop.com,PROXY
+- DOMAIN-SUFFIX,telegram.me,PROXY
+- DOMAIN-SUFFIX,ttvnw.net,PROXY
+- DOMAIN-SUFFIX,twitchcdn.net,PROXY
+- DOMAIN-SUFFIX,wikia.com,PROXY
+- DOMAIN-SUFFIX,wn.com,PROXY
+- DOMAIN-SUFFIX,wolframalpha.com,PROXY
 - DOMAIN-SUFFIX,x-art.com,PROXY
-- DOMAIN-KEYWORD,github,PROXY
+- DOMAIN-SUFFIX,yimg.com,PROXY
 # > Telegram
 - IP-CIDR,91.108.4.0/22,PROXY
 - IP-CIDR,91.108.8.0/22,PROXY
@@ -520,9 +683,12 @@ Rule:
 
 # China Area Network
 # > Apple
-- DOMAIN-SUFFIX,itunes.apple.com,APPLE
-- DOMAIN,audio-ssl.itunes.apple.com,APPLE
-- DOMAIN,gspe1-ssl.ls.apple.com,APPLE
+- DOMAIN-SUFFIX,itunes.apple.com,APPLE // App Store Download || iBooks Sample
+- DOMAIN,audio-ssl.itunes.apple.com,APPLE // Apple Music Preview
+- DOMAIN,gspe1-ssl.ls.apple.com,APPLE // Apple News and Apple Map TOMTOM Version
+# PROCESS-NAME,LookupViewService,PROXY
+# PROCESS-NAME,News,PROXY // Apple News
+# USER-AGENT,AppleNews*,PROXY // Apple News
 - DOMAIN-SUFFIX,aaplimg.com,DIRECT
 - DOMAIN-SUFFIX,apple.co,DIRECT
 - DOMAIN-SUFFIX,apple.com,DIRECT
@@ -537,7 +703,7 @@ Rule:
 - DOMAIN-SUFFIX,microsoft.com,DIRECT
 - DOMAIN-SUFFIX,windows.net,DIRECT
 - DOMAIN-SUFFIX,sfx.ms,DIRECT
-- DOMAIN,officecdn-microsoft-com.akamaized.net,DIRECT
+- DOMAIN,officecdn-microsoft-com.akamaized.net,DIRECT // Microsoft AutoUpdate
 # > Blizzard
 - DOMAIN-SUFFIX,blizzard.com,DIRECT
 - DOMAIN-SUFFIX,battle.net,DIRECT
@@ -549,6 +715,8 @@ Rule:
 - DOMAIN,steamuserimages-a.akamaihd.net,DIRECT
 - DOMAIN,steamstore-a.akamaihd.net,DIRECT
 # > Tencent
+# USER-AGENT,MicroMessenger Client,DIRECT
+# USER-AGENT,WeChat*,DIRECT
 - DOMAIN-SUFFIX,qq.com,DIRECT
 - DOMAIN-SUFFIX,qpic.cn,DIRECT
 # > Alibaba
@@ -577,8 +745,10 @@ Rule:
 - DOMAIN-SUFFIX,jd.hk,DIRECT
 - DOMAIN-SUFFIX,360buyimg.com,DIRECT
 # > MI
+- DOMAIN-SUFFIX,duokan.com,DIRECT
 - DOMAIN-SUFFIX,mi-img.com,DIRECT
 - DOMAIN-SUFFIX,mifile.cn,DIRECT
+- DOMAIN-SUFFIX,xiaomi.com,DIRECT
 # > bilibili
 - DOMAIN-SUFFIX,acgvideo.com,DIRECT
 - DOMAIN-SUFFIX,bilibili.com,DIRECT
@@ -605,7 +775,7 @@ Rule:
 - DOMAIN-SUFFIX,ipv6-test.com,DIRECT
 - DOMAIN-SUFFIX,test-ipv6.com,DIRECT
 - DOMAIN-SUFFIX,whatismyip.com,DIRECT
-- DOMAIN,ip.bjango.com,DIRECT
+- DOMAIN,ip.bjango.com,DIRECT // iStat Menu
 # > Other
 - DOMAIN-SUFFIX,akadns.net,DIRECT
 - DOMAIN-SUFFIX,maoyun.tv,DIRECT
@@ -618,6 +788,8 @@ Rule:
 - DOMAIN-SUFFIX,zhihu.com,DIRECT
 - DOMAIN-SUFFIX,zhimg.com,DIRECT
 - DOMAIN-SUFFIX,smzdm.com,DIRECT
+# USER-AGENT,NeteaseMusic*,DIRECT
+# USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*,DIRECT
 
 # Local Area Network
 - DOMAIN-SUFFIX,local,DIRECT
@@ -641,7 +813,7 @@ Rule:
 - IP-CIDR,209.85.128.0/17,PROXY
 - IP-CIDR,216.58.192.0/19,PROXY
 - IP-CIDR,216.239.32.0/19,PROXY
-# Facebook
+# > Facebook
 - IP-CIDR,31.13.24.0/21,PROXY
 - IP-CIDR,31.13.64.0/18,PROXY
 - IP-CIDR,45.64.40.0/22,PROXY
@@ -657,7 +829,7 @@ Rule:
 - IP-CIDR,179.60.192.0/22,PROXY
 - IP-CIDR,185.60.216.0/22,PROXY
 - IP-CIDR,204.15.20.0/22,PROXY
-# Twitter
+# > Twitter
 - IP-CIDR,69.195.160.0/19,PROXY
 - IP-CIDR,104.244.42.0/21,PROXY
 - IP-CIDR,192.133.76.0/22,PROXY
@@ -666,14 +838,9 @@ Rule:
 - IP-CIDR,199.96.56.0/21,PROXY
 - IP-CIDR,202.160.128.0/22,PROXY
 - IP-CIDR,209.237.192.0/19,PROXY
-# > Other
-- IP-CIDR,68.71.240.0/20,PROXY
-- IP-CIDR,72.27.224.0/19,PROXY
-- IP-CIDR,81.169.128.0/17,PROXY
-- IP-CIDR,151.138.0.0/16,PROXY
-- IP-CIDR,190.86.0.0/16,PROXY
-- IP-CIDR,199.87.52.0/22,PROXY
+
 # GeoIP China
 - GEOIP,CN,DIRECT
+
 # Final
 - MATCH,FINAL
