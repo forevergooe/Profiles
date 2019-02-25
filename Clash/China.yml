@@ -42,14 +42,41 @@ Proxy:
 # 加密算法推荐：AEAD_AES_128_GCM AEAD_AES_192_GCM AEAD_AES_256_GCM AEAD_CHACHA20_POLY1305
 - { name: "1", type: ss, server: 1.2.4.8, port: 443, cipher: AEAD_CHACHA20_POLY1305, password: "password" }
 # Shadowsocks + OBFS
-- { name: "2", type: ss, server: 1.2.4.8, port: 443, cipher: AEAD_CHACHA20_POLY1305, password: "password", obfs: tls, obfs-host: yunjiasu-cdn.net }
+- name: "2"
+  type: ss
+  server: 1.2.4.8
+  port: 443
+  cipher: AEAD_CHACHA20_POLY1305
+  password: "password"
+  plugin: obfs
+  plugin-opts:
+    mode: tls # or http
+    host: yunjiasu-cdn.net
 # V2Ray(WSS)
 - { name: "3", type: vmess, server: v2ray.cool, port: 443, uuid: a3482e88-686a-4a58-8126-99c9df64b7bf, alterId: 32, cipher: auto, network: ws, ws-path: /v2ray.cool/, tls: true }
 
 # 代理组策略
 Proxy Group:
-- { name: "PROXY", type: select, proxies: ["1", "2", "3"] }
-- { name: "AUTO", type: url-test, proxies: ["1", "2", "3"], url: http://www.gstatic.com/generate_204, interval: 300 }
+# url-test 通过对 URL 对速度进行基准测试，自动选择最快的节点。
+- { name: "UrlTest", type: url-test, proxies: ["1", "2", "3"], url: "http://www.gstatic.com/generate_204", interval: 300 }
+
+# fallback 和 url-test 类似，按优先级选择可使用的节点，当 1 不可用时使用 2，以此类推
+# - { name: "FallBack", type: fallback, proxies: ["1", "2", "3"], url: "http://www.gstatic.com/generate_204", interval: 300 }
+
+# load-balance: 负载均衡
+# - { name: "LoadBalance", type: load-balance, proxies: ["1", "2", "3"] }
+
+# 代理节点选择
+- { name: "PROXY", type: select, proxies: ["UrlTest","1", "2", "3"] }
+
+# 白名单模式 PROXY，黑名单模式 DIRECT
+- { name: "Final", type: select, proxies: ["PROXY", "DIRECT"] }
+
+- { name: "Apple", type: select, proxies: ["DIRECT", "PROXY"] }
+- { name: "ForeignMedia", type: select, proxies: ["1", "2", "3"] }
+- { name: "DomesticMedia", type: select, proxies: ["1", "2", "3"] }
+- { name: "Hijacking", type: select, proxies: ["DIRECT", "REJECT"] }
+
 
 # 规则
 Rule:

@@ -77,17 +77,6 @@ Proxy Group:
 - { name: "DomesticMedia", type: select, proxies: ["1", "2", "3"] }
 - { name: "Hijacking", type: select, proxies: ["DIRECT", "REJECT"] }
 
-# 代理组策略
-Proxy Group:
-- { name: "PROXY", type: select, proxies: ["Auto","1", "2", "3"] }
-# 白名单模式 PROXY，黑名单模式 DIRECT
-- { name: "Final", type: select, proxies: ["PROXY", "DIRECT"] }
-- { name: "Apple", type: select, proxies: ["DIRECT", "PROXY"] }
-- { name: "ForeignMedia", type: select, proxies: ["1", "2", "3"] }
-- { name: "DomesticMedia", type: select, proxies: ["1", "2", "3"] }
-- { name: "Hijacking", type: select, proxies: ["DIRECT", "REJECT"] }
-- { name: "Auto", type: url-test, proxies: ["1", "2", "3"], url: http://www.gstatic.com/generate_204, interval: 300 }
-
 # 规则
 Rule:
 # Internet Service Provider Hijacking Protection 运营商劫持保护
