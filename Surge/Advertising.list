@@ -161,6 +161,10 @@ DOMAIN-SUFFIX,yldbt.com
 DOMAIN-SUFFIX,ymtracking.com
 DOMAIN-SUFFIX,appnext.com
 DOMAIN-SUFFIX,cnadnet.com
+DOMAIN-SUFFIX,media.net
+DOMAIN-SUFFIX,betrad.com
+DOMAIN-SUFFIX,dianomi.com
+DOMAIN-SUFFIX,admantx.com
 
 DOMAIN-SUFFIX,ad.daum.net
 DOMAIN-SUFFIX,api.appsee.com
@@ -305,6 +309,7 @@ DOMAIN,ifacelog.iqiyi.com
 DOMAIN,mbdlog.iqiyi.com
 DOMAIN,msg.71.am
 DOMAIN,msg.qy.net
+DOMAIN,t7z.cupid.iqiyi.com
 IP-CIDR,101.227.97.240/32,no-resolve
 IP-CIDR,101.227.200.11/32,no-resolve
 IP-CIDR,101.227.200.28/32,no-resolve
@@ -329,7 +334,7 @@ DOMAIN,de.as.pptv.com
 # > Le
 DOMAIN-SUFFIX,webp2p.letv.com
 DOMAIN,ark.letv.com
-DOMAIN,emma-414870e223.huodonghezi.com // TV Home
+DOMAIN,emma-414870e223.huodonghezi.com
 DOMAIN,g3.letv.com
 DOMAIN,n.mark.letv.com
 # > 喜马拉雅
