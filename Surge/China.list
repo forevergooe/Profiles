@@ -14,7 +14,7 @@ DOMAIN-SUFFIX,mzstatic.com
 DOMAIN-SUFFIX,microsoft.com
 DOMAIN-SUFFIX,windows.net
 DOMAIN-SUFFIX,sfx.ms
-DOMAIN,officecdn-microsoft-com.akamaized.net // Microsoft AutoUpdate
+DOMAIN-KEYWORD,officecdn
 # > Blizzard
 DOMAIN-SUFFIX,blizzard.com
 DOMAIN-SUFFIX,battle.net
@@ -86,7 +86,7 @@ DOMAIN-SUFFIX,ip-cdn.com
 DOMAIN-SUFFIX,ipv6-test.com
 DOMAIN-SUFFIX,test-ipv6.com
 DOMAIN-SUFFIX,whatismyip.com
-DOMAIN,ip.bjango.com // iStat Menu
+DOMAIN,ip.bjango.com
 # > Other
 DOMAIN-SUFFIX,akadns.net
 DOMAIN-SUFFIX,maoyun.tv
@@ -104,15 +104,15 @@ USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*
 
 # Client
 # > Proxy
-PROCESS-NAME,v2ray // V2RayX
-PROCESS-NAME,ss-local // ShadowsocksX-NG
+PROCESS-NAME,v2ray
+PROCESS-NAME,ss-local
 # > Download
-PROCESS-NAME,aria2c // Aria2GUI
-PROCESS-NAME,fdm // Free Download Manager
-PROCESS-NAME,Folx //Folx
-PROCESS-NAME,NetTransport // NetTransport
-PROCESS-NAME,Thunder // Thunder
-PROCESS-NAME,Transmission // Transmission
-PROCESS-NAME,uTorrent //uTorrent
-PROCESS-NAME,WebTorrent // WebTorrent
-PROCESS-NAME,WebTorrent Helper // WebTorrent Helper
+PROCESS-NAME,aria2c
+PROCESS-NAME,fdm
+PROCESS-NAME,Folx
+PROCESS-NAME,NetTransport
+PROCESS-NAME,Thunder
+PROCESS-NAME,Transmission
+PROCESS-NAME,uTorrent
+PROCESS-NAME,WebTorrent
+PROCESS-NAME,WebTorrent Helper

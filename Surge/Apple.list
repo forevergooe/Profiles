@@ -1,4 +1,8 @@
-DOMAIN-SUFFIX,itunes.apple.com //  App Store Download || iBooks Sample
-DOMAIN,audio-ssl.itunes.apple.com // Apple Music Preview
-DOMAIN,gspe1-ssl.ls.apple.com // Apple News and Apple Map TOMTOM Version
-USER-AGENT,geod*
+# > App Store Download || iBooks Sample
+DOMAIN-SUFFIX,itunes.apple.com
+# > Apple Music Preview
+DOMAIN,audio-ssl.itunes.apple.com
+# > Apple News and Apple Map TOMTOM Version
+DOMAIN,gspe1-ssl.ls.apple.com
+PROCESS-NAME,News
+USER-AGENT,AppleNews*

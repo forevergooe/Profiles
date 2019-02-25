@@ -308,8 +308,8 @@ Rule:
 # USER-AGENT,BBCiPlayer*,ForeignMedia
 - DOMAIN-SUFFIX,bbc.co.uk,ForeignMedia
 - DOMAIN-SUFFIX,bbci.co.uk,ForeignMedia
-- DOMAIN-KEYWORDbbcfmt,ForeignMedia
-- DOMAIN-KEYWORDuk-live,ForeignMedia
+- DOMAIN-KEYWORD,bbcfmt,ForeignMedia
+- DOMAIN-KEYWORD,uk-live,ForeignMedia
 # > Bahamut
 # USER-AGENT,Anime*,ForeignMedia
 - DOMAIN-SUFFIX,bahamut.com.tw,ForeignMedia
@@ -361,8 +361,8 @@ Rule:
 - DOMAIN-SUFFIX,gvt1.com,PROXY
 - DOMAIN-SUFFIX,gvt3.com,PROXY
 - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,PROXY
-- DOMAIN-KEYWORDgoogle,PROXY
-- DOMAIN-KEYWORDblogspot,PROXY
+- DOMAIN-KEYWORD,google,PROXY
+- DOMAIN-KEYWORD,blogspot,PROXY
 # > Facebook
 - DOMAIN-SUFFIX,cdninstagram.com,PROXY
 - DOMAIN-SUFFIX,fb.com,PROXY
@@ -379,7 +379,7 @@ Rule:
 - DOMAIN-SUFFIX,rocksdb.org,PROXY
 - DOMAIN-SUFFIX,whatsapp.com,PROXY
 - DOMAIN-SUFFIX,whatsapp.net,PROXY
-- DOMAIN-KEYWORDfacebook,PROXY
+- DOMAIN-KEYWORD,facebook,PROXY
 # > Twitter
 - DOMAIN-SUFFIX,pscp.tv,PROXY
 - DOMAIN-SUFFIX,periscope.tv,PROXY
@@ -388,7 +388,7 @@ Rule:
 - DOMAIN-SUFFIX,twimg.com,PROXY
 - DOMAIN-SUFFIX,twitpic.com,PROXY
 - DOMAIN-SUFFIX,vine.co,PROXY
-- DOMAIN-KEYWORDtwitter,PROXY
+- DOMAIN-KEYWORD,twitter,PROXY
 # > Line
 - DOMAIN-SUFFIX,line.me,PROXY
 - DOMAIN-SUFFIX,line-apps.com,PROXY
@@ -595,10 +595,10 @@ Rule:
 - DOMAINcdn-images.mailchimp.com,PROXY
 - DOMAINgist.github.com,PROXY
 - DOMAINid.heroku.com,PROXY
-- DOMAIN-KEYWORDjav,PROXY
-- DOMAIN-KEYWORDpinterest,PROXY
-- DOMAIN-KEYWORDporn,PROXY
-- DOMAIN-KEYWORDwikileaks,PROXY
+- DOMAIN-KEYWORD,jav,PROXY
+- DOMAIN-KEYWORD,pinterest,PROXY
+- DOMAIN-KEYWORD,porn,PROXY
+- DOMAIN-KEYWORD,wikileaks,PROXY
 
 # (Region-Restricted Access Denied)
 - DOMAIN-SUFFIX,apartmentratings.com,PROXY
@@ -812,7 +812,7 @@ Rule:
 - DOMAIN-SUFFIX,microsoft.com,DIRECT
 - DOMAIN-SUFFIX,windows.net,DIRECT
 - DOMAIN-SUFFIX,sfx.ms,DIRECT
-- DOMAIN-KEYWORDofficecdn,DIRECT
+- DOMAIN-KEYWORD,officecdn,DIRECT
 # > Blizzard
 - DOMAIN-SUFFIX,blizzard.com,DIRECT
 - DOMAIN-SUFFIX,battle.net,DIRECT
@@ -820,10 +820,10 @@ Rule:
 # > Steam
 - DOMAIN-SUFFIX,steampowered.com,DIRECT
 - DOMAIN-SUFFIX,steam-chat.com,DIRECT
-- DOMAIN-KEYWORDsteamcdn,DIRECT
-- DOMAIN-KEYWORDsteamstore,DIRECT
-- DOMAIN-KEYWORDsteamuserimages,DIRECT
-- DOMAIN-KEYWORDsteambroadcast,DIRECT
+- DOMAIN-KEYWORD,steamcdn,DIRECT
+- DOMAIN-KEYWORD,steamstore,DIRECT
+- DOMAIN-KEYWORD,steamuserimages,DIRECT
+- DOMAIN-KEYWORD,steambroadcast,DIRECT
 # > Tencent
 # USER-AGENT,MicroMessenger Client,DIRECT
 # USER-AGENT,WeChat*,DIRECT

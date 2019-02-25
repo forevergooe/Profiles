@@ -313,9 +313,6 @@ DOMAIN,api-glb-sea.smoot.apple.com
 # > Dictionary
 DOMAIN,lookup-api.apple.com
 PROCESS-NAME,LookupViewService
-# > Apple News
-PROCESS-NAME,News
-USER-AGENT,AppleNews*
 # > Google
 DOMAIN-SUFFIX,abc.xyz
 DOMAIN-SUFFIX,android.com

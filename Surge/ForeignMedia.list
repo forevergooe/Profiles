@@ -5,9 +5,9 @@ DOMAIN,videos-f.jwpsrv.com
 # > Youtube
 USER-AGENT,*youtube*
 USER-AGENT,YouTube*
-DOMAIN-SUFFIX,googlevideo.com,force-remote-dns
-DOMAIN-SUFFIX,youtube.com,force-remote-dns
-DOMAIN,youtubei.googleapis.com,force-remote-dns
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,youtube.com
+DOMAIN,youtubei.googleapis.com
 # > Netflix
 USER-AGENT,Argo*
 DOMAIN-SUFFIX,netflix.com
@@ -29,8 +29,8 @@ DOMAIN-SUFFIX,huluim.com
 DOMAIN-SUFFIX,happyon.jp
 # > BBC iPlayer
 USER-AGENT,BBCiPlayer*
-DOMAIN-SUFFIX,bbc.co.uk,force-remote-dns
-DOMAIN-SUFFIX,bbci.co.uk,force-remote-dns
+DOMAIN-SUFFIX,bbc.co.uk
+DOMAIN-SUFFIX,bbci.co.uk
 DOMAIN-KEYWORD,bbcfmt
 DOMAIN-KEYWORD,uk-live
 # > Bahamut
