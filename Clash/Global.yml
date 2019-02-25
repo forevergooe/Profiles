@@ -14,8 +14,8 @@ allow-lan: false
 mode: Rule
 
 # 设置日志输出级别 (默认级别：info，级别越高日志输出量越大，越倾向于调试)
-# 四个级别：info / warning / error / debug
-log-level: silent
+# 四个级别：info / warning / error / debug / silent
+log-level: info
 
 # Clash 的 RESTful API
 external-controller: 127.0.0.1:9090
@@ -42,278 +42,315 @@ Proxy:
 # 加密算法推荐：AEAD_AES_128_GCM AEAD_AES_192_GCM AEAD_AES_256_GCM AEAD_CHACHA20_POLY1305
 - { name: "1", type: ss, server: 1.2.4.8, port: 443, cipher: AEAD_CHACHA20_POLY1305, password: "password" }
 # Shadowsocks + OBFS
-- { name: "2", type: ss, server: 1.2.4.8, port: 443, cipher: AEAD_CHACHA20_POLY1305, password: "password", obfs: tls, obfs-host: yunjiasu-cdn.net }
+- name: "2"
+  type: ss
+  server: 1.2.4.8
+  port: 443
+  cipher: AEAD_CHACHA20_POLY1305
+  password: "password"
+  plugin: obfs
+  plugin-opts:
+    mode: tls # or http
+    host: yunjiasu-cdn.net
 # V2Ray(WSS)
 - { name: "3", type: vmess, server: v2ray.cool, port: 443, uuid: a3482e88-686a-4a58-8126-99c9df64b7bf, alterId: 32, cipher: auto, network: ws, ws-path: /v2ray.cool/, tls: true }
 
 # 代理组策略
 Proxy Group:
-- { name: "PROXY", type: select, proxies: ["1", "2", "3"] }
+# url-test 通过对 URL 对速度进行基准测试，自动选择最快的节点。
+- { name: "UrlTest", type: url-test, proxies: ["1", "2", "3"], url: "http://www.gstatic.com/generate_204", interval: 300 }
+
+# fallback 和 url-test 类似，按优先级选择可使用的节点，当 1 不可用时使用 2，以此类推
+# - { name: "FallBack", type: fallback, proxies: ["1", "2", "3"], url: "http://www.gstatic.com/generate_204", interval: 300 }
+
+# load-balance: 负载均衡
+# - { name: "LoadBalance", type: load-balance, proxies: ["1", "2", "3"] }
+
+# 代理节点选择
+- { name: "PROXY", type: select, proxies: ["UrlTest","1", "2", "3"] }
+
 # 白名单模式 PROXY，黑名单模式 DIRECT
-- { name: "FINAL", type: select, proxies: ["PROXY", "DIRECT"] }
-- { name: "APPLE", type: select, proxies: ["DIRECT", "PROXY"] }
-- { name: "MEDIA", type: select, proxies: ["1", "2", "3"] }
-- { name: "HIJACKING", type: select, proxies: ["DIRECT", "REJECT"] }
-- { name: "AUTO", type: url-test, proxies: ["1", "2", "3"], url: http://www.gstatic.com/generate_204, interval: 300 }
+- { name: "Final", type: select, proxies: ["PROXY", "DIRECT"] }
+
+- { name: "Apple", type: select, proxies: ["DIRECT", "PROXY"] }
+- { name: "ForeignMedia", type: select, proxies: ["1", "2", "3"] }
+- { name: "DomesticMedia", type: select, proxies: ["1", "2", "3"] }
+- { name: "Hijacking", type: select, proxies: ["DIRECT", "REJECT"] }
+
+# 代理组策略
+Proxy Group:
+- { name: "PROXY", type: select, proxies: ["Auto","1", "2", "3"] }
+# 白名单模式 PROXY，黑名单模式 DIRECT
+- { name: "Final", type: select, proxies: ["PROXY", "DIRECT"] }
+- { name: "Apple", type: select, proxies: ["DIRECT", "PROXY"] }
+- { name: "ForeignMedia", type: select, proxies: ["1", "2", "3"] }
+- { name: "DomesticMedia", type: select, proxies: ["1", "2", "3"] }
+- { name: "Hijacking", type: select, proxies: ["DIRECT", "REJECT"] }
+- { name: "Auto", type: url-test, proxies: ["1", "2", "3"], url: http://www.gstatic.com/generate_204, interval: 300 }
 
 # 规则
 Rule:
 # Internet Service Provider Hijacking Protection 运营商劫持保护
-- DOMAIN-SUFFIX,17gouwuba.com,HIJACKING
-- DOMAIN-SUFFIX,189zj.cn,HIJACKING
-- DOMAIN-SUFFIX,285680.com,HIJACKING
-- DOMAIN-SUFFIX,3721zh.com,HIJACKING
-- DOMAIN-SUFFIX,4336wang.cn,HIJACKING
-- DOMAIN-SUFFIX,51chumoping.com,HIJACKING
-- DOMAIN-SUFFIX,58mingri.cn,HIJACKING
-- DOMAIN-SUFFIX,58mingtian.cn,HIJACKING
-- DOMAIN-SUFFIX,6d63d3.com,HIJACKING
-- DOMAIN-SUFFIX,91veg.com,HIJACKING
-- DOMAIN-SUFFIX,9s6q.cn,HIJACKING
-- DOMAIN-SUFFIX,adsame.com,HIJACKING
-- DOMAIN-SUFFIX,aiclk.com,HIJACKING
-- DOMAIN-SUFFIX,akuai.top,HIJACKING
-- DOMAIN-SUFFIX,atplay.cn,HIJACKING
-- DOMAIN-SUFFIX,baiwanchuangyi.com,HIJACKING
-- DOMAIN-SUFFIX,bayimob.com,HIJACKING
-- DOMAIN-SUFFIX,beerto.cn,HIJACKING
-- DOMAIN-SUFFIX,beilamusi.com,HIJACKING
-- DOMAIN-SUFFIX,benshiw.net,HIJACKING
-- DOMAIN-SUFFIX,bianxianmao.com,HIJACKING
-- DOMAIN-SUFFIX,bryonypie.com,HIJACKING
-- DOMAIN-SUFFIX,cishantao.com,HIJACKING
-- DOMAIN-SUFFIX,cszlks.com,HIJACKING
-- DOMAIN-SUFFIX,cudaojia.com,HIJACKING
-- DOMAIN-SUFFIX,dafapromo.com,HIJACKING
-- DOMAIN-SUFFIX,daitdai.com,HIJACKING
-- DOMAIN-SUFFIX,dsaeerf.com,HIJACKING
-- DOMAIN-SUFFIX,dugesheying.com,HIJACKING
-- DOMAIN-SUFFIX,erdoscs.com,HIJACKING
-- DOMAIN-SUFFIX,fan-yong.com,HIJACKING
-- DOMAIN-SUFFIX,feih.com.cn,HIJACKING
-- DOMAIN-SUFFIX,fjlqqc.com,HIJACKING
-- DOMAIN-SUFFIX,fkku194.com,HIJACKING
-- DOMAIN-SUFFIX,freedrive.cn,HIJACKING
-- DOMAIN-SUFFIX,gclick.cn,HIJACKING
-- DOMAIN-SUFFIX,goufanli100.com,HIJACKING
-- DOMAIN-SUFFIX,gouwubang.com,HIJACKING
-- DOMAIN-SUFFIX,haoshengtoys.com,HIJACKING
-- DOMAIN-SUFFIX,ichaosheng.com,HIJACKING
-- DOMAIN-SUFFIX,ishop789.com,HIJACKING
-- DOMAIN-SUFFIX,jdkic.com,HIJACKING
-- DOMAIN-SUFFIX,jiubuhua.com,HIJACKING
-- DOMAIN-SUFFIX,kumihua.com,HIJACKING
-- DOMAIN-SUFFIX,linktech.cn,HIJACKING
-- DOMAIN-SUFFIX,ltheanine.cn,HIJACKING
-- DOMAIN-SUFFIX,maipinshangmao.com,HIJACKING
-- DOMAIN-SUFFIX,minisplat.cn,HIJACKING
-- DOMAIN-SUFFIX,mkitgfs.com,HIJACKING
-- DOMAIN-SUFFIX,mlnbike.com,HIJACKING
-- DOMAIN-SUFFIX,newapi.com,HIJACKING
-- DOMAIN-SUFFIX,pinzhitmall.com,HIJACKING
-- DOMAIN-SUFFIX,poppyta.com,HIJACKING
-- DOMAIN-SUFFIX,qichexin.com,HIJACKING
-- DOMAIN-SUFFIX,qinchugudao.com,HIJACKING
-- DOMAIN-SUFFIX,quanliyouxi.cn,HIJACKING
-- DOMAIN-SUFFIX,qutaobi.com,HIJACKING
-- DOMAIN-SUFFIX,ry51w.cn,HIJACKING
-- DOMAIN-SUFFIX,sg536.cn,HIJACKING
-- DOMAIN-SUFFIX,sifubo.cn,HIJACKING
-- DOMAIN-SUFFIX,sifuce.cn,HIJACKING
-- DOMAIN-SUFFIX,sifuda.cn,HIJACKING
-- DOMAIN-SUFFIX,sifufu.cn,HIJACKING
-- DOMAIN-SUFFIX,sifuge.cn,HIJACKING
-- DOMAIN-SUFFIX,sifugu.cn,HIJACKING
-- DOMAIN-SUFFIX,sifuhe.cn,HIJACKING
-- DOMAIN-SUFFIX,sifuhu.cn,HIJACKING
-- DOMAIN-SUFFIX,sifuji.cn,HIJACKING
-- DOMAIN-SUFFIX,sifuka.cn,HIJACKING
-- DOMAIN-SUFFIX,smgru.net,HIJACKING
-- DOMAIN-SUFFIX,taoggou.com,HIJACKING
-- DOMAIN-SUFFIX,tcxshop.com,HIJACKING
-- DOMAIN-SUFFIX,tjqonline.cn,HIJACKING
-- DOMAIN-SUFFIX,topitme.com,HIJACKING
-- DOMAIN-SUFFIX,tuia.cn,HIJACKING
-- DOMAIN-SUFFIX,tuipenguin.com,HIJACKING
-- DOMAIN-SUFFIX,tuitiger.com,HIJACKING
-- DOMAIN-SUFFIX,wx16999.com,HIJACKING
-- DOMAIN-SUFFIX,xiaohuau.xyz,HIJACKING
-- DOMAIN-SUFFIX,yinmong.com,HIJACKING
-- DOMAIN-SUFFIX,yiqifa.com,HIJACKING
-- DOMAIN-SUFFIX,yitaopt.com,HIJACKING
-- DOMAIN-SUFFIX,zhaozecheng.cn,HIJACKING
-- DOMAIN-SUFFIX,zhenxinet.com,HIJACKING
-- DOMAIN-SUFFIX,zzd6.com,HIJACKING
-- IP-CIDR,39.107.15.115/32,HIJACKING
-- IP-CIDR,47.89.59.182/32,HIJACKING
-- IP-CIDR,103.49.209.27/32,HIJACKING
-- IP-CIDR,123.56.152.96/32,HIJACKING
+- DOMAIN-SUFFIX,17gouwuba.com,Hijacking
+- DOMAIN-SUFFIX,189zj.cn,Hijacking
+- DOMAIN-SUFFIX,285680.com,Hijacking
+- DOMAIN-SUFFIX,3721zh.com,Hijacking
+- DOMAIN-SUFFIX,4336wang.cn,Hijacking
+- DOMAIN-SUFFIX,51chumoping.com,Hijacking
+- DOMAIN-SUFFIX,58mingri.cn,Hijacking
+- DOMAIN-SUFFIX,58mingtian.cn,Hijacking
+- DOMAIN-SUFFIX,6d63d3.com,Hijacking
+- DOMAIN-SUFFIX,91veg.com,Hijacking
+- DOMAIN-SUFFIX,9s6q.cn,Hijacking
+- DOMAIN-SUFFIX,adsame.com,Hijacking
+- DOMAIN-SUFFIX,aiclk.com,Hijacking
+- DOMAIN-SUFFIX,akuai.top,Hijacking
+- DOMAIN-SUFFIX,atplay.cn,Hijacking
+- DOMAIN-SUFFIX,baiwanchuangyi.com,Hijacking
+- DOMAIN-SUFFIX,bayimob.com,Hijacking
+- DOMAIN-SUFFIX,beerto.cn,Hijacking
+- DOMAIN-SUFFIX,beilamusi.com,Hijacking
+- DOMAIN-SUFFIX,benshiw.net,Hijacking
+- DOMAIN-SUFFIX,bianxianmao.com,Hijacking
+- DOMAIN-SUFFIX,bryonypie.com,Hijacking
+- DOMAIN-SUFFIX,cishantao.com,Hijacking
+- DOMAIN-SUFFIX,cszlks.com,Hijacking
+- DOMAIN-SUFFIX,cudaojia.com,Hijacking
+- DOMAIN-SUFFIX,dafapromo.com,Hijacking
+- DOMAIN-SUFFIX,daitdai.com,Hijacking
+- DOMAIN-SUFFIX,dsaeerf.com,Hijacking
+- DOMAIN-SUFFIX,dugesheying.com,Hijacking
+- DOMAIN-SUFFIX,erdoscs.com,Hijacking
+- DOMAIN-SUFFIX,fan-yong.com,Hijacking
+- DOMAIN-SUFFIX,feih.com.cn,Hijacking
+- DOMAIN-SUFFIX,fjlqqc.com,Hijacking
+- DOMAIN-SUFFIX,fkku194.com,Hijacking
+- DOMAIN-SUFFIX,freedrive.cn,Hijacking
+- DOMAIN-SUFFIX,gclick.cn,Hijacking
+- DOMAIN-SUFFIX,goufanli100.com,Hijacking
+- DOMAIN-SUFFIX,gouwubang.com,Hijacking
+- DOMAIN-SUFFIX,haoshengtoys.com,Hijacking
+- DOMAIN-SUFFIX,ichaosheng.com,Hijacking
+- DOMAIN-SUFFIX,ishop789.com,Hijacking
+- DOMAIN-SUFFIX,jdkic.com,Hijacking
+- DOMAIN-SUFFIX,jiubuhua.com,Hijacking
+- DOMAIN-SUFFIX,kumihua.com,Hijacking
+- DOMAIN-SUFFIX,linktech.cn,Hijacking
+- DOMAIN-SUFFIX,ltheanine.cn,Hijacking
+- DOMAIN-SUFFIX,maipinshangmao.com,Hijacking
+- DOMAIN-SUFFIX,minisplat.cn,Hijacking
+- DOMAIN-SUFFIX,mkitgfs.com,Hijacking
+- DOMAIN-SUFFIX,mlnbike.com,Hijacking
+- DOMAIN-SUFFIX,newapi.com,Hijacking
+- DOMAIN-SUFFIX,pinzhitmall.com,Hijacking
+- DOMAIN-SUFFIX,poppyta.com,Hijacking
+- DOMAIN-SUFFIX,qichexin.com,Hijacking
+- DOMAIN-SUFFIX,qinchugudao.com,Hijacking
+- DOMAIN-SUFFIX,quanliyouxi.cn,Hijacking
+- DOMAIN-SUFFIX,qutaobi.com,Hijacking
+- DOMAIN-SUFFIX,ry51w.cn,Hijacking
+- DOMAIN-SUFFIX,sg536.cn,Hijacking
+- DOMAIN-SUFFIX,sifubo.cn,Hijacking
+- DOMAIN-SUFFIX,sifuce.cn,Hijacking
+- DOMAIN-SUFFIX,sifuda.cn,Hijacking
+- DOMAIN-SUFFIX,sifufu.cn,Hijacking
+- DOMAIN-SUFFIX,sifuge.cn,Hijacking
+- DOMAIN-SUFFIX,sifugu.cn,Hijacking
+- DOMAIN-SUFFIX,sifuhe.cn,Hijacking
+- DOMAIN-SUFFIX,sifuhu.cn,Hijacking
+- DOMAIN-SUFFIX,sifuji.cn,Hijacking
+- DOMAIN-SUFFIX,sifuka.cn,Hijacking
+- DOMAIN-SUFFIX,smgru.net,Hijacking
+- DOMAIN-SUFFIX,taoggou.com,Hijacking
+- DOMAIN-SUFFIX,tcxshop.com,Hijacking
+- DOMAIN-SUFFIX,tjqonline.cn,Hijacking
+- DOMAIN-SUFFIX,topitme.com,Hijacking
+- DOMAIN-SUFFIX,tuia.cn,Hijacking
+- DOMAIN-SUFFIX,tuipenguin.com,Hijacking
+- DOMAIN-SUFFIX,tuitiger.com,Hijacking
+- DOMAIN-SUFFIX,wx16999.com,Hijacking
+- DOMAIN-SUFFIX,xiaohuau.xyz,Hijacking
+- DOMAIN-SUFFIX,yinmong.com,Hijacking
+- DOMAIN-SUFFIX,yiqifa.com,Hijacking
+- DOMAIN-SUFFIX,yitaopt.com,Hijacking
+- DOMAIN-SUFFIX,zhaozecheng.cn,Hijacking
+- DOMAIN-SUFFIX,zhenxinet.com,Hijacking
+- DOMAIN-SUFFIX,zzd6.com,Hijacking
+- IP-CIDR,39.107.15.115/32,Hijacking
+- IP-CIDR,47.89.59.182/32,Hijacking
+- IP-CIDR,103.49.209.27/32,Hijacking
+- IP-CIDR,123.56.152.96/32,Hijacking
 # > ChinaNet
-- IP-CIDR,61.160.200.223/32,HIJACKING
-- IP-CIDR,61.160.200.242/32,HIJACKING
-- IP-CIDR,61.160.200.252/32,HIJACKING
-- IP-CIDR,61.174.50.214/32,HIJACKING
-- IP-CIDR,111.175.220.163/32,HIJACKING
-- IP-CIDR,111.175.220.164/32,HIJACKING
-- IP-CIDR,124.232.160.178/32,HIJACKING
-- IP-CIDR,175.6.223.15/32,HIJACKING
-- IP-CIDR,183.59.53.237/32,HIJACKING
-- IP-CIDR,218.93.127.37/32,HIJACKING
-- IP-CIDR,221.228.17.152/32,HIJACKING
-- IP-CIDR,221.231.6.79/32,HIJACKING
-- IP-CIDR,222.186.61.91/32,HIJACKING
-- IP-CIDR,222.186.61.95/32,HIJACKING
-- IP-CIDR,222.186.61.96/32,HIJACKING
-- IP-CIDR,222.186.61.97/32,HIJACKING
+- IP-CIDR,61.160.200.223/32,Hijacking
+- IP-CIDR,61.160.200.242/32,Hijacking
+- IP-CIDR,61.160.200.252/32,Hijacking
+- IP-CIDR,61.174.50.214/32,Hijacking
+- IP-CIDR,111.175.220.163/32,Hijacking
+- IP-CIDR,111.175.220.164/32,Hijacking
+- IP-CIDR,124.232.160.178/32,Hijacking
+- IP-CIDR,175.6.223.15/32,Hijacking
+- IP-CIDR,183.59.53.237/32,Hijacking
+- IP-CIDR,218.93.127.37/32,Hijacking
+- IP-CIDR,221.228.17.152/32,Hijacking
+- IP-CIDR,221.231.6.79/32,Hijacking
+- IP-CIDR,222.186.61.91/32,Hijacking
+- IP-CIDR,222.186.61.95/32,Hijacking
+- IP-CIDR,222.186.61.96/32,Hijacking
+- IP-CIDR,222.186.61.97/32,Hijacking
 # > ChinaUnicom
-- IP-CIDR,106.75.231.48/32,HIJACKING
-- IP-CIDR,119.4.249.166/32,HIJACKING
-- IP-CIDR,220.196.52.141/32,HIJACKING
-- IP-CIDR,221.6.4.148/32,HIJACKING
+- IP-CIDR,106.75.231.48/32,Hijacking
+- IP-CIDR,119.4.249.166/32,Hijacking
+- IP-CIDR,220.196.52.141/32,Hijacking
+- IP-CIDR,221.6.4.148/32,Hijacking
 # > ChinaMobile
-- IP-CIDR,114.247.28.96/32,HIJACKING
-- IP-CIDR,221.179.131.72/32,HIJACKING
-- IP-CIDR,221.179.140.145/32,HIJACKING
+- IP-CIDR,114.247.28.96/32,Hijacking
+- IP-CIDR,221.179.131.72/32,Hijacking
+- IP-CIDR,221.179.140.145/32,Hijacking
 # > Dr.Peng
-- IP-CIDR,10.72.25.0/24,HIJACKING
-- IP-CIDR,115.182.16.79/32,HIJACKING
-- IP-CIDR,118.144.88.126/32,HIJACKING
-- IP-CIDR,118.144.88.215/32,HIJACKING
-- IP-CIDR,120.76.189.132/32,HIJACKING
-- IP-CIDR,124.14.21.147/32,HIJACKING
-- IP-CIDR,124.14.21.151/32,HIJACKING
-- IP-CIDR,180.166.52.24/32,HIJACKING
-- IP-CIDR,220.115.251.25/32,HIJACKING
-- IP-CIDR,222.73.156.235/32,HIJACKING
+- IP-CIDR,10.72.25.0/24,Hijacking
+- IP-CIDR,115.182.16.79/32,Hijacking
+- IP-CIDR,118.144.88.126/32,Hijacking
+- IP-CIDR,118.144.88.215/32,Hijacking
+- IP-CIDR,120.76.189.132/32,Hijacking
+- IP-CIDR,124.14.21.147/32,Hijacking
+- IP-CIDR,124.14.21.151/32,Hijacking
+- IP-CIDR,180.166.52.24/32,Hijacking
+- IP-CIDR,220.115.251.25/32,Hijacking
+- IP-CIDR,222.73.156.235/32,Hijacking
 
 # Blocklist 黑名单
-- DOMAIN-SUFFIX,kuaizip.com,HIJACKING
-- DOMAIN-SUFFIX,mackeeper.com,HIJACKING
+- DOMAIN-SUFFIX,kuaizip.com,Hijacking
+- DOMAIN-SUFFIX,mackeeper.com,Hijacking
 # > CJ Marketing
-- DOMAIN-SUFFIX,4009997658.com,HIJACKING
-- DOMAIN-SUFFIX,abbyychina.com,HIJACKING
-- DOMAIN-SUFFIX,bartender.cc,HIJACKING
-- DOMAIN-SUFFIX,betterzip.net,HIJACKING
-- DOMAIN-SUFFIX,beyondcompare.cc,HIJACKING
-- DOMAIN-SUFFIX,bingdianhuanyuan.cn,HIJACKING
-- DOMAIN-SUFFIX,chemdraw.com.cn,HIJACKING
-- DOMAIN-SUFFIX,cjmakeding.com,HIJACKING
-- DOMAIN-SUFFIX,cjmkt.com,HIJACKING
-- DOMAIN-SUFFIX,codesoftchina.com,HIJACKING
-- DOMAIN-SUFFIX,coreldrawchina.com,HIJACKING
-- DOMAIN-SUFFIX,crossoverchina.com,HIJACKING
-- DOMAIN-SUFFIX,easyrecoverychina.com,HIJACKING
-- DOMAIN-SUFFIX,ediuschina.com,HIJACKING
-- DOMAIN-SUFFIX,flstudiochina.com,HIJACKING
-- DOMAIN-SUFFIX,formysql.com,HIJACKING
-- DOMAIN-SUFFIX,guitarpro.cc,HIJACKING
-- DOMAIN-SUFFIX,huishenghuiying.com.cn,HIJACKING
-- DOMAIN-SUFFIX,hypersnap.net,HIJACKING
-- DOMAIN-SUFFIX,iconworkshop.cn,HIJACKING
-- DOMAIN-SUFFIX,imindmap.cc,HIJACKING
-- DOMAIN-SUFFIX,jihehuaban.com.cn,HIJACKING
-- DOMAIN-SUFFIX,keyshot.cc,HIJACKING
-- DOMAIN-SUFFIX,kingdeecn.cn,HIJACKING
-- DOMAIN-SUFFIX,logoshejishi.com,HIJACKING
-- DOMAIN-SUFFIX,mairuan.cn,HIJACKING
-- DOMAIN-SUFFIX,mairuan.com,HIJACKING
-- DOMAIN-SUFFIX,mairuan.com.cn,HIJACKING
-- DOMAIN-SUFFIX,mairuan.net,HIJACKING
-- DOMAIN-SUFFIX,mairuanwang.com,HIJACKING
-- DOMAIN-SUFFIX,makeding.com,HIJACKING
-- DOMAIN-SUFFIX,mathtype.cn,HIJACKING
-- DOMAIN-SUFFIX,mindmanager.cc,HIJACKING
-- DOMAIN-SUFFIX,mindmapper.cc,HIJACKING
-- DOMAIN-SUFFIX,mycleanmymac.com,HIJACKING
-- DOMAIN-SUFFIX,nicelabel.cc,HIJACKING
-- DOMAIN-SUFFIX,ntfsformac.cc,HIJACKING
-- DOMAIN-SUFFIX,ntfsformac.cn,HIJACKING
-- DOMAIN-SUFFIX,overturechina.com,HIJACKING
-- DOMAIN-SUFFIX,passwordrecovery.cn,HIJACKING
-- DOMAIN-SUFFIX,pdfexpert.cc,HIJACKING
-- DOMAIN-SUFFIX,shankejingling.com,HIJACKING
-- DOMAIN-SUFFIX,ultraiso.net,HIJACKING
-- DOMAIN-SUFFIX,vegaschina.cn,HIJACKING
-- DOMAIN-SUFFIX,xmindchina.net,HIJACKING
-- DOMAIN-SUFFIX,xshellcn.com,HIJACKING
-- DOMAIN-SUFFIX,yihuifu.cn,HIJACKING
-- DOMAIN-SUFFIX,yuanchengxiezuo.com,HIJACKING
-- DOMAIN-SUFFIX,zbrushcn.com,HIJACKING
-- DOMAIN-SUFFIX,zhzzx.com,HIJACKING
+- DOMAIN-SUFFIX,4009997658.com,Hijacking
+- DOMAIN-SUFFIX,abbyychina.com,Hijacking
+- DOMAIN-SUFFIX,bartender.cc,Hijacking
+- DOMAIN-SUFFIX,betterzip.net,Hijacking
+- DOMAIN-SUFFIX,beyondcompare.cc,Hijacking
+- DOMAIN-SUFFIX,bingdianhuanyuan.cn,Hijacking
+- DOMAIN-SUFFIX,chemdraw.com.cn,Hijacking
+- DOMAIN-SUFFIX,cjmakeding.com,Hijacking
+- DOMAIN-SUFFIX,cjmkt.com,Hijacking
+- DOMAIN-SUFFIX,codesoftchina.com,Hijacking
+- DOMAIN-SUFFIX,coreldrawchina.com,Hijacking
+- DOMAIN-SUFFIX,crossoverchina.com,Hijacking
+- DOMAIN-SUFFIX,easyrecoverychina.com,Hijacking
+- DOMAIN-SUFFIX,ediuschina.com,Hijacking
+- DOMAIN-SUFFIX,flstudiochina.com,Hijacking
+- DOMAIN-SUFFIX,formysql.com,Hijacking
+- DOMAIN-SUFFIX,guitarpro.cc,Hijacking
+- DOMAIN-SUFFIX,huishenghuiying.com.cn,Hijacking
+- DOMAIN-SUFFIX,hypersnap.net,Hijacking
+- DOMAIN-SUFFIX,iconworkshop.cn,Hijacking
+- DOMAIN-SUFFIX,imindmap.cc,Hijacking
+- DOMAIN-SUFFIX,jihehuaban.com.cn,Hijacking
+- DOMAIN-SUFFIX,keyshot.cc,Hijacking
+- DOMAIN-SUFFIX,kingdeecn.cn,Hijacking
+- DOMAIN-SUFFIX,logoshejishi.com,Hijacking
+- DOMAIN-SUFFIX,mairuan.cn,Hijacking
+- DOMAIN-SUFFIX,mairuan.com,Hijacking
+- DOMAIN-SUFFIX,mairuan.com.cn,Hijacking
+- DOMAIN-SUFFIX,mairuan.net,Hijacking
+- DOMAIN-SUFFIX,mairuanwang.com,Hijacking
+- DOMAIN-SUFFIX,makeding.com,Hijacking
+- DOMAIN-SUFFIX,mathtype.cn,Hijacking
+- DOMAIN-SUFFIX,mindmanager.cc,Hijacking
+- DOMAIN-SUFFIX,mindmapper.cc,Hijacking
+- DOMAIN-SUFFIX,mycleanmymac.com,Hijacking
+- DOMAIN-SUFFIX,nicelabel.cc,Hijacking
+- DOMAIN-SUFFIX,ntfsformac.cc,Hijacking
+- DOMAIN-SUFFIX,ntfsformac.cn,Hijacking
+- DOMAIN-SUFFIX,overturechina.com,Hijacking
+- DOMAIN-SUFFIX,passwordrecovery.cn,Hijacking
+- DOMAIN-SUFFIX,pdfexpert.cc,Hijacking
+- DOMAIN-SUFFIX,shankejingling.com,Hijacking
+- DOMAIN-SUFFIX,ultraiso.net,Hijacking
+- DOMAIN-SUFFIX,vegaschina.cn,Hijacking
+- DOMAIN-SUFFIX,xmindchina.net,Hijacking
+- DOMAIN-SUFFIX,xshellcn.com,Hijacking
+- DOMAIN-SUFFIX,yihuifu.cn,Hijacking
+- DOMAIN-SUFFIX,yuanchengxiezuo.com,Hijacking
+- DOMAIN-SUFFIX,zbrushcn.com,Hijacking
+- DOMAIN-SUFFIX,zhzzx.com,Hijacking
+- DOMAIN-SUFFIX,zunmi.cn,Hijacking
 
 # Global Area Network
+# (ForeignMedia)
 # (Video)
-- DOMAIN,content.jwplatform.com,MEDIA
-- DOMAIN,videos-f.jwpsrv.com,MEDIA
+- DOMAINcontent.jwplatform.com,ForeignMedia
+- DOMAINvideos-f.jwpsrv.com,ForeignMedia
 # > Youtube
-# USER-AGENT,*youtube*,MEDIA
-# USER-AGENT,YouTube*,MEDIA
-- DOMAIN-SUFFIX,googlevideo.com,MEDIA
-- DOMAIN-SUFFIX,youtube.com,MEDIA
-- DOMAIN,youtubei.googleapis.com,MEDIA
+# USER-AGENT,*youtube*,ForeignMedia
+# USER-AGENT,YouTube*,ForeignMedia
+- DOMAIN-SUFFIX,googlevideo.com,ForeignMedia
+- DOMAIN-SUFFIX,youtube.com,ForeignMedia
+- DOMAINyoutubei.googleapis.com,ForeignMedia
 # > Netflix
-# USER-AGENT,Argo*,MEDIA
-- DOMAIN-SUFFIX,netflix.com,MEDIA
-- DOMAIN-SUFFIX,netflix.net,MEDIA
-- DOMAIN-SUFFIX,nflxext.com,MEDIA
-- DOMAIN-SUFFIX,nflximg.com,MEDIA
-- DOMAIN-SUFFIX,nflximg.net,MEDIA
-- DOMAIN-SUFFIX,nflxso.net,MEDIA
-- DOMAIN-SUFFIX,nflxvideo.net,MEDIA
+# USER-AGENT,Argo*,ForeignMedia
+- DOMAIN-SUFFIX,netflix.com,ForeignMedia
+- DOMAIN-SUFFIX,netflix.net,ForeignMedia
+- DOMAIN-SUFFIX,nflxext.com,ForeignMedia
+- DOMAIN-SUFFIX,nflximg.com,ForeignMedia
+- DOMAIN-SUFFIX,nflximg.net,ForeignMedia
+- DOMAIN-SUFFIX,nflxso.net,ForeignMedia
+- DOMAIN-SUFFIX,nflxvideo.net,ForeignMedia
 # > HBO
-# USER-AGENT,HBO%20NOW*,MEDIA
-- DOMAIN-SUFFIX,hbo.com,MEDIA
-- DOMAIN-SUFFIX,hbogo.com,MEDIA
+# USER-AGENT,HBO%20NOW*,ForeignMedia
+- DOMAIN-SUFFIX,hbo.com,ForeignMedia
+- DOMAIN-SUFFIX,hbogo.com,ForeignMedia
 # > Hulu
-# USER-AGENT,Hulu*,MEDIA
-- DOMAIN-SUFFIX,hulu.com,MEDIA
-- DOMAIN-SUFFIX,huluim.com,MEDIA
+# USER-AGENT,Hulu*,ForeignMedia
+- DOMAIN-SUFFIX,hulu.com,ForeignMedia
+- DOMAIN-SUFFIX,huluim.com,ForeignMedia
 # > Hulu(フールー)
-- DOMAIN-SUFFIX,happyon.jp,MEDIA
+- DOMAIN-SUFFIX,happyon.jp,ForeignMedia
 # > BBC iPlayer
-# USER-AGENT,BBCiPlayer*,MEDIA
-- DOMAIN-SUFFIX,bbc.co.uk,MEDIA
-- DOMAIN-SUFFIX,bbci.co.uk,MEDIA
-- DOMAIN-KEYWORD,bbcfmt,MEDIA
-- DOMAIN-KEYWORD,uk-live,MEDIA
+# USER-AGENT,BBCiPlayer*,ForeignMedia
+- DOMAIN-SUFFIX,bbc.co.uk,ForeignMedia
+- DOMAIN-SUFFIX,bbci.co.uk,ForeignMedia
+- DOMAIN-KEYWORDbbcfmt,ForeignMedia
+- DOMAIN-KEYWORDuk-live,ForeignMedia
 # > Bahamut
-# USER-AGENT,Anime*,MEDIA
-- DOMAIN-SUFFIX,bahamut.com.tw,MEDIA
-- DOMAIN-SUFFIX,gamer.com.tw,MEDIA
-- DOMAIN-SUFFIX,hinet.net,MEDIA
+# USER-AGENT,Anime*,ForeignMedia
+- DOMAIN-SUFFIX,bahamut.com.tw,ForeignMedia
+- DOMAIN-SUFFIX,gamer.com.tw,ForeignMedia
+- DOMAIN-SUFFIX,hinet.net,ForeignMedia
 # > myTV_SUPER
-# USER-AGENT,mytv*,MEDIA
-- DOMAIN-SUFFIX,mytvsuper.com,MEDIA
-- DOMAIN-SUFFIX,tvb.com,MEDIA
+# USER-AGENT,mytv*,ForeignMedia
+- DOMAIN-SUFFIX,mytvsuper.com,ForeignMedia
+- DOMAIN-SUFFIX,tvb.com,ForeignMedia
 # > AbemaTV
-# USER-AGENT,AbemaTV*,MEDIA
-- DOMAIN-SUFFIX,abema.io,MEDIA
-- DOMAIN-SUFFIX,ameba.jp,MEDIA
-- DOMAIN-SUFFIX,hayabusa.io,MEDIA
-- DOMAIN,linear-abematv.akamaized.net,MEDIA
+# USER-AGENT,AbemaTV*,ForeignMedia
+- DOMAIN-SUFFIX,abema.io,ForeignMedia
+- DOMAIN-SUFFIX,ameba.jp,ForeignMedia
+- DOMAIN-SUFFIX,hayabusa.io,ForeignMedia
+- DOMAIN,linear-abematv.akamaized.net,ForeignMedia
 # > encoreTVB
-# USER-AGENT,encoreTVB*,MEDIA
-# > 愛奇藝台灣站
-- DOMAIN-SUFFIX,tw.iqiyi.com,MEDIA
+# USER-AGENT,encoreTVB*,ForeignMedia
 # > PBS
-# USER-AGENT,PBS*,MEDIA
-- DOMAIN-SUFFIX,pbs.org,MEDIA
+# USER-AGENT,PBS*,ForeignMedia
+- DOMAIN-SUFFIX,pbs.org,ForeignMedia
 # > Amazon Prime Video
-# USER-AGENT,InstantVideo.US*,MEDIA
-# USER-AGENT,Prime%20Video*,MEDIA
+# USER-AGENT,InstantVideo.US*,ForeignMedia
+# USER-AGENT,Prime%20Video*,ForeignMedia
 
 # (Music)
 # > Spotify
-# USER-AGENT,Spotify*,MEDIA
-- DOMAIN-SUFFIX,scdn.co,MEDIA
-- DOMAIN-SUFFIX,spotify.com,MEDIA
-- DOMAIN-SUFFIX,spoti.fi,MEDIA
+# USER-AGENT,Spotify*,ForeignMedia
+- DOMAIN-SUFFIX,scdn.co,ForeignMedia
+- DOMAIN-SUFFIX,spotify.com,ForeignMedia
+- DOMAIN-SUFFIX,spoti.fi,ForeignMedia
 # > JOOX
-# USER-AGENT,WeMusic*,MEDIA
-# USER-AGENT,JOOX*,MEDIA
-- DOMAIN-SUFFIX,joox.com,MEDIA
+# USER-AGENT,WeMusic*,ForeignMedia
+# USER-AGENT,JOOX*,ForeignMedia
+- DOMAIN-SUFFIX,joox.com,ForeignMedia
 # > Pandora
-- DOMAIN-SUFFIX,pandora.com,MEDIA
+- DOMAIN-SUFFIX,pandora.com,ForeignMedia
+
+# (DomesticMedia)
+# > 愛奇藝台灣站
+- DOMAIN-SUFFIX,iqiyi.com,DomesticMedia
+- DOMAIN-SUFFIX,71.am,DomesticMedia
 
 # (DNS Cache Pollution Protection)
 # > Google
@@ -324,8 +361,8 @@ Rule:
 - DOMAIN-SUFFIX,gvt1.com,PROXY
 - DOMAIN-SUFFIX,gvt3.com,PROXY
 - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,PROXY
-- DOMAIN-KEYWORD,google,PROXY
-- DOMAIN-KEYWORD,blogspot,PROXY
+- DOMAIN-KEYWORDgoogle,PROXY
+- DOMAIN-KEYWORDblogspot,PROXY
 # > Facebook
 - DOMAIN-SUFFIX,cdninstagram.com,PROXY
 - DOMAIN-SUFFIX,fb.com,PROXY
@@ -342,7 +379,7 @@ Rule:
 - DOMAIN-SUFFIX,rocksdb.org,PROXY
 - DOMAIN-SUFFIX,whatsapp.com,PROXY
 - DOMAIN-SUFFIX,whatsapp.net,PROXY
-- DOMAIN-KEYWORD,facebook,PROXY
+- DOMAIN-KEYWORDfacebook,PROXY
 # > Twitter
 - DOMAIN-SUFFIX,pscp.tv,PROXY
 - DOMAIN-SUFFIX,periscope.tv,PROXY
@@ -351,7 +388,7 @@ Rule:
 - DOMAIN-SUFFIX,twimg.com,PROXY
 - DOMAIN-SUFFIX,twitpic.com,PROXY
 - DOMAIN-SUFFIX,vine.co,PROXY
-- DOMAIN-KEYWORD,twitter,PROXY
+- DOMAIN-KEYWORDtwitter,PROXY
 # > Line
 - DOMAIN-SUFFIX,line.me,PROXY
 - DOMAIN-SUFFIX,line-apps.com,PROXY
@@ -370,6 +407,7 @@ Rule:
 - DOMAIN-SUFFIX,apkmonk.com,PROXY
 - DOMAIN-SUFFIX,apkpure.com,PROXY
 - DOMAIN-SUFFIX,aptoide.com,PROXY
+- DOMAIN-SUFFIX,archive.is,PROXY
 - DOMAIN-SUFFIX,archive.org,PROXY
 - DOMAIN-SUFFIX,arte.tv,PROXY
 - DOMAIN-SUFFIX,ask.com,PROXY
@@ -399,34 +437,65 @@ Rule:
 - DOMAIN-SUFFIX,cbc.ca,PROXY
 - DOMAIN-SUFFIX,cdw.com,PROXY
 - DOMAIN-SUFFIX,change.org,PROXY
+- DOMAIN-SUFFIX,ck101.com,PROXY
+- DOMAIN-SUFFIX,clarionproject.org,PROXY
 - DOMAIN-SUFFIX,clyp.it,PROXY
+- DOMAIN-SUFFIX,cna.com.tw,PROXY
 - DOMAIN-SUFFIX,comparitech.com,PROXY
+- DOMAIN-SUFFIX,conoha.jp,PROXY
+- DOMAIN-SUFFIX,crucial.com,PROXY
+- DOMAIN-SUFFIX,cts.com.tw,PROXY
+- DOMAIN-SUFFIX,cw.com.tw,PROXY
+- DOMAIN-SUFFIX,cyberctm.com,PROXY
 - DOMAIN-SUFFIX,dailymotion.com,PROXY
 - DOMAIN-SUFFIX,dailyview.tw,PROXY
 - DOMAIN-SUFFIX,daum.net,PROXY
+- DOMAIN-SUFFIX,dcard.tw,PROXY
 - DOMAIN-SUFFIX,deepdiscount.com,PROXY
 - DOMAIN-SUFFIX,deezer.com,PROXY
 - DOMAIN-SUFFIX,depositphotos.com,PROXY
+- DOMAIN-SUFFIX,disconnect.me,PROXY
 - DOMAIN-SUFFIX,discordapp.com,PROXY
 - DOMAIN-SUFFIX,discordapp.net,PROXY
 - DOMAIN-SUFFIX,disqus.com,PROXY
+- DOMAIN-SUFFIX,dns2go.com,PROXY
 - DOMAIN-SUFFIX,dropbox.com,PROXY
 - DOMAIN-SUFFIX,dropboxusercontent.com,PROXY
 - DOMAIN-SUFFIX,duckduckgo.com,PROXY
+- DOMAIN-SUFFIX,dw.com,PROXY
 - DOMAIN-SUFFIX,dynu.com,PROXY
+- DOMAIN-SUFFIX,earthcam.com,PROXY
 - DOMAIN-SUFFIX,ebookservice.tw,PROXY
+- DOMAIN-SUFFIX,economist.com,PROXY
+- DOMAIN-SUFFIX,edgecastcdn.net,PROXY
+- DOMAIN-SUFFIX,edgecastcdn.net,PROXY
+- DOMAIN-SUFFIX,edu,PROXY
+- DOMAIN-SUFFIX,elpais.com,PROXY
+- DOMAIN-SUFFIX,enanyang.my,PROXY
+- DOMAIN-SUFFIX,euronews.com,PROXY
 - DOMAIN-SUFFIX,feedly.com,PROXY
 - DOMAIN-SUFFIX,files.wordpress.com,PROXY
 - DOMAIN-SUFFIX,flickr.com,PROXY
 - DOMAIN-SUFFIX,flitto.com,PROXY
 - DOMAIN-SUFFIX,foreignpolicy.com,PROXY
+- DOMAIN-SUFFIX,friday.tw,PROXY
 - DOMAIN-SUFFIX,gate.io,PROXY
+- DOMAIN-SUFFIX,getlantern.org,PROXY
+- DOMAIN-SUFFIX,getsync.com,PROXY
+- DOMAIN-SUFFIX,globalvoices.org,PROXY
 - DOMAIN-SUFFIX,goo.ne.jp,PROXY
 - DOMAIN-SUFFIX,goodreads.com,PROXY
 - DOMAIN-SUFFIX,gov.tw,PROXY
+- DOMAIN-SUFFIX,gumroad.com,PROXY
 - DOMAIN-SUFFIX,hbg.com,PROXY
 - DOMAIN-SUFFIX,hightail.com,PROXY
+- DOMAIN-SUFFIX,hk01.com,PROXY
+- DOMAIN-SUFFIX,hkbf.org,PROXY
+- DOMAIN-SUFFIX,hkbookcity.com,PROXY
+- DOMAIN-SUFFIX,hkej.com,PROXY
+- DOMAIN-SUFFIX,hket.com,PROXY
 - DOMAIN-SUFFIX,hkgolden.com,PROXY
+- DOMAIN-SUFFIX,hootsuite.com,PROXY
 - DOMAIN-SUFFIX,hudson.org,PROXY
 - DOMAIN-SUFFIX,huobi.pro,PROXY
 - DOMAIN-SUFFIX,initiummall.com,PROXY
@@ -444,6 +513,7 @@ Rule:
 - DOMAIN-SUFFIX,matters.news,PROXY
 - DOMAIN-SUFFIX,medium.com,PROXY
 - DOMAIN-SUFFIX,mega.nz,PROXY
+- DOMAIN-SUFFIX,mil,PROXY
 - DOMAIN-SUFFIX,mobile01.com,PROXY
 - DOMAIN-SUFFIX,naver.com,PROXY
 - DOMAIN-SUFFIX,nikkei.com,PROXY
@@ -469,6 +539,7 @@ Rule:
 - DOMAIN-SUFFIX,rakuten.co.jp,PROXY
 - DOMAIN-SUFFIX,reddit.com,PROXY
 - DOMAIN-SUFFIX,redditmedia.com,PROXY
+- DOMAIN-SUFFIX,resilio.com,PROXY
 - DOMAIN-SUFFIX,reuters.com,PROXY
 - DOMAIN-SUFFIX,scmp.com,PROXY
 - DOMAIN-SUFFIX,scribd.com,PROXY
@@ -482,19 +553,28 @@ Rule:
 - DOMAIN-SUFFIX,teco-hk.org,PROXY
 - DOMAIN-SUFFIX,teco-mo.org,PROXY
 - DOMAIN-SUFFIX,teddysun.com,PROXY
+- DOMAIN-SUFFIX,telegra.ph,PROXY
 - DOMAIN-SUFFIX,telegram.org,PROXY
 - DOMAIN-SUFFIX,theinitium.com,PROXY
 - DOMAIN-SUFFIX,tineye.com,PROXY
+- DOMAIN-SUFFIX,torproject.org,PROXY
 - DOMAIN-SUFFIX,tumblr.com,PROXY
 - DOMAIN-SUFFIX,turbobit.net,PROXY
 - DOMAIN-SUFFIX,twitch.tv,PROXY
+- DOMAIN-SUFFIX,udn.com,PROXY
 - DOMAIN-SUFFIX,unseen.is,PROXY
+- DOMAIN-SUFFIX,upmedia.mg,PROXY
 - DOMAIN-SUFFIX,uptodown.com,PROXY
+- DOMAIN-SUFFIX,ustream.tv,PROXY
+- DOMAIN-SUFFIX,uwants.com,PROXY
 - DOMAIN-SUFFIX,v2ray.com,PROXY
+- DOMAIN-SUFFIX,viber.com,PROXY
 - DOMAIN-SUFFIX,videopress.com,PROXY
 - DOMAIN-SUFFIX,vimeo.com,PROXY
-- DOMAIN-SUFFIX,voachinese.com,PROXY
+- DOMAIN-SUFFIX,voxer.com,PROXY
 - DOMAIN-SUFFIX,vzw.com,PROXY
+- DOMAIN-SUFFIX,w3schools.com,PROXY
+- DOMAIN-SUFFIX,wattpad.com,PROXY
 - DOMAIN-SUFFIX,whoer.net,PROXY
 - DOMAIN-SUFFIX,wikimapia.org,PROXY
 - DOMAIN-SUFFIX,wikipedia.org,PROXY
@@ -502,6 +582,7 @@ Rule:
 - DOMAIN-SUFFIX,worldcat.org,PROXY
 - DOMAIN-SUFFIX,wsj.com,PROXY
 - DOMAIN-SUFFIX,wsj.net,PROXY
+- DOMAIN-SUFFIX,xboxlive.com,PROXY
 - DOMAIN-SUFFIX,xvideos.com,PROXY
 - DOMAIN-SUFFIX,yahoo.com,PROXY
 - DOMAIN-SUFFIX,yesasia.com,PROXY
@@ -511,12 +592,13 @@ Rule:
 - DOMAIN-SUFFIX,zb.com,PROXY
 - DOMAIN-SUFFIX,zello.com,PROXY
 - DOMAIN-SUFFIX,zeronet.io,PROXY
-- DOMAIN,cdn-images.mailchimp.com,PROXY
-- DOMAIN,gist.github.com,PROXY
-- DOMAIN-KEYWORD,jav,PROXY
-- DOMAIN-KEYWORD,pinterest,PROXY
-- DOMAIN-KEYWORD,porn,PROXY
-- DOMAIN-KEYWORD,wikileaks,PROXY
+- DOMAINcdn-images.mailchimp.com,PROXY
+- DOMAINgist.github.com,PROXY
+- DOMAINid.heroku.com,PROXY
+- DOMAIN-KEYWORDjav,PROXY
+- DOMAIN-KEYWORDpinterest,PROXY
+- DOMAIN-KEYWORDporn,PROXY
+- DOMAIN-KEYWORDwikileaks,PROXY
 
 # (Region-Restricted Access Denied)
 - DOMAIN-SUFFIX,apartmentratings.com,PROXY
@@ -527,6 +609,7 @@ Rule:
 - DOMAIN-SUFFIX,centauro.com.br,PROXY
 - DOMAIN-SUFFIX,clearsurance.com,PROXY
 - DOMAIN-SUFFIX,costco.com,PROXY
+- DOMAIN-SUFFIX,crackle.com,PROXY
 - DOMAIN-SUFFIX,depositphotos.cn,PROXY
 - DOMAIN-SUFFIX,dish.com,PROXY
 - DOMAIN-SUFFIX,dmm.co.jp,PROXY
@@ -561,21 +644,32 @@ Rule:
 - DOMAIN-SUFFIX,vsco.co,PROXY
 - DOMAIN-SUFFIX,xfinity.com,PROXY
 - DOMAIN-SUFFIX,zattoo.com,PROXY
-- DOMAIN,abc.com,PROXY
-- DOMAIN,abc.go.com,PROXY
-- DOMAIN,abc.net.au,PROXY
-- DOMAIN,wego.here.com,PROXY
-# USER-AGENT,Roam*,PROXY // JegoTrip
+- DOMAINabc.com,PROXY
+- DOMAINabc.go.com,PROXY
+- DOMAINabc.net.au,PROXY
+- DOMAINwego.here.com,PROXY
+# USER-AGENT,Roam*,PROXY
 
 # (The Most Popular Sites)
 # > Apple
-- DOMAIN-SUFFIX,appsto.re,PROXY // Apple URL Shortener
-- DOMAIN,api-glb-sea.smoot.apple.com,PROXY // Spotlight
-- DOMAIN,beta.itunes.apple.com,PROXY // TestFlight
-- DOMAIN,books.itunes.apple.com,PROXY // iBooks Store download
-- DOMAIN,hls.itunes.apple.com,PROXY // iTunes Store Moveis Trailers
-- DOMAIN,itunes.apple.com,PROXY // App Store Preview
-- DOMAIN,lookup-api.apple.com,PROXY // Dictionary
+# > Apple URL Shortener
+- DOMAIN-SUFFIX,appsto.re,PROXY
+# > TestFlight
+- DOMAINbeta.itunes.apple.com,PROXY
+# > iBooks Store download
+- DOMAINbooks.itunes.apple.com,PROXY
+# > iTunes Store Moveis Trailers
+- DOMAINhls.itunes.apple.com,PROXY
+# App Store Preview
+- DOMAINitunes.apple.com,PROXY
+# > Spotlight
+- DOMAINapi-glb-sea.smoot.apple.com,PROXY
+# > Dictionary
+- DOMAINlookup-api.apple.com,PROXY
+# PROCESS-NAME,LookupViewService,PROXY
+# > Apple News
+# PROCESS-NAME,News,PROXY
+# USER-AGENT,AppleNews*,PROXY
 # > Google
 - DOMAIN-SUFFIX,abc.xyz,PROXY
 - DOMAIN-SUFFIX,android.com,PROXY
@@ -625,10 +719,10 @@ Rule:
 # - DOMAIN-SUFFIX,akamai.net,PROXY
 # - DOMAIN-SUFFIX,akamaistream.net,PROXY
 # - DOMAIN-SUFFIX,akamaized.net,PROXY
-# - DOMAIN-SUFFIX,akamaihd.net,PROXY
+- DOMAIN-SUFFIX,akamaihd.net,PROXY
 # > Steam
-- DOMAIN,media.steampowered.com,PROXY
-- DOMAIN,store.steampowered.com,PROXY
+- DOMAINmedia.steampowered.com,PROXY
+- DOMAINstore.steampowered.com,PROXY
 # > Supercell
 - DOMAIN-SUFFIX,brawlstars.com,PROXY
 - DOMAIN-SUFFIX,brawlstarsgame.com,PROXY
@@ -637,7 +731,6 @@ Rule:
 - DOMAIN-SUFFIX,0rz.tw,PROXY
 - DOMAIN-SUFFIX,4bluestones.biz,PROXY
 - DOMAIN-SUFFIX,9bis.net,PROXY
-- DOMAIN-SUFFIX,akamaihd.net,PROXY
 - DOMAIN-SUFFIX,allconnected.co,PROXY
 - DOMAIN-SUFFIX,amazon.com,PROXY
 - DOMAIN-SUFFIX,amazonaws.com,PROXY
@@ -651,24 +744,40 @@ Rule:
 - DOMAIN-SUFFIX,broadcast.co.nz,PROXY
 - DOMAIN-SUFFIX,camfrog.com,PROXY
 - DOMAIN-SUFFIX,cfos.de,PROXY
+- DOMAIN-SUFFIX,citypopulation.de,PROXY
 - DOMAIN-SUFFIX,cloudfront.net,PROXY
+- DOMAIN-SUFFIX,ctitv.com.tw,PROXY
+- DOMAIN-SUFFIX,cuhk.edu.hk,PROXY
+- DOMAIN-SUFFIX,cusu.hk,PROXY
 - DOMAIN-SUFFIX,discuss.com.hk,PROXY
+- DOMAIN-SUFFIX,dropboxapi.com,PROXY
 - DOMAIN-SUFFIX,edditstatic.com,PROXY
+- DOMAIN-SUFFIX,flickriver.com,PROXY
+- DOMAIN-SUFFIX,focustaiwan.tw,PROXY
+- DOMAIN-SUFFIX,free.fr,PROXY
 - DOMAIN-SUFFIX,ftchinese.com,PROXY
+- DOMAIN-SUFFIX,gigacircle.com,PROXY
 - DOMAIN-SUFFIX,gov,PROXY
+- DOMAIN-SUFFIX,hk-pub.com,PROXY
+- DOMAIN-SUFFIX,hosting.co.uk,PROXY
 - DOMAIN-SUFFIX,hwcdn.net,PROXY
 - DOMAIN-SUFFIX,jtvnw.net,PROXY
+- DOMAIN-SUFFIX,linksalpha.com,PROXY
 - DOMAIN-SUFFIX,manyvids.com,PROXY
 - DOMAIN-SUFFIX,myactimes.com,PROXY
 - DOMAIN-SUFFIX,newsblur.com,PROXY
 - DOMAIN-SUFFIX,now.im,PROXY
 - DOMAIN-SUFFIX,redditlist.com,PROXY
 - DOMAIN-SUFFIX,sparknotes.com,PROXY
+- DOMAIN-SUFFIX,streetvoice.com,PROXY
 - DOMAIN-SUFFIX,t.me,PROXY
 - DOMAIN-SUFFIX,tdesktop.com,PROXY
 - DOMAIN-SUFFIX,telegram.me,PROXY
 - DOMAIN-SUFFIX,ttvnw.net,PROXY
+- DOMAIN-SUFFIX,tv.com,PROXY
 - DOMAIN-SUFFIX,twitchcdn.net,PROXY
+- DOMAIN-SUFFIX,typepad.com,PROXY
+- DOMAIN-SUFFIX,udnbkk.com,PROXY
 - DOMAIN-SUFFIX,wikia.com,PROXY
 - DOMAIN-SUFFIX,wn.com,PROXY
 - DOMAIN-SUFFIX,wolframalpha.com,PROXY
@@ -682,13 +791,13 @@ Rule:
 - IP-CIDR,149.154.160.0/20,PROXY
 
 # China Area Network
+# > App Store Download || iBooks Sample
+- DOMAIN-SUFFIX,itunes.apple.com,Apple
+# > Apple Music Preview
+- DOMAINaudio-ssl.itunes.apple.com,Apple
+# > Apple News and Apple Map TOMTOM Version
+- DOMAINgspe1-ssl.ls.apple.com,Apple
 # > Apple
-- DOMAIN-SUFFIX,itunes.apple.com,APPLE // App Store Download || iBooks Sample
-- DOMAIN,audio-ssl.itunes.apple.com,APPLE // Apple Music Preview
-- DOMAIN,gspe1-ssl.ls.apple.com,APPLE // Apple News and Apple Map TOMTOM Version
-# PROCESS-NAME,LookupViewService,PROXY
-# PROCESS-NAME,News,PROXY // Apple News
-# USER-AGENT,AppleNews*,PROXY // Apple News
 - DOMAIN-SUFFIX,aaplimg.com,DIRECT
 - DOMAIN-SUFFIX,apple.co,DIRECT
 - DOMAIN-SUFFIX,apple.com,DIRECT
@@ -703,17 +812,18 @@ Rule:
 - DOMAIN-SUFFIX,microsoft.com,DIRECT
 - DOMAIN-SUFFIX,windows.net,DIRECT
 - DOMAIN-SUFFIX,sfx.ms,DIRECT
-- DOMAIN,officecdn-microsoft-com.akamaized.net,DIRECT // Microsoft AutoUpdate
+- DOMAIN-KEYWORDofficecdn,DIRECT
 # > Blizzard
 - DOMAIN-SUFFIX,blizzard.com,DIRECT
 - DOMAIN-SUFFIX,battle.net,DIRECT
-- DOMAIN,blzddist1-a.akamaihd.net,DIRECT
+- DOMAINblzddist1-a.akamaihd.net,DIRECT
 # > Steam
 - DOMAIN-SUFFIX,steampowered.com,DIRECT
 - DOMAIN-SUFFIX,steam-chat.com,DIRECT
-- DOMAIN,steamcdn-a.akamaihd.net,DIRECT
-- DOMAIN,steamuserimages-a.akamaihd.net,DIRECT
-- DOMAIN,steamstore-a.akamaihd.net,DIRECT
+- DOMAIN-KEYWORDsteamcdn,DIRECT
+- DOMAIN-KEYWORDsteamstore,DIRECT
+- DOMAIN-KEYWORDsteamuserimages,DIRECT
+- DOMAIN-KEYWORDsteambroadcast,DIRECT
 # > Tencent
 # USER-AGENT,MicroMessenger Client,DIRECT
 # USER-AGENT,WeChat*,DIRECT
@@ -775,7 +885,7 @@ Rule:
 - DOMAIN-SUFFIX,ipv6-test.com,DIRECT
 - DOMAIN-SUFFIX,test-ipv6.com,DIRECT
 - DOMAIN-SUFFIX,whatismyip.com,DIRECT
-- DOMAIN,ip.bjango.com,DIRECT // iStat Menu
+- DOMAINip.bjango.com,DIRECT
 # > Other
 - DOMAIN-SUFFIX,akadns.net,DIRECT
 - DOMAIN-SUFFIX,maoyun.tv,DIRECT
@@ -842,5 +952,4 @@ Rule:
 # GeoIP China
 - GEOIP,CN,DIRECT
 
-# Final
-- MATCH,FINAL
+- MATCH,Final
