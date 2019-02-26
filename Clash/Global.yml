@@ -266,14 +266,14 @@ Rule:
 # Global Area Network
 # (ForeignMedia)
 # (Video)
-- DOMAINcontent.jwplatform.com,ForeignMedia
-- DOMAINvideos-f.jwpsrv.com,ForeignMedia
+- DOMAIN,content.jwplatform.com,ForeignMedia
+- DOMAIN,videos-f.jwpsrv.com,ForeignMedia
 # > Youtube
 # USER-AGENT,*youtube*,ForeignMedia
 # USER-AGENT,YouTube*,ForeignMedia
 - DOMAIN-SUFFIX,googlevideo.com,ForeignMedia
 - DOMAIN-SUFFIX,youtube.com,ForeignMedia
-- DOMAINyoutubei.googleapis.com,ForeignMedia
+- DOMAIN,youtubei.googleapis.com,ForeignMedia
 # > Netflix
 # USER-AGENT,Argo*,ForeignMedia
 - DOMAIN-SUFFIX,netflix.com,ForeignMedia
@@ -581,9 +581,9 @@ Rule:
 - DOMAIN-SUFFIX,zb.com,PROXY
 - DOMAIN-SUFFIX,zello.com,PROXY
 - DOMAIN-SUFFIX,zeronet.io,PROXY
-- DOMAINcdn-images.mailchimp.com,PROXY
-- DOMAINgist.github.com,PROXY
-- DOMAINid.heroku.com,PROXY
+- DOMAIN,cdn-images.mailchimp.com,PROXY
+- DOMAIN,gist.github.com,PROXY
+- DOMAIN,id.heroku.com,PROXY
 - DOMAIN-KEYWORD,jav,PROXY
 - DOMAIN-KEYWORD,pinterest,PROXY
 - DOMAIN-KEYWORD,porn,PROXY
@@ -633,10 +633,10 @@ Rule:
 - DOMAIN-SUFFIX,vsco.co,PROXY
 - DOMAIN-SUFFIX,xfinity.com,PROXY
 - DOMAIN-SUFFIX,zattoo.com,PROXY
-- DOMAINabc.com,PROXY
-- DOMAINabc.go.com,PROXY
-- DOMAINabc.net.au,PROXY
-- DOMAINwego.here.com,PROXY
+- DOMAIN,abc.com,PROXY
+- DOMAIN,abc.go.com,PROXY
+- DOMAIN,abc.net.au,PROXY
+- DOMAIN,wego.here.com,PROXY
 # USER-AGENT,Roam*,PROXY
 
 # (The Most Popular Sites)
@@ -644,17 +644,17 @@ Rule:
 # > Apple URL Shortener
 - DOMAIN-SUFFIX,appsto.re,PROXY
 # > TestFlight
-- DOMAINbeta.itunes.apple.com,PROXY
+- DOMAIN,beta.itunes.apple.com,PROXY
 # > iBooks Store download
-- DOMAINbooks.itunes.apple.com,PROXY
+- DOMAIN,books.itunes.apple.com,PROXY
 # > iTunes Store Moveis Trailers
-- DOMAINhls.itunes.apple.com,PROXY
+- DOMAIN,hls.itunes.apple.com,PROXY
 # App Store Preview
-- DOMAINitunes.apple.com,PROXY
+- DOMAIN,itunes.apple.com,PROXY
 # > Spotlight
-- DOMAINapi-glb-sea.smoot.apple.com,PROXY
+- DOMAIN,api-glb-sea.smoot.apple.com,PROXY
 # > Dictionary
-- DOMAINlookup-api.apple.com,PROXY
+- DOMAIN,lookup-api.apple.com,PROXY
 # PROCESS-NAME,LookupViewService,PROXY
 # > Apple News
 # PROCESS-NAME,News,PROXY
@@ -710,8 +710,8 @@ Rule:
 # - DOMAIN-SUFFIX,akamaized.net,PROXY
 - DOMAIN-SUFFIX,akamaihd.net,PROXY
 # > Steam
-- DOMAINmedia.steampowered.com,PROXY
-- DOMAINstore.steampowered.com,PROXY
+- DOMAIN,media.steampowered.com,PROXY
+- DOMAIN,store.steampowered.com,PROXY
 # > Supercell
 - DOMAIN-SUFFIX,brawlstars.com,PROXY
 - DOMAIN-SUFFIX,brawlstarsgame.com,PROXY
@@ -783,9 +783,9 @@ Rule:
 # > App Store Download || iBooks Sample
 - DOMAIN-SUFFIX,itunes.apple.com,Apple
 # > Apple Music Preview
-- DOMAINaudio-ssl.itunes.apple.com,Apple
+- DOMAIN,audio-ssl.itunes.apple.com,Apple
 # > Apple News and Apple Map TOMTOM Version
-- DOMAINgspe1-ssl.ls.apple.com,Apple
+- DOMAIN,gspe1-ssl.ls.apple.com,Apple
 # > Apple
 - DOMAIN-SUFFIX,aaplimg.com,DIRECT
 - DOMAIN-SUFFIX,apple.co,DIRECT
@@ -805,7 +805,7 @@ Rule:
 # > Blizzard
 - DOMAIN-SUFFIX,blizzard.com,DIRECT
 - DOMAIN-SUFFIX,battle.net,DIRECT
-- DOMAINblzddist1-a.akamaihd.net,DIRECT
+- DOMAIN,blzddist1-a.akamaihd.net,DIRECT
 # > Steam
 - DOMAIN-SUFFIX,steampowered.com,DIRECT
 - DOMAIN-SUFFIX,steam-chat.com,DIRECT
@@ -874,7 +874,7 @@ Rule:
 - DOMAIN-SUFFIX,ipv6-test.com,DIRECT
 - DOMAIN-SUFFIX,test-ipv6.com,DIRECT
 - DOMAIN-SUFFIX,whatismyip.com,DIRECT
-- DOMAINip.bjango.com,DIRECT
+- DOMAIN,ip.bjango.com,DIRECT
 # > Other
 - DOMAIN-SUFFIX,akadns.net,DIRECT
 - DOMAIN-SUFFIX,maoyun.tv,DIRECT
