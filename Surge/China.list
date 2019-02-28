@@ -101,18 +101,3 @@ DOMAIN-SUFFIX,zhimg.com
 DOMAIN-SUFFIX,smzdm.com
 USER-AGENT,NeteaseMusic*
 USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*
-
-# Client
-# > Proxy
-PROCESS-NAME,v2ray
-PROCESS-NAME,ss-local
-# > Download
-PROCESS-NAME,aria2c
-PROCESS-NAME,fdm
-PROCESS-NAME,Folx
-PROCESS-NAME,NetTransport
-PROCESS-NAME,Thunder
-PROCESS-NAME,Transmission
-PROCESS-NAME,uTorrent
-PROCESS-NAME,WebTorrent
-PROCESS-NAME,WebTorrent Helper
