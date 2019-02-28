@@ -227,6 +227,7 @@ DOMAIN-SUFFIX,googlesyndication.com
 DOMAIN-SUFFIX,googletagmanager.com
 # > Baidu
 DOMAIN-SUFFIX,baidustatic.com
+DOMAIN,afd.baidu.com
 DOMAIN,duclick.baidu.com
 DOMAIN,hm.baidu.com
 DOMAIN,hmma.baidu.com
