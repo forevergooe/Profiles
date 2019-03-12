@@ -14,7 +14,7 @@ allow-lan: false
 mode: Rule
 
 # 设置日志输出级别 (默认级别：info，级别越高日志输出量越大，越倾向于调试)
-# 四个级别：info / warning / error / debug / silent
+# 四个级别：silent / info / warning / error / debug
 log-level: info
 
 # Clash 的 RESTful API
@@ -32,8 +32,8 @@ external-controller: 127.0.0.1:9090
 #   - 223.5.5.5
 #   - tls://dns.rubyfish.cn:853 # dns over tls
 #   fallback: # concurrent request with nameserver, fallback used when GEOIP country isnt CN
-#   - 1.1.1.1
-#   - 8.8.8.8
+#   - tls://1.1.1.1:853
+#   - tls://1.0.0.1:853
 
 # 代理节点
 Proxy:

@@ -1,7 +1,5 @@
 # (ForeignMedia)
 # (Video)
-DOMAIN,content.jwplatform.com
-DOMAIN,videos-f.jwpsrv.com
 # > Youtube
 USER-AGENT,*youtube*
 USER-AGENT,YouTube*
@@ -17,7 +15,15 @@ DOMAIN-SUFFIX,nflximg.com
 DOMAIN-SUFFIX,nflximg.net
 DOMAIN-SUFFIX,nflxso.net
 DOMAIN-SUFFIX,nflxvideo.net
-# > HBO
+# > Amazon Prime Video (US|JP)
+USER-AGENT,InstantVideo.US*
+USER-AGENT,Prime%20Video*
+# > Fox+ (HK|TW|SG)
+USER-AGENT,FOXPlus*
+DOMAIN-SUFFIX,foxplus.com
+DOMAIN-SUFFIX,theplatform.com
+# > (US)
+# > HBO Now
 USER-AGENT,HBO%20NOW*
 DOMAIN-SUFFIX,hbo.com
 DOMAIN-SUFFIX,hbogo.com
@@ -25,49 +31,43 @@ DOMAIN-SUFFIX,hbogo.com
 USER-AGENT,Hulu*
 DOMAIN-SUFFIX,hulu.com
 DOMAIN-SUFFIX,huluim.com
-# > Hulu(フールー)
-DOMAIN-SUFFIX,happyon.jp
-# > BBC iPlayer
-USER-AGENT,BBCiPlayer*
-DOMAIN-SUFFIX,bbc.co.uk
-DOMAIN-SUFFIX,bbci.co.uk
-DOMAIN-KEYWORD,bbcfmt
-DOMAIN-KEYWORD,uk-live
-# > Bahamut
-USER-AGENT,Anime*
-DOMAIN-SUFFIX,bahamut.com.tw
-DOMAIN-SUFFIX,gamer.com.tw
-DOMAIN-SUFFIX,hinet.net
+# > PBS
+USER-AGENT,PBS*
+DOMAIN-SUFFIX,pbs.org
+# > Fox Now
+USER-AGENT,FOX%20NOW*
+# > (HK)
 # > myTV_SUPER
 USER-AGENT,mytv*
 DOMAIN-SUFFIX,mytvsuper.com
 DOMAIN-SUFFIX,tvb.com
+# > encoreTVB
+USER-AGENT,encoreTVB*
+DOMAIN-SUFFIX,encoretvb.com
+DOMAIN,content.jwplatform.com
+DOMAIN,videos-f.jwpsrv.com
+# > ViuTV
+USER-AGENT,ViuTV*
+DOMAIN,api.viu.now.com
+# > (JP)
+# > Hulu(フールー)
+DOMAIN-SUFFIX,happyon.jp
 # > AbemaTV
 USER-AGENT,AbemaTV*
 DOMAIN-SUFFIX,abema.io
 DOMAIN-SUFFIX,ameba.jp
 DOMAIN-SUFFIX,hayabusa.io
 DOMAIN,linear-abematv.akamaized.net
-# > encoreTVB
-USER-AGENT,encoreTVB*
-# > 愛奇藝台灣站
-DOMAIN-SUFFIX,tw.iqiyi.com
-# > PBS
-USER-AGENT,PBS*
-DOMAIN-SUFFIX,pbs.org
-# > Amazon Prime Video
-USER-AGENT,InstantVideo.US*
-USER-AGENT,Prime%20Video*
-
-# (Music)
-# > Spotify
-USER-AGENT,Spotify*
-DOMAIN-SUFFIX,scdn.co
-DOMAIN-SUFFIX,spotify.com
-DOMAIN-SUFFIX,spoti.fi
-# > JOOX
-USER-AGENT,WeMusic*
-USER-AGENT,JOOX*
-DOMAIN-SUFFIX,joox.com
-# > Pandora
-DOMAIN-SUFFIX,pandora.com
+# > (UK)
+# > BBC iPlayer
+USER-AGENT,BBCiPlayer*
+DOMAIN-SUFFIX,bbc.co.uk
+DOMAIN-SUFFIX,bbci.co.uk
+DOMAIN-KEYWORD,bbcfmt
+DOMAIN-KEYWORD,uk-live
+# > (TW)
+# > Bahamut
+USER-AGENT,Anime*
+DOMAIN-SUFFIX,bahamut.com.tw
+DOMAIN-SUFFIX,gamer.com.tw
+DOMAIN-SUFFIX,hinet.net

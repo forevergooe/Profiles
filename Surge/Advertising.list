@@ -1,4 +1,3 @@
-# Advertising Block 去广告以及隐私追踪保护
 # > General
 DOMAIN-KEYWORD,adservice
 DOMAIN-KEYWORD,analytics
@@ -14,6 +13,7 @@ DOMAIN-SUFFIX,adinall.com
 DOMAIN-SUFFIX,adjust.com
 DOMAIN-SUFFIX,adkmob.com
 DOMAIN-SUFFIX,adlefee.com
+DOMAIN-SUFFIX,admantx.com
 DOMAIN-SUFFIX,admarvel.com
 DOMAIN-SUFFIX,admaster.com.cn
 DOMAIN-SUFFIX,admob.com
@@ -36,9 +36,11 @@ DOMAIN-SUFFIX,analysys.cn
 DOMAIN-SUFFIX,app-adforce.jp
 DOMAIN-SUFFIX,appboy.com
 DOMAIN-SUFFIX,appier.net
+DOMAIN-SUFFIX,appnext.com
 DOMAIN-SUFFIX,appsflyer.com
 DOMAIN-SUFFIX,apptentive.com
 DOMAIN-SUFFIX,atwola.com
+DOMAIN-SUFFIX,betrad.com
 DOMAIN-SUFFIX,bidswitch.com
 DOMAIN-SUFFIX,bjytgw.com
 DOMAIN-SUFFIX,bttrack.com
@@ -48,6 +50,7 @@ DOMAIN-SUFFIX,cferw.com
 DOMAIN-SUFFIX,chartbeat.net
 DOMAIN-SUFFIX,clickhubs.com
 DOMAIN-SUFFIX,cloudmobi.net
+DOMAIN-SUFFIX,cnadnet.com
 DOMAIN-SUFFIX,cnzz.com
 DOMAIN-SUFFIX,cocounion.com
 DOMAIN-SUFFIX,conviva.com
@@ -55,6 +58,7 @@ DOMAIN-SUFFIX,criteo.com
 DOMAIN-SUFFIX,crwdcntrl.net
 DOMAIN-SUFFIX,ctrmi.com
 DOMAIN-SUFFIX,demdex.net
+DOMAIN-SUFFIX,dianomi.com
 DOMAIN-SUFFIX,digitru.st
 DOMAIN-SUFFIX,dtscout.com
 DOMAIN-SUFFIX,effectivemeasure.net
@@ -64,6 +68,7 @@ DOMAIN-SUFFIX,exoclick.com
 DOMAIN-SUFFIX,exosrv.com
 DOMAIN-SUFFIX,exposebox.com
 DOMAIN-SUFFIX,eyeota.net
+DOMAIN-SUFFIX,eyeviewads.com
 DOMAIN-SUFFIX,flurry.com
 DOMAIN-SUFFIX,fwmrm.net
 DOMAIN-SUFFIX,getrockerbox.com
@@ -93,6 +98,7 @@ DOMAIN-SUFFIX,lnk0.com
 DOMAIN-SUFFIX,luomi.com
 DOMAIN-SUFFIX,madserving.com
 DOMAIN-SUFFIX,mathtag.com
+DOMAIN-SUFFIX,media.net
 DOMAIN-SUFFIX,metalex.io
 DOMAIN-SUFFIX,mfadsrvr.com
 DOMAIN-SUFFIX,miaozhen.com
@@ -131,10 +137,11 @@ DOMAIN-SUFFIX,storygize.net
 DOMAIN-SUFFIX,summerhamster.com
 DOMAIN-SUFFIX,supersonicads.com
 DOMAIN-SUFFIX,taboola.com
+DOMAIN-SUFFIX,tagtic.cn
 DOMAIN-SUFFIX,talkingdata.com
 DOMAIN-SUFFIX,tango-deg.com
-DOMAIN-SUFFIX,tanx.com
 DOMAIN-SUFFIX,tanv.com
+DOMAIN-SUFFIX,tanx.com
 DOMAIN-SUFFIX,taplytics.com
 DOMAIN-SUFFIX,taptica.com
 DOMAIN-SUFFIX,testplus.cn
@@ -159,13 +166,6 @@ DOMAIN-SUFFIX,xadchina.cn
 DOMAIN-SUFFIX,xdrig.com
 DOMAIN-SUFFIX,yldbt.com
 DOMAIN-SUFFIX,ymtracking.com
-DOMAIN-SUFFIX,appnext.com
-DOMAIN-SUFFIX,cnadnet.com
-DOMAIN-SUFFIX,media.net
-DOMAIN-SUFFIX,betrad.com
-DOMAIN-SUFFIX,dianomi.com
-DOMAIN-SUFFIX,admantx.com
-DOMAIN-SUFFIX,tagtic.cn
 
 DOMAIN-SUFFIX,ad.daum.net
 DOMAIN-SUFFIX,api.appsee.com
@@ -202,6 +202,7 @@ DOMAIN,adxserver.ad.cmvideo.cn
 DOMAIN,app-ad.variflight.com
 DOMAIN,applog.mobike.com
 DOMAIN,ggs.myzaker.com
+DOMAIN,ja.chushou.tv
 DOMAIN,log.b612kaji.com
 DOMAIN,log.star.ele.me
 DOMAIN,log.voicecloud.cn
@@ -270,7 +271,7 @@ DOMAIN,pingma.qq.com
 DOMAIN,pingtcss.qq.com
 DOMAIN,splashqqlive.gtimg.com
 DOMAIN,tajs.qq.com
-# > 酷狗酷我
+# > KuGou and Kuwo
 DOMAIN,adserviceretry.kugou.com
 DOMAIN,ads.service.kugou.com
 DOMAIN,adsfile.bssdlbig.kugou.com
@@ -401,3 +402,6 @@ DOMAIN,xlog-va.byteoversea.com
 DOMAIN,a.wkanx.com
 DOMAIN,cwx.lianwangtech.com
 DOMAIN,c1wx.lianwangtech.com
+# > 小红书
+DOMAIN,t-ads.xiaohongshu.com
+DOMAIN,apm-track.xiaohongshu.com
