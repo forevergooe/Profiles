@@ -2,9 +2,11 @@
 
 配置规则文件（订阅 [Telegram 频道](https://t.me/DivineEngine_Profiles) 获取更多信息）
 
-macOS：[Surge](https://nssurge.com/)、[ClashX](https://github.com/yichengchen/clashX)
+macOS：[Surge](https://nssurge.com/) | [ClashX](https://github.com/yichengchen/clashX)
 
-iOS：[Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8)、[Quantumult](https://itunes.apple.com/app/apple-store/id1252015438?mt=8)、[Kitsunebi](https://itunes.apple.com/us/app/kitsunebi-proxy-utility/id1446584073?ls=1&mt=8)、[Shadowrocket](https://itunes.apple.com/app/apple-store/id932747118?mt=8)、[Pepi(ShadowRay)](https://itunes.apple.com/app/apple-store/id1283082051?mt=8) 
+iOS：[Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8) | [Quantumult](https://itunes.apple.com/app/apple-store/id1252015438?mt=8) | [Kitsunebi](https://itunes.apple.com/app/apple-store/id1446584073?mt=8) | [Shadowrocket](https://itunes.apple.com/app/apple-store/id932747118?mt=8) | [Pepi(ShadowRay)](https://itunes.apple.com/app/apple-store/id1283082051?mt=8) 
+
+Android：[Surfboard](https://rink.hockeyapp.net/recruit/2113783c503645abb0a5ec6317e1a169) | [BifrostV](https://play.google.com/store/apps/details?id=com.github.dawndiy.bifrostv) | [Kitsunebi](https://play.google.com/store/apps/details?id=fun.kitsunebi.kitsunebi4android)
 
 Windows：[Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg)
 
