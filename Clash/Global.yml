@@ -809,11 +809,11 @@ Rule:
 # PROCESS-NAME,News,PROXY
 # USER-AGENT,AppleNews*,PROXY
 # > Apple
-- DOMAIN-SUFFIX,aaplimg.com,DIRECT
+- DOMAIN-SUFFIX,aaplimg.com,Apple
 - DOMAIN-SUFFIX,apple.co,DIRECT
 - DOMAIN-SUFFIX,apple.com,DIRECT
 - DOMAIN-SUFFIX,appstore.com,DIRECT
-- DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+- DOMAIN-SUFFIX,cdn-apple.com,Apple
 - DOMAIN-SUFFIX,crashlytics.com,DIRECT
 - DOMAIN-SUFFIX,icloud.com,DIRECT
 - DOMAIN-SUFFIX,icloud-content.com,Apple
@@ -823,6 +823,7 @@ Rule:
 - DOMAIN-SUFFIX,microsoft.com,DIRECT
 - DOMAIN-SUFFIX,windows.net,DIRECT
 - DOMAIN-SUFFIX,sfx.ms,DIRECT
+- DOMAIN-SUFFIX,sharepoint.com,DIRECT
 - DOMAIN-KEYWORD,officecdn,DIRECT
 # > Blizzard
 - DOMAIN-SUFFIX,blizzard.com,DIRECT
@@ -836,14 +837,15 @@ Rule:
 - DOMAIN-KEYWORD,steamuserimages,DIRECT
 - DOMAIN-KEYWORD,steambroadcast,DIRECT
 # > Tencent
-# USER-AGENT,MicroMessenger Client,DIRECT
+# USER-AGENT,MicroMessenger%20Client,DIRECT
 # USER-AGENT,WeChat*,DIRECT
 - DOMAIN-SUFFIX,qq.com,DIRECT
-- DOMAIN-SUFFIX,qpic.cn,DIRECT
+- DOMAIN-SUFFIX,qpic.cn,DIRECTMicroMessenger
 # > Alibaba
 - DOMAIN-SUFFIX,alibaba.com,DIRECT
 - DOMAIN-SUFFIX,alicdn.com,DIRECT
 - DOMAIN-SUFFIX,amap.com,DIRECT
+- DOMAIN-SUFFIX,dingtalk.com,DIRECT
 - DOMAIN-SUFFIX,taobao.com,DIRECT
 - DOMAIN-SUFFIX,tmall.com,DIRECT
 - DOMAIN-SUFFIX,ykimg.com,DIRECT
@@ -861,6 +863,7 @@ Rule:
 - DOMAIN-SUFFIX,v-56.com,DIRECT
 # > Sina
 - DOMAIN-SUFFIX,weibo.com,DIRECT
+- DOMAIN-SUFFIX,weibo.cn,DIRECT
 # > JD
 - DOMAIN-SUFFIX,jd.com,DIRECT
 - DOMAIN-SUFFIX,jd.hk,DIRECT
@@ -877,10 +880,12 @@ Rule:
 # > iQiyi
 - DOMAIN-SUFFIX,iqiyi.com,DIRECT
 - DOMAIN-SUFFIX,iqiyipic.com,DIRECT
+- DOMAIN-SUFFIX,71.am.com,DIRECT
 # > HunanTV
 - DOMAIN-SUFFIX,hitv.com,DIRECT
 - DOMAIN-SUFFIX,mgtv.com,DIRECT
 # > Meitu
+- DOMAIN-SUFFIX,meitu.com,DIRECT
 - DOMAIN-SUFFIX,meitudata.com,DIRECT
 - DOMAIN-SUFFIX,meipai.com,DIRECT
 # > YYeTs
@@ -888,6 +893,22 @@ Rule:
 - DOMAIN-SUFFIX,zimuzu.tv,DIRECT
 - DOMAIN-SUFFIX,zmzfile.com,DIRECT
 - DOMAIN-SUFFIX,zmzapi.net,DIRECT
+# > Baidu
+- DOMAIN-SUFFIX,baidu.com,DIRECT
+- DOMAIN-SUFFIX,baidubcr.com,DIRECT
+- DOMAIN-SUFFIX,bdstatic.com,DIRECT
+# > ChinaNet
+- DOMAIN-SUFFIX,189.cn,DIRECT
+- DOMAIN-SUFFIX,21cn.com,DIRECT
+# > ByteDance
+- DOMAIN-SUFFIX,bytecdn.cn,DIRECT
+- DOMAIN-SUFFIX,pstatp.com,DIRECT
+- DOMAIN-SUFFIX,snssdk.com,DIRECT
+- DOMAIN-SUFFIX,toutiao.com,DIRECT
+# > Content Delivery Network
+- DOMAIN-SUFFIX,akadns.net,DIRECT
+- DOMAIN-SUFFIX,chinanetcenter.com,DIRECT
+- DOMAIN-SUFFIX,wangsu.com,DIRECT
 # > IP Query
 - DOMAIN-SUFFIX,ipip.net,DIRECT
 - DOMAIN-SUFFIX,ip.cn,DIRECT
@@ -898,17 +919,32 @@ Rule:
 - DOMAIN-SUFFIX,whatismyip.com,DIRECT
 - DOMAIN,ip.bjango.com,DIRECT
 # > Other
-- DOMAIN-SUFFIX,akadns.net,DIRECT
+- DOMAIN-SUFFIX,40017.cn,DIRECT
+- DOMAIN-SUFFIX,cailianpress.com,DIRECT
+- DOMAIN-SUFFIX,chushou.tv,DIRECT
+- DOMAIN-SUFFIX,cmbchina.com,DIRECT
+- DOMAIN-SUFFIX,cmbimg.com,DIRECT
+- DOMAIN-SUFFIX,cmvideo.cn,DIRECT
+- DOMAIN-SUFFIX,doubanio.com,DIRECT
+- DOMAIN-SUFFIX,douyu.com,DIRECT
+- DOMAIN-SUFFIX,douyucdn.cn,DIRECT
+- DOMAIN-SUFFIX,dxycdn.com,DIRECT
+- DOMAIN-SUFFIX,hicloud.com,DIRECT
+- DOMAIN-SUFFIX,kkmh.com,DIRECT
+- DOMAIN-SUFFIX,ksosoft.com,DIRECT
 - DOMAIN-SUFFIX,maoyun.tv,DIRECT
+- DOMAIN-SUFFIX,meituan.net,DIRECT
+- DOMAIN-SUFFIX,mobike.com,DIRECT
+- DOMAIN-SUFFIX,mubu.com,DIRECT
+- DOMAIN-SUFFIX,myzaker.com,DIRECT
+- DOMAIN-SUFFIX,smzdm.com,DIRECT
+- DOMAIN-SUFFIX,sogou.com,DIRECT
 - DOMAIN-SUFFIX,teamviewer.com,DIRECT
 - DOMAIN-SUFFIX,udacity.com,DIRECT
-- DOMAIN-SUFFIX,cmvideo.cn,DIRECT
 - DOMAIN-SUFFIX,xmcdn.com,DIRECT
-- DOMAIN-SUFFIX,sogou.com,DIRECT
-- DOMAIN-SUFFIX,myzaker.com,DIRECT
+- DOMAIN-SUFFIX,yangkeduo.com,DIRECT
 - DOMAIN-SUFFIX,zhihu.com,DIRECT
 - DOMAIN-SUFFIX,zhimg.com,DIRECT
-- DOMAIN-SUFFIX,smzdm.com,DIRECT
 # USER-AGENT,NeteaseMusic*,DIRECT
 # USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*,DIRECT
 

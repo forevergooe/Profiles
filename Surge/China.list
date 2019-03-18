@@ -1,10 +1,8 @@
 # China Area Network
 # > Apple
-DOMAIN-SUFFIX,aaplimg.com
 DOMAIN-SUFFIX,apple.co
 DOMAIN-SUFFIX,apple.com
 DOMAIN-SUFFIX,appstore.com
-DOMAIN-SUFFIX,cdn-apple.com
 DOMAIN-SUFFIX,crashlytics.com
 DOMAIN-SUFFIX,icloud.com
 DOMAIN-SUFFIX,me.com
@@ -13,6 +11,7 @@ DOMAIN-SUFFIX,mzstatic.com
 DOMAIN-SUFFIX,microsoft.com
 DOMAIN-SUFFIX,windows.net
 DOMAIN-SUFFIX,sfx.ms
+DOMAIN-SUFFIX,sharepoint.com
 DOMAIN-KEYWORD,officecdn
 # > Blizzard
 DOMAIN-SUFFIX,blizzard.com
@@ -21,11 +20,12 @@ DOMAIN,blzddist1-a.akamaihd.net
 # > Steam
 DOMAIN-SUFFIX,steampowered.com
 DOMAIN-SUFFIX,steam-chat.com
-DOMAIN,steamcdn-a.akamaihd.net
-DOMAIN,steamuserimages-a.akamaihd.net
-DOMAIN,steamstore-a.akamaihd.net
+DOMAIN-KEYWORD,steamcdn
+DOMAIN-KEYWORD,steamstore
+DOMAIN-KEYWORD,steamuserimages
+DOMAIN-KEYWORD,steambroadcast
 # > Tencent
-USER-AGENT,MicroMessenger Client
+USER-AGENT,MicroMessenger%20Client
 USER-AGENT,WeChat*
 DOMAIN-SUFFIX,qq.com
 DOMAIN-SUFFIX,qpic.cn
@@ -33,6 +33,7 @@ DOMAIN-SUFFIX,qpic.cn
 DOMAIN-SUFFIX,alibaba.com
 DOMAIN-SUFFIX,alicdn.com
 DOMAIN-SUFFIX,amap.com
+DOMAIN-SUFFIX,dingtalk.com
 DOMAIN-SUFFIX,taobao.com
 DOMAIN-SUFFIX,tmall.com
 DOMAIN-SUFFIX,ykimg.com
@@ -50,6 +51,7 @@ DOMAIN-SUFFIX,sohu.com
 DOMAIN-SUFFIX,v-56.com
 # > Sina
 DOMAIN-SUFFIX,weibo.com
+DOMAIN-SUFFIX,weibo.cn
 # > JD
 DOMAIN-SUFFIX,jd.com
 DOMAIN-SUFFIX,jd.hk
@@ -63,13 +65,11 @@ DOMAIN-SUFFIX,xiaomi.com
 DOMAIN-SUFFIX,acgvideo.com
 DOMAIN-SUFFIX,bilibili.com
 DOMAIN-SUFFIX,hdslb.com
-# > iQiyi
-DOMAIN-SUFFIX,iqiyi.com
-DOMAIN-SUFFIX,iqiyipic.com
 # > HunanTV
 DOMAIN-SUFFIX,hitv.com
 DOMAIN-SUFFIX,mgtv.com
 # > Meitu
+DOMAIN-SUFFIX,meitu.com
 DOMAIN-SUFFIX,meitudata.com
 DOMAIN-SUFFIX,meipai.com
 # > YYeTs
@@ -77,6 +77,22 @@ DOMAIN-SUFFIX,zmzapi.com
 DOMAIN-SUFFIX,zimuzu.tv
 DOMAIN-SUFFIX,zmzfile.com
 DOMAIN-SUFFIX,zmzapi.net
+# > Baidu
+DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,baidubcr.com
+DOMAIN-SUFFIX,bdstatic.com
+# > ChinaNet
+DOMAIN-SUFFIX,189.cn
+DOMAIN-SUFFIX,21cn.com
+# > ByteDance
+DOMAIN-SUFFIX,bytecdn.cn
+DOMAIN-SUFFIX,pstatp.com
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,toutiao.com
+# > Content Delivery Network
+DOMAIN-SUFFIX,akadns.net
+DOMAIN-SUFFIX,chinanetcenter.com
+DOMAIN-SUFFIX,wangsu.com
 # > IP Query
 DOMAIN-SUFFIX,ipip.net
 DOMAIN-SUFFIX,ip.cn
@@ -87,16 +103,31 @@ DOMAIN-SUFFIX,test-ipv6.com
 DOMAIN-SUFFIX,whatismyip.com
 DOMAIN,ip.bjango.com
 # > Other
-DOMAIN-SUFFIX,akadns.net
+DOMAIN-SUFFIX,40017.cn
+DOMAIN-SUFFIX,cailianpress.com
+DOMAIN-SUFFIX,chushou.tv
+DOMAIN-SUFFIX,cmbchina.com
+DOMAIN-SUFFIX,cmbimg.com
+DOMAIN-SUFFIX,cmvideo.cn
+DOMAIN-SUFFIX,doubanio.com
+DOMAIN-SUFFIX,douyu.com
+DOMAIN-SUFFIX,douyucdn.cn
+DOMAIN-SUFFIX,dxycdn.com
+DOMAIN-SUFFIX,hicloud.com
+DOMAIN-SUFFIX,kkmh.com
+DOMAIN-SUFFIX,ksosoft.com
 DOMAIN-SUFFIX,maoyun.tv
+DOMAIN-SUFFIX,meituan.net
+DOMAIN-SUFFIX,mobike.com
+DOMAIN-SUFFIX,mubu.com
+DOMAIN-SUFFIX,myzaker.com
+DOMAIN-SUFFIX,smzdm.com
+DOMAIN-SUFFIX,sogou.com
 DOMAIN-SUFFIX,teamviewer.com
 DOMAIN-SUFFIX,udacity.com
-DOMAIN-SUFFIX,cmvideo.cn
 DOMAIN-SUFFIX,xmcdn.com
-DOMAIN-SUFFIX,sogou.com
-DOMAIN-SUFFIX,myzaker.com
+DOMAIN-SUFFIX,yangkeduo.com
 DOMAIN-SUFFIX,zhihu.com
 DOMAIN-SUFFIX,zhimg.com
-DOMAIN-SUFFIX,smzdm.com
 USER-AGENT,NeteaseMusic*
 USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*
