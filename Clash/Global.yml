@@ -840,7 +840,7 @@ Rule:
 # USER-AGENT,MicroMessenger%20Client,DIRECT
 # USER-AGENT,WeChat*,DIRECT
 - DOMAIN-SUFFIX,qq.com,DIRECT
-- DOMAIN-SUFFIX,qpic.cn,DIRECTMicroMessenger
+- DOMAIN-SUFFIX,qpic.cn,DIRECT
 # > Alibaba
 - DOMAIN-SUFFIX,alibaba.com,DIRECT
 - DOMAIN-SUFFIX,alicdn.com,DIRECT
