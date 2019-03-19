@@ -6,8 +6,6 @@ macOS：[Surge](https://nssurge.com/) | [ClashX](https://github.com/yichengchen/
 
 iOS：[Surge](https://itunes.apple.com/app/apple-store/id1329879957?mt=8) | [Quantumult](https://itunes.apple.com/app/apple-store/id1252015438?mt=8) | [Kitsunebi](https://itunes.apple.com/app/apple-store/id1446584073?mt=8) | [Shadowrocket](https://itunes.apple.com/app/apple-store/id932747118?mt=8) | [Pepi(ShadowRay)](https://itunes.apple.com/app/apple-store/id1283082051?mt=8) 
 
-Android：[Surfboard](https://rink.hockeyapp.net/recruit/2113783c503645abb0a5ec6317e1a169) | [BifrostV](https://play.google.com/store/apps/details?id=com.github.dawndiy.bifrostv) | [Kitsunebi](https://play.google.com/store/apps/details?id=fun.kitsunebi.kitsunebi4android)
-
 Windows：[Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg)
 
 ### 规则
@@ -39,11 +37,10 @@ Windows：[Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg)
 |                             应用                             |                            标准版                            |                            专业版                            |                            回国版                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |                            Clash                             |                              无                              | [Global](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Clash/Global.yml) | [China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Clash/China.yml) |
-|               BifrostV<br />Kitsunebi(Android)               |                              无                              | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/ProjectV/Pro.json) |                              无                              |
 |                        Kitsunebi(iOS)                        | [Basic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Kitsunebi/Basic.conf) | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Kitsunebi/Pro.conf) | [China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Kitsunebi/China.conf) |
 | Quantumult \| [快捷指令](https://www.icloud.com/shortcuts/44f0cffd3ddf422ea28fb94380cec417) | [Basic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/Basic.conf) | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/Pro.conf)<br />[Rejection](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/Rejection.conf) | [ China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/China.conf)<br />[Rejection](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/Rejection.conf) |
 | Shadowrocket \| Pepi \| [快捷指令](https://www.icloud.com/shortcuts/b50d84fb063e469891f8600ab089a684) | [Basic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/Basic.conf) | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/Pro.conf) | [China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/China.conf) |
-| Surge 2 \| [快捷指令](https://www.icloud.com/shortcuts/244585386fef4058abc9ac4b2f47ca56)<br />Surfboard | [Basic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Basic.conf) | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Pro.conf) | [China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/China.conf) |
+| Surge 2 \| [快捷指令](https://www.icloud.com/shortcuts/244585386fef4058abc9ac4b2f47ca56) | [Basic](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Basic.conf) | [Pro](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Pro.conf) | [China](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/China.conf) |
 | Surge 3 \| [快捷指令](https://www.icloud.com/shortcuts/7a9dbf08f4ad4db58076990b596e65a6) |                              无                              | [Surge3](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Surge3.conf) |                              无                              |
 
 ### 使用说明 & 常见问题
