@@ -1,8 +1,9 @@
 # (ForeignMedia)
 # (Video)
 # > Youtube
-USER-AGENT,*youtube*
+USER-AGENT,com.google.ios.youtube*
 USER-AGENT,YouTube*
+USER-AGENT,YouTubeMusic*
 DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,youtube.com
 DOMAIN,youtubei.googleapis.com
@@ -28,7 +29,6 @@ USER-AGENT,HBO%20NOW*
 DOMAIN-SUFFIX,hbo.com
 DOMAIN-SUFFIX,hbogo.com
 # > Hulu
-USER-AGENT,Hulu*
 DOMAIN-SUFFIX,hulu.com
 DOMAIN-SUFFIX,huluim.com
 # > PBS
@@ -36,6 +36,9 @@ USER-AGENT,PBS*
 DOMAIN-SUFFIX,pbs.org
 # > Fox Now
 USER-AGENT,FOX%20NOW*
+DOMAIN-SUFFIX,fox.com
+DOMAIN-SUFFIX,foxdcg.com
+DOMAIN-SUFFIX,uplynk.com
 # > (HK)
 # > myTV_SUPER
 USER-AGENT,mytv*
