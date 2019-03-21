@@ -77,6 +77,11 @@ DOMAIN-SUFFIX,zmzapi.com
 DOMAIN-SUFFIX,zimuzu.tv
 DOMAIN-SUFFIX,zmzfile.com
 DOMAIN-SUFFIX,zmzapi.net
+# > 蛋蛋赞
+DOMAIN-SUFFIX,dandanzan.com
+DOMAIN-SUFFIX,fjhps.com
+DOMAIN-SUFFIX,czybjz.com
+DOMAIN-SUFFIX,baduziyuan.com
 # > Baidu
 DOMAIN-SUFFIX,baidu.com
 DOMAIN-SUFFIX,baidubcr.com
