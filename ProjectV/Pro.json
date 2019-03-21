@@ -1,72 +1,16 @@
 {
-  "outbounds" : [
-    {
-      "mux" : {
-        "enabled" : true,
-        "concurrency" : 8
-      },
-      "tag" : "proxy",
-      "settings" : {
-        "vnext" : [
-          {
-            "users" : [
-              {
-                "alterId" : 64,
-                "id" : "a3482e88-686a-4a58-8126-99c9df64b7bf",
-                "security" : "none"
-              }
-            ],
-            "address" : "v2ray.cool",
-            "port" : 443
-          }
-        ]
-      },
-      "protocol" : "vmess",
-      "streamSettings" : {
-        "wsSettings" : {
-          "path" : "\/v2ray.cool\/",
-          "headers" : {
-            "Host" : "v2ray.cool"
-          }
-        },
-        "security" : "tls",
-        "tlsSettings" : {
-          "allowInsecure" : true
-        },
-        "network" : "ws"
-      }
-    },
-    {
-      "tag" : "direct",
-      "settings" : {
-        "domainStrategy" : "UseIP",
-        "userLevel" : 2018
-      },
-      "protocol" : "freedom",
-      "streamSettings" : {
-
-      }
-    },
-    {
-      "tag" : "block",
-      "settings" : {
-
-      },
-      "protocol" : "blackhole"
-    }
-  ],
   "dns" : {
-    "clientIp" : "202.96.209.133",
     "hosts" : {
 
     },
+    "clientIp" : "202.96.209.133",
     "servers" : [
       {
         "domains" : [
           "geosite:cn"
         ],
-        "address" : "223.5.5.5",
-        "port" : 53
+        "port" : 53,
+        "address" : "223.5.5.5"
       },
       "114.114.114.114",
       {
@@ -316,22 +260,94 @@
           "porn",
           "wikileaks"
         ],
-        "address" : "8.8.8.8",
-        "port" : 53
+        "port" : 53,
+        "address" : "8.8.8.8"
       }
     ]
   },
-  "inbounds" : [
+  "outbounds" : [
     {
-      "listen" : "127.0.0.1",
       "settings" : {
-        "allowTransparent" : true
+        "vnext" : [
+          {
+            "users" : [
+              {
+                "id" : "a3482e88-686a-4a58-8126-99c9df64b7bf",
+                "security" : "none",
+                "alterId" : 64
+              }
+            ],
+            "port" : 443,
+            "address" : "v2ray.cool"
+          }
+        ]
       },
-      "protocol" : "http",
+      "streamSettings" : {
+        "wsSettings" : {
+          "headers" : {
+            "Host" : "v2ray.cool"
+          },
+          "path" : "\/v2ray.cool\/"
+        },
+        "network" : "ws",
+        "tlsSettings" : {
+          "allowInsecure" : true
+        },
+        "security" : "tls"
+      },
+      "mux" : {
+        "enabled" : true,
+        "concurrency" : 8
+      },
+      "protocol" : "vmess",
+      "tag" : "proxy"
+    },
+    {
+      "settings" : {
+        "userLevel" : 2018,
+        "domainStrategy" : "AsIs"
+      },
       "streamSettings" : {
 
       },
-      "port" : 1087
+      "protocol" : "freedom",
+      "tag" : "direct"
+    },
+    {
+      "tag" : "block",
+      "settings" : {
+
+      },
+      "protocol" : "blackhole"
+    }
+  ],
+  "policy" : {
+    "levels" : {
+      "0" : {
+        "handshake" : 4,
+        "uplinkOnly" : 0,
+        "downlinkOnly" : 0,
+        "connIdle" : 15
+      },
+      "2018" : {
+        "handshake" : 4,
+        "uplinkOnly" : 0,
+        "downlinkOnly" : 0,
+        "connIdle" : 15
+      }
+    }
+  },
+  "inbounds" : [
+    {
+      "settings" : {
+        "allowTransparent" : true
+      },
+      "port" : 1087,
+      "streamSettings" : {
+
+      },
+      "listen" : "127.0.0.1",
+      "protocol" : "http"
     }
   ],
   "routing" : {
@@ -339,7 +355,6 @@
     "rules" : [
       {
         "type" : "field",
-        "outboundTag" : "proxy",
         "ip" : [
           "1.1.1.1\/32",
           "1.0.0.1\/32",
@@ -347,17 +362,35 @@
           "8.8.4.4\/32",
           "208.67.222.222\/32",
           "208.67.220.220\/32"
-        ]
+        ],
+        "outboundTag" : "proxy"
       },
       {
         "type" : "field",
-        "outboundTag" : "block",
+        "domain" : [
+          "full:analytics.google.com",
+          "full:analyticsinsights-pa.googleapis.com",
+          "full:analyticsreporting.googleapis.com"
+        ],
+        "outboundTag" : "proxy"
+      },
+      {
+        "type" : "field",
+        "domain" : [
+          "domain:vd.l.qq.com"
+        ],
+        "outboundTag" : "direct"
+      },
+      {
+        "type" : "field",
         "domain" : [
           "adservice",
           "analytics",
           "analysis",
           "domain:3lift.com",
+          "domain:4006825178.com",
           "domain:51.la",
+          "domain:550tg.com",
           "domain:56txs4.com",
           "domain:ad373.com",
           "domain:adcolony.com",
@@ -366,6 +399,7 @@
           "domain:adjust.com",
           "domain:adkmob.com",
           "domain:adlefee.com",
+          "domain:admantx.com",
           "domain:admarvel.com",
           "domain:admaster.com.cn",
           "domain:admob.com",
@@ -388,9 +422,11 @@
           "domain:app-adforce.jp",
           "domain:appboy.com",
           "domain:appier.net",
+          "domain:appnext.com",
           "domain:appsflyer.com",
           "domain:apptentive.com",
           "domain:atwola.com",
+          "domain:betrad.com",
           "domain:bidswitch.com",
           "domain:bjytgw.com",
           "domain:bttrack.com",
@@ -400,6 +436,7 @@
           "domain:chartbeat.net",
           "domain:clickhubs.com",
           "domain:cloudmobi.net",
+          "domain:cnadnet.com",
           "domain:cnzz.com",
           "domain:cocounion.com",
           "domain:conviva.com",
@@ -407,6 +444,7 @@
           "domain:crwdcntrl.net",
           "domain:ctrmi.com",
           "domain:demdex.net",
+          "domain:dianomi.com",
           "domain:digitru.st",
           "domain:dtscout.com",
           "domain:effectivemeasure.net",
@@ -416,6 +454,7 @@
           "domain:exosrv.com",
           "domain:exposebox.com",
           "domain:eyeota.net",
+          "domain:eyeviewads.com",
           "domain:flurry.com",
           "domain:fwmrm.net",
           "domain:getrockerbox.com",
@@ -445,6 +484,7 @@
           "domain:luomi.com",
           "domain:madserving.com",
           "domain:mathtag.com",
+          "domain:media.net",
           "domain:metalex.io",
           "domain:mfadsrvr.com",
           "domain:miaozhen.com",
@@ -471,7 +511,6 @@
           "domain:rayjump.com",
           "domain:rubiconproject.com",
           "domain:scorecardresearch.com",
-          "domain:segment.com",
           "domain:serving-sys.com",
           "domain:simplepath.com",
           "domain:skimresources.com",
@@ -483,10 +522,11 @@
           "domain:summerhamster.com",
           "domain:supersonicads.com",
           "domain:taboola.com",
+          "domain:tagtic.cn",
           "domain:talkingdata.com",
           "domain:tango-deg.com",
-          "domain:tanx.com",
           "domain:tanv.com",
+          "domain:tanx.com",
           "domain:taplytics.com",
           "domain:taptica.com",
           "domain:testplus.cn",
@@ -511,12 +551,6 @@
           "domain:xdrig.com",
           "domain:yldbt.com",
           "domain:ymtracking.com",
-          "domain:appnext.com",
-          "domain:cnadnet.com",
-          "domain:media.net",
-          "domain:betrad.com",
-          "domain:dianomi.com",
-          "domain:admantx.com",
           "domain:ad.daum.net",
           "domain:api.appsee.com",
           "domain:ssl2.duapps.com",
@@ -543,7 +577,6 @@
           "full:adsapi.manhuaren.com",
           "full:adsdk.dmzj.com",
           "full:ads.daydaycook.com.cn",
-          "full:adshow.58.com",
           "full:adshows.21cn.com",
           "full:adui.tg.meitu.com",
           "full:adx.hupu.com",
@@ -551,6 +584,7 @@
           "full:app-ad.variflight.com",
           "full:applog.mobike.com",
           "full:ggs.myzaker.com",
+          "full:ja.chushou.tv",
           "full:log.b612kaji.com",
           "full:log.star.ele.me",
           "full:log.voicecloud.cn",
@@ -561,26 +595,14 @@
           "full:optimus-ads.amap.com",
           "full:static.vuevideo.net",
           "full:sugar.zhihu.com",
-          "full:track.58.com",
-          "full:tracklog.58.com",
           "full:track.tiara.daum.net",
           "full:track.tiara.kakao.com",
           "full:trackapp.guahao.cn",
           "full:traffic.mogujie.com",
           "full:wmlog.meituan.com",
-          "domain:doubleclick.net",
-          "domain:googleadservices.com",
-          "domain:googleadsserving.cn",
-          "domain:googlesyndication.com",
-          "domain:googletagmanager.com",
-          "domain:baidustatic.com",
-          "full:duclick.baidu.com",
-          "full:hm.baidu.com",
-          "full:hmma.baidu.com",
-          "full:mobads.baidu.com",
-          "full:mobads-logs.baidu.com",
-          "full:nsclick.baidu.com",
-          "full:wn.pos.baidu.com",
+          "full:adshow.58.com",
+          "full:track.58.com",
+          "full:tracklog.58.com",
           "full:acs4baichuan.m.taobao.com",
           "full:adash.m.taobao.com",
           "full:adash.man.aliyuncs.com",
@@ -592,12 +614,120 @@
           "full:apoll.m.taobao.com",
           "full:nbsdk-baichuan.alicdn.com",
           "full:tunion-api.m.taobao.com",
-          "domain:atm.youku.com",
-          "full:ad.mobile.youku.com",
-          "full:iyes.youku.com",
-          "full:adtrack.ucweb.com",
-          "full:applogios.uc.cn",
-          "full:track.uc.cn",
+          "full:adproxy.autohome.com.cn",
+          "full:rd.autohome.com.cn",
+          "full:al.autohome.com.cn",
+          "full:applogapi.autohome.com.cn",
+          "domain:baidustatic.com",
+          "full:afd.baidu.com",
+          "full:duclick.baidu.com",
+          "full:hm.baidu.com",
+          "full:hmma.baidu.com",
+          "full:mobads.baidu.com",
+          "full:mobads-logs.baidu.com",
+          "full:nsclick.baidu.com",
+          "full:wn.pos.baidu.com",
+          "full:applog.musical.ly",
+          "full:track.toutiao.com",
+          "full:xlog.snssdk.com",
+          "full:xlog-va.byteoversea.com",
+          "full:adx.yiche.com",
+          "full:log.ycapp.yiche.com",
+          "full:advertise.baicizhan.org",
+          "full:advertise.baicizhan.com",
+          "full:galaxy.bjcathay.com",
+          "full:mdrecv.app.cntvwb.cn",
+          "full:sdapprecv.app.cntvwb.cn",
+          "full:vdapprecv.app.cntvwb.cn",
+          "full:admarket.21cn.com",
+          "domain:doubleclick.net",
+          "domain:googleadservices.com",
+          "domain:googleadsserving.cn",
+          "domain:googlesyndication.com",
+          "domain:googletagmanager.com",
+          "domain:da.mgtv.com",
+          "domain:da.hunantv.com",
+          "domain:log.hunantv.com",
+          "full:log.v2.hunantv.com",
+          "full:v2.log.hunantv.com",
+          "full:ifacelog.iqiyi.com",
+          "full:mbdlog.iqiyi.com",
+          "full:msg.71.am",
+          "full:msg.qy.net",
+          "full:t7z.cupid.iqiyi.com"
+        ],
+        "outboundTag" : "block"
+      },
+      {
+        "type" : "field",
+        "ip" : [
+          "101.227.97.240\/32",
+          "101.227.200.11\/32",
+          "101.227.200.28\/32",
+          "124.192.153.42\/32"
+        ],
+        "outboundTag" : "block"
+      },
+      {
+        "type" : "field",
+        "domain" : [
+          "full:adserviceretry.kugou.com",
+          "full:ads.service.kugou.com",
+          "full:adsfile.bssdlbig.kugou.com",
+          "full:log.stat.kugou.com",
+          "full:log.web.kugou.com",
+          "full:kgmobilestat.kugou.com",
+          "full:kgmobilestatbak.kugou.com",
+          "full:mobilelog.kugou.com",
+          "full:mobilead.kuwo.cn",
+          "full:rich.kuwo.cn",
+          "full:ad-stat.ksosoft.com",
+          "full:img.auction-ads.wpscdn.cn",
+          "domain:webp2p.letv.com",
+          "full:ark.letv.com",
+          "full:emma-414870e223.huodonghezi.com",
+          "full:g3.letv.com",
+          "full:n.mark.letv.com",
+          "domain:ad.xiaomi.com",
+          "domain:ad.intl.xiaomi.com",
+          "domain:data.mistat.xiaomi.com",
+          "domain:tracking.miui.com",
+          "full:adv.sec.miui.com",
+          "full:o2o.api.xiaomi.com",
+          "full:ad.api.moji.com",
+          "full:adlaunch.moji.com",
+          "full:ads.mojicdn.com",
+          "full:v1.log.moji.com",
+          "full:minfo.wps.cn",
+          "full:ad.bn.netease.com",
+          "full:ad.yixin.im",
+          "full:iadmat.nosdn.127.net",
+          "full:iadmusicmat.music.126.net",
+          "full:iadmusicmatvideo.music.126.net",
+          "full:impservice.dictapp.youdao.com",
+          "full:impservice.youdao.com",
+          "full:log.yex.youdao.com",
+          "full:log-yex.youdao.com",
+          "full:n.3g.163.com",
+          "full:nex.163.com",
+          "full:yt-adp.nosdn.127.net",
+          "full:ads.aplus.pptv.com",
+          "full:asimgs.pplive.cn",
+          "full:de.as.pptv.com",
+          "full:regist.fotoable.com",
+          "full:cdn.adapi.fotoable.com",
+          "full:adnew.wifi8.com",
+          "full:adfile.wifi8.com",
+          "full:u1.img.mobile.sina.cn",
+          "full:sax.sina.com.cn",
+          "full:saxs.sina.com.cn",
+          "full:saxn.sina.com.cn",
+          "domain:ads.sohu.com",
+          "domain:aty.sohu.com",
+          "full:imp.optaim.com",
+          "full:v2.reachmax.cn",
+          "full:track.sohu.com",
+          "full:hui.sohu.com",
           "domain:bugly.qq.com",
           "domain:e.qq.com",
           "domain:gdt.qq.com",
@@ -611,121 +741,33 @@
           "full:pingtcss.qq.com",
           "full:splashqqlive.gtimg.com",
           "full:tajs.qq.com",
-          "full:adserviceretry.kugou.com",
-          "full:ads.service.kugou.com",
-          "full:adsfile.bssdlbig.kugou.com",
-          "full:log.stat.kugou.com",
-          "full:log.web.kugou.com",
-          "full:kgmobilestat.kugou.com",
-          "full:kgmobilestatbak.kugou.com",
-          "full:mobilelog.kugou.com",
-          "full:mobilead.kuwo.cn",
-          "full:rich.kuwo.cn",
-          "full:ad.bn.netease.com",
-          "full:ad.yixin.im",
-          "full:iadmat.nosdn.127.net",
-          "full:iadmusicmat.music.126.net",
-          "full:iadmusicmatvideo.music.126.net",
-          "full:impservice.dictapp.youdao.com",
-          "full:impservice.youdao.com",
-          "full:log.yex.youdao.com",
-          "full:log-yex.youdao.com",
-          "full:n.3g.163.com",
-          "full:nex.163.com",
-          "full:yt-adp.nosdn.127.net",
-          "domain:ad.xiaomi.com",
-          "domain:ad.intl.xiaomi.com",
-          "domain:data.mistat.xiaomi.com",
-          "domain:tracking.miui.com",
-          "full:adv.sec.miui.com",
-          "full:o2o.api.xiaomi.com",
-          "full:u1.img.mobile.sina.cn",
-          "full:sax.sina.com.cn",
-          "full:saxs.sina.com.cn",
-          "full:saxn.sina.com.cn",
-          "full:ifacelog.iqiyi.com",
-          "full:mbdlog.iqiyi.com",
-          "full:msg.71.am",
-          "full:msg.qy.net",
-          "full:t7z.cupid.iqiyi.com"
-        ]
-      },
-      {
-        "type" : "field",
-        "outboundTag" : "block",
-        "ip" : [
-          "101.227.97.240\/32",
-          "101.227.200.11\/32",
-          "101.227.200.28\/32",
-          "124.192.153.42\/32"
-        ]
-      },
-      {
-        "type" : "field",
-        "outboundTag" : "block",
-        "domain" : [
-          "domain:ads.sohu.com",
-          "domain:aty.sohu.com",
-          "full:imp.optaim.com",
-          "full:v2.reachmax.cn",
-          "full:track.sohu.com",
-          "full:hui.sohu.com",
-          "domain:da.mgtv.com",
-          "domain:da.hunantv.com",
-          "domain:log.hunantv.com",
-          "full:log.v2.hunantv.com",
-          "full:v2.log.hunantv.com",
-          "full:ads.aplus.pptv.com",
-          "full:asimgs.pplive.cn",
-          "full:de.as.pptv.com",
-          "domain:webp2p.letv.com",
-          "full:ark.letv.com",
-          "full:emma-414870e223.huodonghezi.com",
-          "full:g3.letv.com",
-          "full:n.mark.letv.com",
-          "full:ad.ximalaya.com",
-          "full:adse.ximalaya.com",
-          "full:ad.api.moji.com",
-          "full:adlaunch.moji.com",
-          "full:ads.mojicdn.com",
-          "full:v1.log.moji.com",
-          "full:ad-stat.ksosoft.com",
-          "full:img.auction-ads.wpscdn.cn",
-          "full:minfo.wps.cn",
-          "full:regist.fotoable.com",
-          "full:cdn.adapi.fotoable.com",
+          "full:imgadpai.thepaper.cn",
+          "full:admonitor.thepaper.cn",
           "full:adsp.xunlei.com",
           "full:etl.xlmc.sandai.net",
-          "full:galaxy.bjcathay.com",
-          "full:mdrecv.app.cntvwb.cn",
-          "full:sdapprecv.app.cntvwb.cn",
-          "full:vdapprecv.app.cntvwb.cn",
-          "full:adx.yiche.com",
-          "full:log.ycapp.yiche.com",
           "full:adm.10jqka.com.cn",
           "full:stat.10jqka.com.cn",
-          "full:adproxy.autohome.com.cn",
-          "full:rd.autohome.com.cn",
-          "full:al.autohome.com.cn",
-          "full:applogapi.autohome.com.cn",
           "full:ad-analysis.pconline.com.cn",
           "full:iad0ssl.pcauto.com.cn",
           "full:iad0ssl.pconline.com.cn",
           "full:imgad0.pcauto.com.cn",
           "full:imgad0.pconline.com.cn",
           "full:ivy.pchouse.com.cn",
+          "full:adtrack.ucweb.com",
+          "full:applogios.uc.cn",
+          "full:track.uc.cn",
+          "full:a.wkanx.com",
+          "full:cwx.lianwangtech.com",
+          "full:c1wx.lianwangtech.com",
+          "full:ad.ximalaya.com",
+          "full:adse.ximalaya.com",
+          "full:t-ads.xiaohongshu.com",
+          "full:apm-track.xiaohongshu.com",
+          "domain:atm.youku.com",
+          "full:ad.mobile.youku.com",
+          "full:iyes.youku.com",
           "full:apppv.zol.com.cn",
           "full:pvnapp.zol.com.cn",
-          "full:adnew.wifi8.com",
-          "full:adfile.wifi8.com",
-          "full:advertise.baicizhan.org",
-          "full:advertise.baicizhan.com",
-          "full:imgadpai.thepaper.cn",
-          "full:admonitor.thepaper.cn",
-          "full:applog.musical.ly",
-          "full:track.toutiao.com",
-          "full:xlog.snssdk.com",
-          "full:xlog-va.byteoversea.com",
           "domain:17gouwuba.com",
           "domain:189zj.cn",
           "domain:285680.com",
@@ -811,11 +853,11 @@
           "domain:zhaozecheng.cn",
           "domain:zhenxinet.com",
           "domain:zzd6.com"
-        ]
+        ],
+        "outboundTag" : "block"
       },
       {
         "type" : "field",
-        "outboundTag" : "block",
         "ip" : [
           "39.107.15.115\/32",
           "47.89.59.182\/32",
@@ -854,11 +896,11 @@
           "180.166.52.24\/32",
           "220.115.251.25\/32",
           "222.73.156.235\/32"
-        ]
+        ],
+        "outboundTag" : "block"
       },
       {
         "type" : "field",
-        "outboundTag" : "block",
         "domain" : [
           "domain:kuaizip.com",
           "domain:mackeeper.com",
@@ -912,28 +954,18 @@
           "domain:yuanchengxiezuo.com",
           "domain:zbrushcn.com",
           "domain:zhzzx.com"
-        ]
+        ],
+        "outboundTag" : "block"
       },
       {
         "type" : "field",
-        "outboundTag" : "proxy",
         "domain" : [
-          "full:content.jwplatform.com",
-          "full:videos-f.jwpsrv.com"
-        ]
+          "domain:youtube.com"
+        ],
+        "outboundTag" : "proxy"
       },
       {
         "type" : "field",
-        "outboundTag" : "proxy",
-        "domain" : [
-          "domain:googlevideo.com",
-          "domain:youtube.com",
-          "full:youtubei.googleapis.com"
-        ]
-      },
-      {
-        "type" : "field",
-        "outboundTag" : "proxy",
         "domain" : [
           "domain:netflix.com",
           "domain:netflix.net",
@@ -942,81 +974,105 @@
           "domain:nflximg.net",
           "domain:nflxso.net",
           "domain:nflxvideo.net"
-        ]
+        ],
+        "outboundTag" : "proxy"
       },
       {
         "type" : "field",
-        "outboundTag" : "proxy",
+        "domain" : [
+          "domain:foxplus.com",
+          "domain:theplatform.com"
+        ],
+        "outboundTag" : "proxy"
+      },
+      {
+        "type" : "field",
         "domain" : [
           "domain:hbo.com",
           "domain:hbogo.com"
-        ]
+        ],
+        "outboundTag" : "proxy"
       },
       {
         "type" : "field",
-        "outboundTag" : "proxy",
         "domain" : [
           "domain:hulu.com",
-          "domain:huluim.com",
-          "domain:happyon.jp"
-        ]
+          "domain:huluim.com"
+        ],
+        "outboundTag" : "proxy"
       },
       {
         "type" : "field",
-        "outboundTag" : "proxy",
         "domain" : [
-          "domain:bbc.co.uk",
-          "domain:bbci.co.uk",
-          "bbcfmt",
-          "uk-live"
-        ]
+          "domain:pbs.org"
+        ],
+        "outboundTag" : "proxy"
       },
       {
         "type" : "field",
-        "outboundTag" : "proxy",
-        "domain" : [
-          "domain:bahamut.com.tw",
-          "domain:gamer.com.tw",
-          "domain:hinet.net"
-        ]
-      },
-      {
-        "type" : "field",
-        "outboundTag" : "proxy",
         "domain" : [
           "domain:mytvsuper.com",
           "domain:tvb.com"
-        ]
+        ],
+        "outboundTag" : "proxy"
       },
       {
         "type" : "field",
-        "outboundTag" : "proxy",
+        "domain" : [
+          "domain:encoretvb.com",
+          "full:content.jwplatform.com",
+          "full:videos-f.jwpsrv.com"
+        ],
+        "outboundTag" : "proxy"
+      },
+      {
+        "type" : "field",
+        "domain" : [
+          "full:api.viu.now.com",
+          "domain:happyon.jp"
+        ],
+        "outboundTag" : "proxy"
+      },
+      {
+        "type" : "field",
         "domain" : [
           "domain:abema.io",
           "domain:ameba.jp",
           "domain:hayabusa.io",
           "full:linear-abematv.akamaized.net"
-        ]
+        ],
+        "outboundTag" : "proxy"
       },
       {
         "type" : "field",
-        "outboundTag" : "proxy",
         "domain" : [
-          "domain:pbs.org"
-        ]
+          "domain:bbc.co.uk",
+          "domain:bbci.co.uk",
+          "bbcfmt",
+          "uk-live"
+        ],
+        "outboundTag" : "proxy"
       },
       {
         "type" : "field",
-        "outboundTag" : "proxy",
+        "domain" : [
+          "domain:bahamut.com.tw",
+          "domain:gamer.com.tw",
+          "domain:hinet.net"
+        ],
+        "outboundTag" : "proxy"
+      },
+      {
+        "type" : "field",
         "domain" : [
           "domain:scdn.co",
           "domain:spotify.com",
           "domain:spoti.fi"
-        ]
+        ],
+        "outboundTag" : "proxy"
       },
       {
         "type" : "field",
-        "outboundTag" : "proxy",
         "domain" : [
           "domain:joox.com",
           "domain:pandora.com",
@@ -1307,11 +1363,11 @@
           "full:abc.go.com",
           "full:abc.net.au",
           "full:wego.here.com"
-        ]
+        ],
+        "outboundTag" : "proxy"
       },
       {
         "type" : "field",
-        "outboundTag" : "proxy",
         "domain" : [
           "domain:appsto.re",
           "full:beta.itunes.apple.com",
@@ -1320,11 +1376,11 @@
           "full:itunes.apple.com",
           "full:api-glb-sea.smoot.apple.com",
           "full:lookup-api.apple.com"
-        ]
+        ],
+        "outboundTag" : "proxy"
       },
       {
         "type" : "field",
-        "outboundTag" : "proxy",
         "domain" : [
           "domain:abc.xyz",
           "domain:android.com",
@@ -1431,22 +1487,22 @@
           "domain:wolframalpha.com",
           "domain:x-art.com",
           "domain:yimg.com"
-        ]
+        ],
+        "outboundTag" : "proxy"
       },
       {
         "type" : "field",
-        "outboundTag" : "proxy",
         "ip" : [
           "91.108.4.0\/22",
           "91.108.8.0\/22",
           "91.108.56.0\/22",
           "109.239.140.0\/24",
           "149.154.160.0\/20"
-        ]
+        ],
+        "outboundTag" : "proxy"
       },
       {
         "type" : "field",
-        "outboundTag" : "direct",
         "domain" : [
           "domain:aaplimg.com",
           "domain:apple.co",
@@ -1458,42 +1514,45 @@
           "domain:icloud-content.com",
           "domain:me.com",
           "domain:mzstatic.com"
-        ]
+        ],
+        "outboundTag" : "direct"
       },
       {
         "type" : "field",
-        "outboundTag" : "direct",
         "ip" : [
           "17.0.0.0\/8"
-        ]
+        ],
+        "outboundTag" : "direct"
       },
       {
         "type" : "field",
-        "outboundTag" : "direct",
         "domain" : [
           "domain:microsoft.com",
           "domain:windows.net",
           "domain:sfx.ms",
-          "full:officecdn-microsoft-com.akamaized.net",
+          "domain:sharepoint.com",
+          "officecdn",
           "domain:blizzard.com",
           "domain:battle.net",
           "full:blzddist1-a.akamaihd.net",
           "domain:steampowered.com",
           "domain:steam-chat.com",
-          "full:steamcdn-a.akamaihd.net",
-          "full:steamuserimages-a.akamaihd.net",
-          "full:steamstore-a.akamaihd.net"
-        ]
+          "steamcdn",
+          "steamstore",
+          "steamuserimages",
+          "steambroadcast"
+        ],
+        "outboundTag" : "direct"
       },
       {
         "type" : "field",
-        "outboundTag" : "direct",
         "domain" : [
           "domain:qq.com",
           "domain:qpic.cn",
           "domain:alibaba.com",
           "domain:alicdn.com",
           "domain:amap.com",
+          "domain:dingtalk.com",
           "domain:taobao.com",
           "domain:tmall.com",
           "domain:ykimg.com",
@@ -1508,6 +1567,7 @@
           "domain:sohu.com",
           "domain:v-56.com",
           "domain:weibo.com",
+          "domain:weibo.cn",
           "domain:jd.com",
           "domain:jd.hk",
           "domain:360buyimg.com",
@@ -1520,14 +1580,32 @@
           "domain:hdslb.com",
           "domain:iqiyi.com",
           "domain:iqiyipic.com",
+          "domain:71.am.com",
           "domain:hitv.com",
           "domain:mgtv.com",
+          "domain:meitu.com",
           "domain:meitudata.com",
           "domain:meipai.com",
           "domain:zmzapi.com",
           "domain:zimuzu.tv",
           "domain:zmzfile.com",
           "domain:zmzapi.net",
+          "domain:dandanzan.com",
+          "domain:fjhps.com",
+          "domain:czybjz.com",
+          "domain:baduziyuan.com",
+          "domain:baidu.com",
+          "domain:baidubcr.com",
+          "domain:bdstatic.com",
+          "domain:189.cn",
+          "domain:21cn.com",
+          "domain:bytecdn.cn",
+          "domain:pstatp.com",
+          "domain:snssdk.com",
+          "domain:toutiao.com",
+          "domain:akadns.net",
+          "domain:chinanetcenter.com",
+          "domain:wangsu.com",
           "domain:ipip.net",
           "domain:ip.cn",
           "domain:ip.la",
@@ -1536,22 +1614,37 @@
           "domain:test-ipv6.com",
           "domain:whatismyip.com",
           "full:ip.bjango.com",
-          "domain:akadns.net",
+          "domain:40017.cn",
+          "domain:cailianpress.com",
+          "domain:chushou.tv",
+          "domain:cmbchina.com",
+          "domain:cmbimg.com",
+          "domain:cmvideo.cn",
+          "domain:doubanio.com",
+          "domain:douyu.com",
+          "domain:douyucdn.cn",
+          "domain:dxycdn.com",
+          "domain:hicloud.com",
+          "domain:kkmh.com",
+          "domain:ksosoft.com",
           "domain:maoyun.tv",
+          "domain:meituan.net",
+          "domain:mobike.com",
+          "domain:mubu.com",
+          "domain:myzaker.com",
+          "domain:smzdm.com",
+          "domain:sogou.com",
           "domain:teamviewer.com",
           "domain:udacity.com",
-          "domain:cmvideo.cn",
           "domain:xmcdn.com",
-          "domain:sogou.com",
-          "domain:myzaker.com",
+          "domain:yangkeduo.com",
           "domain:zhihu.com",
-          "domain:zhimg.com",
-          "domain:smzdm.com"
-        ]
+          "domain:zhimg.com"
+        ],
+        "outboundTag" : "direct"
       },
       {
         "type" : "field",
-        "outboundTag" : "proxy",
         "ip" : [
           "35.190.247.0\/24",
           "64.233.160.0\/19",
@@ -1588,32 +1681,17 @@
           "199.96.56.0\/21",
           "202.160.128.0\/22",
           "209.237.192.0\/19"
-        ]
+        ],
+        "outboundTag" : "proxy"
       },
       {
         "type" : "field",
-        "outboundTag" : "direct",
         "ip" : [
           "geoip:cn",
           "geoip:private"
-        ]
+        ],
+        "outboundTag" : "direct"
       }
     ]
-  },
-  "policy" : {
-    "levels" : {
-      "0" : {
-        "handshake" : 4,
-        "uplinkOnly" : 0,
-        "connIdle" : 5,
-        "downlinkOnly" : 0
-      },
-      "2018" : {
-        "handshake" : 4,
-        "uplinkOnly" : 0,
-        "connIdle" : 5,
-        "downlinkOnly" : 0
-      }
-    }
   }
 }
