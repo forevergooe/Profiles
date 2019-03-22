@@ -45,7 +45,6 @@ DOMAIN-SUFFIX,4shared.com
 DOMAIN-SUFFIX,881903.com
 DOMAIN-SUFFIX,abc.net.au
 DOMAIN-SUFFIX,abebooks.com
-DOMAIN-SUFFIX,aex.com
 DOMAIN-SUFFIX,amazon.co.jp
 DOMAIN-SUFFIX,apigee.com
 DOMAIN-SUFFIX,apk-dl.com
@@ -96,6 +95,7 @@ DOMAIN-SUFFIX,cyberctm.com
 DOMAIN-SUFFIX,dailymotion.com
 DOMAIN-SUFFIX,dailyview.tw
 DOMAIN-SUFFIX,daum.net
+DOMAIN-SUFFIX,daumcdn.net
 DOMAIN-SUFFIX,dcard.tw
 DOMAIN-SUFFIX,deepdiscount.com
 DOMAIN-SUFFIX,deezer.com
@@ -113,7 +113,6 @@ DOMAIN-SUFFIX,dynu.com
 DOMAIN-SUFFIX,earthcam.com
 DOMAIN-SUFFIX,ebookservice.tw
 DOMAIN-SUFFIX,economist.com
-DOMAIN-SUFFIX,edgecastcdn.net
 DOMAIN-SUFFIX,edgecastcdn.net
 DOMAIN-SUFFIX,edu
 DOMAIN-SUFFIX,elpais.com
@@ -237,8 +236,8 @@ DOMAIN-SUFFIX,zb.com
 DOMAIN-SUFFIX,zello.com
 DOMAIN-SUFFIX,zeronet.io
 DOMAIN,cdn-images.mailchimp.com
-DOMAIN,gist.github.com
 DOMAIN,id.heroku.com
+DOMAIN-KEYWORD,github
 DOMAIN-KEYWORD,jav
 DOMAIN-KEYWORD,pinterest
 DOMAIN-KEYWORD,porn

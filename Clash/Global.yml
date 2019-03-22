@@ -71,7 +71,6 @@ Proxy Group:
 
 # 白名单模式 PROXY，黑名单模式 DIRECT
 - { name: "Final", type: select, proxies: ["PROXY", "DIRECT"] }
-
 - { name: "Apple", type: select, proxies: ["DIRECT", "PROXY"] }
 - { name: "ForeignMedia", type: select, proxies: ["1", "2", "3"] }
 - { name: "DomesticMedia", type: select, proxies: ["DIRECT", "1", "2", "3"] }
@@ -267,8 +266,9 @@ Rule:
 # (ForeignMedia)
 # (Video)
 # > Youtube
-# USER-AGENT,*youtube*,ForeignMedia
+# USER-AGENT,com.google.ios.youtube*,ForeignMedia
 # USER-AGENT,YouTube*,ForeignMedia
+# USER-AGENT,YouTubeMusic*,ForeignMedia
 - DOMAIN-SUFFIX,googlevideo.com,ForeignMedia
 - DOMAIN-SUFFIX,youtube.com,ForeignMedia
 - DOMAIN,youtubei.googleapis.com,ForeignMedia
@@ -301,6 +301,9 @@ Rule:
 - DOMAIN-SUFFIX,pbs.org,ForeignMedia
 # > Fox Now
 # USER-AGENT,FOX%20NOW*,ForeignMedia
+- DOMAIN-SUFFIX,fox.com,ForeignMedia
+- DOMAIN-SUFFIX,foxdcg.com,ForeignMedia
+- DOMAIN-SUFFIX,uplynk.com,ForeignMedia
 # > (HK)
 # > myTV_SUPER
 # USER-AGENT,mytv*,ForeignMedia
@@ -392,6 +395,18 @@ Rule:
 - DOMAIN-SUFFIX,twitpic.com,PROXY
 - DOMAIN-SUFFIX,vine.co,PROXY
 - DOMAIN-KEYWORD,twitter,PROXY
+# > Telegram
+- DOMAIN-SUFFIX,t.me,PROXY
+- DOMAIN-SUFFIX,tdesktop.com,PROXY
+- DOMAIN-SUFFIX,telegra.ph,PROXY
+- DOMAIN-SUFFIX,telegram.me,PROXY
+- DOMAIN-SUFFIX,telegram.org,PROXY
+- IP-CIDR,91.108.4.0/22,PROXY
+- IP-CIDR,91.108.8.0/22,PROXY
+- IP-CIDR,91.108.12.0/22,PROXY
+- IP-CIDR,91.108.16.0/22,PROXY
+- IP-CIDR,91.108.56.0/22,PROXY
+- IP-CIDR,149.154.160.0/20,PROXY
 # > Line
 - DOMAIN-SUFFIX,line.me,PROXY
 - DOMAIN-SUFFIX,line-apps.com,PROXY
@@ -402,7 +417,6 @@ Rule:
 - DOMAIN-SUFFIX,881903.com,PROXY
 - DOMAIN-SUFFIX,abc.net.au,PROXY
 - DOMAIN-SUFFIX,abebooks.com,PROXY
-- DOMAIN-SUFFIX,aex.com,PROXY
 - DOMAIN-SUFFIX,amazon.co.jp,PROXY
 - DOMAIN-SUFFIX,apigee.com,PROXY
 - DOMAIN-SUFFIX,apk-dl.com,PROXY
@@ -453,6 +467,7 @@ Rule:
 - DOMAIN-SUFFIX,dailymotion.com,PROXY
 - DOMAIN-SUFFIX,dailyview.tw,PROXY
 - DOMAIN-SUFFIX,daum.net,PROXY
+- DOMAIN-SUFFIX,daumcdn.net,PROXY
 - DOMAIN-SUFFIX,dcard.tw,PROXY
 - DOMAIN-SUFFIX,deepdiscount.com,PROXY
 - DOMAIN-SUFFIX,deezer.com,PROXY
@@ -470,7 +485,6 @@ Rule:
 - DOMAIN-SUFFIX,earthcam.com,PROXY
 - DOMAIN-SUFFIX,ebookservice.tw,PROXY
 - DOMAIN-SUFFIX,economist.com,PROXY
-- DOMAIN-SUFFIX,edgecastcdn.net,PROXY
 - DOMAIN-SUFFIX,edgecastcdn.net,PROXY
 - DOMAIN-SUFFIX,edu,PROXY
 - DOMAIN-SUFFIX,elpais.com,PROXY
@@ -556,8 +570,6 @@ Rule:
 - DOMAIN-SUFFIX,teco-hk.org,PROXY
 - DOMAIN-SUFFIX,teco-mo.org,PROXY
 - DOMAIN-SUFFIX,teddysun.com,PROXY
-- DOMAIN-SUFFIX,telegra.ph,PROXY
-- DOMAIN-SUFFIX,telegram.org,PROXY
 - DOMAIN-SUFFIX,theinitium.com,PROXY
 - DOMAIN-SUFFIX,tineye.com,PROXY
 - DOMAIN-SUFFIX,torproject.org,PROXY
@@ -595,11 +607,9 @@ Rule:
 - DOMAIN-SUFFIX,zb.com,PROXY
 - DOMAIN-SUFFIX,zello.com,PROXY
 - DOMAIN-SUFFIX,zeronet.io,PROXY
-- DOMAIN-SUFFIX,daumcdn.net,PROXY
-
 - DOMAIN,cdn-images.mailchimp.com,PROXY
-- DOMAIN,gist.github.com,PROXY
 - DOMAIN,id.heroku.com,PROXY
+- DOMAIN-KEYWORD,github,PROXY
 - DOMAIN-KEYWORD,jav,PROXY
 - DOMAIN-KEYWORD,pinterest,PROXY
 - DOMAIN-KEYWORD,porn,PROXY
@@ -718,17 +728,13 @@ Rule:
 - DOMAIN-SUFFIX,yt.be,PROXY
 - DOMAIN-SUFFIX,ytimg.com,PROXY
 # > Akamai
-# - DOMAIN-SUFFIX,akamai.net,PROXY
-# - DOMAIN-SUFFIX,akamaistream.net,PROXY
-# - DOMAIN-SUFFIX,akamaized.net,PROXY
+# DOMAIN-SUFFIX,akamai.net,PROXY
+# DOMAIN-SUFFIX,akamaistream.net,PROXY
+# DOMAIN-SUFFIX,akamaized.net,PROXY
 - DOMAIN-SUFFIX,akamaihd.net,PROXY
 # > Steam
 - DOMAIN,media.steampowered.com,PROXY
 - DOMAIN,store.steampowered.com,PROXY
-# > Supercell
-- DOMAIN-SUFFIX,brawlstars.com,PROXY
-- DOMAIN-SUFFIX,brawlstarsgame.com,PROXY
-- DOMAIN-SUFFIX,supercell.com,PROXY
 # > Other
 - DOMAIN-SUFFIX,0rz.tw,PROXY
 - DOMAIN-SUFFIX,4bluestones.biz,PROXY
@@ -772,9 +778,6 @@ Rule:
 - DOMAIN-SUFFIX,redditlist.com,PROXY
 - DOMAIN-SUFFIX,sparknotes.com,PROXY
 - DOMAIN-SUFFIX,streetvoice.com,PROXY
-- DOMAIN-SUFFIX,t.me,PROXY
-- DOMAIN-SUFFIX,tdesktop.com,PROXY
-- DOMAIN-SUFFIX,telegram.me,PROXY
 - DOMAIN-SUFFIX,ttvnw.net,PROXY
 - DOMAIN-SUFFIX,tv.com,PROXY
 - DOMAIN-SUFFIX,twitchcdn.net,PROXY
@@ -787,12 +790,18 @@ Rule:
 - DOMAIN-SUFFIX,yimg.com,PROXY
 - DOMAIN-SUFFIX,signal.org,PROXY
 - DOMAIN-SUFFIX,whispersystems.org,PROXY
-# > Telegram
-- IP-CIDR,91.108.4.0/22,PROXY
-- IP-CIDR,91.108.8.0/22,PROXY
-- IP-CIDR,91.108.56.0/22,PROXY
-- IP-CIDR,109.239.140.0/24,PROXY
-- IP-CIDR,149.154.160.0/20,PROXY
+
+# (Optional Enhanced Proxy)
+# > Akamai
+- DOMAIN-SUFFIX,akadns.net,Optional
+- DOMAIN-SUFFIX,akamai.net,Optional
+- DOMAIN-SUFFIX,akamaistream.net,Optional
+- DOMAIN-SUFFIX,akamaized.net,Optional
+- DOMAIN-SUFFIX,akamaihd.net,Optional
+# > Supercell
+- DOMAIN-SUFFIX,brawlstars.com,Optional
+- DOMAIN-SUFFIX,brawlstarsgame.com,Optional
+- DOMAIN-SUFFIX,supercell.com,Optional
 
 # China Area Network
 # > App Store Download || iBooks Sample
@@ -898,6 +907,8 @@ Rule:
 - DOMAIN-SUFFIX,fjhps.com,DIRECT
 - DOMAIN-SUFFIX,czybjz.com,DIRECT
 - DOMAIN-SUFFIX,baduziyuan.com,DIRECT
+- DOMAIN-SUFFIX,kuyunbo.club,DIRECT
+- DOMAIN-SUFFIX,com-hs-hkdy.com,DIRECT
 # > Baidu
 - DOMAIN-SUFFIX,baidu.com,DIRECT
 - DOMAIN-SUFFIX,baidubcr.com,DIRECT
@@ -911,7 +922,6 @@ Rule:
 - DOMAIN-SUFFIX,snssdk.com,DIRECT
 - DOMAIN-SUFFIX,toutiao.com,DIRECT
 # > Content Delivery Network
-- DOMAIN-SUFFIX,akadns.net,DIRECT
 - DOMAIN-SUFFIX,chinanetcenter.com,DIRECT
 - DOMAIN-SUFFIX,wangsu.com,DIRECT
 # > IP Query
