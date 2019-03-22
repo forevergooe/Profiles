@@ -791,18 +791,6 @@ Rule:
 - DOMAIN-SUFFIX,signal.org,PROXY
 - DOMAIN-SUFFIX,whispersystems.org,PROXY
 
-# (Optional Enhanced Proxy)
-# > Akamai
-- DOMAIN-SUFFIX,akadns.net,Optional
-- DOMAIN-SUFFIX,akamai.net,Optional
-- DOMAIN-SUFFIX,akamaistream.net,Optional
-- DOMAIN-SUFFIX,akamaized.net,Optional
-- DOMAIN-SUFFIX,akamaihd.net,Optional
-# > Supercell
-- DOMAIN-SUFFIX,brawlstars.com,Optional
-- DOMAIN-SUFFIX,brawlstarsgame.com,Optional
-- DOMAIN-SUFFIX,supercell.com,Optional
-
 # China Area Network
 # > App Store Download || iBooks Sample
 - DOMAIN-SUFFIX,itunes.apple.com,Apple
@@ -922,6 +910,7 @@ Rule:
 - DOMAIN-SUFFIX,snssdk.com,DIRECT
 - DOMAIN-SUFFIX,toutiao.com,DIRECT
 # > Content Delivery Network
+- DOMAIN-SUFFIX,akadns.net,DIRECT
 - DOMAIN-SUFFIX,chinanetcenter.com,DIRECT
 - DOMAIN-SUFFIX,wangsu.com,DIRECT
 # > IP Query
