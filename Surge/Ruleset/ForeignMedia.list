@@ -1,4 +1,3 @@
-# (ForeignMedia)
 # (Video)
 # > Youtube
 USER-AGENT,com.google.ios.youtube*
@@ -74,3 +73,20 @@ USER-AGENT,Anime*
 DOMAIN-SUFFIX,bahamut.com.tw
 DOMAIN-SUFFIX,gamer.com.tw
 DOMAIN-SUFFIX,hinet.net
+
+# (Music)
+# > Spotify
+USER-AGENT,Spotify*
+DOMAIN-SUFFIX,scdn.co
+DOMAIN-SUFFIX,spotify.com
+DOMAIN-SUFFIX,spoti.fi
+# > JOOX
+USER-AGENT,WeMusic*
+USER-AGENT,JOOX*
+DOMAIN-SUFFIX,joox.com
+# > Pandora
+DOMAIN-SUFFIX,pandora.com
+# > KKBOX(HK|MO|TW|JP|SG|MY)
+DOMAIN-SUFFIX,kkbox.com,PROXY
+DOMAIN-SUFFIX,kkbox.com.tw
+DOMAIN-SUFFIX,kfs.io
