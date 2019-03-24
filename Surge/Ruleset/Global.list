@@ -35,6 +35,18 @@ DOMAIN-SUFFIX,twimg.com
 DOMAIN-SUFFIX,twitpic.com
 DOMAIN-SUFFIX,vine.co
 DOMAIN-KEYWORD,twitter
+# > Telegram
+DOMAIN-SUFFIX,t.me
+DOMAIN-SUFFIX,tdesktop.com
+DOMAIN-SUFFIX,telegra.ph
+DOMAIN-SUFFIX,telegram.me
+DOMAIN-SUFFIX,telegram.org
+IP-CIDR,91.108.4.0/22,no-resolve
+IP-CIDR,91.108.8.0/22,no-resolve
+IP-CIDR,91.108.12.0/22,no-resolve
+IP-CIDR,91.108.16.0/22,no-resolve
+IP-CIDR,91.108.56.0/22,no-resolve
+IP-CIDR,149.154.160.0/20,no-resolve
 # > Line
 DOMAIN-SUFFIX,line.me
 DOMAIN-SUFFIX,line-apps.com
@@ -195,6 +207,7 @@ DOMAIN-SUFFIX,soundcloud.com
 DOMAIN-SUFFIX,startpage.com
 DOMAIN-SUFFIX,steamcommunity.com
 DOMAIN-SUFFIX,steemit.com
+DOMAIN-SUFFIX,t66y.com
 DOMAIN-SUFFIX,teco-hk.org
 DOMAIN-SUFFIX,teco-mo.org
 DOMAIN-SUFFIX,teddysun.com
@@ -354,24 +367,14 @@ DOMAIN-SUFFIX,x.company
 DOMAIN-SUFFIX,youtu.be
 DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
-# > Akamai
-# DOMAIN-SUFFIX,akamai.net
-# DOMAIN-SUFFIX,akamaistream.net
-# DOMAIN-SUFFIX,akamaized.net
-DOMAIN-SUFFIX,akamaihd.net
 # > Steam
 DOMAIN,media.steampowered.com
 DOMAIN,store.steampowered.com
-# > Supercell
-DOMAIN-SUFFIX,brawlstars.com
-DOMAIN-SUFFIX,brawlstarsgame.com
-DOMAIN-SUFFIX,supercell.com
 # > Other
 DOMAIN-SUFFIX,0rz.tw
 DOMAIN-SUFFIX,4bluestones.biz
 DOMAIN-SUFFIX,9bis.net
 DOMAIN-SUFFIX,allconnected.co
-DOMAIN-SUFFIX,amazon.com
 DOMAIN-SUFFIX,amazonaws.com
 DOMAIN-SUFFIX,aol.com
 DOMAIN-SUFFIX,bcc.com.tw
@@ -407,6 +410,7 @@ DOMAIN-SUFFIX,myactimes.com
 DOMAIN-SUFFIX,newsblur.com
 DOMAIN-SUFFIX,now.im
 DOMAIN-SUFFIX,redditlist.com
+DOMAIN-SUFFIX,signal.org
 DOMAIN-SUFFIX,sparknotes.com
 DOMAIN-SUFFIX,streetvoice.com
 DOMAIN-SUFFIX,ttvnw.net
@@ -414,6 +418,7 @@ DOMAIN-SUFFIX,tv.com
 DOMAIN-SUFFIX,twitchcdn.net
 DOMAIN-SUFFIX,typepad.com
 DOMAIN-SUFFIX,udnbkk.com
+DOMAIN-SUFFIX,whispersystems.org
 DOMAIN-SUFFIX,wikia.com
 DOMAIN-SUFFIX,wn.com
 DOMAIN-SUFFIX,wolframalpha.com

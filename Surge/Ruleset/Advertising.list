@@ -10,24 +10,35 @@ DOMAIN-SUFFIX,51.la
 DOMAIN-SUFFIX,550tg.com
 DOMAIN-SUFFIX,56txs4.com
 DOMAIN-SUFFIX,ad373.com
+DOMAIN-SUFFIX,ad4screen.com
+DOMAIN-SUFFIX,ad-brix.com
 DOMAIN-SUFFIX,adcolony.com
 DOMAIN-SUFFIX,adform.net
 DOMAIN-SUFFIX,adinall.com
+DOMAIN-SUFFIX,adinfuse.com
 DOMAIN-SUFFIX,adjust.com
+DOMAIN-SUFFIX,adjust.io
 DOMAIN-SUFFIX,adkmob.com
 DOMAIN-SUFFIX,adlefee.com
 DOMAIN-SUFFIX,admantx.com
+DOMAIN-SUFFIX,admarketplace.net
 DOMAIN-SUFFIX,admarvel.com
 DOMAIN-SUFFIX,admaster.com.cn
 DOMAIN-SUFFIX,admob.com
+DOMAIN-SUFFIX,adnow.com
 DOMAIN-SUFFIX,adnxs.com
 DOMAIN-SUFFIX,adsafeprotected.com
+DOMAIN-SUFFIX,adsota.com
+DOMAIN-SUFFIX,ads-pixiv.net
 DOMAIN-SUFFIX,adsrvr.org
 DOMAIN-SUFFIX,ads-twitter.com
+DOMAIN-SUFFIX,adswizz.com
 DOMAIN-SUFFIX,adsymptotic.com
 DOMAIN-SUFFIX,adtechus.com
 DOMAIN-SUFFIX,adtilt.com
+DOMAIN-SUFFIX,adtrue.com
 DOMAIN-SUFFIX,advertising.com
+DOMAIN-SUFFIX,advertnative.com
 DOMAIN-SUFFIX,adview.cn
 DOMAIN-SUFFIX,adxpansion.com
 DOMAIN-SUFFIX,adxvip.com
@@ -37,11 +48,18 @@ DOMAIN-SUFFIX,alipaylog.com
 DOMAIN-SUFFIX,amazon-adsystem.com
 DOMAIN-SUFFIX,analysys.cn
 DOMAIN-SUFFIX,app-adforce.jp
+DOMAIN-SUFFIX,appads.com
 DOMAIN-SUFFIX,appboy.com
 DOMAIN-SUFFIX,appier.net
+DOMAIN-SUFFIX,applift.com
+DOMAIN-SUFFIX,applovin.com
 DOMAIN-SUFFIX,appnext.com
+DOMAIN-SUFFIX,appodealx.com
+DOMAIN-SUFFIX,appsee.com
 DOMAIN-SUFFIX,appsflyer.com
 DOMAIN-SUFFIX,apptentive.com
+DOMAIN-SUFFIX,apptornado.com
+DOMAIN-SUFFIX,atdmt.com
 DOMAIN-SUFFIX,atwola.com
 DOMAIN-SUFFIX,betrad.com
 DOMAIN-SUFFIX,bidswitch.com
@@ -49,13 +67,19 @@ DOMAIN-SUFFIX,bjytgw.com
 DOMAIN-SUFFIX,bttrack.com
 DOMAIN-SUFFIX,bxmns.com
 DOMAIN-SUFFIX,cappumedia.com
+DOMAIN-SUFFIX,celtra.com
 DOMAIN-SUFFIX,cferw.com
 DOMAIN-SUFFIX,chartbeat.net
+DOMAIN-SUFFIX,chartboost.com
+DOMAIN-SUFFIX,chitika.com
 DOMAIN-SUFFIX,clickhubs.com
+DOMAIN-SUFFIX,clickintext.com
+DOMAIN-SUFFIX,clickintext.net
 DOMAIN-SUFFIX,cloudmobi.net
 DOMAIN-SUFFIX,cnadnet.com
 DOMAIN-SUFFIX,cnzz.com
 DOMAIN-SUFFIX,cocounion.com
+DOMAIN-SUFFIX,conversantmedia.com
 DOMAIN-SUFFIX,conviva.com
 DOMAIN-SUFFIX,criteo.com
 DOMAIN-SUFFIX,crwdcntrl.net
@@ -64,11 +88,13 @@ DOMAIN-SUFFIX,demdex.net
 DOMAIN-SUFFIX,dianomi.com
 DOMAIN-SUFFIX,digitru.st
 DOMAIN-SUFFIX,dtscout.com
+DOMAIN-SUFFIX,duapps.com
 DOMAIN-SUFFIX,effectivemeasure.net
 DOMAIN-SUFFIX,endpo.in
 DOMAIN-SUFFIX,eum-appdynamics.com
 DOMAIN-SUFFIX,exoclick.com
 DOMAIN-SUFFIX,exosrv.com
+DOMAIN-SUFFIX,exponential.com
 DOMAIN-SUFFIX,exposebox.com
 DOMAIN-SUFFIX,eyeota.net
 DOMAIN-SUFFIX,eyeviewads.com
@@ -79,9 +105,10 @@ DOMAIN-SUFFIX,go2cloud.org
 DOMAIN-SUFFIX,go-mpulse.net
 DOMAIN-SUFFIX,gowadogo.com
 DOMAIN-SUFFIX,growingio.com
+DOMAIN-SUFFIX,gwallet.com
 DOMAIN-SUFFIX,i2000.xyz
-DOMAIN-SUFFIX,iadsdk.apple.com
 DOMAIN-SUFFIX,igexin.com
+DOMAIN-SUFFIX,i-mobile.co.jp
 DOMAIN-SUFFIX,imrworldwide.com
 DOMAIN-SUFFIX,indexww.com
 DOMAIN-SUFFIX,inmobi.cn
@@ -97,21 +124,28 @@ DOMAIN-SUFFIX,krxd.net
 DOMAIN-SUFFIX,leadzu.com
 DOMAIN-SUFFIX,leanplum.com
 DOMAIN-SUFFIX,lenzmx.com
+DOMAIN-SUFFIX,lifestreet.com
+DOMAIN-SUFFIX,lifestreetmedia.com
+DOMAIN-SUFFIX,ligatus.com
 DOMAIN-SUFFIX,lnk0.com
 DOMAIN-SUFFIX,luomi.com
 DOMAIN-SUFFIX,madserving.com
 DOMAIN-SUFFIX,mathtag.com
 DOMAIN-SUFFIX,media.net
+DOMAIN-SUFFIX,medialytics.com
 DOMAIN-SUFFIX,metalex.io
 DOMAIN-SUFFIX,mfadsrvr.com
+DOMAIN-SUFFIX,mgid.com
 DOMAIN-SUFFIX,miaozhen.com
 DOMAIN-SUFFIX,moatads.com
 DOMAIN-SUFFIX,mobileapptracking.com
 DOMAIN-SUFFIX,mobiw.com
+DOMAIN-SUFFIX,mojiva.com
 DOMAIN-SUFFIX,mopub.com
 DOMAIN-SUFFIX,mparticle.com
 DOMAIN-SUFFIX,mxpnl.com
 DOMAIN-SUFFIX,mybest.app
+DOMAIN-SUFFIX,mydas.mobi
 DOMAIN-SUFFIX,nexage.com
 DOMAIN-SUFFIX,nr-data.net
 DOMAIN-SUFFIX,offerstrack.net
@@ -120,6 +154,9 @@ DOMAIN-SUFFIX,outbrain.com
 DOMAIN-SUFFIX,parsely.com
 DOMAIN-SUFFIX,peak-adx.com
 DOMAIN-SUFFIX,personaly.click
+DOMAIN-SUFFIX,popads.com
+DOMAIN-SUFFIX,popads.net
+DOMAIN-SUFFIX,propellerads.com
 DOMAIN-SUFFIX,pubnative.net
 DOMAIN-SUFFIX,qchannel01.cn
 DOMAIN-SUFFIX,qualtrics.com
@@ -132,9 +169,12 @@ DOMAIN-SUFFIX,serving-sys.com
 DOMAIN-SUFFIX,simplepath.com
 DOMAIN-SUFFIX,skimresources.com
 DOMAIN-SUFFIX,smardroid.com
+DOMAIN-SUFFIX,smartadserver.com
 DOMAIN-SUFFIX,snnd.co
 DOMAIN-SUFFIX,sonobi.com
 DOMAIN-SUFFIX,starmobs.com
+DOMAIN-SUFFIX,startappexchange.com
+DOMAIN-SUFFIX,startappservice.com
 DOMAIN-SUFFIX,storygize.net
 DOMAIN-SUFFIX,summerhamster.com
 DOMAIN-SUFFIX,supersonicads.com
@@ -144,10 +184,10 @@ DOMAIN-SUFFIX,talkingdata.com
 DOMAIN-SUFFIX,tango-deg.com
 DOMAIN-SUFFIX,tanv.com
 DOMAIN-SUFFIX,tanx.com
+DOMAIN-SUFFIX,tapad.com
 DOMAIN-SUFFIX,taplytics.com
 DOMAIN-SUFFIX,taptica.com
 DOMAIN-SUFFIX,testplus.cn
-DOMAIN-SUFFIX,track.xiachufang.com
 DOMAIN-SUFFIX,trackclickers.com
 DOMAIN-SUFFIX,trafficjunky.net
 DOMAIN-SUFFIX,trustx.org
@@ -163,16 +203,17 @@ DOMAIN-SUFFIX,urbanairship.com
 DOMAIN-SUFFIX,usebutton.com
 DOMAIN-SUFFIX,voiceads.cn
 DOMAIN-SUFFIX,vrtcal.com
+DOMAIN-SUFFIX,vserv.mobi
+DOMAIN-SUFFIX,vungle.com
 DOMAIN-SUFFIX,webspectator.com
 DOMAIN-SUFFIX,xadchina.cn
 DOMAIN-SUFFIX,xdrig.com
 DOMAIN-SUFFIX,yldbt.com
+DOMAIN-SUFFIX,yllix.com
 DOMAIN-SUFFIX,ymtracking.com
 
 DOMAIN-SUFFIX,ad.daum.net
-DOMAIN-SUFFIX,api.appsee.com
-DOMAIN-SUFFIX,ssl2.duapps.com
-DOMAIN-SUFFIX,unityads.unity3d.com
+DOMAIN-SUFFIX,track.xiachufang.com
 DOMAIN,log.umsns.com
 DOMAIN,log.snssdk.com
 DOMAIN,toblog.snssdk.com
@@ -183,6 +224,7 @@ DOMAIN,stats.jpush.cn
 DOMAIN,stats.umsns.com
 DOMAIN,s0.2mdn.net
 DOMAIN,appnext.hs.llnwd.net
+DOMAIN,appnext-a.akamaihd.net
 
 DOMAIN,abema-adx.ameba.jp
 DOMAIN,ad.10010.com
@@ -196,7 +238,6 @@ DOMAIN,ad-cn.jovcloud.com
 DOMAIN,adsapi.manhuaren.com
 DOMAIN,adsdk.dmzj.com
 DOMAIN,ads.daydaycook.com.cn
-DOMAIN,adshows.21cn.com
 DOMAIN,adui.tg.meitu.com
 DOMAIN,adx.hupu.com
 DOMAIN,adxserver.ad.cmvideo.cn
@@ -226,6 +267,11 @@ DOMAIN,adshow.58.com
 DOMAIN,track.58.com
 DOMAIN,tracklog.58.com
 # (A)
+# > Apple
+DOMAIN-SUFFIX,iadsdk.apple.com
+DOMAIN-SUFFIX,ads.internal.unity3d.com
+DOMAIN-SUFFIX,ads.prd.ie.internal.unity3d.com
+DOMAIN-SUFFIX,unityads.unity3d.com
 # > Alibaba
 DOMAIN,acs4baichuan.m.taobao.com
 DOMAIN,adash.m.taobao.com
@@ -281,6 +327,8 @@ DOMAIN-SUFFIX,googleadservices.com
 DOMAIN-SUFFIX,googleadsserving.cn
 DOMAIN-SUFFIX,googlesyndication.com
 DOMAIN-SUFFIX,googletagmanager.com
+DOMAIN-SUFFIX,googletagservices.com
+DOMAIN-SUFFIX,google-analytics.com
 # (H)
 # > HunanTV
 DOMAIN-SUFFIX,da.mgtv.com
@@ -324,10 +372,12 @@ DOMAIN,n.mark.letv.com
 # (M)
 # > MI
 DOMAIN-SUFFIX,ad.xiaomi.com
+DOMAIN-SUFFIX,admob.xiaomi.com
 DOMAIN-SUFFIX,ad.intl.xiaomi.com
 DOMAIN-SUFFIX,data.mistat.xiaomi.com
 DOMAIN-SUFFIX,tracking.miui.com
 DOMAIN,adv.sec.miui.com
+DOMAIN,adv.sec.intl.miui.com
 DOMAIN,o2o.api.xiaomi.com
 # > 墨迹天气
 DOMAIN,ad.api.moji.com
@@ -339,6 +389,7 @@ DOMAIN,minfo.wps.cn
 # > NetEase
 DOMAIN,ad.bn.netease.com
 DOMAIN,ad.yixin.im
+DOMAIN,admusicpic.music.126.net
 DOMAIN,iadmat.nosdn.127.net
 DOMAIN,iadmusicmat.music.126.net
 DOMAIN,iadmusicmatvideo.music.126.net

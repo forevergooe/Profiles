@@ -1,3 +1,4 @@
+# (ForeignMedia)
 # (Video)
 # > Youtube
 USER-AGENT,com.google.ios.youtube*
@@ -22,6 +23,8 @@ USER-AGENT,Prime%20Video*
 USER-AGENT,FOXPlus*
 DOMAIN-SUFFIX,foxplus.com
 DOMAIN-SUFFIX,theplatform.com
+DOMAIN-SUFFIX,staticasiafox.akamaized.net
+DOMAIN-SUFFIX,dashasiafox.akamaized.net
 # > (US)
 # > HBO Now
 USER-AGENT,HBO%20NOW*
@@ -77,6 +80,7 @@ DOMAIN-SUFFIX,hinet.net
 # (Music)
 # > Spotify
 USER-AGENT,Spotify*
+DOMAIN-SUFFIX,pscdn.co
 DOMAIN-SUFFIX,scdn.co
 DOMAIN-SUFFIX,spotify.com
 DOMAIN-SUFFIX,spoti.fi
@@ -87,6 +91,6 @@ DOMAIN-SUFFIX,joox.com
 # > Pandora
 DOMAIN-SUFFIX,pandora.com
 # > KKBOX(HK|MO|TW|JP|SG|MY)
-DOMAIN-SUFFIX,kkbox.com,PROXY
+DOMAIN-SUFFIX,kkbox.com
 DOMAIN-SUFFIX,kkbox.com.tw
 DOMAIN-SUFFIX,kfs.io
