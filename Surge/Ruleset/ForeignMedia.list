@@ -53,10 +53,12 @@ DOMAIN,content.jwplatform.com
 DOMAIN,videos-f.jwpsrv.com
 # > ViuTV
 USER-AGENT,ViuTV*
+DOMAIN-SUFFIX,viu.tv
 DOMAIN,api.viu.now.com
 # > (JP)
 # > Hulu(フールー)
 DOMAIN-SUFFIX,happyon.jp
+DOMAIN-SUFFIX,hulu.jp
 # > AbemaTV
 USER-AGENT,AbemaTV*
 DOMAIN-SUFFIX,abema.io
