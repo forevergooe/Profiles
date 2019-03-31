@@ -835,6 +835,9 @@ Rule:
 - DOMAIN-SUFFIX,abema.io,ForeignMedia
 - DOMAIN-SUFFIX,ameba.jp,ForeignMedia
 - DOMAIN-SUFFIX,hayabusa.io,ForeignMedia
+- DOMAIN,abematv.akamaized.net,ForeignMedia
+- DOMAIN,ds-linear-abematv.akamaized.net,ForeignMedia
+- DOMAIN,ds-vod-abematv.akamaized.net,ForeignMedia
 - DOMAIN,linear-abematv.akamaized.net,ForeignMedia
 # > (UK)
 # > BBC iPlayer
