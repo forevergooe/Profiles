@@ -616,6 +616,7 @@ Rule:
 - DOMAIN-SUFFIX,daitdai.com,Hijacking
 - DOMAIN-SUFFIX,dsaeerf.com,Hijacking
 - DOMAIN-SUFFIX,dugesheying.com,Hijacking
+- DOMAIN-SUFFIX,dv8c1t.cn,Hijacking
 - DOMAIN-SUFFIX,erdoscs.com,Hijacking
 - DOMAIN-SUFFIX,fan-yong.com,Hijacking
 - DOMAIN-SUFFIX,feih.com.cn,Hijacking
@@ -630,6 +631,7 @@ Rule:
 - DOMAIN-SUFFIX,ishop789.com,Hijacking
 - DOMAIN-SUFFIX,jdkic.com,Hijacking
 - DOMAIN-SUFFIX,jiubuhua.com,Hijacking
+- DOMAIN-SUFFIX,jwg365.cn,Hijacking
 - DOMAIN-SUFFIX,kumihua.com,Hijacking
 - DOMAIN-SUFFIX,linktech.cn,Hijacking
 - DOMAIN-SUFFIX,ltheanine.cn,Hijacking
@@ -669,6 +671,7 @@ Rule:
 - DOMAIN-SUFFIX,yinmong.com,Hijacking
 - DOMAIN-SUFFIX,yiqifa.com,Hijacking
 - DOMAIN-SUFFIX,yitaopt.com,Hijacking
+- DOMAIN-SUFFIX,yukhj.com,Hijacking
 - DOMAIN-SUFFIX,zhaozecheng.cn,Hijacking
 - DOMAIN-SUFFIX,zhenxinet.com,Hijacking
 - DOMAIN-SUFFIX,zunmi.cn,Hijacking
@@ -712,6 +715,7 @@ Rule:
 - IP-CIDR,124.14.21.147/32,Hijacking
 - IP-CIDR,124.14.21.151/32,Hijacking
 - IP-CIDR,180.166.52.24/32,Hijacking
+- IP-CIDR,211.161.101.106/32,Hijacking
 - IP-CIDR,220.115.251.25/32,Hijacking
 - IP-CIDR,222.73.156.235/32,Hijacking
 
