@@ -3,7 +3,7 @@ DOMAIN,gspe1-ssl.ls.apple.com
 PROCESS-NAME,News
 USER-AGENT,AppleNews*
 USER-AGENT,com.apple.news*
-USER-AGENT,News*
+#USER-AGENT,News*
 #DOMAIN,gateway.icloud.com,PROXY // 必须
 #DOMAIN,news-events.apple.com,PROXY // 必须
 #DOMAIN,gateway.icloud.com,PROXY// 必须
