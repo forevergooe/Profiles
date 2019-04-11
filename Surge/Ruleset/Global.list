@@ -307,7 +307,6 @@ DOMAIN,gspe1-ssl.ls.apple.com // Apple News Dependencies
 PROCESS-NAME,News // Apple News
 USER-AGENT,AppleNews* // Apple News
 USER-AGENT,com.apple.news* // Apple News
-USER-AGENT,News* // Apple News
 # > Google
 DOMAIN-SUFFIX,abc.xyz
 DOMAIN-SUFFIX,android.com
