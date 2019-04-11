@@ -802,10 +802,13 @@ Rule:
 - DOMAIN-SUFFIX,staticasiafox.akamaized.net,ForeignMedia
 - DOMAIN-SUFFIX,dashasiafox.akamaized.net,ForeignMedia
 # > (US)
-# > HBO Now
-#USER-AGENT,HBO%20NOW*,ForeignMedia
-- DOMAIN-SUFFIX,hbo.com,ForeignMedia
-- DOMAIN-SUFFIX,hbogo.com,ForeignMedia
+# > HBO NOW & HBO GO
+#USER-AGENT,HBO%20NOW*,PROXY
+- DOMAIN-SUFFIX,hbo.com,PROXY
+- DOMAIN-SUFFIX,hbogo.com,PROXY
+- DOMAIN-SUFFIX,hboasia.com,PROXY
+- DOMAIN-SUFFIX,hbogo.com,PROXY
+- DOMAIN-SUFFIX,hbogoasia.hk,PROXY
 # > Hulu
 - DOMAIN-SUFFIX,hulu.com,ForeignMedia
 - DOMAIN-SUFFIX,huluim.com,ForeignMedia
