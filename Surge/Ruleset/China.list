@@ -9,9 +9,15 @@ DOMAIN-SUFFIX,me.com
 DOMAIN-SUFFIX,mzstatic.com
 # > Microsoft
 DOMAIN-SUFFIX,microsoft.com
-DOMAIN-SUFFIX,windows.net
+DOMAIN-SUFFIX,msecnd.net
+DOMAIN-SUFFIX,msedge.net
+DOMAIN-SUFFIX,office.com
+DOMAIN-SUFFIX,outlookmobile.com
 DOMAIN-SUFFIX,sfx.ms
 DOMAIN-SUFFIX,sharepoint.com
+DOMAIN-SUFFIX,s-microsoft.com
+DOMAIN-SUFFIX,visualstudio.com
+DOMAIN-SUFFIX,windows.net
 DOMAIN-KEYWORD,officecdn
 # > Blizzard
 DOMAIN-SUFFIX,blizzard.com
@@ -78,10 +84,13 @@ DOMAIN-SUFFIX,meitu.com
 DOMAIN-SUFFIX,meitudata.com
 DOMAIN-SUFFIX,meipai.com
 # > YYeTs
-DOMAIN-SUFFIX,zmzapi.com
+DOMAIN-SUFFIX,jstucdn.com
+DOMAIN-SUFFIX,zimuzu.io
 DOMAIN-SUFFIX,zimuzu.tv
-DOMAIN-SUFFIX,zmzfile.com
+DOMAIN-SUFFIX,zmz2019.com
+DOMAIN-SUFFIX,zmzapi.com
 DOMAIN-SUFFIX,zmzapi.net
+DOMAIN-SUFFIX,zmzfile.com
 # > 蛋蛋赞
 DOMAIN-SUFFIX,baduziyuan.com
 DOMAIN-SUFFIX,com-hs-hkdy.com
