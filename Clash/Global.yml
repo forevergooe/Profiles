@@ -1335,9 +1335,15 @@ Rule:
 - DOMAIN-SUFFIX,mzstatic.com,DIRECT
 # > Microsoft
 - DOMAIN-SUFFIX,microsoft.com,DIRECT
-- DOMAIN-SUFFIX,windows.net,DIRECT
+- DOMAIN-SUFFIX,msecnd.net,DIRECT
+- DOMAIN-SUFFIX,msedge.net,DIRECT
+- DOMAIN-SUFFIX,office.com,DIRECT
+- DOMAIN-SUFFIX,outlookmobile.com,DIRECT
 - DOMAIN-SUFFIX,sfx.ms,DIRECT
 - DOMAIN-SUFFIX,sharepoint.com,DIRECT
+- DOMAIN-SUFFIX,s-microsoft.com,DIRECT
+- DOMAIN-SUFFIX,visualstudio.com,DIRECT
+- DOMAIN-SUFFIX,windows.net,DIRECT
 - DOMAIN-KEYWORD,officecdn,DIRECT
 # > Blizzard
 - DOMAIN-SUFFIX,blizzard.com,DIRECT
@@ -1404,10 +1410,13 @@ Rule:
 - DOMAIN-SUFFIX,meitudata.com,DIRECT
 - DOMAIN-SUFFIX,meipai.com,DIRECT
 # > YYeTs
-- DOMAIN-SUFFIX,zmzapi.com,DIRECT
+- DOMAIN-SUFFIX,jstucdn.com,DIRECT
+- DOMAIN-SUFFIX,zimuzu.io,DIRECT
 - DOMAIN-SUFFIX,zimuzu.tv,DIRECT
-- DOMAIN-SUFFIX,zmzfile.com,DIRECT
+- DOMAIN-SUFFIX,zmz2019.com,DIRECT
+- DOMAIN-SUFFIX,zmzapi.com,DIRECT
 - DOMAIN-SUFFIX,zmzapi.net,DIRECT
+- DOMAIN-SUFFIX,zmzfile.com,DIRECT
 # > 蛋蛋赞
 - DOMAIN-SUFFIX,baduziyuan.com,DIRECT
 - DOMAIN-SUFFIX,com-hs-hkdy.com,DIRECT
