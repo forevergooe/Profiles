@@ -104,7 +104,7 @@ DOMAIN-SUFFIX,dcard.tw
 DOMAIN-SUFFIX,deepdiscount.com
 DOMAIN-SUFFIX,deezer.com
 DOMAIN-SUFFIX,depositphotos.com
-DOMAIN-SUFFIX,deviantart.com,force-remote-dns
+DOMAIN-SUFFIX,deviantart.com
 DOMAIN-SUFFIX,disconnect.me
 DOMAIN-SUFFIX,discordapp.com
 DOMAIN-SUFFIX,discordapp.net
@@ -362,7 +362,6 @@ DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
 # > Steam
 DOMAIN,media.steampowered.com
-DOMAIN,store.steampowered.com
 # > Other
 DOMAIN-SUFFIX,0rz.tw
 DOMAIN-SUFFIX,4bluestones.biz

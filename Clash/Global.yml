@@ -318,6 +318,7 @@ Rule:
 
 - DOMAIN-SUFFIX,ad.daum.net,Advertising
 - DOMAIN-SUFFIX,track.xiachufang.com,Advertising
+- DOMAIN-SUFFIX,deliver.ifeng.com,Advertising
 - DOMAIN,log.umsns.com,Advertising
 - DOMAIN,log.snssdk.com,Advertising
 - DOMAIN,toblog.snssdk.com,Advertising
@@ -331,6 +332,7 @@ Rule:
 - DOMAIN,appnext-a.akamaihd.net,Advertising
 
 - DOMAIN,abema-adx.ameba.jp,Advertising
+- DOMAIN,ad.10010.com,Advertising
 - DOMAIN,ad.12306.cn,Advertising
 - DOMAIN,ad.caiyunapp.com,Advertising
 - DOMAIN,ad.huajiao.com,Advertising
@@ -720,6 +722,9 @@ Rule:
 # Blocklist 黑名单
 - DOMAIN-SUFFIX,kuaizip.com,Hijacking
 - DOMAIN-SUFFIX,mackeeper.com,Hijacking
+# > Adobe
+- DOMAIN-SUFFIX,flash.cn,Hijacking
+- DOMAIN,geo2.adobe.com,Hijacking
 # > CJ Marketing
 - DOMAIN-SUFFIX,4009997658.com,Hijacking
 - DOMAIN-SUFFIX,abbyychina.com,Hijacking
@@ -801,13 +806,13 @@ Rule:
 - DOMAIN-SUFFIX,staticasiafox.akamaized.net,ForeignMedia
 - DOMAIN-SUFFIX,dashasiafox.akamaized.net,ForeignMedia
 # > (US)
-# > HBO NOW & HBO GO
-#USER-AGENT,HBO%20NOW*,PROXY
-- DOMAIN-SUFFIX,hbo.com,PROXY
-- DOMAIN-SUFFIX,hbogo.com,PROXY
-- DOMAIN-SUFFIX,hboasia.com,PROXY
-- DOMAIN-SUFFIX,hbogo.com,PROXY
-- DOMAIN-SUFFIX,hbogoasia.hk,PROXY
+# > HBO Now & HBO GO
+#USER-AGENT,HBO%20NOW*,ForeignMedia
+- DOMAIN-SUFFIX,hbo.com,ForeignMedia
+- DOMAIN-SUFFIX,hbogo.com,ForeignMedia
+- DOMAIN-SUFFIX,hboasia.com,ForeignMedia
+- DOMAIN-SUFFIX,hbogo.com,ForeignMedia
+- DOMAIN-SUFFIX,hbogoasia.hk,ForeignMedia
 # > Hulu
 - DOMAIN-SUFFIX,hulu.com,ForeignMedia
 - DOMAIN-SUFFIX,huluim.com,ForeignMedia
@@ -831,10 +836,12 @@ Rule:
 - DOMAIN,videos-f.jwpsrv.com,ForeignMedia
 # > ViuTV
 #USER-AGENT,ViuTV*,ForeignMedia
+- DOMAIN-SUFFIX,viu.tv,ForeignMedia
 - DOMAIN,api.viu.now.com,ForeignMedia
 # > (JP)
 # > Hulu(フールー)
 - DOMAIN-SUFFIX,happyon.jp,ForeignMedia
+- DOMAIN-SUFFIX,hulu.jp,ForeignMedia
 # > AbemaTV
 #USER-AGENT,AbemaTV*,ForeignMedia
 - DOMAIN-SUFFIX,abema.io,ForeignMedia
@@ -938,6 +945,8 @@ Rule:
 # > Other
 - DOMAIN-SUFFIX,4shared.com,PROXY
 - DOMAIN-SUFFIX,881903.com,PROXY
+- DOMAIN-SUFFIX,9cache.com,PROXY
+- DOMAIN-SUFFIX,9gag.com,PROXY
 - DOMAIN-SUFFIX,abc.net.au,PROXY
 - DOMAIN-SUFFIX,abebooks.com,PROXY
 - DOMAIN-SUFFIX,amazon.co.jp,PROXY
@@ -950,6 +959,7 @@ Rule:
 - DOMAIN-SUFFIX,archive.is,PROXY
 - DOMAIN-SUFFIX,archive.org,PROXY
 - DOMAIN-SUFFIX,arte.tv,PROXY
+- DOMAIN-SUFFIX,artstation.com,PROXY
 - DOMAIN-SUFFIX,ask.com,PROXY
 - DOMAIN-SUFFIX,avgle.com,PROXY
 - DOMAIN-SUFFIX,badoo.com,PROXY
@@ -975,6 +985,7 @@ Rule:
 - DOMAIN-SUFFIX,bwh1.net,PROXY
 - DOMAIN-SUFFIX,castbox.fm,PROXY
 - DOMAIN-SUFFIX,cbc.ca,PROXY
+- DOMAIN-SUFFIX,mailchimp.com,PROXY
 - DOMAIN-SUFFIX,cdw.com,PROXY
 - DOMAIN-SUFFIX,change.org,PROXY
 - DOMAIN-SUFFIX,ck101.com,PROXY
@@ -995,6 +1006,7 @@ Rule:
 - DOMAIN-SUFFIX,deepdiscount.com,PROXY
 - DOMAIN-SUFFIX,deezer.com,PROXY
 - DOMAIN-SUFFIX,depositphotos.com,PROXY
+- DOMAIN-SUFFIX,deviantart.com
 - DOMAIN-SUFFIX,disconnect.me,PROXY
 - DOMAIN-SUFFIX,discordapp.com,PROXY
 - DOMAIN-SUFFIX,discordapp.net,PROXY
@@ -1037,7 +1049,8 @@ Rule:
 - DOMAIN-SUFFIX,hkgolden.com,PROXY
 - DOMAIN-SUFFIX,hootsuite.com,PROXY
 - DOMAIN-SUFFIX,hudson.org,PROXY
-- DOMAIN-SUFFIX,huobi.pro,PROXY
+- DOMAIN-SUFFIX,id.heroku.com,PROXY
+- DOMAIN-SUFFIX,imgur.com,PROXY
 - DOMAIN-SUFFIX,initiummall.com,PROXY
 - DOMAIN-SUFFIX,ipfs.io,PROXY
 - DOMAIN-SUFFIX,issuu.com,PROXY
@@ -1056,6 +1069,7 @@ Rule:
 - DOMAIN-SUFFIX,mil,PROXY
 - DOMAIN-SUFFIX,mobile01.com,PROXY
 - DOMAIN-SUFFIX,naver.com,PROXY
+- DOMAIN-SUFFIX,nicovideo.jp,PROXY
 - DOMAIN-SUFFIX,nikkei.com,PROXY
 - DOMAIN-SUFFIX,nofile.io,PROXY
 - DOMAIN-SUFFIX,now.com,PROXY
@@ -1131,8 +1145,6 @@ Rule:
 - DOMAIN-SUFFIX,zb.com,PROXY
 - DOMAIN-SUFFIX,zello.com,PROXY
 - DOMAIN-SUFFIX,zeronet.io,PROXY
-- DOMAIN,cdn-images.mailchimp.com,PROXY
-- DOMAIN,id.heroku.com,PROXY
 - DOMAIN-KEYWORD,github,PROXY
 - DOMAIN-KEYWORD,jav,PROXY
 - DOMAIN-KEYWORD,pinterest,PROXY
@@ -1252,7 +1264,6 @@ Rule:
 - DOMAIN-SUFFIX,ytimg.com,PROXY
 # > Steam
 - DOMAIN,media.steampowered.com,PROXY
-- DOMAIN,store.steampowered.com,PROXY
 # > Other
 - DOMAIN-SUFFIX,0rz.tw,PROXY
 - DOMAIN-SUFFIX,4bluestones.biz,PROXY
@@ -1320,8 +1331,15 @@ Rule:
 - DOMAIN,ocvideo.apple.com,Apple
 # > Apple News and Apple Map TOMTOM Version
 - DOMAIN,gspe1-ssl.ls.apple.com,Apple
-#PROCESS-NAME,News,PROXY
-#USER-AGENT,AppleNews*,PROXY
+#PROCESS-NAME,News,Apple
+#USER-AGENT,AppleNews*,Apple
+#USER-AGENT,com.apple.news*,Apple
+#- DOMAIN,http://news-events.apple.com ,PROXY // News 服务检查
+#- DOMAIN,http://gateway.icloud.com ,PROXY// 同上
+#- DOMAIN,http://apple.comscoreresearch.com ,PROXY // 不代理获取0资源
+#- DOMAIN-SUFFIX,http://apple.news ,PROXY // 可选不影响使用
+#- DOMAIN,http://news-client.apple.com ,PROXY // 同上
+#- DOMAIN,http://news-edge.apple.com ,PROXY // 同上
 # > Apple
 - DOMAIN-SUFFIX,aaplimg.com,Apple
 - DOMAIN-SUFFIX,apple.co,DIRECT
@@ -1469,6 +1487,7 @@ Rule:
 - DOMAIN-SUFFIX,douyu.com,DIRECT
 - DOMAIN-SUFFIX,douyucdn.cn,DIRECT
 - DOMAIN-SUFFIX,dxycdn.com,DIRECT
+- DOMAIN-SUFFIX,futunn.com,DIRECT
 - DOMAIN-SUFFIX,hicloud.com,DIRECT
 - DOMAIN-SUFFIX,ithome.com,DIRECT
 - DOMAIN-SUFFIX,kkmh.com,DIRECT
