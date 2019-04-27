@@ -1008,7 +1008,7 @@ Rule:
 - DOMAIN-SUFFIX,deepdiscount.com,PROXY
 - DOMAIN-SUFFIX,deezer.com,PROXY
 - DOMAIN-SUFFIX,depositphotos.com,PROXY
-- DOMAIN-SUFFIX,deviantart.com
+- DOMAIN-SUFFIX,deviantart.com,PROXY
 - DOMAIN-SUFFIX,disconnect.me,PROXY
 - DOMAIN-SUFFIX,discordapp.com,PROXY
 - DOMAIN-SUFFIX,discordapp.net,PROXY
