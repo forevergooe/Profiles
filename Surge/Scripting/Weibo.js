@@ -1,7 +1,7 @@
 /**
  * @author yichahucha
  * @repo https://github.com/yichahucha/surge
- * @Script http-response ^https?:\/\/api\.weibo\.cn script-path=https://github.com/ConnersHua/Profiles/raw/self-use/Surge/Scripting/Weibo.js
+ * @Script http-response ^https?:\/\/api\.weibo\.cn script-path=https://github.com/ConnersHua/Profiles/raw/master/Surge/Scripting/Weibo.js
  * @MITM api.weibo.cn
  */
 
