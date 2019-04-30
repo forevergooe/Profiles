@@ -5,11 +5,13 @@
  * @MITM api.weibo.cn
  */
 
+let result = body;
+
 let path2 = '/statuses/';//feed流广告、好友关注
 let path3 = '/statuses/extend';//详情中的广告共享计划、相关推荐
 let path4 = '/comments/build_comments';//评论中的相关内容、推荐
 let path5 = '/photo/recommend_list';//相关图集屏蔽
-var result = body;
+
 if (url.indexOf(path2) != -1) {
     var json_body = JSON.parse(body);
     if (url.indexOf(path3) != -1) { 
@@ -36,6 +38,7 @@ if (url.indexOf(path2) != -1) {
     }
     result = JSON.stringify(json_body);
 }
+
 if (url.indexOf(path4) != -1) { 
     var json_body = JSON.parse(body);
     var datas = json_body.datas;
@@ -50,9 +53,11 @@ if (url.indexOf(path4) != -1) {
     json_body.datas = new_datas;
     result = JSON.stringify(json_body);
 }
+
 if (url.indexOf(path5) != -1) { 
     var json_body = JSON.parse(body);
     json_body.data = {};
     result = JSON.stringify(json_body);
 }
+
 result;
