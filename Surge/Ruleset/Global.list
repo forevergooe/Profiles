@@ -357,10 +357,6 @@ DOMAIN,itunes.apple.com // App Store Preview
 DOMAIN,api-glb-sea.smoot.apple.com // Spotlight
 DOMAIN,lookup-api.apple.com // Dictionary
 PROCESS-NAME,LookupViewService // Dictionary
-DOMAIN,gspe1-ssl.ls.apple.com // Apple News Dependencies
-PROCESS-NAME,News // Apple News
-USER-AGENT,AppleNews* // Apple News
-USER-AGENT,com.apple.news* // Apple News
 # > Google
 DOMAIN-SUFFIX,abc.xyz
 DOMAIN-SUFFIX,android.com
