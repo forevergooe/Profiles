@@ -5,15 +5,8 @@
  * @MITM mp.weixin.qq.com
  */
 
-let result = body;
+let result = JSON.parse(body);
 
-// Subscriptions articles
-let subscriptionsArticles = '/mp/getappmsgad?f=';
+delete result['advertisement_info'];
 
-if (url.indexOf(subscriptionsArticles) != -1) {
-    var jsbody = JSON.parse(body);
-    jsbody.advertisement_info = [];
-    result = JSON.stringify(jsbody);
-}
-
-result;
+JSON.stringify(result);
