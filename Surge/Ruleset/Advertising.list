@@ -351,8 +351,10 @@ IP-CIDR,124.192.153.42/32,no-resolve
 DOMAIN,adserviceretry.kugou.com
 DOMAIN,ads.service.kugou.com
 DOMAIN,adsfile.bssdlbig.kugou.com
+DOMAIN,g.koowo.com
 DOMAIN,log.stat.kugou.com
 DOMAIN,log.web.kugou.com
+DOMAIN,log.kuwo.cn
 DOMAIN,kgmobilestat.kugou.com
 DOMAIN,kgmobilestatbak.kugou.com
 DOMAIN,mobilelog.kugou.com
@@ -373,7 +375,6 @@ DOMAIN,n.mark.letv.com
 DOMAIN-SUFFIX,ad.xiaomi.com
 DOMAIN-SUFFIX,admob.xiaomi.com
 DOMAIN-SUFFIX,ad.intl.xiaomi.com
-DOMAIN-SUFFIX,data.mistat.xiaomi.com
 DOMAIN-SUFFIX,tracking.miui.com
 DOMAIN,adv.sec.miui.com
 DOMAIN,adv.sec.intl.miui.com
