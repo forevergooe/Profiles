@@ -1,6 +1,6 @@
 /**
  * @author Choler
- * @repo https://github.com/Choler/Surge
+ * @repo https://github.com/Choler/Rule
  * @Script http-response ^https?:\/\/mp\.weixin\.qq\.com script-path=https://github.com/ConnersHua/Profiles/raw/master/Surge/Scripting/WeChat.js
  * @MITM mp.weixin.qq.com
  */

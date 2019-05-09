@@ -1,6 +1,6 @@
 /**
  * @author Choler
- * @repo https://github.com/Choler/Surge
+ * @repo https://github.com/Choler/Rule
  * @Script http-response ^http://vip1\.kuwo\.cn/vip/ script-path=https://github.com/ConnersHua/Profiles/raw/master/Surge/Scripting/KWPlayer.js
  * @MITM api.rr.tv
  */
