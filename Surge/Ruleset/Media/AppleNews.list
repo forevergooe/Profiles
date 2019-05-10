@@ -3,10 +3,3 @@ DOMAIN,gspe1-ssl.ls.apple.com
 PROCESS-NAME,News
 USER-AGENT,AppleNews*
 USER-AGENT,com.apple.news*
-#USER-AGENT,News*
-#DOMAIN,gateway.icloud.com,PROXY // 必须
-#DOMAIN,news-events.apple.com,PROXY // 必须
-#DOMAIN,apple.comscoreresearch.com,PROXY // 不代理获取0资源
-#DOMAIN-SUFFIX,apple.news,PROXY // 可选不影响使用
-#DOMAIN,news-client.apple.com,PROXY // 可选不影响使用
-#DOMAIN,news-edge.apple.com,PROXY // 可选不影响使用
