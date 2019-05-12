@@ -20,20 +20,59 @@ log-level: info
 # Clash 的 RESTful API
 external-controller: 127.0.0.1:9090
 
+# you can put the static web resource (such as clash-dashboard) to a directory, and clash would serve in `${API}/ui`
+# input is a relative path to the configuration directory or an absolute path
+# external-ui: folder
+
+# Secret for RESTful API (Optional)
+# secret: ""
+
+# experimental feature
+experimental:
+  ignore-resolve-fail: true # ignore dns reslove fail, default value is true
+
+# DNS 设置
 dns:
-  enable: true # set true to enable dns (default is false)
-  ipv6: false # default is false
-  listen: 0.0.0.0:53
-  enhanced-mode: redir-host # redir-host or fake-ip
-  #fake-ip-range: 198.18.0.1/16 # if you don't know what it is, don't change it
-  nameserver:
-    - 117.50.10.10
-    - 119.29.29.29
-    - 223.5.5.5
-    - tls://dns.rubyfish.cn:853 # dns over tls
-  fallback: # concurrent request with nameserver, fallback used when GEOIP country isn't CN
-    - tls://dns.rubyfish.cn:853
-    - tls://dns.google:853
+enable: true # set true to enable dns (default is false)
+ipv6: false # default is false
+listen: 0.0.0.0:53
+enhanced-mode: fake-ip # redir-host or fake-ip
+# fake-ip-range: 198.18.0.1/16 # if you don't know what it is, don't change it
+nameserver:
+  - 117.50.10.10
+  - 119.29.29.29
+  - 223.5.5.5
+# fallback: # concurrent request with nameserver, fallback used when GEOIP country isn't CN
+  # - tls://8.8.4.4:853
+  # - tls://1.0.0.1:853
+
+# Clash for Windows
+cfw-bypass:
+  - qq.com
+  - music.163.com
+  - '*.music.126.net'
+  - localhost
+  - 127.*
+  - 10.*
+  - 172.16.*
+  - 172.17.*
+  - 172.18.*
+  - 172.19.*
+  - 172.20.*
+  - 172.21.*
+  - 172.22.*
+  - 172.23.*
+  - 172.24.*
+  - 172.25.*
+  - 172.26.*
+  - 172.27.*
+  - 172.28.*
+  - 172.29.*
+  - 172.30.*
+  - 172.31.*
+  - 192.168.*
+  - <local>
+cfw-latency-timeout: 5000
 
 # 代理节点
 Proxy:
@@ -73,12 +112,12 @@ Proxy:
 
 # 代理组策略
 Proxy Group:
-# 不同于 Surge，后面用到的策略组要放到前面以免报错
+# 不同于 Surge，后面要用到的策略组要放到前面
 
-# url-test 可以自动选择与指定 URL 测速后，延迟最短的服务器。
+# url-test 通过指定的 URL 测试并选择延迟最低的节点
 - { name: "UrlTest", type: url-test, proxies: ["1", "2", "3","4"], url: "http://www.gstatic.com/generate_204", interval: 300 }
 
-# fallback 和 url-test 类似，按优先级选择可使用的节点，当 1 不可用时使用 2，以此类推
+# fallback 通过指定的 URL 测试并选择可用的节点，当 1 故障不可用时自动切换到 2 以此类推
 # - { name: "FallBack", type: fallback, proxies: ["1", "2", "3","4"], url: "http://www.gstatic.com/generate_204", interval: 300 }
 
 # load-balance: 负载均衡
