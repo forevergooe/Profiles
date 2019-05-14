@@ -40,7 +40,7 @@ DOMAIN-SUFFIX,adtechus.com
 DOMAIN-SUFFIX,adthor.com
 DOMAIN-SUFFIX,adtilt.com
 DOMAIN-SUFFIX,adtrue.com
-DOMAIN-SUFFIX.com
+DOMAIN-SUFFIX,advertising.com
 DOMAIN-SUFFIX,advertnative.com
 DOMAIN-SUFFIX,adview.cn
 DOMAIN-SUFFIX,adxpansion.com
@@ -367,8 +367,10 @@ IP-CIDR,124.192.153.42/32,no-resolve
 DOMAIN,adserviceretry.kugou.com
 DOMAIN,ads.service.kugou.com
 DOMAIN,adsfile.bssdlbig.kugou.com
+DOMAIN,g.koowo.com
 DOMAIN,log.stat.kugou.com
 DOMAIN,log.web.kugou.com
+DOMAIN,log.kuwo.cn
 DOMAIN,kgmobilestat.kugou.com
 DOMAIN,kgmobilestatbak.kugou.com
 DOMAIN,mobilelog.kugou.com
