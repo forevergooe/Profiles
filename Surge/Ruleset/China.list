@@ -150,8 +150,10 @@ DOMAIN-SUFFIX,eastmoney.com
 DOMAIN-SUFFIX,futunn.com
 DOMAIN-SUFFIX,geilicdn.com
 DOMAIN-SUFFIX,hicloud.com
+DOMAIN-SUFFIX,huya.com
 DOMAIN-SUFFIX,infinitynewtab.com
 DOMAIN-SUFFIX,ithome.com
+DOMAIN-SUFFIX,keepcdn.com
 DOMAIN-SUFFIX,kkmh.com
 DOMAIN-SUFFIX,ksosoft.com
 DOMAIN-SUFFIX,maoyun.tv
@@ -164,7 +166,9 @@ DOMAIN-SUFFIX,paypalobjects.com
 DOMAIN-SUFFIX,ruguoapp.com
 DOMAIN-SUFFIX,smzdm.com
 DOMAIN-SUFFIX,snapdrop.net
+DOMAIN-SUFFIX,sogo.com
 DOMAIN-SUFFIX,sogou.com
+DOMAIN-SUFFIX,sogoucdn.com
 DOMAIN-SUFFIX,teamviewer.com
 DOMAIN-SUFFIX,tianyancha.com
 DOMAIN-SUFFIX,udacity.com

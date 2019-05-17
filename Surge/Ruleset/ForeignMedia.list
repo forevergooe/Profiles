@@ -16,6 +16,9 @@ DOMAIN-SUFFIX,nflximg.com
 DOMAIN-SUFFIX,nflximg.net
 DOMAIN-SUFFIX,nflxso.net
 DOMAIN-SUFFIX,nflxvideo.net
+# > Pornhub
+DOMAIN-SUFFIX,phncdn.com
+DOMAIN-SUFFIX,pornhub.com
 # > Amazon Prime Video (US|JP)
 USER-AGENT,InstantVideo.US*
 USER-AGENT,Prime%20Video*
@@ -78,6 +81,10 @@ DOMAIN-SUFFIX,bbc.co.uk
 DOMAIN-SUFFIX,bbci.co.uk
 DOMAIN-KEYWORD,bbcfmt
 DOMAIN-KEYWORD,uk-live
+# > All4
+USER-AGENT,All4*
+DOMAIN-SUFFIX,c4assets.com
+DOMAIN-SUFFIX,channel4.com
 # > (TW)
 # > Bahamut
 USER-AGENT,Anime*

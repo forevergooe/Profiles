@@ -349,6 +349,9 @@ Rule:
 - DOMAIN-SUFFIX,nflximg.net,ForeignMedia
 - DOMAIN-SUFFIX,nflxso.net,ForeignMedia
 - DOMAIN-SUFFIX,nflxvideo.net,ForeignMedia
+# > Pornhub
+- DOMAIN-SUFFIX,phncdn.com,ForeignMedia
+- DOMAIN-SUFFIX,pornhub.com,ForeignMedia
 # > Amazon Prime Video (US|JP)
 # USER-AGENT,InstantVideo.US*,ForeignMedia
 # USER-AGENT,Prime%20Video*,ForeignMedia
@@ -411,6 +414,10 @@ Rule:
 - DOMAIN-SUFFIX,bbci.co.uk,ForeignMedia
 - DOMAIN-KEYWORD,bbcfmt,ForeignMedia
 - DOMAIN-KEYWORD,uk-live,ForeignMedia
+# > All4
+# USER-AGENT,All4*,ForeignMedia
+- DOMAIN-SUFFIX,c4assets.com,ForeignMedia
+- DOMAIN-SUFFIX,channel4.com,ForeignMedia
 # > (TW)
 # > Bahamut
 # USER-AGENT,Anime*,ForeignMedia
@@ -691,7 +698,6 @@ Rule:
 - DOMAIN-SUFFIX,pixiv.net,PROXY
 - DOMAIN-SUFFIX,player.fm,PROXY
 - DOMAIN-SUFFIX,plurk.com,PROXY
-- DOMAIN-SUFFIX,pornhub.com,PROXY
 - DOMAIN-SUFFIX,prism-break.org,PROXY
 - DOMAIN-SUFFIX,proxifier.com,PROXY
 - DOMAIN-SUFFIX,pts.org.tw,PROXY
@@ -1108,8 +1114,10 @@ Rule:
 - DOMAIN-SUFFIX,futunn.com,DIRECT
 - DOMAIN-SUFFIX,geilicdn.com,DIRECT
 - DOMAIN-SUFFIX,hicloud.com,DIRECT
+- DOMAIN-SUFFIX,huya.com,DIRECT
 - DOMAIN-SUFFIX,infinitynewtab.com,DIRECT
 - DOMAIN-SUFFIX,ithome.com,DIRECT
+- DOMAIN-SUFFIX,keepcdn.com,DIRECT
 - DOMAIN-SUFFIX,kkmh.com,DIRECT
 - DOMAIN-SUFFIX,ksosoft.com,DIRECT
 - DOMAIN-SUFFIX,maoyun.tv,DIRECT
@@ -1122,7 +1130,9 @@ Rule:
 - DOMAIN-SUFFIX,ruguoapp.com,DIRECT
 - DOMAIN-SUFFIX,smzdm.com,DIRECT
 - DOMAIN-SUFFIX,snapdrop.net,DIRECT
+- DOMAIN-SUFFIX,sogo.com,DIRECT
 - DOMAIN-SUFFIX,sogou.com,DIRECT
+- DOMAIN-SUFFIX,sogoucdn.com,DIRECT
 - DOMAIN-SUFFIX,teamviewer.com,DIRECT
 - DOMAIN-SUFFIX,tianyancha.com,DIRECT
 - DOMAIN-SUFFIX,udacity.com,DIRECT
