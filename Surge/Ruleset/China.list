@@ -39,10 +39,12 @@ DOMAIN-SUFFIX,tencent.com
 DOMAIN-SUFFIX,alibaba.com
 DOMAIN-SUFFIX,alicdn.com
 DOMAIN-SUFFIX,alikunlun.com
+DOMAIN-SUFFIX,alipay.com
 DOMAIN-SUFFIX,amap.com
 DOMAIN-SUFFIX,dingtalk.com
 DOMAIN-SUFFIX,taobao.com
 DOMAIN-SUFFIX,tmall.com
+DOMAIN-SUFFIX,tmall.hk
 DOMAIN-SUFFIX,ykimg.com
 DOMAIN-SUFFIX,youku.com
 DOMAIN-SUFFIX,xiami.com
@@ -69,6 +71,7 @@ DOMAIN-SUFFIX,miui.com
 DOMAIN-SUFFIX,xiaomi.com
 # > bilibili
 DOMAIN-SUFFIX,acgvideo.com
+DOMAIN-SUFFIX,bilibili.com
 DOMAIN-SUFFIX,hdslb.com
 # > iQiyi
 DOMAIN-SUFFIX,iqiyi.com
@@ -120,8 +123,6 @@ DOMAIN-SUFFIX,akadns.net
 # > ChinaNetCenter
 DOMAIN-SUFFIX,chinanetcenter.com
 DOMAIN-SUFFIX,wangsu.com
-# > CloudFlare
-DOMAIN-SUFFIX,cloudflare.com
 # > IP Query
 DOMAIN-SUFFIX,ipip.net
 DOMAIN-SUFFIX,ip.la
@@ -131,13 +132,14 @@ DOMAIN-SUFFIX,test-ipv6.com
 DOMAIN-SUFFIX,whatismyip.com
 DOMAIN,ip.bjango.com
 # > Speed Test
-# DOMAIN-SUFFIX,nspeedtest.net
+# DOMAIN-SUFFIX,speedtest.net
 # DOMAIN-SUFFIX,netspeedtestmaster.com
 DOMAIN,speedtest.macpaw.com
 # > Other
 DOMAIN-SUFFIX,cn
 DOMAIN-SUFFIX,cailianpress.com
 DOMAIN-SUFFIX,chushou.tv
+DOMAIN-SUFFIX,cloudflare.com
 DOMAIN-SUFFIX,cmbchina.com
 DOMAIN-SUFFIX,cmbimg.com
 DOMAIN-SUFFIX,dfcfw.com
@@ -146,9 +148,12 @@ DOMAIN-SUFFIX,douyu.com
 DOMAIN-SUFFIX,dxycdn.com
 DOMAIN-SUFFIX,eastmoney.com
 DOMAIN-SUFFIX,futunn.com
+DOMAIN-SUFFIX,geilicdn.com
 DOMAIN-SUFFIX,hicloud.com
+DOMAIN-SUFFIX,huya.com
 DOMAIN-SUFFIX,infinitynewtab.com
 DOMAIN-SUFFIX,ithome.com
+DOMAIN-SUFFIX,keepcdn.com
 DOMAIN-SUFFIX,kkmh.com
 DOMAIN-SUFFIX,ksosoft.com
 DOMAIN-SUFFIX,maoyun.tv
@@ -161,10 +166,14 @@ DOMAIN-SUFFIX,paypalobjects.com
 DOMAIN-SUFFIX,ruguoapp.com
 DOMAIN-SUFFIX,smzdm.com
 DOMAIN-SUFFIX,snapdrop.net
+DOMAIN-SUFFIX,sogo.com
 DOMAIN-SUFFIX,sogou.com
+DOMAIN-SUFFIX,sogoucdn.com
 DOMAIN-SUFFIX,teamviewer.com
 DOMAIN-SUFFIX,tianyancha.com
 DOMAIN-SUFFIX,udacity.com
+DOMAIN-SUFFIX,weather.com
+DOMAIN-SUFFIX,weidian.com
 DOMAIN-SUFFIX,xmcdn.com
 DOMAIN-SUFFIX,yangkeduo.com
 DOMAIN-SUFFIX,zhangzishi.cc

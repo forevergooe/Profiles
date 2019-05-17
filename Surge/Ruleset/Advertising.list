@@ -28,6 +28,7 @@ DOMAIN-SUFFIX,admaster.com.cn
 DOMAIN-SUFFIX,admob.com
 DOMAIN-SUFFIX,adnow.com
 DOMAIN-SUFFIX,adnxs.com
+DOMAIN-SUFFIX,adnyg.com
 DOMAIN-SUFFIX,adsafeprotected.com
 DOMAIN-SUFFIX,adsota.com
 DOMAIN-SUFFIX,ads-pixiv.net
@@ -162,6 +163,8 @@ DOMAIN-SUFFIX,nexage.com
 DOMAIN-SUFFIX,nr-data.net
 DOMAIN-SUFFIX,offerstrack.net
 DOMAIN-SUFFIX,omtrdc.net
+DOMAIN-SUFFIX,onead.com.tw
+DOMAIN-SUFFIX,onevision.com.tw
 DOMAIN-SUFFIX,outbrain.com
 DOMAIN-SUFFIX,parsely.com
 DOMAIN-SUFFIX,peak-adx.com
@@ -210,6 +213,7 @@ DOMAIN-SUFFIX,tuanxue360.net
 DOMAIN-SUFFIX,turn.com
 DOMAIN-SUFFIX,uberads.com
 DOMAIN-SUFFIX,udrig.com
+DOMAIN-SUFFIX,ugdtimg.com
 DOMAIN-SUFFIX,umeng.co
 DOMAIN-SUFFIX,umeng.com
 DOMAIN-SUFFIX,umengcloud.com
@@ -250,6 +254,7 @@ DOMAIN,ad.huajiao.com
 DOMAIN,ad.hzyoka.com
 DOMAIN,ad.jiemian.com
 DOMAIN,ad.qingting.fm
+DOMAIN,ad.wappalyzer.com
 DOMAIN,ad-cn.jovcloud.com
 DOMAIN,adsapi.manhuaren.com
 DOMAIN,adsdk.dmzj.com
@@ -260,6 +265,7 @@ DOMAIN,adxserver.ad.cmvideo.cn
 DOMAIN,app-ad.variflight.com
 DOMAIN,applog.mobike.com
 DOMAIN,ggs.myzaker.com
+DOMAIN,itad.linetv.tw
 DOMAIN,ja.chushou.tv
 DOMAIN,log.b612kaji.com
 DOMAIN,log.star.ele.me
@@ -391,7 +397,6 @@ DOMAIN,n.mark.letv.com
 DOMAIN-SUFFIX,ad.xiaomi.com
 DOMAIN-SUFFIX,admob.xiaomi.com
 DOMAIN-SUFFIX,ad.intl.xiaomi.com
-DOMAIN-SUFFIX,data.mistat.xiaomi.com
 DOMAIN-SUFFIX,tracking.miui.com
 DOMAIN,adv.sec.miui.com
 DOMAIN,adv.sec.intl.miui.com

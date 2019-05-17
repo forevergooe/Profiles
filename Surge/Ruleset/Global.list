@@ -50,6 +50,7 @@ DOMAIN-SUFFIX,abebooks.com
 DOMAIN-SUFFIX,amazon.co.jp
 DOMAIN-SUFFIX,apigee.com
 DOMAIN-SUFFIX,apk-dl.com
+DOMAIN-SUFFIX,apkfind.com
 DOMAIN-SUFFIX,apkmirror.com
 DOMAIN-SUFFIX,apkmonk.com
 DOMAIN-SUFFIX,apkpure.com
@@ -217,7 +218,6 @@ DOMAIN-SUFFIX,pinimg.com
 DOMAIN-SUFFIX,pixiv.net
 DOMAIN-SUFFIX,player.fm
 DOMAIN-SUFFIX,plurk.com
-DOMAIN-SUFFIX,pornhub.com
 DOMAIN-SUFFIX,prism-break.org
 DOMAIN-SUFFIX,proxifier.com
 DOMAIN-SUFFIX,pts.org.tw
@@ -275,6 +275,7 @@ DOMAIN-SUFFIX,wattpad.com
 DOMAIN-SUFFIX,whoer.net
 DOMAIN-SUFFIX,wikimapia.org
 DOMAIN-SUFFIX,wikipedia.org
+DOMAIN-SUFFIX,winudf.com
 DOMAIN-SUFFIX,wire.com
 DOMAIN-SUFFIX,workflow.is
 DOMAIN-SUFFIX,worldcat.org
