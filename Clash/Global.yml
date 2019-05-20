@@ -372,6 +372,7 @@ Rule:
 # > Hulu
 - DOMAIN-SUFFIX,hulu.com,ForeignMedia
 - DOMAIN-SUFFIX,huluim.com,ForeignMedia
+- DOMAIN-SUFFIX,hulustream.com,ForeignMedia
 # > PBS
 # USER-AGENT,PBS*,ForeignMedia
 - DOMAIN-SUFFIX,pbs.org,ForeignMedia
@@ -521,6 +522,10 @@ Rule:
 - DOMAIN-SUFFIX,line-apps.com,PROXY
 - DOMAIN-SUFFIX,line-scdn.net,PROXY
 - DOMAIN-SUFFIX,naver.jp,PROXY
+- IP-CIDR,103.2.30.0/23,PROXY
+- IP-CIDR,125.209.208.0/20,PROXY
+- IP-CIDR,147.92.128.0/17,PROXY
+- IP-CIDR,203.104.144.0/21,PROXY
 # > Other
 - DOMAIN-SUFFIX,4shared.com,PROXY
 - DOMAIN-SUFFIX,881903.com,PROXY
