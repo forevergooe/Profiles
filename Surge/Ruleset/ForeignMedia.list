@@ -39,6 +39,7 @@ DOMAIN-SUFFIX,hbogoasia.hk
 # > Hulu
 DOMAIN-SUFFIX,hulu.com
 DOMAIN-SUFFIX,huluim.com
+DOMAIN-SUFFIX,hulustream.com
 # > PBS
 USER-AGENT,PBS*
 DOMAIN-SUFFIX,pbs.org
